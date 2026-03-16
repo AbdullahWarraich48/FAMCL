@@ -14,7 +14,7 @@ export const BUSINESS_ADVICE_HERO_DATA: ServiceHeroData = {
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
 
   image: {
-    src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80",
+    src: "https://images.unsplash.com/photo-1552664730-d307ca884978?auto=format&fit=crop&w=1000&q=80",
     alt: "Advisor reviewing financial reports and making notes with a laptop and calculator",
   },
 

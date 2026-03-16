@@ -14,7 +14,7 @@ export const INHERITANCE_TAX_HERO_DATA: ServiceHeroData = {
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
 
   image: {
-    src: "https://images.unsplash.com/photo-1554224155-3d340b456a3d?auto=format&fit=crop&w=1000&q=80",
+    src: "https://images.unsplash.com/photo-1579621970795-87facc2f976d?auto=format&fit=crop&w=1000&q=80",
     alt: "Person reviewing financial paperwork with a calculator and notebook on a desk",
   },
 

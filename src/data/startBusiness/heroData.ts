@@ -14,7 +14,7 @@ export const START_BUSINESS_HERO_DATA: ServiceHeroData = {
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
 
   image: {
-    src: "https://images.unsplash.com/photo-1505843513577-22bb7d21e455?auto=format&fit=crop&w=1200&q=80",
+    src: "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1000&q=80",
     alt: "Modern office building viewed from below",
   },
 

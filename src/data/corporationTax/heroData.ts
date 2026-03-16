@@ -14,7 +14,7 @@ export const CORPORATION_TAX_HERO_DATA: ServiceHeroData = {
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
 
   image: {
-    src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80",
+    src: "https://cdn.create.vista.com/api/media/small/620421516/stock-photo-top-view-documents-important-date-april-filing-declaration-concept-important",
     alt: "Person writing in a notebook with a laptop and calculator on a desk",
   },
 

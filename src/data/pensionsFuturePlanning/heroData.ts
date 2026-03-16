@@ -14,7 +14,7 @@ export const PENSIONS_FUTURE_PLANNING_HERO_DATA: ServiceHeroData = {
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
 
   image: {
-    src: "https://images.unsplash.com/photo-1584466977773-e625c37cdd50?auto=format&fit=crop&w=1000&q=80",
+    src: "https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?auto=format&fit=crop&w=1000&q=80",
     alt: "Older person reviewing financial documents at a table with a pen and notebook",
   },
 
