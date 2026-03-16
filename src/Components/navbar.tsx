@@ -126,7 +126,7 @@ export default function Navbar() {
 
   return (
     <header
-      className="relative sticky top-0 z-50 w-full bg-white"
+      className="relative w-full bg-white"
       role="banner"
       aria-label="Main navigation"
     >
@@ -172,7 +172,7 @@ export default function Navbar() {
       >
         {/* Navbar row - always on top of dropdown, solid bg so dropdown never shows through */}
         <div
-          className={`content-padding-x mx-auto relative z-[60] flex h-16 w-full max-w-[1440px] shrink-0 items-center justify-between bg-white py-4 md:h-auto md:py-4 ${!openDropdown ? "border-b border-slate-200/80" : ""}`}
+          className={`content-padding-x mx-auto relative z-[60] flex h-20 w-full max-w-[1440px] shrink-0 items-center justify-between bg-white py-4 md:h-24 md:py-4 ${!openDropdown ? "border-b border-slate-200/80" : ""}`}
         >
         {/* Left: Logo */}
         <Link
@@ -181,12 +181,13 @@ export default function Navbar() {
           aria-label="FAM - Financial & Management Consultants Limited, go to homepage"
           onClick={handleCloseMenu}
         >
-          <div className="relative h-12 w-36 md:h-16 md:w-48">
+          {/* Larger logo so 'Chartered Accountants' is clearly readable */}
+          <div className="relative h-16 w-44 md:h-28 md:w-56">
             <Image
               src="/assets/images/FAM Approved Logo 4-Feb-2026.png"
               alt="FAM Approved logo"
               fill
-              sizes="(max-width: 768px) 128px, 160px"
+              sizes="(max-width: 768px) 220px, 280px"
               className="object-contain"
               priority
             />

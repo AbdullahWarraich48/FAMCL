@@ -396,7 +396,7 @@ export const Solution = ({ data }: SolutionProps) => {
         {/* Header: SOLUTION & FRAMEWORK pill + lines */}
         <div className="flex flex-col items-center text-center">
           <div className="flex w-full max-w-3xl items-center justify-center gap-4">
-            <span className="h-px min-w-[80px] flex-1 bg-slate-300" aria-hidden />
+            <span className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block" aria-hidden />
             <div
               className="shrink-0 rounded-lg bg-[#BFFFCB] px-4 py-2"
               role="status"
@@ -406,7 +406,7 @@ export const Solution = ({ data }: SolutionProps) => {
                 {content.sectionLabel}
               </span>
             </div>
-            <span className="h-px min-w-[80px] flex-1 bg-slate-300" aria-hidden />
+            <span className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block" aria-hidden />
           </div>
 
           <h2
@@ -416,13 +416,13 @@ export const Solution = ({ data }: SolutionProps) => {
             {content.heading}
           </h2>
 
-          <p className="mt-6 max-w-3xl text-[18px] leading-[27.8px] text-slate-600">
+          <p className="mt-6 max-w-3xl text-[16px] leading-relaxed text-slate-600 sm:text-[18px] sm:leading-[27.8px]">
             {content.description}
           </p>
         </div>
 
-        {/* Step cards - vertical list */}
-        <div className="mx-auto mt-16 flex max-w-3xl flex-col gap-6">
+        {/* Step cards - vertical list, slightly tighter on mobile */}
+        <div className="mx-auto mt-12 flex max-w-3xl flex-col gap-5 sm:mt-16 sm:gap-6">
           {content.steps.map(({ number, title, iconKey }) => (
             <StepCard
               key={number}

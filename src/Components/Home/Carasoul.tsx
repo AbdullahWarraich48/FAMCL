@@ -23,26 +23,26 @@ export default function TestimonialExact({ hideArrows, items }: CarasoulProps) {
     <section className="w-full bg-white py-10">
       {/* ✅ match upper component container */}
       <div className="content-padding-x mx-auto max-w-[1440px]">
-        <div className="relative flex min-h-[560px] items-center justify-start">
+        <div className="relative flex flex-col gap-8 md:min-h-[560px] md:flex-row md:items-center md:justify-start">
           {/* LEFT IMAGE */}
           <div className="relative z-0 w-full max-w-[720px] md:mr-[280px]">
             <div className="overflow-hidden rounded-2xl shadow-[0_18px_40px_rgba(0,0,0,0.12)]">
               <img
                 src={t.imageUrl}
                 alt={t.author}
-                className="h-[320px] w-full object-cover md:h-[360px]"
+                className="h-[240px] w-full object-cover sm:h-[280px] md:h-[360px]"
                 draggable={false}
               />
             </div>
           </div>
 
-          {/* RIGHT CARD (overlapping) */}
-          <Card className="absolute right-0 top-1/2 z-10 flex min-h-[420px] w-full max-w-[640px] -translate-y-1/2 flex-col justify-center rounded-2xl border-0 shadow-[0_22px_45px_rgba(0,0,0,0.14)]">
-            <div className="flex min-h-[420px] flex-1 flex-col justify-center rounded-2xl bg-gradient-to-b from-white/70 to-[#D8EAFF]  to-sky-100">
-              <CardContent className="relative flex flex-1 flex-col justify-center p-10 md:p-14">
-                {/* Nav buttons (top-right) */}
+          {/* RIGHT CARD (overlapping on desktop, stacked on mobile) */}
+          <Card className="relative z-10 mt-4 flex w-full max-w-[640px] flex-col justify-center rounded-2xl border-0 shadow-[0_22px_45px_rgba(0,0,0,0.14)] md:absolute md:right-0 md:top-1/2 md:mt-0 md:min-h-[420px] md:-translate-y-1/2">
+            <div className="flex min-h-[360px] flex-1 flex-col justify-center rounded-2xl bg-gradient-to-b from-white/70 to-[#D8EAFF]  to-sky-100 md:min-h-[420px]">
+              <CardContent className="relative flex flex-1 flex-col justify-center p-6 sm:p-8 md:p-14">
+                {/* Nav buttons (top-right on desktop) */}
                 {!hideArrows && (
-                  <div className="absolute right-8 top-8 flex gap-3">
+                  <div className="absolute right-8 top-8 hidden gap-3 md:flex">
                     <Button
                       type="button"
                       onClick={prev}
@@ -60,32 +60,54 @@ export default function TestimonialExact({ hideArrows, items }: CarasoulProps) {
                   </div>
                 )}
                 {/* Title */}
-                <h2 className="whitespace-pre-line text-[44px] font-bold leading-[1.05] tracking-tight text-[#175dab] md:text-5xl">
+                <h2 className="whitespace-pre-line text-2xl font-bold leading-tight tracking-tight text-[#175dab] sm:text-3xl md:text-5xl md:leading-[1.05]">
                   {t.title}
                 </h2>
 
+                {/* Nav buttons (inline on mobile) */}
+                {!hideArrows && (
+                  <div className="mt-4 flex gap-3 self-end md:hidden">
+                    <Button
+                      type="button"
+                      onClick={prev}
+                      className="h-10 w-10 rounded-md bg-[#12254B] p-0"
+                    >
+                      <ChevronLeft className="h-4 w-4 text-white" />
+                    </Button>
+                    <Button
+                      type="button"
+                      onClick={next}
+                      className="h-10 w-10 rounded-md bg-[#12254B] p-0"
+                    >
+                      <ChevronRight className="h-4 w-4 text-white" />
+                    </Button>
+                  </div>
+                )}
+
                 {/* Underline */}
-                <div className="mt-6 h-[3px] w-16 bg-slate-900" />
+                <div className="mt-4 h-[3px] w-16 bg-slate-900 md:mt-6" />
 
                 {/* Quote */}
-                <p className="mt-8 max-w-[520px] text-lg leading-8 text-slate-600 md:text-xl">
+                <p className="mt-6 max-w-[520px] text-base leading-relaxed text-slate-600 sm:text-lg sm:leading-8 md:mt-8 md:text-xl">
                   “{t.quote}”
                 </p>
 
                 {/* Author block */}
-                <div className="mt-10">
-                  <div className="flex items-center gap-3 text-2xl font-semibold text-[#175dab]">
+                <div className="mt-8 md:mt-10">
+                  <div className="flex items-center gap-3 text-lg font-semibold text-[#175dab] sm:text-xl md:text-2xl">
                     <span className="inline-block h-[3px] w-7 bg-slate-900" />
                     <span>{t.author}</span>
                   </div>
-                  <div className="mt-2 text-lg text-slate-700">{t.role}</div>
+                  <div className="mt-1 text-sm text-slate-700 sm:mt-2 sm:text-base md:text-lg">
+                    {t.role}
+                  </div>
                 </div>
               </CardContent>
             </div>
           </Card>
 
           {/* DOTS */}
-          <div className="absolute bottom-2 left-1/2 flex -translate-x-1/2 items-center gap-3">
+          <div className="mt-6 flex justify-center gap-3 md:absolute md:bottom-2 md:left-1/2 md:-translate-x-1/2 md:mt-0">
             {data.map((_, idx) => (
               <button
                 key={idx}

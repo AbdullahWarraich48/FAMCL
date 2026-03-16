@@ -151,19 +151,19 @@ export default function Steps() {
         {/* Heading with dividers */}
         <div className="flex flex-col items-center text-center">
           <div className="flex w-full max-w-3xl items-center justify-center gap-4">
-            <span className="h-px min-w-[80px] flex-1 bg-slate-300" aria-hidden />
+            <span className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block" aria-hidden />
             <h2
               id="steps-heading"
               className="shrink-0 text-[1.75rem] font-bold leading-tight tracking-tight text-[#175dab]  sm:text-3xl lg:text-4xl"
             >
               {data.heading}
             </h2>
-            <span className="h-px min-w-[80px] flex-1 bg-slate-300" aria-hidden />
+            <span className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block" aria-hidden />
           </div>
         </div>
 
         {/* Three step cards */}
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-16 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3 lg:gap-8">
           {data.items.map(({ step, title, description, iconKey }) => (
             <StepCard
               key={step}

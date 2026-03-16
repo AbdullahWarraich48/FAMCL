@@ -15,7 +15,7 @@ export const BUSINESS_STRUCTURE_HERO_DATA: ServiceHeroData = {
 
   image: {
     src: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1000&q=80",
-    alt: "Advisor reviewing documents and financial plans on a desk with a laptop and calculator",
+    alt: "Business owners reviewing their company structure and plans with an adviser",
   },
 
   featureCards: [
