@@ -54,10 +54,10 @@ const RESOURCES_LINKS: FooterLink[] = [
 ];
 
 const SOCIAL_LINKS = [
-  { label: "Facebook", href: "#facebook", Icon: Facebook },
-  { label: "Twitter", href: "#twitter", Icon: Twitter },
-  { label: "LinkedIn", href: "#linkedin", Icon: Linkedin },
-  { label: "Instagram", href: "#instagram", Icon: Instagram },
+  { label: "Facebook", href: "#facebook", Icon: Facebook, colorClass: "text-[#1877F2]" },
+  { label: "Twitter", href: "#twitter", Icon: Twitter, colorClass: "text-[#1DA1F2]" },
+  { label: "LinkedIn", href: "#linkedin", Icon: Linkedin, colorClass: "text-[#0A66C2]" },
+  { label: "Instagram", href: "#instagram", Icon: Instagram, colorClass: "text-[#E4405F]" },
 ] as const;
 
 const POLICY_LINKS: FooterLink[] = [
@@ -123,16 +123,16 @@ const FooterSection = () => {
         {/* Social + logos row */}
         <div className="mt-8 flex flex-col items-start justify-between gap-4 md:flex-row md:items-center">
           <div className="flex flex-wrap gap-2" role="group" aria-label="Social media">
-            {SOCIAL_LINKS.map(({ label, href, Icon }) => (
+            {SOCIAL_LINKS.map(({ label, href, Icon, colorClass }) => (
               <a
                 key={label}
                 href={href}
-                className="flex h-10 w-10 items-center justify-center bg-[#12254b] text-white transition-colors hover:bg-[#12254b] focus:outline-none focus:ring-2 focus:ring-[#12254b] focus:ring-offset-2"
+                className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-700 shadow-sm transition-colors hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[#12254b] focus:ring-offset-2"
                 aria-label={label}
                 tabIndex={0}
                 onKeyDown={(e) => handleSocialKeyDown(e, href)}
               >
-                <Icon className="h-5 w-5" aria-hidden />
+                <Icon className={`h-5 w-5 ${colorClass}`} aria-hidden />
               </a>
             ))}
           </div>

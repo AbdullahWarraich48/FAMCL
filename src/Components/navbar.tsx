@@ -182,7 +182,7 @@ export default function Navbar() {
           onClick={handleCloseMenu}
         >
           {/* Compact wrapper, visually larger logo via scale so navbar height stays smaller */}
-          <div className="relative h-10 w-40 overflow-visible md:h-12 md:w-48 mb-2 ">
+          <div className="relative h-10 w-40 overflow-visible md:h-16 md:w-48 mb-[14px] pt-10 ">
             <Image
               src="/assets/images/FAM Approved Logo 4-Feb-2026.png"
               alt="FAM Approved logo"
@@ -284,7 +284,7 @@ export default function Navbar() {
           </button>
 
           <Link
-            href="#contact"
+            href="/Company/contact-us"
             className="rounded-lg bg-[#12254b] px-4 py-2.5 text-sm font-semibold text-white shadow transition-colors hover:bg-[#0f1f3d] xl:px-5"
             aria-label="Contact us"
           >
@@ -295,7 +295,7 @@ export default function Navbar() {
         {/* Mobile: CTA + hamburger */}
         <div className="flex items-center gap-3 lg:hidden">
           <Link
-            href="#contact"
+            href="/Company/contact-us"
             className="rounded-lg bg-[#12254b] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#0f1f3d]"
             aria-label="Contact us"
           >
@@ -333,7 +333,7 @@ export default function Navbar() {
               <div>
                 <div>
                   {/* Top blue header */}
-                  <div className="bg-blue-700 px-6 py-6">
+                  <div className="bg-[#175dab] px-6 py-6">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
                       <div className="shrink-0">
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
@@ -461,7 +461,7 @@ export default function Navbar() {
                 {/* Content (same width as before: 8/12 of 980px) */}
                 <div>
                   {/* Top blue header */}
-                  <div className="bg-blue-700 px-6 py-6">
+                  <div className="bg-[#175dab] px-6 py-6">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
                       <div className="shrink-0">
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
@@ -590,7 +590,7 @@ export default function Navbar() {
               <div>
                 <div>
                   {/* Top blue header */}
-                  <div className="bg-blue-700 px-6 py-6">
+                  <div className="bg-[#175dab] px-6 py-6">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
                       <div className="shrink-0">
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
@@ -718,7 +718,7 @@ export default function Navbar() {
               <div>
                 <div>
                   {/* Top blue header */}
-                  <div className="bg-blue-700 px-6 py-6">
+                  <div className="bg-[#175dab] px-6 py-6">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
                       <div className="shrink-0">
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
@@ -831,7 +831,7 @@ export default function Navbar() {
               <div>
                 <div>
                   {/* Top blue header */}
-                  <div className="bg-blue-700 px-6 py-6">
+                  <div className="bg-[#175dab] px-6 py-6">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
                       <div className="shrink-0">
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">

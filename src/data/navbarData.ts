@@ -167,12 +167,16 @@ export const ABOUT_US_COL3: {
   title: "Careers & Contact",
   links: [
     { label: "Careers", href: "/Company/careers" },
-    { label: "Contact Us", href: "#contact-us" },
+    { label: "Contact Us", href: "/Company/contact-us" },
   ],
 } as const;
 
 export const RESOURCES_COL1: { label: string; href: string; withArrow?: boolean }[] = [
-  { label: "News & Updates", href: "#resources-news-updates", withArrow: true },
+  {
+    label: "News & Updates",
+    href: "/recources/news-and-updates",
+    withArrow: true,
+  },
 ] as const;
 
 export const RESOURCES_COL2 = [
@@ -180,5 +184,8 @@ export const RESOURCES_COL2 = [
 ] as const;
 
 export const RESOURCES_COL3 = [
-  { label: "Tools & Calculators", href: "#resources-tools-calculators" },
+  {
+    label: "Tools & Calculators",
+    href: "/recources/tools-calculator",
+  },
 ] as const;

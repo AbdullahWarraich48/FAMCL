@@ -49,7 +49,7 @@ const cloudSoftwareCards: ChooseCardItem[] = [
     description:
       "Cloud accounting for freelancers and small businesses.",
     buttonLabel: "Learn More",
-    buttonHref: "#freeagent",
+    buttonHref: "/Agents/free-agent-cloud-accounts",
     imageSrc:
       "https://images.unsplash.com/photo-1563013544-824ae1b704d3?w=240&h=80&fit=contain",
     imageAlt: "FreeAgent",
@@ -63,7 +63,7 @@ const cloudSoftwareCards: ChooseCardItem[] = [
     description:
       "Simple, powerful accounting software giving you full control of your accounts 24/7.",
     buttonLabel: "Learn More",
-    buttonHref: "#quickbooks",
+    buttonHref: "/Agents/quick-books",
     imageSrc:
       "https://images.unsplash.com/photo-1611974789855-9c2a0a7236a3?w=240&h=80&fit=contain",
     imageAlt: "QuickBooks",
@@ -77,7 +77,7 @@ const cloudSoftwareCards: ChooseCardItem[] = [
     description:
       "Accounting and tax software for professionals and firms.",
     buttonLabel: "Learn More",
-    buttonHref: "#iris",
+    buttonHref: "/Agents/iris",
     imageSrc:
       "https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=240&h=80&fit=contain",
     imageAlt: "IRIS",
