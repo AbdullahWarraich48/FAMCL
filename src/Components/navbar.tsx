@@ -182,7 +182,7 @@ export default function Navbar() {
           onClick={handleCloseMenu}
         >
           {/* Compact wrapper, visually larger logo via scale so navbar height stays smaller */}
-          <div className="relative h-10 w-40 overflow-visible md:h-16 md:w-48 mb-[14px] pt-10 ">
+          <div className="relative h-10 w-40 overflow-visible md:h-16 md:w-48 md:mb-[14px]">
             <Image
               src="/assets/images/FAM Approved Logo 4-Feb-2026.png"
               alt="FAM Approved logo"
@@ -324,7 +324,7 @@ export default function Navbar() {
         {/* Business Formation dropdown */}
         {openDropdown === "business-formation" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(653px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="Business formation"
             onMouseEnter={() => setOpenDropdown("business-formation")}
@@ -333,7 +333,7 @@ export default function Navbar() {
               <div>
                 <div>
                   {/* Top blue header */}
-                  <div className="bg-[#175dab] px-6 py-6">
+                  <div className="bg-[#12254b] px-6 py-6">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
                       <div className="shrink-0">
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
@@ -421,7 +421,7 @@ export default function Navbar() {
                       </div>
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-blue-800"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
                         aria-label="Search"
                       >
                         <svg
@@ -451,7 +451,7 @@ export default function Navbar() {
         {/* Business dropdown */}
         {openDropdown === "business" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(653px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="Business services"
             onMouseEnter={() => setOpenDropdown("business")}
@@ -461,7 +461,7 @@ export default function Navbar() {
                 {/* Content (same width as before: 8/12 of 980px) */}
                 <div>
                   {/* Top blue header */}
-                  <div className="bg-[#175dab] px-6 py-6">
+                  <div className="bg-[#12254b] px-6 py-6">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
                       <div className="shrink-0">
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
@@ -551,7 +551,7 @@ export default function Navbar() {
 
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-blue-800"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
                         aria-label="Search"
                       >
                         <svg
@@ -581,7 +581,7 @@ export default function Navbar() {
         {/* For You (personal) dropdown */}
         {openDropdown === "personal" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(653px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="For you services"
             onMouseEnter={() => setOpenDropdown("personal")}
@@ -590,7 +590,7 @@ export default function Navbar() {
               <div>
                 <div>
                   {/* Top blue header */}
-                  <div className="bg-[#175dab] px-6 py-6">
+                  <div className="bg-[#12254b] px-6 py-6">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
                       <div className="shrink-0">
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
@@ -690,7 +690,7 @@ export default function Navbar() {
                       </div>
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-blue-800"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
                         aria-label="Search"
                       >
                         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -709,7 +709,7 @@ export default function Navbar() {
         {/* Industries dropdown */}
         {openDropdown === "who-we-help" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(653px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="Industries"
             onMouseEnter={() => setOpenDropdown("who-we-help")}
@@ -718,7 +718,7 @@ export default function Navbar() {
               <div>
                 <div>
                   {/* Top blue header */}
-                  <div className="bg-[#175dab] px-6 py-6">
+                  <div className="bg-[#12254b] px-6 py-6">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
                       <div className="shrink-0">
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
@@ -803,7 +803,7 @@ export default function Navbar() {
                       </div>
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-blue-800"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
                         aria-label="Search"
                       >
                         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -822,7 +822,7 @@ export default function Navbar() {
         {/* Company (About Us) dropdown */}
         {openDropdown === "about-us" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(653px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="Company"
             onMouseEnter={() => setOpenDropdown("about-us")}
@@ -831,7 +831,7 @@ export default function Navbar() {
               <div>
                 <div>
                   {/* Top blue header */}
-                  <div className="bg-[#175dab] px-6 py-6">
+                  <div className="bg-[#12254b] px-6 py-6">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
                       <div className="shrink-0">
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
@@ -914,7 +914,7 @@ export default function Navbar() {
                       </div>
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-blue-800"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
                         aria-label="Search"
                       >
                         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -933,7 +933,7 @@ export default function Navbar() {
         {/* Resources dropdown */}
         {openDropdown === "resources" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(653px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="Resources"
             onMouseEnter={() => setOpenDropdown("resources")}
@@ -942,7 +942,7 @@ export default function Navbar() {
               <div>
                 <div>
                   {/* Top blue header */}
-                  <div className="bg-blue-700 px-6 py-6">
+                  <div className="bg-[#12254b] px-6 py-6">
                     <div className="flex flex-col gap-4 sm:flex-row sm:items-center sm:gap-6">
                       <div className="shrink-0">
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
@@ -1025,7 +1025,7 @@ export default function Navbar() {
                       </div>
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-blue-700 px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-blue-800"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
                         aria-label="Search"
                       >
                         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
