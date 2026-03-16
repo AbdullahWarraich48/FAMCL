@@ -235,40 +235,46 @@ export const Facts = ({ data }: FactsProps) => {
 
   return (
     <section
-      className="w-full bg-[#F6F9FF] py-16 md:py-20 lg:py-24"
+      className="w-full bg-[#F6F9FF] py-10 md:py-16 lg:py-20"
       aria-labelledby="facts-heading"
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">
         {/* Header: FACTS & STATS pill + lines */}
         <div className="flex flex-col items-center text-center">
-          <div className="flex w-full max-w-3xl items-center justify-center gap-4">
-            <span className="h-px min-w-[80px] flex-1 bg-slate-300" aria-hidden />
+          <div className="flex w-full max-w-3xl items-center justify-center gap-3 sm:gap-4">
+            <span
+              className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block"
+              aria-hidden
+            />
             <div
               className="shrink-0 rounded-lg bg-[#BFFFCB] px-4 py-2"
               role="status"
               aria-label="Section"
             >
-              <span className="text-sm font-semibold uppercase tracking-[0.2em] text-[#239337]">
+              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#239337] sm:text-sm sm:tracking-[0.2em]">
                 {content.sectionLabel}
               </span>
             </div>
-            <span className="h-px min-w-[80px] flex-1 bg-slate-300" aria-hidden />
+            <span
+              className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block"
+              aria-hidden
+            />
           </div>
 
           <h2
             id="facts-heading"
-            className="mt-8 text-[2rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
+            className="mt-6 text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:mt-8 sm:text-4xl lg:text-[44px]"
           >
             {content.heading}
           </h2>
 
-          <p className="mt-6 max-w-3xl text-[18px] leading-[27.8px] text-slate-600">
+          <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-slate-600 sm:mt-6 sm:text-[18px] sm:leading-[27.8px]">
             {content.description}
           </p>
         </div>
 
         {/* Three fact cards */}
-        <div className="mt-16 grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-14 sm:grid-cols-2 sm:gap-7 lg:mt-16 lg:grid-cols-3 lg:gap-8">
           {content.items.map(({ stat, description, source, iconKey }) => (
             <FactCard
               key={stat}
