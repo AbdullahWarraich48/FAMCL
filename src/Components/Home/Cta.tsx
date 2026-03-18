@@ -38,7 +38,7 @@ export default function CtaExact() {
               variant="outline"
               className={[
                 "h-11 rounded-full border-white/70 bg-transparent px-7 text-[13px] font-semibold text-white",
-                "hover:bg-white/10 hover:text-white",
+                "hover:bg-[#12254B] hover:text-white",
               ].join(" ")}
             >
               <Phone className="mr-2 h-4 w-4" />

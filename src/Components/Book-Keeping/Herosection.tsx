@@ -111,7 +111,7 @@ export const BookKeepingHerosection = ({
             <div className="mt-8 flex flex-wrap items-center gap-4">
               <Link
                 href={hero.primaryCta.href}
-                className="inline-flex h-12 min-w-[140px] items-center justify-center gap-2 rounded-xl bg-[#1e3a5f] px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-[#162d47] focus:outline-none focus:ring-2 focus:ring-[#1e3a5f] focus:ring-offset-2"
+                className="inline-flex h-12 min-w-[140px] items-center justify-center gap-2 rounded-xl bg-[#1e3a5f] px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-[#184B83] focus:outline-none focus:ring-2 focus:ring-[#1e3a5f] focus:ring-offset-2"
                 aria-label="Get started today"
               >
                 {hero.primaryCta.label}
@@ -132,7 +132,7 @@ export const BookKeepingHerosection = ({
               </Link>
               <a
                 href={hero.phoneHref}
-                className="inline-flex h-12 min-w-[140px] items-center justify-center gap-2 rounded-xl border-2 border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-800 transition-colors hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
+                className="inline-flex h-12 min-w-[140px] items-center justify-center gap-2 rounded-xl border-2 border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-800 transition-colors hover:border-[#12254B] hover:bg-[#12254B] hover:text-white focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
                 aria-label={`Call ${hero.phoneNumber}`}
               >
                 {hero.secondaryCta.labelPrefix} {hero.phoneNumber}

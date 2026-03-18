@@ -8,7 +8,7 @@ type PrimaryButtonProps = ComponentProps<typeof Button> & {
 };
 
  const baseClasses =
-   "bg-[#12254B] hover:bg-[#0f1f3d] text-white rounded-full px-12 py-7 text-xl font-semibold shadow-md transition-all duration-200";
+   "bg-[#12254B] hover:bg-[#184B83] text-white rounded-full px-12 py-7 text-xl font-semibold shadow-md transition-all duration-200";
 
  const PrimaryButton = ({ className, children, ...props }: PrimaryButtonProps) => {
    const mergedClasses = [baseClasses, className].filter(Boolean).join(" ");

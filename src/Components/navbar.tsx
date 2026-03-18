@@ -264,7 +264,7 @@ export default function Navbar() {
         <div className="hidden shrink-0 items-center gap-4 lg:flex xl:gap-6">
           <button
             type="button"
-            className="hidden h-9 w-9 items-center justify-center rounded text-slate-600 transition-colors hover:bg-slate-100 hover:text-slate-900 xl:flex"
+            className="hidden h-9 w-9 items-center justify-center rounded text-slate-600 transition-colors hover:bg-[#12254B] hover:text-white xl:flex"
             aria-label="Search"
           >
             <svg
@@ -285,7 +285,7 @@ export default function Navbar() {
 
           <Link
             href="/Company/contact-us"
-            className="rounded-lg bg-[#12254b] px-4 py-2.5 text-sm font-semibold text-white shadow transition-colors hover:bg-[#0f1f3d] xl:px-5"
+            className="rounded-lg bg-[#12254b] px-4 py-2.5 text-sm font-semibold text-white shadow transition-colors hover:bg-[#184B83] xl:px-5"
             aria-label="Contact us"
           >
             Contact Us
@@ -296,14 +296,14 @@ export default function Navbar() {
         <div className="flex items-center gap-3 lg:hidden">
           <Link
             href="/Company/contact-us"
-            className="rounded-lg bg-[#12254b] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#0f1f3d]"
+            className="rounded-lg bg-[#12254b] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#184B83]"
             aria-label="Contact us"
           >
             Contact Us
           </Link>
           <button
             type="button"
-            className="flex h-10 w-10 items-center justify-center rounded text-slate-700 hover:bg-slate-100"
+            className="flex h-10 w-10 items-center justify-center rounded text-slate-700 transition-colors hover:bg-[#12254B] hover:text-white"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMenuOpen}
             onClick={handleToggleMenu}
@@ -421,7 +421,7 @@ export default function Navbar() {
                       </div>
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#184B83]"
                         aria-label="Search"
                       >
                         <svg
@@ -551,7 +551,7 @@ export default function Navbar() {
 
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#184B83]"
                         aria-label="Search"
                       >
                         <svg
@@ -690,7 +690,7 @@ export default function Navbar() {
                       </div>
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#184B83]"
                         aria-label="Search"
                       >
                         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -803,7 +803,7 @@ export default function Navbar() {
                       </div>
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#184B83]"
                         aria-label="Search"
                       >
                         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -914,7 +914,7 @@ export default function Navbar() {
                       </div>
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#184B83]"
                         aria-label="Search"
                       >
                         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
@@ -1025,7 +1025,7 @@ export default function Navbar() {
                       </div>
                       <button
                         type="button"
-                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#0f1f3d]"
+                        className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-2.5 text-sm font-semibold text-white shadow hover:bg-[#184B83]"
                         aria-label="Search"
                       >
                         <svg className="h-4 w-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>

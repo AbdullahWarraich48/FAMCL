@@ -43,7 +43,7 @@ export default function FeaturedInsight() {
           <div className="mt-8">
             <Link
               href="#"
-              className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#0f1f3d] sm:text-base"
+              className="inline-flex items-center gap-2 rounded-full bg-[#12254b] px-6 py-3 text-sm font-semibold text-white shadow-sm transition-colors hover:bg-[#184B83] sm:text-base"
             >
               Read Full Article
               <span aria-hidden className="text-base">

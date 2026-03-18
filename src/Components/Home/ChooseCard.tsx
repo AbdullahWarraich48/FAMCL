@@ -113,7 +113,7 @@ export default function ChooseCard({
                 <Button
                   variant="outline"
                   size="lg"
-                  className={`h-12 min-h-12 w-full min-w-full max-w-full !rounded-xl border-2 bg-[#D8EAFF] font-semibold border-[#175dab] text-[#175dab] `}
+                  className={`h-12 min-h-12 w-full min-w-full max-w-full rounded-full border-2 bg-[#D8EAFF] font-semibold border-[#175dab] text-[#175dab] `}
                   asChild
                 >
                   <Link

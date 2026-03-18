@@ -118,7 +118,7 @@ const FirmCard = ({ title, description, icon: Icon, href, ctaLabel }: FirmCardPr
       <Button
         asChild
         variant="outline"
-        className="mt-6 w-full rounded-xl border-2 border-[#1e3a5f] bg-[#D8EAFF] py-6 text-base font-semibold text-[#1e3a5f] hover:bg-slate-50 hover:border-[#162d47]"
+        className="mt-6 w-full rounded-xl border-2 border-[#1e3a5f] bg-[#D8EAFF] py-6 text-base font-semibold text-[#1e3a5f] hover:border-[#12254B] hover:bg-[#12254B] hover:text-white"
       >
         <Link
           href={href}

@@ -92,7 +92,7 @@ export default function AgentHero({
            
             <button
               type="button"
-              className="inline-flex items-center gap-2 rounded-full border border-white/60 px-4 py-1.5 text-xs font-semibold text-white hover:bg-white/10 sm:text-sm"
+              className="inline-flex items-center gap-2 rounded-full border border-white/60 px-4 py-1.5 text-xs font-semibold text-white transition-colors hover:bg-[#12254B] sm:text-sm"
             >
               <Share2 className="h-4 w-4" />
               <span>Share</span>

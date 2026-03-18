@@ -117,7 +117,7 @@ const StepCard = ({ step, title, description, icon: Icon }: StepCardProps) => (
       <Button
         asChild
         variant="outline"
-        className="mt-6 w-full rounded-xl border-2 border-slate-300 bg-white py-6 text-base font-semibold text-slate-800 hover:border-slate-400 hover:bg-slate-50"
+        className="mt-6 w-full rounded-xl border-2 border-slate-300 bg-white py-6 text-base font-semibold text-slate-800 hover:border-[#12254B] hover:bg-[#12254B] hover:text-white"
       >
         <Link
           href={BOOKKEEPING_STEPS_DATA.cta.href}

@@ -94,7 +94,7 @@ export default function LatestUpdate() {
                 </div>
                 <Button
                   variant="outline"
-                  className="rounded-full border-slate-300 bg-transparent px-4 py-1.5 text-xs font-semibold text-slate-900 hover:border-slate-400 hover:bg-transparent sm:text-sm"
+                  className="rounded-full border-slate-300 bg-transparent px-4 py-1.5 text-xs font-semibold text-slate-900 hover:border-[#12254B] hover:bg-[#12254B] hover:text-white sm:text-sm"
                 >
                   Read More
                 </Button>

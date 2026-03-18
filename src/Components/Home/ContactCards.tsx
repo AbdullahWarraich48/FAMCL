@@ -76,7 +76,7 @@ export default function ContactCards({ className = "" }: ContactCardsProps) {
                 <Button
                   variant="outline"
                   size="lg"
-                  className="h-12 w-full rounded-full border-gray-800 bg-gradient font-medium text-gray-900 hover:bg-gray-50 hover:text-gray-900"
+                  className="h-12 w-full rounded-full border-gray-800 bg-transparent font-medium text-gray-900 hover:bg-[#12254B] hover:text-white"
                   asChild
                 >
                   <Link
