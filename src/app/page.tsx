@@ -11,6 +11,7 @@ import {
 import Client from "@/Components/Home/Client";
 import Cta from "@/Components/Home/Cta";
 import TaxCta from "@/Components/Home/TaxCta";
+import Contact from "@/Components/Book-Keeping/Contact";
 
 export default function Home() {
   return (
@@ -39,6 +40,7 @@ export default function Home() {
       />
       <Client />
       <Cta />
+      <Contact />
       <FooterSection />
     </>
   );

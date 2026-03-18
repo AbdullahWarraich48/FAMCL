@@ -48,6 +48,19 @@ export default function ChooseCard({
 }: ChooseCardProps) {
   if (cards.length === 0) return null;
 
+  const handleAnchorClick = (href: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+    if (!href.startsWith("#")) return;
+    e.preventDefault();
+    const id = href.slice(1);
+    const el = document.getElementById(id);
+    if (el) {
+      el.scrollIntoView({ behavior: "smooth", block: "start" });
+      window.history.pushState(null, "", href);
+    } else {
+      window.location.hash = href;
+    }
+  };
+
   return (
     <section
       className={`w-full bg-[#F6F9FF] py-16 md:py-20 ${className}`.trim()}
@@ -120,6 +133,7 @@ export default function ChooseCard({
                     href={card.buttonHref}
                     aria-label={`${card.buttonLabel} - opens in same page`}
                     tabIndex={0}
+                    onClick={handleAnchorClick(card.buttonHref)}
                     className="flex h-12 w-full min-h-12 min-w-full items-center justify-center"
                   >
                     <span className="truncate">{card.buttonLabel}</span>

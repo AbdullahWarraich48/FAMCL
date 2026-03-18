@@ -12,7 +12,7 @@ export const CONTACT_CARDS = [
     description:
       "Call us today to arrange a free consultation and receive clear guidance tailored to your financial needs.",
     buttonLabel: "Book a Call",
-    buttonHref: "#book-call",
+    buttonHref: "#contact",
   },
   {
     id: "online",
@@ -22,7 +22,7 @@ export const CONTACT_CARDS = [
     description:
       "Book a convenient online meeting with an experienced financial consultant, wherever you are in the UK.",
     buttonLabel: "Schedule Online",
-    buttonHref: "#schedule-online",
+    buttonHref: "#contact",
   },
   {
     id: "office",
@@ -32,6 +32,6 @@ export const CONTACT_CARDS = [
     description:
       "Meet us in person at our registered office or arrange a face-to-face consultation at a convenient location.",
     buttonLabel: "Find Location",
-    buttonHref: "#find-location",
+    buttonHref: "#contact",
   },
 ] as const;
