@@ -19,6 +19,20 @@ type ContactCardsProps = {
 };
 
 export default function ContactCards({ className = "" }: ContactCardsProps) {
+  const handleAnchorClick =
+    (href: string) => (e: React.MouseEvent<HTMLAnchorElement>) => {
+      if (!href.startsWith("#")) return;
+      e.preventDefault();
+      const id = href.slice(1);
+      const el = document.getElementById(id);
+      if (el) {
+        el.scrollIntoView({ behavior: "smooth", block: "start" });
+        window.history.pushState(null, "", href);
+      } else {
+        window.location.hash = href;
+      }
+    };
+
   return (
     <section
       className={` bg-[#F6F9FF] py-16 md:py-20 ${className}`.trim()}
@@ -83,6 +97,7 @@ export default function ContactCards({ className = "" }: ContactCardsProps) {
                     href={card.buttonHref}
                     aria-label={`${card.buttonLabel} - opens in same page`}
                     tabIndex={0}
+                    onClick={handleAnchorClick(card.buttonHref)}
                   >
                     {card.buttonLabel}
                     <ArrowRight

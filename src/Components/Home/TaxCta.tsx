@@ -3,7 +3,6 @@
 import * as React from "react"
 import { Card, CardContent } from "@/Components/ui/card"
 import { Button } from "@/Components/ui/button"
-import Link from "next/link"
 
 export default function SelfAssessmentCta() {
   return (
@@ -41,7 +40,7 @@ export default function SelfAssessmentCta() {
                   asChild
                   className="mt-8 h-11 rounded-full bg-[#12254B] px-8 text-[13px] font-semibold text-white"
                 >
-                  <Link href="#contact">Get Started</Link>
+                  <a href="#contact">Get Started</a>
                 </Button>
               </CardContent>
             </div>

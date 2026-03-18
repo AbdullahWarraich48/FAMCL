@@ -1,5 +1,4 @@
 import Image from "next/image";
-import Link from "next/link";
 
 export default function LandingSection() {
   return (
@@ -38,7 +37,7 @@ export default function LandingSection() {
               compliance to confident financial planning.
             </p>
 
-            <Link
+            <a
               href="#contact"
               className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-3 text-sm font-semibold text-white shadow transition hover:bg-[#184B83] active:bg-red-800"
             >
@@ -60,7 +59,7 @@ export default function LandingSection() {
                 </svg>
               </span>
               Book a Free Consultation
-            </Link>
+            </a>
           </div>
         </div>
       </div>
