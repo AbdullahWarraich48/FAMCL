@@ -59,7 +59,7 @@ export default function ComprehensiveAccountingSolutionsExact() {
 
               {/* Floating info card (left, overlapping) */}
               <Card className="absolute left-0 top-1/2 w-[300px] -translate-y-1/2 rounded-2xl border-0 shadow-[0_22px_45px_rgba(0,0,0,0.20)] md:w-[320px]">
-                <div className={`rounded-2xl bg-gradient-to-b from-white/70 to-[#D8EAFF]`}>
+                <div className={`rounded-2xl bg-[#D8EAFF]`}>
                   <CardContent className="p-5 md:p-6">
                     {/* Icon */}
                     <div className={`inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#175dab]`}>

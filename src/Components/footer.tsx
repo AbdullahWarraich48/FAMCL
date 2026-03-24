@@ -6,64 +6,64 @@ import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 type FooterLink = { label: string; href: string };
 
 const BUSINESS_SERVICES_LINKS: FooterLink[] = [
-  { label: "Accounts & Bookkeeping", href: "#accounts-bookkeeping" },
-  { label: "Corporation Tax", href: "#corporation-tax" },
-  { label: "VAT Returns", href: "#vat-returns" },
-  { label: "Payroll & Pensions", href: "#payroll-pensions" },
-  { label: "Business Advice", href: "#business-advice" },
-  { label: "Business Structuring", href: "#business-structuring" },
+  { label: "Accounts & Bookkeeping", href: "/accounts-and-bookkeeping" },
+  { label: "Corporation Tax", href: "/corporation-tax" },
+  { label: "VAT Returns", href: "/vat-returns" },
+  { label: "Payroll & Pensions", href: "/payroll-pansions" },
+  { label: "Business Advice", href: "/business-advice" },
+  { label: "Business Structuring", href: "/business-structure" },
 ];
 
 const PERSONAL_SERVICES_LINKS: FooterLink[] = [
-  { label: "Self-Assessment Tax", href: "#self-assessment" },
-  { label: "Capital Gains & Property Tax", href: "#capital-gains-property-tax" },
-  { label: "Pensions & Future Planning", href: "#pensions-future-planning" },
+  { label: "Self-Assessment Tax", href: "/self-assesment-tax" },
+  { label: "Capital Gains & Property Tax", href: "/capital-gain-property-tax" },
+  { label: "Pensions & Future Planning", href: "/pensions-future-planning" },
   {
     label: "Director & Shareholder Advisory",
-    href: "#director-shareholder-advisory",
+    href: "/director-shareholder-advice",
   },
-  { label: "Crypto & Modern Income", href: "#crypto-modern-income" },
+  { label: "Crypto & Modern Income", href: "/crypto-modern-income" },
   {
     label: "Inheritance Tax & Retirement",
-    href: "#inheritance-tax-retirement",
+    href: "/inheritance-tax-retirement-strategy-estate-planning",
   },
-  { label: "Strategy & Estate Planning", href: "#strategy-estate-planning" },
+  { label: "Strategy & Estate Planning", href: "/inheritance-tax-retirement-strategy-estate-planning" },
 ];
 
 const WHO_WE_HELP_LINKS: FooterLink[] = [
-  { label: "Starting a Business", href: "#starting-a-business" },
-  { label: "Limited Companies", href: "#limited-companies" },
-  { label: "Contractors & Freelancers", href: "#contractors-freelancers" },
-  { label: "Landlords & Families", href: "#landlords-families" },
-  { label: "Online Businesses", href: "#online-businesses" },
+  { label: "Starting a Business", href: "/Business_Formation/start_business" },
+  { label: "Limited Companies", href: "/Business_Formation/limited-companies" },
+  { label: "Contractors & Freelancers", href: "/Business_Formation/contractors-freelancers" },
+  { label: "Landlords & Families", href: "/Business_Formation/landlords-families" },
+  { label: "Online Businesses", href: "/Business_Formation/start_business" },
 ];
 
 const COMPANY_LINKS: FooterLink[] = [
-  { label: "Our Story", href: "#our-story" },
-  { label: "Our Team", href: "#our-team" },
-  { label: "How We Work", href: "#how-we-work" },
-  { label: "Fixed Fees", href: "#fixed-fees" },
-  { label: "Careers", href: "#careers" },
-  { label: "Contact Us", href: "#contact-us" },
+  { label: "Our Story", href: "/Company/our-company" },
+  { label: "Our Team", href: "/Company/our-team" },
+  { label: "How We Work", href: "/Company/how-we-work" },
+  { label: "Fixed Fees", href: "/Company/fixed-fees" },
+  { label: "Careers", href: "/Company/careers" },
+  { label: "Contact Us", href: "/Company/contact-us#contact" },
 ];
 
 const RESOURCES_LINKS: FooterLink[] = [
-  { label: "News & Updates", href: "#news-updates" },
-  { label: "FAQs", href: "#faqs" },
-  { label: "Tools & Calculators", href: "#tools-calculators" },
+  { label: "News & Updates", href: "/recources/news-and-updates" },
+  { label: "FAQs", href: "/faqs" },
+  { label: "Tools & Calculators", href: "/recources/tools-calculator" },
 ];
 
 const SOCIAL_LINKS = [
-  { label: "Facebook", href: "#facebook", Icon: Facebook, colorClass: "text-[#1877F2]" },
-  { label: "Twitter", href: "#twitter", Icon: Twitter, colorClass: "text-[#1DA1F2]" },
-  { label: "LinkedIn", href: "#linkedin", Icon: Linkedin, colorClass: "text-[#0A66C2]" },
-  { label: "Instagram", href: "#instagram", Icon: Instagram, colorClass: "text-[#E4405F]" },
+  { label: "Facebook", href: "https://facebook.com", Icon: Facebook, colorClass: "text-[#1877F2]" },
+  { label: "Twitter", href: "https://x.com", Icon: Twitter, colorClass: "text-[#1DA1F2]" },
+  { label: "LinkedIn", href: "https://linkedin.com", Icon: Linkedin, colorClass: "text-[#0A66C2]" },
+  { label: "Instagram", href: "https://instagram.com", Icon: Instagram, colorClass: "text-[#E4405F]" },
 ] as const;
 
 const POLICY_LINKS: FooterLink[] = [
-  { label: "Privacy Policy", href: "#privacy-policy" },
-  { label: "Terms & Conditions", href: "#terms-conditions" },
-  { label: "Cookie Policy", href: "#cookie-policy" },
+  { label: "Privacy Policy", href: "/Company/contact-us" },
+  { label: "Terms & Conditions", href: "/Company/contact-us" },
+  { label: "Cookie Policy", href: "/Company/contact-us" },
 ];
 
 const FooterColumn = ({
@@ -79,7 +79,7 @@ const FooterColumn = ({
     </h3>
     <ul className="space-y-2" role="list">
       {links.map((item) => (
-        <li key={item.href}>
+        <li key={`${item.href}-${item.label}`}>
           <Link
             href={item.href}
             className="text-base leading-normal text-gray-900 transition-colors hover:underline"
@@ -127,6 +127,8 @@ const FooterSection = () => {
               <a
                 key={label}
                 href={href}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex h-10 w-10 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-700 shadow-sm transition-colors hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus:ring-2 focus:ring-[#12254b] focus:ring-offset-2"
                 aria-label={label}
                 tabIndex={0}
@@ -165,7 +167,7 @@ const FooterSection = () => {
           <nav aria-label="Footer legal links">
             <ul className="flex flex-wrap items-center gap-2 text-sm text-gray-900 md:gap-4">
               {POLICY_LINKS.map((item, index) => (
-                <li key={item.href} className="flex items-center gap-2 md:gap-4">
+                <li key={`${item.href}-${item.label}`} className="flex items-center gap-2 md:gap-4">
                   {index > 0 && (
                     <span
                       className="hidden h-4 w-px bg-gray-300 md:inline"

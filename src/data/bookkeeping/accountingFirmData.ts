@@ -10,21 +10,21 @@ export const BOOKKEEPING_ACCOUNTING_FIRM_DATA = {
       description:
         "We specialise in supporting UK-based businesses and individuals. Our advisors understand local regulations & provide practical, personalised advice you can rely on.",
       iconKey: "users",
-      cta: { label: "Learn More", href: "#" },
+      cta: { label: "Learn More", href: "/about" },
     },
     {
       title: "Come and Meet Us",
       description:
         "We specialise in supporting UK-based businesses and individuals. Our advisors understand local regulations & provide practical, personalised advice you can rely on.",
       iconKey: "headset",
-      cta: { label: "Learn More", href: "#" },
+      cta: { label: "Learn More", href: "/Company/contact-us#contact" },
     },
     {
       title: "Switching is Simple",
       description:
         "We specialise in supporting UK-based businesses and individuals. Our advisors understand local regulations & provide practical, personalised advice you can rely on.",
       iconKey: "refresh",
-      cta: { label: "Learn More", href: "#" },
+      cta: { label: "Learn More", href: "/switching-accounts" },
     },
   ],
 } as const;

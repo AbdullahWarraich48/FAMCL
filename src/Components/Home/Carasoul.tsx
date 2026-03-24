@@ -23,10 +23,10 @@ export default function TestimonialExact({ hideArrows, items }: CarasoulProps) {
     <section className="w-full bg-white py-10">
       {/* ✅ match upper component container */}
       <div className="content-padding-x mx-auto max-w-[1440px]">
-        <div className="relative flex flex-col gap-8 md:min-h-[560px] md:flex-row md:items-center md:justify-start">
+        <div className="relative isolate flex flex-col gap-8 md:min-h-[560px] md:flex-row md:items-center md:justify-start">
           {/* LEFT IMAGE */}
           <div className="relative z-0 w-full max-w-[720px] md:mr-[280px]">
-            <div className="overflow-hidden rounded-2xl shadow-[0_18px_40px_rgba(0,0,0,0.12)]">
+            <div className="overflow-hidden rounded-2xl shadow-[0_18px_40px_rgba(0,0,0,0.12)] md:opacity-95">
               <img
                 src={t.imageUrl}
                 alt={t.author}
@@ -37,8 +37,8 @@ export default function TestimonialExact({ hideArrows, items }: CarasoulProps) {
           </div>
 
           {/* RIGHT CARD (overlapping on desktop, stacked on mobile) */}
-          <Card className="relative z-10 mt-4 flex w-full max-w-[640px] flex-col justify-center rounded-2xl border-0 shadow-[0_22px_45px_rgba(0,0,0,0.14)] md:absolute md:right-0 md:top-1/2 md:mt-0 md:min-h-[420px] md:-translate-y-1/2">
-            <div className="flex min-h-[360px] flex-1 flex-col justify-center rounded-2xl bg-gradient-to-b from-white/70 to-[#D8EAFF]  to-sky-100 md:min-h-[420px]">
+          <Card className="relative z-20 mt-4 flex w-full max-w-[640px] flex-col justify-center rounded-2xl border-0 shadow-[0_26px_56px_rgba(10,37,77,0.22)] md:absolute md:right-0 md:top-1/2 md:mt-0 md:min-h-[420px] md:-translate-y-1/2 md:ring-1 md:ring-[#b8d6fa]">
+            <div className="flex min-h-[360px] flex-1 flex-col justify-center rounded-2xl bg-gradient-to-b from-white via-[#eef6ff] to-[#d8eaff] md:min-h-[420px]">
               <CardContent className="relative flex flex-1 flex-col justify-center p-6 sm:p-8 md:p-14">
                 {/* Nav buttons (top-right on desktop) */}
                 {!hideArrows && (

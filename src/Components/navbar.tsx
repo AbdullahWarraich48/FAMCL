@@ -3,6 +3,7 @@
 import Link from "next/link";
 import Image from "next/image";
 import { useState, useRef, useEffect } from "react";
+import { usePathname } from "next/navigation";
 import {
   NAV_LINKS,
   BUSINESS_SERVICES_COL1,
@@ -100,10 +101,25 @@ const collectMobileLinks = (key: OpenDropdown): SimpleLink[] => {
 };
 
 export default function Navbar() {
+  const pathname = usePathname();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [openDropdown, setOpenDropdown] = useState<OpenDropdown>(null);
   const [openMobileSection, setOpenMobileSection] = useState<OpenDropdown>(null);
   const navRef = useRef<HTMLDivElement>(null);
+
+  const normalizePath = (value: string) => {
+    const pathOnly = value.split("#")[0].split("?")[0] || "/";
+    const trimmed = pathOnly.replace(/\/+$/, "");
+    return trimmed || "/";
+  };
+
+  const isActiveLink = (href: string) =>
+    normalizePath(pathname) === normalizePath(href);
+
+  const getDropdownLinkClass = (href: string, extraClass = "") =>
+    `group inline-flex items-center gap-2 text-sm font-medium ${
+      isActiveLink(href) ? "text-red-600" : "text-slate-700"
+    } hover:text-red-700 ${extraClass}`.trim();
 
   const handleToggleMenu = () => {
     setIsMenuOpen((prev) => !prev);
@@ -356,22 +372,27 @@ export default function Navbar() {
                   <div className="px-6 py-6">
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-3">
                       <ul className="space-y-2">
-                        {BUSINESS_FORMATION_COL1.map(({ label, href, withArrow }) => (
+                        {BUSINESS_FORMATION_COL1.map(({ label, href }) => (
                           <li key={label}>
+                            {(() => {
+                              const active = isActiveLink(href);
+                              return (
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
                               className={`group inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium ${
-                                withArrow ? "text-red-600" : "text-slate-700"
+                                active ? "text-red-600" : "text-slate-700"
                               } hover:text-red-700`}
                             >
                               {label}
-                              {withArrow && (
+                              {active && (
                                 <span className="transition-transform group-hover:translate-x-0.5">
                                   →
                                 </span>
                               )}
                             </Link>
+                              );
+                            })()}
                           </li>
                         ))}
                       </ul>
@@ -382,9 +403,14 @@ export default function Navbar() {
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
-                              className="whitespace-nowrap text-sm font-medium text-slate-700 hover:text-blue-700"
+                              className={getDropdownLinkClass(href, "whitespace-nowrap")}
                             >
                               {label}
+                              {isActiveLink(href) && (
+                                <span className="transition-transform group-hover:translate-x-0.5">
+                                  →
+                                </span>
+                              )}
                             </Link>
                           </li>
                         ))}
@@ -396,9 +422,14 @@ export default function Navbar() {
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
-                              className="whitespace-nowrap text-sm font-medium text-slate-700 hover:text-blue-700"
+                              className={getDropdownLinkClass(href, "whitespace-nowrap")}
                             >
                               {label}
+                              {isActiveLink(href) && (
+                                <span className="transition-transform group-hover:translate-x-0.5">
+                                  →
+                                </span>
+                              )}
                             </Link>
                           </li>
                         ))}
@@ -485,22 +516,27 @@ export default function Navbar() {
                   <div className="px-6 py-6">
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-3">
                       <ul className="space-y-2">
-                        {BUSINESS_SERVICES_COL1.map(({ label, href, withArrow }) => (
+                        {BUSINESS_SERVICES_COL1.map(({ label, href }) => (
                           <li key={label}>
+                            {(() => {
+                              const active = isActiveLink(href);
+                              return (
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
                               className={`group inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium ${
-                                withArrow ? "text-red-600" : "text-slate-700"
+                                active ? "text-red-600" : "text-slate-700"
                               } hover:text-red-700`}
                             >
                               {label}
-                              {withArrow && (
+                              {active && (
                                 <span className="transition-transform group-hover:translate-x-0.5">
                                   →
                                 </span>
                               )}
                             </Link>
+                              );
+                            })()}
                           </li>
                         ))}
                       </ul>
@@ -511,9 +547,14 @@ export default function Navbar() {
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
-                              className="text-sm font-medium text-slate-700 hover:text-blue-700"
+                              className={getDropdownLinkClass(href)}
                             >
                               {label}
+                              {isActiveLink(href) && (
+                                <span className="transition-transform group-hover:translate-x-0.5">
+                                  →
+                                </span>
+                              )}
                             </Link>
                           </li>
                         ))}
@@ -525,9 +566,14 @@ export default function Navbar() {
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
-                              className="text-sm font-medium text-slate-700 hover:text-blue-700"
+                              className={getDropdownLinkClass(href)}
                             >
                               {label}
+                              {isActiveLink(href) && (
+                                <span className="transition-transform group-hover:translate-x-0.5">
+                                  →
+                                </span>
+                              )}
                             </Link>
                           </li>
                         ))}
@@ -613,22 +659,27 @@ export default function Navbar() {
                   <div className="px-6 py-6">
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                       <ul className="space-y-2">
-                        {PERSONAL_SERVICES_COL1.map(({ label, href, withArrow }) => (
+                        {PERSONAL_SERVICES_COL1.map(({ label, href }) => (
                           <li key={label}>
+                            {(() => {
+                              const active = isActiveLink(href);
+                              return (
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
                               className={`group inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium ${
-                                withArrow ? "text-red-600" : "text-slate-700"
+                                active ? "text-red-600" : "text-slate-700"
                               } hover:text-red-700`}
                             >
                               {label}
-                              {withArrow && (
+                              {active && (
                                 <span className="transition-transform group-hover:translate-x-0.5">
                                   →
                                 </span>
                               )}
                             </Link>
+                              );
+                            })()}
                           </li>
                         ))}
                       </ul>
@@ -641,9 +692,9 @@ export default function Navbar() {
                               <Link
                                 href={href}
                                 onClick={() => setOpenDropdown(null)}
-                                className={`text-sm font-medium text-slate-700 hover:text-blue-700 ${
+                                className={getDropdownLinkClass(href, `${
                                   isInheritanceRetirement ? "whitespace-normal" : "whitespace-nowrap"
-                                }`}
+                                }`)}
                               >
                                 {isInheritanceRetirement ? (
                                   <>
@@ -653,6 +704,11 @@ export default function Navbar() {
                                   </>
                                 ) : (
                                   label
+                                )}
+                                {isActiveLink(href) && (
+                                  <span className="transition-transform group-hover:translate-x-0.5">
+                                    →
+                                  </span>
                                 )}
                               </Link>
                             </li>
@@ -665,9 +721,14 @@ export default function Navbar() {
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
-                              className="whitespace-nowrap text-sm font-medium text-slate-700 hover:text-blue-700"
+                              className={getDropdownLinkClass(href, "whitespace-nowrap")}
                             >
                               {label}
+                              {isActiveLink(href) && (
+                                <span className="transition-transform group-hover:translate-x-0.5">
+                                  →
+                                </span>
+                              )}
                             </Link>
                           </li>
                         ))}
@@ -740,22 +801,27 @@ export default function Navbar() {
                   <div className="px-6 py-6">
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
                       <ul className="space-y-2">
-                        {WHO_WE_HELP_COL1.map(({ label, href, withArrow }) => (
+                        {WHO_WE_HELP_COL1.map(({ label, href }) => (
                           <li key={label}>
+                            {(() => {
+                              const active = isActiveLink(href);
+                              return (
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
                               className={`group inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium ${
-                                withArrow ? "text-red-600" : "text-slate-700"
+                                active ? "text-red-600" : "text-slate-700"
                               } hover:text-red-700`}
                             >
                               {label}
-                              {withArrow && (
+                              {active && (
                                 <span className="transition-transform group-hover:translate-x-0.5">
                                   →
                                 </span>
                               )}
                             </Link>
+                              );
+                            })()}
                           </li>
                         ))}
                       </ul>
@@ -765,9 +831,14 @@ export default function Navbar() {
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
-                              className="text-sm font-medium text-slate-700 hover:text-blue-700"
+                              className={getDropdownLinkClass(href)}
                             >
                               {label}
+                              {isActiveLink(href) && (
+                                <span className="transition-transform group-hover:translate-x-0.5">
+                                  →
+                                </span>
+                              )}
                             </Link>
                           </li>
                         ))}
@@ -778,9 +849,14 @@ export default function Navbar() {
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
-                              className="text-sm font-medium text-slate-700 hover:text-blue-700"
+                              className={getDropdownLinkClass(href)}
                             >
                               {label}
+                              {isActiveLink(href) && (
+                                <span className="transition-transform group-hover:translate-x-0.5">
+                                  →
+                                </span>
+                              )}
                             </Link>
                           </li>
                         ))}
@@ -851,22 +927,27 @@ export default function Navbar() {
                   <div className="px-6 py-6">
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-3">
                       <ul className="space-y-2">
-                        {ABOUT_US_COL1.links.map(({ label, href, withArrow }) => (
+                        {ABOUT_US_COL1.links.map(({ label, href }) => (
                           <li key={label}>
+                            {(() => {
+                              const active = isActiveLink(href);
+                              return (
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
                               className={`group inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium ${
-                                withArrow ? "text-red-600" : "text-slate-700"
+                                active ? "text-red-600" : "text-slate-700"
                               } hover:text-red-700`}
                             >
                               {label}
-                              {withArrow && (
+                              {active && (
                                 <span className="transition-transform group-hover:translate-x-0.5">
                                   →
                                 </span>
                               )}
                             </Link>
+                              );
+                            })()}
                           </li>
                         ))}
                       </ul>
@@ -876,9 +957,14 @@ export default function Navbar() {
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
-                              className="whitespace-nowrap text-sm font-medium text-slate-700 hover:text-blue-700"
+                              className={getDropdownLinkClass(href, "whitespace-nowrap")}
                             >
                               {label}
+                              {isActiveLink(href) && (
+                                <span className="transition-transform group-hover:translate-x-0.5">
+                                  →
+                                </span>
+                              )}
                             </Link>
                           </li>
                         ))}
@@ -889,9 +975,14 @@ export default function Navbar() {
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
-                              className="whitespace-nowrap text-sm font-medium text-slate-700 hover:text-blue-700"
+                              className={getDropdownLinkClass(href, "whitespace-nowrap")}
                             >
                               {label}
+                              {isActiveLink(href) && (
+                                <span className="transition-transform group-hover:translate-x-0.5">
+                                  →
+                                </span>
+                              )}
                             </Link>
                           </li>
                         ))}
@@ -962,22 +1053,27 @@ export default function Navbar() {
                   <div className="px-6 py-6">
                     <div className="grid grid-cols-1 gap-6 sm:grid-cols-3 lg:grid-cols-3">
                       <ul className="space-y-2">
-                        {RESOURCES_COL1.map(({ label, href, withArrow }) => (
+                        {RESOURCES_COL1.map(({ label, href }) => (
                           <li key={label}>
+                            {(() => {
+                              const active = isActiveLink(href);
+                              return (
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
                               className={`group inline-flex items-center gap-2 whitespace-nowrap text-sm font-medium ${
-                                withArrow ? "text-red-600" : "text-slate-700"
+                                active ? "text-red-600" : "text-slate-700"
                               } hover:text-red-700`}
                             >
                               {label}
-                              {withArrow && (
+                              {active && (
                                 <span className="transition-transform group-hover:translate-x-0.5">
                                   →
                                 </span>
                               )}
                             </Link>
+                              );
+                            })()}
                           </li>
                         ))}
                       </ul>
@@ -987,9 +1083,14 @@ export default function Navbar() {
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
-                              className="whitespace-nowrap text-sm font-medium text-slate-700 hover:text-blue-700"
+                              className={getDropdownLinkClass(href, "whitespace-nowrap")}
                             >
                               {label}
+                              {isActiveLink(href) && (
+                                <span className="transition-transform group-hover:translate-x-0.5">
+                                  →
+                                </span>
+                              )}
                             </Link>
                           </li>
                         ))}
@@ -1000,9 +1101,14 @@ export default function Navbar() {
                             <Link
                               href={href}
                               onClick={() => setOpenDropdown(null)}
-                              className="whitespace-nowrap text-sm font-medium text-slate-700 hover:text-blue-700"
+                              className={getDropdownLinkClass(href, "whitespace-nowrap")}
                             >
                               {label}
+                              {isActiveLink(href) && (
+                                <span className="transition-transform group-hover:translate-x-0.5">
+                                  →
+                                </span>
+                              )}
                             </Link>
                           </li>
                         ))}
