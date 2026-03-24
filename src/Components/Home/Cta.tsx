@@ -1,6 +1,7 @@
 "use client"
 
 import * as React from "react"
+import Link from "next/link"
 import { Button } from "@/Components/ui/button"
 import { CalendarDays, Phone } from "lucide-react"
 
@@ -24,25 +25,31 @@ export default function CtaExact() {
           <div className="mt-10 flex flex-col items-center gap-4 sm:flex-row sm:gap-6">
             {/* Primary (white pill) */}
             <Button
+              asChild
               className={[
                 "h-11 rounded-full bg-white px-7 text-[13px] font-semibold text-[#1E63B3]",
                 "shadow-[0_10px_25px_rgba(0,0,0,0.18)] hover:bg-white/95",
               ].join(" ")}
             >
-              <CalendarDays className="mr-2 h-4 w-4" />
-              Book a Free Consultation
+              <Link href="/Company/contact-us#contact">
+                <CalendarDays className="mr-2 h-4 w-4" />
+                Book a Free Consultation
+              </Link>
             </Button>
 
             {/* Secondary (outline pill) */}
             <Button
+              asChild
               variant="outline"
               className={[
                 "h-11 rounded-full border-white/70 bg-transparent px-7 text-[13px] font-semibold text-white",
                 "hover:bg-[#12254B] hover:text-white",
               ].join(" ")}
             >
-              <Phone className="mr-2 h-4 w-4" />
-              Call Us Today
+              <Link href="/Company/contact-us#contact">
+                <Phone className="mr-2 h-4 w-4" />
+                Call Us Today
+              </Link>
             </Button>
           </div>
         </div>
