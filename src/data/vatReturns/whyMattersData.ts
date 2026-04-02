@@ -21,7 +21,7 @@ export const VAT_RETURNS_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Stay Digitally Compliant",
       description:
         "Making Tax Digital requires businesses to maintain proper digital VAT records.",
-      iconKey: "check-square" as VatWhyMattersIconKey,
+      iconKey: "clipboard-check" as VatWhyMattersIconKey,
     },
     {
       title: "Lower Risk of HMRC Queries",
@@ -33,19 +33,19 @@ export const VAT_RETURNS_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Reduce Administrative Stress",
       description:
         "Professional VAT management removes the pressure of calculations and deadlines.",
-      iconKey: "activity" as VatWhyMattersIconKey,
+      iconKey: "leaf" as VatWhyMattersIconKey,
     },
     {
       title: "Protect Cash Flow",
       description:
         "Accurate VAT tracking prevents unexpected liabilities and improves planning.",
-      iconKey: "circle-dollar" as VatWhyMattersIconKey,
+      iconKey: "arrow-left-right" as VatWhyMattersIconKey,
     },
     {
       title: "Confidence in Compliance",
       description:
         "With structured processes, you know your VAT obligations are handled correctly.",
-      iconKey: "zap" as VatWhyMattersIconKey,
+      iconKey: "check-square" as VatWhyMattersIconKey,
     },
   ],
 };

@@ -13,14 +13,14 @@ export const DIRECTOR_SHAREHOLDER_FACTS_DATA: FactsData = {
       description:
         "Directors can be held personally liable for the company’s tax debts in cases of negligence or deliberate default.",
       source: "HMRC",
-      iconKey: "file-warning" as DirectorFactsIconKey,
+      iconKey: "alert-octagon" as DirectorFactsIconKey,
     },
     {
       stat: "Dividends & Compliance",
       description:
         "Improperly paid dividends are one of the most common causes of company compliance failures, often triggering action from HMRC.",
       source: "Companies House",
-      iconKey: "trend" as DirectorFactsIconKey,
+      iconKey: "file-warning" as DirectorFactsIconKey,
     },
     {
       stat: "Companies Act 2006 Duties",

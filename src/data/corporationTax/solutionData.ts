@@ -14,27 +14,27 @@ export const CORPORATION_TAX_SOLUTION_DATA: SolutionData = {
     {
       number: "01",
       title: "Understand your business and structure",
-      iconKey: "search" as CorporationTaxSolutionIconKey,
+      iconKey: "network" as CorporationTaxSolutionIconKey,
     },
     {
       number: "02",
       title: "Review past filings and potential risks",
-      iconKey: "cogs" as CorporationTaxSolutionIconKey,
+      iconKey: "document-check" as CorporationTaxSolutionIconKey,
     },
     {
       number: "03",
       title: "Plan tax obligations before deadlines",
-      iconKey: "message" as CorporationTaxSolutionIconKey,
+      iconKey: "calendar-clock" as CorporationTaxSolutionIconKey,
     },
     {
       number: "04",
       title: "File corporation tax accurately and on time",
-      iconKey: "bar-chart" as CorporationTaxSolutionIconKey,
+      iconKey: "receipt-tax" as CorporationTaxSolutionIconKey,
     },
     {
       number: "05",
       title: "Act as your point of contact with HMRC",
-      iconKey: "heart-check" as CorporationTaxSolutionIconKey,
+      iconKey: "message" as CorporationTaxSolutionIconKey,
     },
   ],
 };

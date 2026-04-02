@@ -13,7 +13,7 @@ export const CAPITAL_GAINS_FACTS_DATA: FactsData = {
       description:
         "CGT reporting deadlines for property sales have become shorter, in some cases as short as 60 days.",
       source: "HMRC",
-      iconKey: "trend" as CapitalGainsFactsIconKey,
+      iconKey: "clock" as CapitalGainsFactsIconKey,
     },
     {
       stat: "CGT Reporting Errors",
@@ -27,7 +27,7 @@ export const CAPITAL_GAINS_FACTS_DATA: FactsData = {
       description:
         "Many taxpayers overpay Capital Gains Tax due to missed reliefs and allowances.",
       source: "ICAEW",
-      iconKey: "building" as CapitalGainsFactsIconKey,
+      iconKey: "badge-percent" as CapitalGainsFactsIconKey,
     },
   ],
 };

@@ -21,13 +21,13 @@ export const BUSINESS_ADVICE_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "Restructuring & Planning",
       description:
         "We guide you through business restructuring to improve efficiency, profitability, or exit options.",
-      iconKey: "document-check" as BusinessAdviceServiceIconKey,
+      iconKey: "network" as BusinessAdviceServiceIconKey,
     },
     {
       title: "Retirement Strategy",
       description:
         "We help you prepare for the future by developing long-term retirement plans for business owners and key stakeholders.",
-      iconKey: "bar-chart" as BusinessAdviceServiceIconKey,
+      iconKey: "calendar-clock" as BusinessAdviceServiceIconKey,
     },
     {
       title: "Risk Management",

@@ -16,21 +16,21 @@ export const BUSINESS_ADVICE_FACTS_DATA: FactsData = {
       description:
         "Cash flow issues are responsible for the majority of UK business failures.",
       source: "British Business Bank",
-      iconKey: "trend" as BusinessAdviceFactsIconKey,
+      iconKey: "alert-octagon" as BusinessAdviceFactsIconKey,
     },
     {
       stat: "Advisory Services Improve Survival",
       description:
         "Businesses that use professional advisory services show significantly higher survival rates.",
       source: "ICAEW",
-      iconKey: "file-warning" as BusinessAdviceFactsIconKey,
+      iconKey: "trend" as BusinessAdviceFactsIconKey,
     },
     {
       stat: "Early Financial Planning",
       description:
         "Early financial planning can significantly reduce the risk of insolvency.",
       source: "Insolvency Service UK",
-      iconKey: "building" as BusinessAdviceFactsIconKey,
+      iconKey: "clock" as BusinessAdviceFactsIconKey,
     },
   ],
 };

@@ -1,3 +1,5 @@
+import SectionIntroHeader from "@/Components/SectionIntroHeader";
+
 const LANDLORD_CHALLENGES = [
   "Property income treated informally without clear reporting",
   "Missed deadlines when reporting property disposals",
@@ -8,33 +10,26 @@ const LANDLORD_CHALLENGES = [
 
 export default function LandlordsFamiliesChallenges() {
   return (
-    <section className="w-full bg-white py-10 md:py-16 lg:py-20">
+    <section
+      className="w-full bg-white py-10 md:py-16 lg:py-20"
+      aria-labelledby="landlord-challenges-heading"
+    >
       <div className="content-padding-x mx-auto max-w-[1440px]">
-        {/* Header */}
         <div className="flex flex-col items-center text-center">
-          <div className="flex w-full max-w-3xl items-center justify-center gap-3 sm:gap-4">
-            <span
-              className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block"
-              aria-hidden
-            />
-            <div
-              className="shrink-0 rounded-lg bg-[#FFE4EC] px-4 py-2"
-              role="status"
-              aria-label="Common landlord challenges"
-            >
+          <SectionIntroHeader
+            headingId="landlord-challenges-heading"
+            sectionLabel={
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C23A5D] sm:text-sm sm:tracking-[0.2em]">
                 Common Landlord Challenges
               </span>
-            </div>
-            <span
-              className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block"
-              aria-hidden
-            />
-          </div>
-
-          <h2 className="mt-6 text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:mt-8 sm:text-4xl lg:text-[44px]">
-            Risks Property Owners Often Face
-          </h2>
+            }
+            labelPillClassName="shrink-0 rounded-lg bg-[#FFE4EC] px-4 py-2"
+            labelAriaLabel="Common landlord challenges"
+            heading="Risks Property Owners Often Face"
+            headingBgClassName="bg-white"
+            headingBlockMarginTop="mt-6 sm:mt-8"
+            headingClassName="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
+          />
 
           <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-slate-600 sm:mt-6 sm:text-[18px] sm:leading-[27.8px]">
             Without structured planning, property income and ownership decisions can create

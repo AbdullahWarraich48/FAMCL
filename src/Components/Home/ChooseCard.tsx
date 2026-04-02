@@ -67,16 +67,22 @@ export default function ChooseCard({
       aria-labelledby={sectionId}
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">
-        <header className="mx-auto max-w-4xl text-center">
-          <div className="flex items-center justify-center gap-6">
-            <span className="h-px w-24 bg-[#F6F9FF]  md:w-28" aria-hidden />
+        <header className="mx-auto max-w-5xl text-center">
+          <div className="flex w-full min-w-0 items-center justify-center gap-3 md:gap-6">
+            <span
+              className="h-px shrink-0 bg-slate-300 w-14 sm:w-16 md:w-20"
+              aria-hidden
+            />
             <h2
               id={sectionId}
-              className="text-[28px] font-bold tracking-tight text-[#175dab] md:text-[32px]"
+              className="min-w-0 shrink-0 whitespace-nowrap text-center text-[clamp(0.875rem,2.4vw,2rem)] font-bold leading-tight tracking-tight text-[#175dab]"
             >
               {sectionTitle}
             </h2>
-            <span className="h-px w-24 bg-slate-300 md:w-28" aria-hidden />
+            <span
+              className="h-px shrink-0 bg-slate-300 w-14 sm:w-16 md:w-20"
+              aria-hidden
+            />
           </div>
           <p className="mx-auto mt-4 max-w-3xl text-[14px] leading-6 text-slate-600 md:text-[15px]">
             {sectionDescription}

@@ -15,31 +15,31 @@ export const VAT_RETURNS_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "VAT Registration & Setup",
       description:
         "We assist with VAT registration and ensure your business is registered under the correct VAT scheme.",
-      iconKey: "document-check" as VatServiceScopeIconKey,
+      iconKey: "badge-check" as VatServiceScopeIconKey,
     },
     {
       title: "Digital VAT Compliance",
       description:
         "We help keep your digital VAT systems compliant with Making Tax Digital requirements.",
-      iconKey: "bar-chart" as VatServiceScopeIconKey,
+      iconKey: "network" as VatServiceScopeIconKey,
     },
     {
       title: "VAT Return Preparation",
       description:
         "All VAT data is reviewed and prepared before submission to minimise reporting errors.",
-      iconKey: "shield" as VatServiceScopeIconKey,
+      iconKey: "receipt-tax" as VatServiceScopeIconKey,
     },
     {
       title: "Accurate Filing",
       description:
         "VAT returns are prepared and submitted to HMRC on time to maintain compliance.",
-      iconKey: "eye" as VatServiceScopeIconKey,
+      iconKey: "calendar-clock" as VatServiceScopeIconKey,
     },
     {
       title: "Organised Record Maintenance",
       description:
         "Your VAT records remain structured, clear, and audit-ready at all times.",
-      iconKey: "trend-up" as VatServiceScopeIconKey,
+      iconKey: "boxes" as VatServiceScopeIconKey,
     },
   ],
 };

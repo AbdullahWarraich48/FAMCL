@@ -15,7 +15,7 @@ export const BUSINESS_ADVICE_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Reduced Business Risk",
       description:
         "Proactive advice helps you avoid potential pitfalls, protecting your business from unexpected challenges.",
-      iconKey: "alert-triangle" as BusinessAdviceWhyIconKey,
+      iconKey: "shield" as BusinessAdviceWhyIconKey,
     },
     {
       title: "Enhanced Business Growth",
@@ -27,25 +27,25 @@ export const BUSINESS_ADVICE_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Improved Cash Flow Management",
       description:
         "Better financial planning improves cash flow and ensures your business stays on track.",
-      iconKey: "circle-dollar" as BusinessAdviceWhyIconKey,
+      iconKey: "arrow-left-right" as BusinessAdviceWhyIconKey,
     },
     {
       title: "Faster Decision Making",
       description:
         "Data-driven insights allow for quicker, more confident decision-making, reducing delays and missed opportunities.",
-      iconKey: "check-square" as BusinessAdviceWhyIconKey,
+      iconKey: "chart-line" as BusinessAdviceWhyIconKey,
     },
     {
       title: "Long-Term Stability",
       description:
         "Strategic planning supports long-term stability and growth, ensuring your business thrives for years.",
-      iconKey: "shield" as BusinessAdviceWhyIconKey,
+      iconKey: "anchor" as BusinessAdviceWhyIconKey,
     },
     {
       title: "Clarity During Change",
       description:
         "When faced with restructuring or pivoting, expert advice helps you navigate complex decisions with confidence.",
-      iconKey: "activity" as BusinessAdviceWhyIconKey,
+      iconKey: "clipboard-check" as BusinessAdviceWhyIconKey,
     },
   ],
 };

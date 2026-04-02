@@ -18,7 +18,7 @@ const chooseFirmCards: ChooseCardItem[] = [
     id: "meet-us",
     title: "Come and Meet Us",
     description:
-      "We specialise in supporting UK-based businesses and individuals. Our advisors understand local regulations & provide practical, personalised advice you can rely on.",
+      "We believe strong relationships matter. Meet our consultants in person, speak with us online, or discuss your requirements over the phone whatever suits you best.",
     buttonLabel: "Contact Us",
     buttonHref: "#contact",
     iconKey: "headset",
@@ -31,7 +31,7 @@ const chooseFirmCards: ChooseCardItem[] = [
     id: "switching",
     title: "Switching is Simple",
     description:
-      "We specialise in supporting UK-based businesses and individuals. Our advisors understand local regulations & provide practical, personalised advice you can rely on.",
+      "Moving to a new accountant doesn't have to be stressful. Our team makes the transition simple, organised and stress-free, with no hidden fees and a fixed-fee support package.",
     buttonLabel: "Learn More",
     buttonHref: "/switching-accounts",
     iconKey: "refreshCw",
@@ -87,7 +87,7 @@ const cloudSoftwareCards: ChooseCardItem[] = [
 export const CHOOSE_FIRM_SECTION = {
   sectionTitle: "Choose an Accounting Firm That Works for You",
   sectionDescription:
-    "Managing a business comes with enough pressure—your accounting shouldn't add to it. Our team takes care of your tax, bookkeeping, accounting, and payroll, so you can focus on growing with confidence. If your current accountant isn't meeting expectations, moving to us is straightforward and stress-free.",
+    "Managing a business comes with enough pressure your accounting shouldn't add to it. Our team takes care of your tax, bookkeeping, accounting, and payroll, so you can focus on growing with confidence. If your current accountant isn't meeting expectations, moving to us is straightforward and stress-free.",
   cards: chooseFirmCards,
 };
 

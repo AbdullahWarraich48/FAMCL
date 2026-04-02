@@ -19,7 +19,7 @@ export const INHERITANCE_TAX_SOLUTION_DATA: SolutionData = {
     {
       number: "02",
       title: "Identify Tax Exposure",
-      iconKey: "bar-chart" as InheritanceSolutionIconKey,
+      iconKey: "calculator" as InheritanceSolutionIconKey,
     },
     {
       number: "03",
@@ -29,12 +29,12 @@ export const INHERITANCE_TAX_SOLUTION_DATA: SolutionData = {
     {
       number: "04",
       title: "Coordinate with Professionals",
-      iconKey: "cogs" as InheritanceSolutionIconKey,
+      iconKey: "network" as InheritanceSolutionIconKey,
     },
     {
       number: "05",
       title: "Keep Plans Under Review",
-      iconKey: "heart-check" as InheritanceSolutionIconKey,
+      iconKey: "calendar-clock" as InheritanceSolutionIconKey,
     },
   ],
 };

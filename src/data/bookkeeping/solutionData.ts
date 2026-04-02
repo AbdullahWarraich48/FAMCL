@@ -13,10 +13,14 @@ export type BookkeepingSolutionIconKey =
   | "boxes"
   | "flask"
   | "factory"
-  | "clock";
+  | "clock"
+  | "network"
+  | "calendar-clock"
+  | "monitor";
 
 export type SolutionData = {
-  sectionLabel: string;
+  /** Optional pill label above the heading (e.g. “Solution & Framework”) */
+  sectionLabel?: string;
   heading: string;
   description: string;
   steps: ReadonlyArray<{
@@ -27,24 +31,35 @@ export type SolutionData = {
 };
 
 export const BOOKKEEPING_SOLUTION_DATA: SolutionData = {
-  sectionLabel: "Solution & Framework",
-  heading: "How We Deliver This Service",
+  heading: "How we deliver",
   description:
-    "Our VAT management approach focuses on clarity, accuracy, and consistent compliance. A structured process ensures every stage of your VAT reporting is handled correctly.",
+    "Our approach is structured and practical. We focus on clarity first, then consistency. A clear, step-by-step process to get your finances in order.",
   steps: [
-    { number: "01", title: "Review VAT Position and Risks", iconKey: "search" },
-    { number: "02", title: "Set Up Digital Systems", iconKey: "cogs" },
+    {
+      number: "01",
+      title: "Review your existing records",
+      iconKey: "search",
+    },
+    {
+      number: "02",
+      title: "Clean and structure your accounts",
+      iconKey: "boxes",
+    },
     {
       number: "03",
-      title: "Review VAT Records before each submission",
-      iconKey: "message",
+      title: "Set up simple digital bookkeeping",
+      iconKey: "monitor",
     },
     {
       number: "04",
-      title: "Prepare and submit VAT returns accurately and on time",
+      title: "Provide regular, readable reports",
       iconKey: "bar-chart",
     },
-    { number: "05", title: "Support you during HMRC enquiries", iconKey: "heart-check" },
+    {
+      number: "05",
+      title: "Support you year-round, not just at year end",
+      iconKey: "heart-check",
+    },
   ],
 } as const;
 

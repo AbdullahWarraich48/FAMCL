@@ -21,7 +21,7 @@ export const SELF_ASSESSMENT_TAX_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Make Tax Digital Compliance",
       description:
         "From April 2026, HMRC will require quarterly reports under Making Tax Digital for self-employed individuals and property income.",
-      iconKey: "check-square" as SelfAssessmentWhyMattersIconKey,
+      iconKey: "clipboard-check" as SelfAssessmentWhyMattersIconKey,
     },
     {
       title: "Reduce HMRC Inquiries",
@@ -33,19 +33,19 @@ export const SELF_ASSESSMENT_TAX_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Prevent Overpayment",
       description:
         "Many individuals overpay taxes due to missed allowances. We ensure you claim everything you’re entitled to.",
-      iconKey: "activity" as SelfAssessmentWhyMattersIconKey,
+      iconKey: "circle-dollar" as SelfAssessmentWhyMattersIconKey,
     },
     {
       title: "Alleviate Tax Stress",
       description:
         "We handle everything, removing the anxiety of last-minute tax filings and complex paperwork.",
-      iconKey: "circle-dollar" as SelfAssessmentWhyMattersIconKey,
+      iconKey: "leaf" as SelfAssessmentWhyMattersIconKey,
     },
     {
       title: "Clarity in Your Finances",
       description:
         "We make your tax position clear, helping you regain confidence in your financial matters.",
-      iconKey: "zap" as SelfAssessmentWhyMattersIconKey,
+      iconKey: "chart-line" as SelfAssessmentWhyMattersIconKey,
     },
   ],
 };

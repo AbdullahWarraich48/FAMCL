@@ -28,9 +28,9 @@ export const CONTACT_CARDS = [
     id: "office",
     imageSrc: "/assets/images/contact-office.png",
     imageAlt: "Modern office interior with plants and seating",
-    title: "Visit a Local Office",
+    title: "Visit Our Office",
     description:
-      "Meet us in person at our registered office or arrange a face-to-face consultation at a convenient location.",
+      "Meet us in person at our registered office or arrange a face-to-face consultation ",
     buttonLabel: "Find Location",
     buttonHref: "#contact",
   },

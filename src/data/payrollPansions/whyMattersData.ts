@@ -21,7 +21,7 @@ export const PAYROLL_PANSIONS_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Ensure Accurate Reporting",
       description:
         "Accurate payroll systems maintain reliable records for both HMRC and internal management.",
-      iconKey: "check-square" as PayrollWhyMattersIconKey,
+      iconKey: "clipboard-check" as PayrollWhyMattersIconKey,
     },
     {
       title: "Stay Pension Compliant",
@@ -33,19 +33,19 @@ export const PAYROLL_PANSIONS_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Protect Employee Trust",
       description:
         "Accurate payroll ensures employees receive the correct payments on time.",
-      iconKey: "circle-dollar" as PayrollWhyMattersIconKey,
+      iconKey: "heart-check" as PayrollWhyMattersIconKey,
     },
     {
       title: "Reduce Administrative Burden",
       description:
         "Outsourcing payroll removes the complexity of calculations and compliance tasks.",
-      iconKey: "activity" as PayrollWhyMattersIconKey,
+      iconKey: "leaf" as PayrollWhyMattersIconKey,
     },
     {
       title: "Maintain Business Confidence",
       description:
         "Employees and regulators can rely on accurate payroll management.",
-      iconKey: "zap" as PayrollWhyMattersIconKey,
+      iconKey: "check-square" as PayrollWhyMattersIconKey,
     },
   ],
 };

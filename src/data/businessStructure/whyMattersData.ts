@@ -27,7 +27,7 @@ export const BUSINESS_STRUCTURE_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Simplify Compliance",
       description:
         "The correct structure ensures you meet regulatory requirements without unnecessary complexity.",
-      iconKey: "check-square" as BusinessStructureWhyIconKey,
+      iconKey: "clipboard-check" as BusinessStructureWhyIconKey,
     },
     {
       title: "Attract Investors",
@@ -45,7 +45,7 @@ export const BUSINESS_STRUCTURE_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Sustainable Growth",
       description:
         "A strong, flexible structure supports the long-term growth of your business, enabling scalability and operational efficiency.",
-      iconKey: "activity" as BusinessStructureWhyIconKey,
+      iconKey: "anchor" as BusinessStructureWhyIconKey,
     },
   ],
 };

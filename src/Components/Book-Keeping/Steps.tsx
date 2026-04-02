@@ -3,6 +3,7 @@
 import Link from "next/link";
 import { Button } from "@/Components/ui/button";
 import { Card, CardContent } from "@/Components/ui/card";
+import SectionIntroHeader from "@/Components/SectionIntroHeader";
 import { BOOKKEEPING_STEPS_DATA, type BookkeepingStepsIconKey } from "@/data/bookkeeping";
 
 function MessageIcon({ className }: { className?: string }) {
@@ -148,18 +149,13 @@ export default function Steps() {
       aria-labelledby="steps-heading"
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">
-        {/* Heading with dividers */}
         <div className="flex flex-col items-center text-center">
-          <div className="flex w-full max-w-3xl items-center justify-center gap-4">
-            <span className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block" aria-hidden />
-            <h2
-              id="steps-heading"
-              className="shrink-0 text-[1.75rem] font-bold leading-tight tracking-tight text-[#175dab]  sm:text-3xl lg:text-4xl"
-            >
-              {data.heading}
-            </h2>
-            <span className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block" aria-hidden />
-          </div>
+          <SectionIntroHeader
+            headingId="steps-heading"
+            heading={data.heading}
+            headingBgClassName="bg-[#F6F9FF]"
+            headingClassName="text-[1.75rem] font-bold leading-tight tracking-tight text-[#175dab] sm:text-3xl lg:text-4xl"
+          />
         </div>
 
         {/* Three step cards */}

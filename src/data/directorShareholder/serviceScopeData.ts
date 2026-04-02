@@ -15,13 +15,13 @@ export const DIRECTOR_SHAREHOLDER_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "Director & Shareholder Duties",
       description:
         "We help directors and shareholders understand and meet their legal duties and obligations under UK company law.",
-      iconKey: "document-check" as DirectorServiceScopeIconKey,
+      iconKey: "scale" as DirectorServiceScopeIconKey,
     },
     {
       title: "Profit Extraction & Dividend Administration",
       description:
         "We advise on tax-efficient strategies for profit extraction and ensure dividends are paid and documented correctly.",
-      iconKey: "bar-chart" as DirectorServiceScopeIconKey,
+      iconKey: "receipt-tax" as DirectorServiceScopeIconKey,
     },
     {
       title: "Director Loans & Compliance",
@@ -39,7 +39,7 @@ export const DIRECTOR_SHAREHOLDER_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "Ongoing Support for Governance",
       description:
         "We offer continuous support with board resolutions, shareholder agreements, and maintaining good corporate governance.",
-      iconKey: "trend-up" as DirectorServiceScopeIconKey,
+      iconKey: "network" as DirectorServiceScopeIconKey,
     },
   ],
 };

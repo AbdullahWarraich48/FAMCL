@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import SectionIntroHeader from "@/Components/SectionIntroHeader";
 import { Button } from "@/Components/ui/button";
 import { Card, CardContent } from "@/Components/ui/card";
 import {
@@ -102,17 +103,17 @@ type FirmCardProps = {
 
 const FirmCard = ({ title, description, icon: Icon, href, ctaLabel }: FirmCardProps) => (
   <Card className="flex h-full flex-col overflow-hidden rounded-2xl border-0 border-slate-100 bg-gradient-to-b from-white/70 to-[#D8EAFF] shadow-[0_4px_14px_rgba(0,0,0,0.06),0_2px_6px_rgba(0,0,0,0.04)] transition-shadow hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)]">
-    <CardContent className="flex flex-1 flex-col p-6">
+    <CardContent className="flex flex-1 flex-col items-center p-6 text-center">
       <span
-        className="mb-4 flex h-16 w-16 items-center justify-center rounded-full bg-[#1e3a5f] text-white"
+        className="mb-4 flex h-16 w-16 shrink-0 items-center justify-center rounded-full bg-[#1e3a5f] text-white"
         aria-hidden
       >
         <Icon className="h-7 w-7" />
       </span>
-      <h3 className="text-lg font-semibold text-[#1e3a5f] sm:text-xl">
+      <h3 className="text-lg font-semibold leading-snug text-[#1e3a5f] sm:text-xl">
         {title}
       </h3>
-      <p className="mt-3 flex-1 text-left text-[15px] leading-[1.6] text-slate-600">
+      <p className="mt-3 max-w-prose flex-1 text-[15px] leading-[1.6] text-slate-600">
         {description}
       </p>
       <Button
@@ -150,18 +151,12 @@ export default function AccountingFirm() {
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">
         <div className="flex flex-col items-center text-center">
-          <div className="flex w-full max-w-3xl items-center justify-center gap-3">
-            <span
-              className="h-0.5 w-12 flex-shrink-0 bg-sky-400 sm:w-16"
-              aria-hidden
-            />
-            <h2
-              id="accounting-firm-heading"
-              className="text-[2rem] font-bold leading-[1.15] tracking-tight text-[#175dab]  sm:text-4xl lg:text-[44px]"
-            >
-              {data.heading}
-            </h2>
-          </div>
+          <SectionIntroHeader
+            headingId="accounting-firm-heading"
+            heading={data.heading}
+            headingBgClassName="bg-white"
+            headingClassName="text-[2rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
+          />
 
           <p className="mt-6 max-w-3xl text-[18px] leading-[27.8px] text-slate-600">
             {data.description}

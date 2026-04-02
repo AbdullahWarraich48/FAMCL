@@ -24,17 +24,17 @@ export const DIRECTOR_SHAREHOLDER_SOLUTION_DATA: SolutionData = {
     {
       number: "03",
       title: "Advise on Tax-Efficient Salary & Dividends",
-      iconKey: "bar-chart" as DirectorSolutionIconKey,
+      iconKey: "calculator" as DirectorSolutionIconKey,
     },
     {
       number: "04",
       title: "Ensure Proper Dividend & Loan Documentation",
-      iconKey: "cogs" as DirectorSolutionIconKey,
+      iconKey: "document-check" as DirectorSolutionIconKey,
     },
     {
       number: "05",
       title: "Provide Ongoing Support & Guidance",
-      iconKey: "heart-check" as DirectorSolutionIconKey,
+      iconKey: "message" as DirectorSolutionIconKey,
     },
   ],
 };

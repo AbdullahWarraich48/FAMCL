@@ -15,25 +15,25 @@ export const CAPITAL_GAINS_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "CGT Calculation on Property Sales",
       description:
         "We accurately calculate Capital Gains Tax on residential and investment property sales, ensuring you only pay what’s due.",
-      iconKey: "document-check" as CapitalGainsServiceScopeIconKey,
+      iconKey: "calculator" as CapitalGainsServiceScopeIconKey,
     },
     {
       title: "Allowance and Relief Applications",
       description:
         "We apply all relevant allowances and reliefs so your CGT liability is minimised.",
-      iconKey: "bar-chart" as CapitalGainsServiceScopeIconKey,
+      iconKey: "badge-percent" as CapitalGainsServiceScopeIconKey,
     },
     {
       title: "Making Tax Digital (MTD) Compliance",
       description:
         "For businesses that meet the reporting threshold, we ensure your CGT-related income is reported under Making Tax Digital regulations.",
-      iconKey: "shield" as CapitalGainsServiceScopeIconKey,
+      iconKey: "network" as CapitalGainsServiceScopeIconKey,
     },
     {
       title: "Timely Report Submission",
       description:
         "We manage reporting deadlines for CGT and file your returns on time, avoiding penalties.",
-      iconKey: "eye" as CapitalGainsServiceScopeIconKey,
+      iconKey: "calendar-clock" as CapitalGainsServiceScopeIconKey,
     },
     {
       title: "Future Tax Planning",

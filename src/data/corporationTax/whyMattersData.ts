@@ -15,37 +15,37 @@ export const CORPORATION_TAX_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Reduced Risk",
       description:
         "Accurate tax management reduces the risk of penalties, fines, or compliance issues.",
-      iconKey: "alert-triangle" as CorporationTaxWhyMattersIconKey,
+      iconKey: "scale" as CorporationTaxWhyMattersIconKey,
     },
     {
       title: "Better Financial Decisions",
       description:
         "Understanding tax obligations clearly allows better business planning and investment.",
-      iconKey: "check-square" as CorporationTaxWhyMattersIconKey,
+      iconKey: "chart-line" as CorporationTaxWhyMattersIconKey,
     },
     {
       title: "HMRC Compliance",
       description:
         "Proper filings ensure your business remains compliant with HMRC regulations.",
-      iconKey: "shield" as CorporationTaxWhyMattersIconKey,
+      iconKey: "clipboard-check" as CorporationTaxWhyMattersIconKey,
     },
     {
       title: "Lower Stress",
       description:
         "Professional tax management removes the pressure of dealing with complex tax rules.",
-      iconKey: "activity" as CorporationTaxWhyMattersIconKey,
+      iconKey: "leaf" as CorporationTaxWhyMattersIconKey,
     },
     {
       title: "Stronger Cash Flow Planning",
       description:
         "When tax obligations are planned ahead, businesses manage cash flow more effectively.",
-      iconKey: "circle-dollar" as CorporationTaxWhyMattersIconKey,
+      iconKey: "arrow-left-right" as CorporationTaxWhyMattersIconKey,
     },
     {
       title: "Long-Term Stability",
       description:
         "Consistent tax planning reduces uncertainty and protects your business over time.",
-      iconKey: "zap" as CorporationTaxWhyMattersIconKey,
+      iconKey: "anchor" as CorporationTaxWhyMattersIconKey,
     },
   ],
 };

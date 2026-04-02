@@ -21,7 +21,7 @@ export const CRYPTO_MODERN_INCOME_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Avoid Misunderstanding Reporting Duties",
       description:
         "Many individuals are unaware of their reporting duties for crypto income. Proper advice ensures you meet your obligations.",
-      iconKey: "check-square" as CryptoWhyMattersIconKey,
+      iconKey: "clipboard-check" as CryptoWhyMattersIconKey,
     },
     {
       title: "Prevent HMRC Investigations",
@@ -33,13 +33,13 @@ export const CRYPTO_MODERN_INCOME_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Clarity Protects You from Future Issues",
       description:
         "Proper tax advice and reporting ensure your crypto activity is handled correctly, giving you peace of mind for the future.",
-      iconKey: "circle-dollar" as CryptoWhyMattersIconKey,
+      iconKey: "eye" as CryptoWhyMattersIconKey,
     },
     {
       title: "Confidence in Tax Filing",
       description:
         "Clear guidance allows you to file with confidence, avoiding mistakes and unnecessary penalties.",
-      iconKey: "zap" as CryptoWhyMattersIconKey,
+      iconKey: "check-square" as CryptoWhyMattersIconKey,
     },
     {
       title: "Adapt to Evolving Rules",

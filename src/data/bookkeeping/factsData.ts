@@ -6,16 +6,20 @@ export type BookkeepingFactsIconKey =
   | "alert-octagon"
   | "clock"
   | "users"
-  | "flask";
+  | "flask"
+  | "badge-percent";
 
 export type FactsData = {
   sectionLabel: string;
   heading: string;
   description: string;
+  /** Default: large stat-style numbers. Use `principles` for title + body cards (e.g. About). */
+  cardStyle?: "statistics" | "principles";
   items: ReadonlyArray<{
     stat: string;
     description: string;
-    source: string;
+    /** Hidden in the UI when omitted or empty */
+    source?: string;
     iconKey: BookkeepingFactsIconKey;
   }>;
 };

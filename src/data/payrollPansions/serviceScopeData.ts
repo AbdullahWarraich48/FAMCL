@@ -15,31 +15,31 @@ export const PAYROLL_PANSIONS_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "Payroll Processing",
       description:
         "Employee salaries are calculated and processed accurately so staff are paid on time.",
-      iconKey: "document-check" as PayrollServiceScopeIconKey,
+      iconKey: "calculator" as PayrollServiceScopeIconKey,
     },
     {
       title: "PAYE Management",
       description:
         "PAYE deductions and submissions are managed in accordance with HMRC requirements.",
-      iconKey: "bar-chart" as PayrollServiceScopeIconKey,
+      iconKey: "receipt-tax" as PayrollServiceScopeIconKey,
     },
     {
       title: "Workplace Pension Compliance",
       description:
         "Auto-enrolment duties and pension contributions are handled correctly under UK regulations.",
-      iconKey: "shield" as PayrollServiceScopeIconKey,
+      iconKey: "badge-check" as PayrollServiceScopeIconKey,
     },
     {
       title: "Employee Changes Management",
       description:
         "Starters, leavers, and salary adjustments are processed smoothly and recorded properly.",
-      iconKey: "eye" as PayrollServiceScopeIconKey,
+      iconKey: "users" as PayrollServiceScopeIconKey,
     },
     {
       title: "Regulatory Reporting",
       description:
         "Payroll-related reports and required submissions are filed accurately and on time.",
-      iconKey: "trend-up" as PayrollServiceScopeIconKey,
+      iconKey: "calendar-clock" as PayrollServiceScopeIconKey,
     },
   ],
 };

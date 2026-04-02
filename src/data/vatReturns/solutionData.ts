@@ -24,17 +24,17 @@ export const VAT_RETURNS_SOLUTION_DATA: SolutionData = {
     {
       number: "03",
       title: "Review VAT Records before each submission",
-      iconKey: "message" as VatSolutionIconKey,
+      iconKey: "document-check" as VatSolutionIconKey,
     },
     {
       number: "04",
       title: "Prepare and submit VAT returns accurately and on time",
-      iconKey: "bar-chart" as VatSolutionIconKey,
+      iconKey: "receipt-tax" as VatSolutionIconKey,
     },
     {
       number: "05",
       title: "Support you during HMRC queries",
-      iconKey: "heart-check" as VatSolutionIconKey,
+      iconKey: "message" as VatSolutionIconKey,
     },
   ],
 };

@@ -15,7 +15,7 @@ export const BUSINESS_STRUCTURE_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "Choosing the Right Structure",
       description:
         "We guide you through the decision-making process, whether you need a sole trader, partnership, LLP, or limited company structure.",
-      iconKey: "document-check" as BusinessStructureIconKey,
+      iconKey: "network" as BusinessStructureIconKey,
     },
     {
       title: "Risk & Liability Management",
@@ -27,7 +27,7 @@ export const BUSINESS_STRUCTURE_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "Tax Efficiency Planning",
       description:
         "Our experts assess tax implications and ensure your business structure is optimised for the most tax-efficient strategy.",
-      iconKey: "bar-chart" as BusinessStructureIconKey,
+      iconKey: "badge-percent" as BusinessStructureIconKey,
     },
     {
       title: "Investment & Funding Preparation",
@@ -39,7 +39,7 @@ export const BUSINESS_STRUCTURE_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "Company Formation & Registration",
       description:
         "We handle the entire company formation and registration process, ensuring compliance with UK law.",
-      iconKey: "eye" as BusinessStructureIconKey,
+      iconKey: "document-check" as BusinessStructureIconKey,
     },
   ],
 };

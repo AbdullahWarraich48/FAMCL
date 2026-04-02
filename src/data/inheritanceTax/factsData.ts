@@ -13,7 +13,7 @@ export const INHERITANCE_TAX_FACTS_DATA: FactsData = {
       description:
         "Inheritance Tax can be charged at up to 40% of the value of your estate.",
       source: "HMRC",
-      iconKey: "trend" as InheritanceFactsIconKey,
+      iconKey: "badge-percent" as InheritanceFactsIconKey,
     },
     {
       stat: "Overpaying on Estates",
@@ -27,7 +27,7 @@ export const INHERITANCE_TAX_FACTS_DATA: FactsData = {
       description:
         "Planning ahead significantly reduces the risk of high Inheritance Tax exposure.",
       source: "MoneyHelper",
-      iconKey: "building" as InheritanceFactsIconKey,
+      iconKey: "clock" as InheritanceFactsIconKey,
     },
   ],
 };

@@ -6,6 +6,7 @@ import { Checkbox } from "@/Components/ui/checkbox";
 import { Input } from "@/Components/ui/input";
 import { Label } from "@/Components/ui/label";
 import { Textarea } from "@/Components/ui/textarea";
+import SectionIntroHeader from "@/Components/SectionIntroHeader";
 import { BOOKKEEPING_CONTACT_DATA } from "@/data/bookkeeping";
 
 export default function Contact() {
@@ -22,25 +23,20 @@ export default function Contact() {
       className="w-full bg-white py-16 md:py-20 lg:py-24"
       aria-labelledby="contact-heading"
     >
+      {/* Hero “Get Started Today” links to #get-started; #contact kept for existing anchors */}
+      <div
+        id="get-started"
+        className="pointer-events-none h-0 scroll-mt-24 md:scroll-mt-28"
+        aria-hidden
+      />
       <div className="content-padding-x mx-auto max-w-[1440px]">
-        {/* Header */}
         <div className="flex flex-col items-center text-center">
-          <div
-            className="shrink-0 rounded-lg bg-[#BFFFCB] px-4 py-2"
-            role="status"
-            aria-label="Section"
-          >
-            <span className="text-sm font-semibold uppercase tracking-[0.2em] text-[#239337]">
-              {data.sectionLabel}
-            </span>
-          </div>
-
-          <h2
-            id="contact-heading"
-            className="mt-8 text-[2rem] font-bold leading-[1.15] tracking-tight text-[#175dab]  sm:text-4xl lg:text-[44px] border-b-2 border-[#1e3a5f] pb-2 inline-block"
-          >
-            {data.heading}
-          </h2>
+          <SectionIntroHeader
+            headingId="contact-heading"
+            sectionLabel={data.sectionLabel}
+            heading={data.heading}
+            headingBgClassName="bg-white"
+          />
 
           <p className="mt-6 max-w-2xl text-[18px] leading-[27.8px] text-slate-600">
             {data.description}

@@ -1,3 +1,5 @@
+import SectionIntroHeader from "@/Components/SectionIntroHeader";
+
 const SOLE_TRADER_CHALLENGES = [
   "Income tracked informally until the end of the year",
   "Expenses claimed incorrectly or inconsistently",
@@ -8,33 +10,26 @@ const SOLE_TRADER_CHALLENGES = [
 
 export default function SoleTradersChallenges() {
   return (
-    <section className="w-full bg-white py-10 md:py-16 lg:py-20">
+    <section
+      className="w-full bg-white py-10 md:py-16 lg:py-20"
+      aria-labelledby="sole-trader-challenges-heading"
+    >
       <div className="content-padding-x mx-auto max-w-[1440px]">
-        {/* Header */}
         <div className="flex flex-col items-center text-center">
-          <div className="flex w-full max-w-3xl items-center justify-center gap-3 sm:gap-4">
-            <span
-              className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block"
-              aria-hidden
-            />
-            <div
-              className="shrink-0 rounded-lg bg-[#FFE4EC] px-4 py-2"
-              role="status"
-              aria-label="Common sole trader challenges"
-            >
+          <SectionIntroHeader
+            headingId="sole-trader-challenges-heading"
+            sectionLabel={
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C23A5D] sm:text-sm sm:tracking-[0.2em]">
                 Common Sole Trader Challenges
               </span>
-            </div>
-            <span
-              className="hidden h-px min-w-[40px] flex-1 bg-slate-300 sm:block"
-              aria-hidden
-            />
-          </div>
-
-          <h2 className="mt-6 text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:mt-8 sm:text-4xl lg:text-[44px]">
-            Risks Self-Employed Individuals Often Face
-          </h2>
+            }
+            labelPillClassName="shrink-0 rounded-lg bg-[#FFE4EC] px-4 py-2"
+            labelAriaLabel="Common sole trader challenges"
+            heading="Risks Self-Employed Individuals Often Face"
+            headingBgClassName="bg-white"
+            headingBlockMarginTop="mt-6 sm:mt-8"
+            headingClassName="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
+          />
 
           <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-slate-600 sm:mt-6 sm:text-[18px] sm:leading-[27.8px]">
             Many Sole Traders operate independently, which can lead to financial and tax issues

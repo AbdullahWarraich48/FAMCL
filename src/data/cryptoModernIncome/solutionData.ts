@@ -19,22 +19,22 @@ export const CRYPTO_MODERN_INCOME_SOLUTION_DATA: SolutionData = {
     {
       number: "02",
       title: "Identify Taxable Events",
-      iconKey: "bar-chart" as CryptoSolutionIconKey,
+      iconKey: "search" as CryptoSolutionIconKey,
     },
     {
       number: "03",
       title: "Calculate Liabilities Correctly",
-      iconKey: "cogs" as CryptoSolutionIconKey,
+      iconKey: "calculator" as CryptoSolutionIconKey,
     },
     {
       number: "04",
       title: "Report Accurately",
-      iconKey: "message" as CryptoSolutionIconKey,
+      iconKey: "receipt-tax" as CryptoSolutionIconKey,
     },
     {
       number: "05",
       title: "Advise on Future Compliance",
-      iconKey: "heart-check" as CryptoSolutionIconKey,
+      iconKey: "calendar-clock" as CryptoSolutionIconKey,
     },
   ],
 };

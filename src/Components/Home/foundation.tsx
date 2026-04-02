@@ -3,10 +3,13 @@ import Image from "next/image";
 export type FoundationSectionData = {
   pillLabel: string;
   heading: string;
+  /** Optional line under the main heading (e.g. About page Figma) */
+  subheading?: string;
   intro: string;
   bulletIntro?: string;
   bullets?: string[];
-  outro: string;
+  /** Closing paragraph; omitted when empty */
+  outro?: string;
   primaryImage: { src: string; alt: string };
   secondaryImage: { src: string; alt: string };
 };
@@ -54,6 +57,12 @@ export default function Foundation({ data }: FoundationProps) {
               {section.heading}
             </h2>
 
+            {section.subheading ? (
+              <p className="mt-4 text-[17px] font-medium leading-snug text-[#7a8aa0] md:text-[19px]">
+                {section.subheading}
+              </p>
+            ) : null}
+
             <p className="mt-8 text-[18px] leading-[1.7] text-[#606b7a]">
               {section.intro}
             </p>
@@ -74,9 +83,11 @@ export default function Foundation({ data }: FoundationProps) {
               </div>
             )}
 
-            <p className="mt-6 text-[18px] leading-[1.7] text-[#606b7a]">
-              {section.outro}
-            </p>
+            {section.outro?.trim() ? (
+              <p className="mt-6 text-[18px] leading-[1.7] text-[#606b7a]">
+                {section.outro}
+              </p>
+            ) : null}
           </div>
 
           <div className="relative mx-auto h-[420px] w-full max-w-[620px] lg:h-[520px]">

@@ -15,7 +15,7 @@ export const CRYPTO_MODERN_INCOME_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "Review Crypto Activity",
       description:
         "We carefully review your crypto transactions to identify taxable events and ensure accuracy.",
-      iconKey: "document-check" as CryptoServiceScopeIconKey,
+      iconKey: "search" as CryptoServiceScopeIconKey,
     },
     {
       title: "Identify Taxable Events",
@@ -27,13 +27,13 @@ export const CRYPTO_MODERN_INCOME_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "Calculate Liabilities Correctly",
       description:
         "We calculate your tax liabilities based on your crypto activity to ensure you are paying the correct amount.",
-      iconKey: "bar-chart" as CryptoServiceScopeIconKey,
+      iconKey: "calculator" as CryptoServiceScopeIconKey,
     },
     {
       title: "Accurate Reporting",
       description:
         "We ensure your crypto transactions are reported accurately to HMRC according to UK tax law.",
-      iconKey: "shield" as CryptoServiceScopeIconKey,
+      iconKey: "receipt-tax" as CryptoServiceScopeIconKey,
     },
     {
       title: "Future Compliance Advice",

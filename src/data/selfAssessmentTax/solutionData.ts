@@ -19,22 +19,22 @@ export const SELF_ASSESSMENT_TAX_SOLUTION_DATA: SolutionData = {
     {
       number: "02",
       title: "Identify Allowances & Risks",
-      iconKey: "cogs" as SelfAssessmentSolutionIconKey,
+      iconKey: "calculator" as SelfAssessmentSolutionIconKey,
     },
     {
       number: "03",
       title: "Prepare the Return Accurately",
-      iconKey: "message" as SelfAssessmentSolutionIconKey,
+      iconKey: "document-check" as SelfAssessmentSolutionIconKey,
     },
     {
       number: "04",
       title: "Submit On Time",
-      iconKey: "bar-chart" as SelfAssessmentSolutionIconKey,
+      iconKey: "calendar-clock" as SelfAssessmentSolutionIconKey,
     },
     {
       number: "05",
       title: "Support with HMRC Queries",
-      iconKey: "heart-check" as SelfAssessmentSolutionIconKey,
+      iconKey: "message" as SelfAssessmentSolutionIconKey,
     },
   ],
 };

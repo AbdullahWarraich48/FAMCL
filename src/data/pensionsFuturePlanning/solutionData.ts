@@ -14,7 +14,7 @@ export const PENSIONS_FUTURE_PLANNING_SOLUTION_DATA: SolutionData = {
     {
       number: "01",
       title: "Understand Your Goals",
-      iconKey: "search" as PensionsSolutionIconKey,
+      iconKey: "target" as PensionsSolutionIconKey,
     },
     {
       number: "02",
@@ -29,12 +29,12 @@ export const PENSIONS_FUTURE_PLANNING_SOLUTION_DATA: SolutionData = {
     {
       number: "04",
       title: "Improve Tax Efficiency",
-      iconKey: "cogs" as PensionsSolutionIconKey,
+      iconKey: "calculator" as PensionsSolutionIconKey,
     },
     {
       number: "05",
       title: "Keep Your Plan Under Review",
-      iconKey: "heart-check" as PensionsSolutionIconKey,
+      iconKey: "calendar-clock" as PensionsSolutionIconKey,
     },
   ],
 };

@@ -39,7 +39,7 @@ export default function LandingSection() {
 
             <a
               href="#contact"
-              className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-3 text-sm font-semibold text-white shadow transition hover:bg-[#184B83] active:bg-red-800"
+              className="mt-6 inline-flex items-center gap-2 rounded-full bg-[#12254b] px-5 py-3 text-sm font-semibold text-white shadow transition hover:bg-[#184B83] "
             >
               {/* simple calendar icon */}
               <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/15">

@@ -24,17 +24,17 @@ export const BUSINESS_STRUCTURE_SOLUTION_DATA: SolutionData = {
     {
       number: "03",
       title: "Model Tax Implications",
-      iconKey: "bar-chart" as BusinessStructureSolutionIconKey,
+      iconKey: "calculator" as BusinessStructureSolutionIconKey,
     },
     {
       number: "04",
       title: "Assist with Formation & Registration",
-      iconKey: "cogs" as BusinessStructureSolutionIconKey,
+      iconKey: "document-check" as BusinessStructureSolutionIconKey,
     },
     {
       number: "05",
       title: "Provide Ongoing Support",
-      iconKey: "heart-check" as BusinessStructureSolutionIconKey,
+      iconKey: "message" as BusinessStructureSolutionIconKey,
     },
   ],
 };

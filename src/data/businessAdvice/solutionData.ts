@@ -14,7 +14,7 @@ export const BUSINESS_ADVICE_SOLUTION_DATA: SolutionData = {
     {
       number: "01",
       title: "Understand Your Goals",
-      iconKey: "heart-check" as BusinessAdviceSolutionIconKey,
+      iconKey: "target" as BusinessAdviceSolutionIconKey,
     },
     {
       number: "02",

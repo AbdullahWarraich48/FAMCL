@@ -15,7 +15,9 @@ export type BookkeepingWhyMattersIconKey =
   | "flask"
   | "cogs"
   | "leaf"
-  | "heart-check";
+  | "heart-check"
+  | "anchor"
+  | "arrow-left-right";
 
 export type WhyMattersData = {
   sectionLabel: string;
@@ -38,19 +40,19 @@ export const BOOKKEEPING_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Reduced Risk",
       description:
         "Accurate numbers reduce the risk of costly errors and regulatory penalties.",
-      iconKey: "alert-triangle",
+      iconKey: "shield",
     },
     {
       title: "Faster Decisions",
       description:
         "When information is organised, action becomes quicker and more confident.",
-      iconKey: "check-square",
+      iconKey: "zap",
     },
     {
       title: "HMRC Protection",
       description:
         "Accurate records provide security during reviews or investigations.",
-      iconKey: "shield",
+      iconKey: "clipboard-check",
     },
     {
       title: "Lower Stress",
@@ -68,7 +70,7 @@ export const BOOKKEEPING_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Greater Business Control",
       description:
         "You understand exactly where your business stands at any moment.",
-      iconKey: "zap",
+      iconKey: "chart-line",
     },
   ],
 } as const;

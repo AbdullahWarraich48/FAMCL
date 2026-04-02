@@ -19,22 +19,22 @@ export const CAPITAL_GAINS_SOLUTION_DATA: SolutionData = {
     {
       number: "02",
       title: "Calculate Gains Correctly",
-      iconKey: "bar-chart" as CapitalGainsSolutionIconKey,
+      iconKey: "calculator" as CapitalGainsSolutionIconKey,
     },
     {
       number: "03",
       title: "Apply Reliefs & Allowances",
-      iconKey: "cogs" as CapitalGainsSolutionIconKey,
+      iconKey: "badge-check" as CapitalGainsSolutionIconKey,
     },
     {
       number: "04",
       title: "MTD Quarterly Reporting & Submit Reports on Time",
-      iconKey: "message" as CapitalGainsSolutionIconKey,
+      iconKey: "network" as CapitalGainsSolutionIconKey,
     },
     {
       number: "05",
       title: "Advise on Future Planning",
-      iconKey: "heart-check" as CapitalGainsSolutionIconKey,
+      iconKey: "target" as CapitalGainsSolutionIconKey,
     },
   ],
 };

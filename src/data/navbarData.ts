@@ -55,6 +55,10 @@ export const BUSINESS_SERVICES_COL1: { label: string; href: string; withArrow?: 
     label: "VAT Returns",
     href: "/vat-returns",
   },
+  {
+    label: "VAT Margin Scheme",
+    href: "/vat-margin-scheme",
+  },
 ];
 
 export const BUSINESS_SERVICES_COL2 = [
@@ -65,6 +69,10 @@ export const BUSINESS_SERVICES_COL2 = [
   {
     label: "Payroll & Pensions",
     href: "/payroll-pansions",
+  },
+  {
+    label: "Construction Industry Scheme",
+    href: "/construction-industry-scheme",
   },
 ] as const;
 

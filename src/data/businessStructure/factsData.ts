@@ -16,7 +16,7 @@ export const BUSINESS_STRUCTURE_FACTS_DATA: FactsData = {
       description:
         "Over 30% of new businesses choose the wrong legal structure, which can hinder growth and increase administrative burdens.",
       source: "FSB",
-      iconKey: "trend" as BusinessStructureFactsIconKey,
+      iconKey: "alert-octagon" as BusinessStructureFactsIconKey,
     },
     {
       stat: "Cost of Restructuring",

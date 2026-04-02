@@ -15,31 +15,31 @@ export const INHERITANCE_TAX_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "Review Estate Structure",
       description:
         "We review your current estate structure to identify areas that may need adjustment to reduce tax exposure.",
-      iconKey: "document-check" as InheritanceServiceScopeIconKey,
+      iconKey: "network" as InheritanceServiceScopeIconKey,
     },
     {
       title: "Identify Tax Exposure",
       description:
         "We identify potential Inheritance Tax liabilities and create strategies to minimise them.",
-      iconKey: "bar-chart" as InheritanceServiceScopeIconKey,
+      iconKey: "badge-percent" as InheritanceServiceScopeIconKey,
     },
     {
       title: "Explain Planning Options",
       description:
         "We explain various estate planning options, such as trusts, gifts, and tax-efficient strategies.",
-      iconKey: "eye" as InheritanceServiceScopeIconKey,
+      iconKey: "message-square" as InheritanceServiceScopeIconKey,
     },
     {
       title: "Coordinate with Professionals",
       description:
         "If needed, we collaborate with legal and financial professionals to ensure your plan is comprehensive.",
-      iconKey: "shield" as InheritanceServiceScopeIconKey,
+      iconKey: "users" as InheritanceServiceScopeIconKey,
     },
     {
       title: "Keep Plans Under Review",
       description:
         "We monitor and update your estate and retirement plans as your circumstances evolve.",
-      iconKey: "trend-up" as InheritanceServiceScopeIconKey,
+      iconKey: "calendar-clock" as InheritanceServiceScopeIconKey,
     },
   ],
 };

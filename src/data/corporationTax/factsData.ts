@@ -13,21 +13,21 @@ export const CORPORATION_TAX_FACTS_DATA: FactsData = {
       description:
         "HMRC penalties can reach up to 100% of unpaid tax.",
       source: "HMRC Compliance Handbook",
-      iconKey: "trend" as CorporationTaxFactsIconKey,
+      iconKey: "alert-octagon" as CorporationTaxFactsIconKey,
     },
     {
       stat: "Missed Reliefs",
       description:
         "Many UK SMEs miss legitimate tax reliefs due to lack of planning or advice.",
       source: "Federation of Small Businesses",
-      iconKey: "file-warning" as CorporationTaxFactsIconKey,
+      iconKey: "badge-percent" as CorporationTaxFactsIconKey,
     },
     {
       stat: "Investigation Triggers",
       description:
         "Tax investigations often begin due to inconsistent or inaccurate filings.",
       source: "HMRC",
-      iconKey: "building" as CorporationTaxFactsIconKey,
+      iconKey: "file-warning" as CorporationTaxFactsIconKey,
     },
   ],
 };

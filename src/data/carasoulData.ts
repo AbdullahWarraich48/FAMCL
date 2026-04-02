@@ -1,9 +1,13 @@
 export type Testimonial = {
   title: string;
-  quote: string;
-  author: string;
-  role: string;
   imageUrl: string;
+  /** Testimonial slide */
+  quote?: string;
+  author?: string;
+  role?: string;
+  /** Editorial slide (e.g. About “What We Do”) — when set, quote/author/role are hidden */
+  subtitle?: string;
+  bodyParagraphs?: string[];
 };
 
 export const CARASOUL_TESTIMONIALS: Testimonial[] = [
@@ -23,7 +27,7 @@ export const CARASOUL_TESTIMONIALS: Testimonial[] = [
     author: "Omar Khan",
     role: "Founder",
     imageUrl:
-      "https://images.unsplash.com/photo-1524503033411-f4f36b6f9f2b?auto=format&fit=crop&w=1400&q=80",
+      "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?auto=format&fit=crop&w=1400&q=80",
   },
   {
     title: "Peace of Mind",

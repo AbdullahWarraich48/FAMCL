@@ -15,13 +15,13 @@ export const SELF_ASSESSMENT_TAX_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "Review All Income Sources",
       description:
         "We examine all your sources of income, ensuring nothing is missed.",
-      iconKey: "document-check" as SelfAssessmentIconKey,
+      iconKey: "search" as SelfAssessmentIconKey,
     },
     {
       title: "Apply Allowances & Reliefs",
       description:
         "We apply the relevant allowances and reliefs to reduce the amount of tax you pay.",
-      iconKey: "bar-chart" as SelfAssessmentIconKey,
+      iconKey: "badge-percent" as SelfAssessmentIconKey,
     },
     {
       title: "Identify Errors Early",
@@ -33,13 +33,13 @@ export const SELF_ASSESSMENT_TAX_SERVICE_SCOPE_DATA: ServiceScopeData = {
       title: "HMRC Correspondence",
       description:
         "We manage all communication with HMRC, removing the hassle for you.",
-      iconKey: "shield" as SelfAssessmentIconKey,
+      iconKey: "message-square" as SelfAssessmentIconKey,
     },
     {
       title: "Accurate & Timely Filing",
       description:
         "We ensure your Self-Assessment tax return is filed accurately and on time.",
-      iconKey: "trend-up" as SelfAssessmentIconKey,
+      iconKey: "calendar-clock" as SelfAssessmentIconKey,
     },
   ],
 };

@@ -90,7 +90,7 @@ const cloudSoftwareCards: ChooseCardItem[] = [
 export const CHOOSE_FIRM_SECTION = {
   sectionTitle: "Choose an Accounting Firm That Works for You",
   sectionDescription:
-    "Managing a business comes with enough pressure—your accounting shouldn't add to it. Our team takes care of your tax, bookkeeping, accounting, and payroll, so you can focus on growing with confidence. If your current accountant isn't meeting expectations, moving to us is straightforward and stress-free.",
+    "Managing a business comes with enough pressure your accounting shouldn't add to it. Our team takes care of your tax, bookkeeping, accounting, and payroll, so you can focus on growing with confidence. If your current accountant isn't meeting expectations, moving to us is straightforward and stress-free.",
   cards: chooseFirmCards,
 };
 

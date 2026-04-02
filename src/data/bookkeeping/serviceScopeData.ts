@@ -12,7 +12,13 @@ export type BookkeepingServiceScopeIconKey =
   | "flask"
   | "boxes"
   | "factory"
-  | "users";
+  | "users"
+  | "calendar-clock"
+  | "badge-percent"
+  | "network"
+  | "message-square"
+  | "search"
+  | "scale";
 
 export type ServiceScopeData = {
   sectionLabel: string;

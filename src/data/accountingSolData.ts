@@ -1,7 +1,7 @@
 export const ACCOUNTING_SOL_SECTION = {
-  title: "A Blended Approach to Support",
+  title: "Comprehensive Accounting Solutions",
   description:
-    "We combine modern tools with professional judgement so your financial information stays organised, accessible and clearly explained.",
+    "From day-to-day bookkeeping to complex tax planning, we provide a full range of accounting services tailored to your needs.",
 };
 
 export type ServiceBlock = {
@@ -10,41 +10,40 @@ export type ServiceBlock = {
   bullets: string[];
   imageUrl: string;
   iconKey: "briefcase" | "userRound";
-  iconWrap: string;
-  panelBg: string;
   dot: string;
 };
 
 export const ACCOUNTING_SOL_BLOCKS: ServiceBlock[] = [
   {
-    title: "Technology That Keeps You In Control",
-    desc: "Modern accounting tools allow financial information to be managed more efficiently.",
+    title: "Business Services",
+    desc: "Complete financial support for businesses of all sizes, from startups to established companies.",
     bullets: [
-      "maintain organised financial records",
-      "manage invoices and expenses",
-      "prepare for Making Tax Digital requirements",
-      "access financial information securely",
+      "Accounts & Bookkeeping",
+      "Corporation Tax",
+      "VAT Returns",
+      "Payroll & Pensions",
+      "Business Advice",
+      "Business Structuring",
     ],
     imageUrl:
-      "https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1497366216548-37526070297c?auto=format&fit=crop&w=1600&q=80",
     iconKey: "briefcase",
-    iconWrap: "bg-blue-700",
-    panelBg: "bg-gradient-to-br from-white via-white to-blue-100/80",
-    dot: "bg-blue-700",
+    dot: "bg-[#175dab]",
   },
   {
-    title: "Personal Advice When You Need It",
-    desc: "While technology improves efficiency, professional advice remains essential.",
+    title: "Personal Services",
+    desc: "Expert guidance for managing your personal finances and tax obligations.",
     bullets: [
-      "discuss financial matters and next steps",
-      "understand regulatory requirements and implications",
-      "receive timely guidance ahead of key decisions",
+      "Self-Assessment Tax Returns",
+      "Capital Gains & Property Tax",
+      "Pensions & Future Planning",
+      "Inheritance Tax & Estate Planning",
+      "Crypto & Modern Income",
+      "Director & Shareholder Advisory",
     ],
     imageUrl:
-      "https://images.unsplash.com/photo-1521737604893-d14cc237f11d?auto=format&fit=crop&w=1600&q=80",
+      "https://images.unsplash.com/photo-1450101499163-c8848c66ca85?auto=format&fit=crop&w=1600&q=80",
     iconKey: "userRound",
-    iconWrap: "bg-green-600",
-    panelBg: "bg-gradient-to-br from-white via-white to-emerald-100/80",
-    dot: "bg-green-600",
+    dot: "bg-[#175dab]",
   },
 ];

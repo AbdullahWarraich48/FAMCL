@@ -27,25 +27,25 @@ export const INHERITANCE_TAX_WHY_MATTERS_DATA: WhyMattersData = {
       title: "Avoid Late Planning",
       description:
         "Planning too late limits your options. Taking action early ensures you have the flexibility to make the best decisions for your family.",
-      iconKey: "activity" as InheritanceWhyMattersIconKey,
+      iconKey: "clock" as InheritanceWhyMattersIconKey,
     },
     {
       title: "Minimise Tax Exposure",
       description:
         "By structuring your estate correctly, you can minimise your tax exposure and pass on more of your wealth.",
-      iconKey: "check-square" as InheritanceWhyMattersIconKey,
+      iconKey: "circle-dollar" as InheritanceWhyMattersIconKey,
     },
     {
       title: "Navigate Complex Rules",
       description:
         "Inheritance Tax and estate planning rules are complex. We guide you through them, ensuring you understand your options and the implications of your decisions.",
-      iconKey: "trend-up" as InheritanceWhyMattersIconKey,
+      iconKey: "scale" as InheritanceWhyMattersIconKey,
     },
     {
       title: "Peace of Mind",
       description:
         "Effective planning reduces uncertainty, ensuring that your family is taken care of when the time comes.",
-      iconKey: "circle-dollar" as InheritanceWhyMattersIconKey,
+      iconKey: "leaf" as InheritanceWhyMattersIconKey,
     },
   ],
 };

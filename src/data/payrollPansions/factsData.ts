@@ -16,21 +16,21 @@ export const PAYROLL_PANSIONS_FACTS_DATA: FactsData = {
       description:
         "Payroll penalties can apply even when errors are small or administrative.",
       source: "HMRC",
-      iconKey: "trend" as PayrollFactsIconKey,
+      iconKey: "alert-octagon" as PayrollFactsIconKey,
     },
     {
       stat: "Mandatory Pension Compliance",
       description:
         "Workplace pensions are a legal requirement for most eligible employees.",
       source: "The Pensions Regulator",
-      iconKey: "file-warning" as PayrollFactsIconKey,
+      iconKey: "users" as PayrollFactsIconKey,
     },
     {
       stat: "Common SME Compliance Issue",
       description:
         "Payroll compliance failures remain a common challenge for small and medium sized businesses.",
       source: "Chartered Institute of Payroll Professionals",
-      iconKey: "building" as PayrollFactsIconKey,
+      iconKey: "file-warning" as PayrollFactsIconKey,
     },
   ],
 };

@@ -16,21 +16,21 @@ export const VAT_RETURNS_FACTS_DATA: FactsData = {
       description:
         "VAT reporting mistakes cost UK businesses significant amounts each year.",
       source: "National Audit Office",
-      iconKey: "trend" as VatFactsIconKey,
+      iconKey: "alert-octagon" as VatFactsIconKey,
     },
     {
       stat: "Making Tax Digital Requirement",
       description:
         "Making Tax Digital has made digital record-keeping mandatory for VAT-registered businesses.",
       source: "HMRC",
-      iconKey: "file-warning" as VatFactsIconKey,
+      iconKey: "chart-pie" as VatFactsIconKey,
     },
     {
       stat: "Penalties Even for Unintentional Errors",
       description:
         "VAT penalties can apply even when mistakes are not deliberate.",
       source: "HMRC",
-      iconKey: "building" as VatFactsIconKey,
+      iconKey: "file-warning" as VatFactsIconKey,
     },
   ],
 };
