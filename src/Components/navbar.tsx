@@ -201,7 +201,7 @@ export default function Navbar() {
           <div className="relative h-10 w-40 overflow-visible md:h-16 md:w-48 md:mb-[2px]">
             <Image
               src="/assets/images/FAM Approved Logo 4-feb-2026.png"
-              alt="FAM Approved logo"
+              alt="FAM Approved Logo"
               fill
               sizes="(max-width: 768px) 220px, 280px"
               className="object-contain scale-[1.9] md:scale-[2.1] -translate-y-1.5"
