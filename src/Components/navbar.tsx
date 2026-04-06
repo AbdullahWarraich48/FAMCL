@@ -193,7 +193,7 @@ export default function Navbar() {
         {/* Left: Logo */}
         <Link
           href="/"
-          className="flex shrink-0 items-center rounded overflow-visible -ml-2 sm:ml-0"
+          className="flex shrink-0 items-center rounded overflow-visible -ml-7 sm:ml-0"
           aria-label="FAM - Financial & Management Consultants Limited, go to homepage"
           onClick={handleCloseMenu}
         >
