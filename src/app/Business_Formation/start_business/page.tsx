@@ -14,6 +14,7 @@ import {
   START_BUSINESS_SOLUTION_DATA,
   START_BUSINESS_TRUST_MATRIX_SOLUTION_DATA,
 } from "@/data/startBusiness/solutionData";
+import { START_BUSINESS_FAQ_DATA } from "@/data/startBusiness/faqData";
 import WhyChooseService from "@/Components/Home/ChooseService";
 import Challenges from "@/Components/Home/Challenges";
 
@@ -34,7 +35,7 @@ export default function StartBusinessPage() {
       <WhyChooseService />
       <Solution data={START_BUSINESS_TRUST_MATRIX_SOLUTION_DATA} />
 
-      <Faq />
+      <Faq data={START_BUSINESS_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

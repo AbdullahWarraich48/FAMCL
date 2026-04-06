@@ -7,6 +7,7 @@ import FooterSection from "@/Components/footer";
 import TeamStructure from "@/Components/Home/TeamStructure";
 import { OUR_TEAM_HERO_DATA } from "@/data/ourTeam/heroData";
 import { OUR_TEAM_FACTS_DATA } from "../../../data/ourTeam/factsData";
+import { OUR_TEAM_FAQ_DATA } from "@/data/ourTeam/faqData";
 
 export const metadata = {
   title: "Our Team | FAM Chartered Accountants",
@@ -41,7 +42,7 @@ export default function OurTeamPage() {
         }}
       />
       <Facts data={OUR_TEAM_FACTS_DATA} />
-      <Faq />
+      <Faq data={OUR_TEAM_FAQ_DATA} />
       <Contact />
       <AccountingFirm />
       <FooterSection />

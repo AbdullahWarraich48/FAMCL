@@ -13,6 +13,7 @@ import { NOT_FOR_PROFIT_SERVICE_SCOPE_DATA } from "@/data/notForProfit/serviceSc
 import { NOT_FOR_PROFIT_WHY_MATTERS_DATA } from "@/data/notForProfit/whyMattersData";
 import { NOT_FOR_PROFIT_FACTS_DATA } from "@/data/notForProfit/factsData";
 import { NOT_FOR_PROFIT_SOLUTION_DATA } from "@/data/notForProfit/solutionData";
+import { NOT_FOR_PROFIT_FAQ_DATA } from "@/data/notForProfit/faqData";
 
 export const metadata = {
   title: "Not-for-Profit | FAM Chartered Accountants",
@@ -29,7 +30,7 @@ export default function NotForProfitPage() {
   
       <Facts data={NOT_FOR_PROFIT_FACTS_DATA} />
       <Solution data={NOT_FOR_PROFIT_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={NOT_FOR_PROFIT_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

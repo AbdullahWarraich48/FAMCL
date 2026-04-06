@@ -14,6 +14,7 @@ import { LIMITED_COMPANIES_SOLUTION_DATA } from "@/data/limitedCompanies/solutio
 import LimitedCompaniesChallenges from "@/Components/Home/LimitedCompaniesChallenges";
 import LimitedCompaniesChooseService from "@/Components/Home/LimitedCompaniesChooseService";
 import { LIMITED_COMPANIES_WHY_MATTERS_DATA } from "@/data/limitedCompanies/whyMattersData";
+import { LIMITED_COMPANIES_FAQ_DATA } from "@/data/limitedCompanies/faqData";
 import WhyMattersSection from "@/Components/Book-Keeping/Why-Matters";
 
 export const metadata = {
@@ -32,7 +33,7 @@ export default function LimitedCompaniesPage() {
       <LimitedCompaniesChallenges />
       <LimitedCompaniesChooseService />
       <WhyMattersSection data={LIMITED_COMPANIES_WHY_MATTERS_DATA} />
-      <Faq />
+      <Faq data={LIMITED_COMPANIES_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

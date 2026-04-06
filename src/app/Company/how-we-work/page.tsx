@@ -9,6 +9,7 @@ import Steps from "@/Components/Book-Keeping/Steps";
 import FooterSection from "@/Components/footer";
 import { HOW_WE_WORK_HERO_DATA } from "@/data/howWeWork/heroData";
 import { HOW_WE_WORK_FACTS_DATA } from "@/data/howWeWork/factsData";
+import { HOW_WE_WORK_FAQ_DATA } from "@/data/howWeWork/faqData";
 import Foundation from "@/Components/Home/foundation";
 
 export const metadata = {
@@ -23,7 +24,7 @@ export default function HowWeWorkPage() {
       <BookKeepingHerosection heroData={HOW_WE_WORK_HERO_DATA} />
       <Foundation />
       <Facts data={HOW_WE_WORK_FACTS_DATA} />
-      <Faq />
+      <Faq data={HOW_WE_WORK_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

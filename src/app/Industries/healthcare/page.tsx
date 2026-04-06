@@ -13,6 +13,7 @@ import { HEALTHCARE_SERVICE_SCOPE_DATA } from "@/data/healthcare/serviceScopeDat
 import { HEALTHCARE_WHY_MATTERS_DATA } from "@/data/healthcare/whyMattersData";
 import { HEALTHCARE_FACTS_DATA } from "@/data/healthcare/factsData";
 import { HEALTHCARE_SOLUTION_DATA } from "@/data/healthcare/solutionData";
+import { HEALTHCARE_FAQ_DATA } from "@/data/healthcare/faqData";
 
 export const metadata = {
   title: "Healthcare | FAM Chartered Accountants",
@@ -29,7 +30,7 @@ export default function HealthcarePage() {
   
       <Facts data={HEALTHCARE_FACTS_DATA} />
       <Solution data={HEALTHCARE_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={HEALTHCARE_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

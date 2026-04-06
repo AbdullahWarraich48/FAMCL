@@ -13,6 +13,7 @@ import { CORPORATION_TAX_SERVICE_SCOPE_DATA } from "@/data/corporationTax/servic
 import { CORPORATION_TAX_WHY_MATTERS_DATA } from "@/data/corporationTax/whyMattersData";
 import { CORPORATION_TAX_FACTS_DATA } from "@/data/corporationTax/factsData";
 import { CORPORATION_TAX_SOLUTION_DATA } from "@/data/corporationTax/solutionData";
+import { CORPORATION_TAX_PAGE_FAQ_DATA } from "@/data/corporationTax/faqData";
 
 export const metadata = {
   title: "Corporation Tax | FAM Chartered Accountants",
@@ -29,7 +30,7 @@ export default function CorporationTaxPage() {
   
       <Facts data={CORPORATION_TAX_FACTS_DATA} />
       <Solution data={CORPORATION_TAX_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={CORPORATION_TAX_PAGE_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

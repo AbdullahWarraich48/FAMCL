@@ -13,6 +13,7 @@ import { BUSINESS_STRUCTURE_SERVICE_SCOPE_DATA } from "@/data/businessStructure/
 import { BUSINESS_STRUCTURE_WHY_MATTERS_DATA } from "@/data/businessStructure/whyMattersData";
 import { BUSINESS_STRUCTURE_FACTS_DATA } from "@/data/businessStructure/factsData";
 import { BUSINESS_STRUCTURE_SOLUTION_DATA } from "@/data/businessStructure/solutionData";
+import { BUSINESS_STRUCTURE_FAQ_DATA } from "@/data/businessStructure/faqData";
 
 export const metadata = {
   title: "Business Structuring | FAM Chartered Accountants",
@@ -29,7 +30,7 @@ export default function BusinessStructurePage() {
 
       <Facts data={BUSINESS_STRUCTURE_FACTS_DATA} />
       <Solution data={BUSINESS_STRUCTURE_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={BUSINESS_STRUCTURE_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

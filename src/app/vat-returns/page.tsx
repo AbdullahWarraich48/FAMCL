@@ -13,6 +13,7 @@ import { VAT_RETURNS_SERVICE_SCOPE_DATA } from "@/data/vatReturns/serviceScopeDa
 import { VAT_RETURNS_WHY_MATTERS_DATA } from "@/data/vatReturns/whyMattersData";
 import { VAT_RETURNS_FACTS_DATA } from "@/data/vatReturns/factsData";
 import { VAT_RETURNS_SOLUTION_DATA } from "@/data/vatReturns/solutionData";
+import { VAT_RETURNS_FAQ_DATA } from "@/data/vatReturns/faqData";
 
 export const metadata = {
   title: "VAT Returns | FAM Chartered Accountants",
@@ -29,7 +30,7 @@ export default function VatReturnsPage() {
   
       <Facts data={VAT_RETURNS_FACTS_DATA} />
       <Solution data={VAT_RETURNS_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={VAT_RETURNS_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

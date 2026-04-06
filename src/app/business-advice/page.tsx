@@ -13,6 +13,7 @@ import { BUSINESS_ADVICE_SERVICE_SCOPE_DATA } from "@/data/businessAdvice/servic
 import { BUSINESS_ADVICE_WHY_MATTERS_DATA } from "@/data/businessAdvice/whyMattersData";
 import { BUSINESS_ADVICE_FACTS_DATA } from "@/data/businessAdvice/factsData";
 import { BUSINESS_ADVICE_SOLUTION_DATA } from "@/data/businessAdvice/solutionData";
+import { BUSINESS_ADVICE_FAQ_DATA } from "@/data/businessAdvice/faqData";
 
 export const metadata = {
   title: "Business Advice | FAM Chartered Accountants",
@@ -29,7 +30,7 @@ export default function BusinessAdvicePage() {
 
       <Facts data={BUSINESS_ADVICE_FACTS_DATA} />
       <Solution data={BUSINESS_ADVICE_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={BUSINESS_ADVICE_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

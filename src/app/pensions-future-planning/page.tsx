@@ -13,6 +13,7 @@ import { PENSIONS_FUTURE_PLANNING_SERVICE_SCOPE_DATA } from "@/data/pensionsFutu
 import { PENSIONS_FUTURE_PLANNING_WHY_MATTERS_DATA } from "@/data/pensionsFuturePlanning/whyMattersData";
 import { PENSIONS_FUTURE_PLANNING_FACTS_DATA } from "@/data/pensionsFuturePlanning/factsData";
 import { PENSIONS_FUTURE_PLANNING_SOLUTION_DATA } from "@/data/pensionsFuturePlanning/solutionData";
+import { PENSIONS_FUTURE_PLANNING_FAQ_DATA } from "@/data/pensionsFuturePlanning/faqData";
 
 export const metadata = {
   title: "Pensions & Future Planning | FAM Chartered Accountants",
@@ -28,7 +29,7 @@ export default function PensionsFuturePlanningPage() {
       <WhyMatters data={PENSIONS_FUTURE_PLANNING_WHY_MATTERS_DATA} />
       <Facts data={PENSIONS_FUTURE_PLANNING_FACTS_DATA} />
       <Solution data={PENSIONS_FUTURE_PLANNING_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={PENSIONS_FUTURE_PLANNING_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

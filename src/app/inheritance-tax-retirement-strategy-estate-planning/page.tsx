@@ -13,6 +13,7 @@ import { INHERITANCE_TAX_SERVICE_SCOPE_DATA } from "@/data/inheritanceTax/servic
 import { INHERITANCE_TAX_WHY_MATTERS_DATA } from "@/data/inheritanceTax/whyMattersData";
 import { INHERITANCE_TAX_FACTS_DATA } from "@/data/inheritanceTax/factsData";
 import { INHERITANCE_TAX_SOLUTION_DATA } from "@/data/inheritanceTax/solutionData";
+import { INHERITANCE_TAX_ESTATE_PLANNING_FAQ_DATA } from "@/data/inheritanceTax/faqData";
 
 export const metadata = {
   title: "Inheritance Tax, Retirement Strategy & Estate Planning | FAM Chartered Accountants",
@@ -28,7 +29,7 @@ export default function InheritanceTaxRetirementStrategyEstatePlanningPage() {
       <WhyMatters data={INHERITANCE_TAX_WHY_MATTERS_DATA} />
       <Facts data={INHERITANCE_TAX_FACTS_DATA} />
       <Solution data={INHERITANCE_TAX_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={INHERITANCE_TAX_ESTATE_PLANNING_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

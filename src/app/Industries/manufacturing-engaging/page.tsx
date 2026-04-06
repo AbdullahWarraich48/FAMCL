@@ -13,6 +13,7 @@ import { MANUFACTURING_ENGINEERING_SERVICE_SCOPE_DATA } from "@/data/manufacturi
 import { MANUFACTURING_ENGINEERING_WHY_MATTERS_DATA } from "@/data/manufacturingEngineering/whyMattersData";
 import { MANUFACTURING_ENGINEERING_FACTS_DATA } from "@/data/manufacturingEngineering/factsData";
 import { MANUFACTURING_ENGINEERING_SOLUTION_DATA } from "@/data/manufacturingEngineering/solutionData";
+import { MANUFACTURING_ENGINEERING_FAQ_DATA } from "@/data/manufacturingEngineering/faqData";
 
 export const metadata = {
   title: "Manufacturing & Engineering | FAM Chartered Accountants",
@@ -29,7 +30,7 @@ export default function ManufacturingEngineeringPage() {
   
       <Facts data={MANUFACTURING_ENGINEERING_FACTS_DATA} />
       <Solution data={MANUFACTURING_ENGINEERING_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={MANUFACTURING_ENGINEERING_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

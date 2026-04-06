@@ -10,6 +10,7 @@ import FooterSection from "@/Components/footer";
 import TeamStructure from "@/Components/Home/TeamStructure";
 import { CAREERS_HERO_DATA } from "@/data/careers/heroData";
 import { CAREERS_FACTS_DATA } from "@/data/careers/factsData";
+import { CAREERS_FAQ_DATA } from "@/data/careers/faqData";
 
 export const metadata = {
   title: "Careers | FAM Chartered Accountants",
@@ -41,7 +42,7 @@ export default function CareersPage() {
 
       <Facts data={CAREERS_FACTS_DATA} />
 
-      <Faq />
+      <Faq data={CAREERS_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

@@ -13,6 +13,7 @@ import { TECHNOLOGY_DIGITAL_SERVICE_SCOPE_DATA } from "@/data/technologyDigital/
 import { TECHNOLOGY_DIGITAL_WHY_MATTERS_DATA } from "@/data/technologyDigital/whyMattersData";
 import { TECHNOLOGY_DIGITAL_FACTS_DATA } from "@/data/technologyDigital/factsData";
 import { TECHNOLOGY_DIGITAL_SOLUTION_DATA } from "@/data/technologyDigital/solutionData";
+import { TECHNOLOGY_DIGITAL_FAQ_DATA } from "@/data/technologyDigital/faqData";
 
 export const metadata = {
   title: "Technology & Digital | FAM Chartered Accountants",
@@ -29,7 +30,7 @@ export default function TechnologyDigitalPage() {
   
       <Facts data={TECHNOLOGY_DIGITAL_FACTS_DATA} />
       <Solution data={TECHNOLOGY_DIGITAL_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={TECHNOLOGY_DIGITAL_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

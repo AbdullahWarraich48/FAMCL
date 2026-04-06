@@ -13,6 +13,7 @@ import { SELF_ASSESSMENT_TAX_SERVICE_SCOPE_DATA } from "@/data/selfAssessmentTax
 import { SELF_ASSESSMENT_TAX_WHY_MATTERS_DATA } from "@/data/selfAssessmentTax/whyMattersData";
 import { SELF_ASSESSMENT_TAX_FACTS_DATA } from "@/data/selfAssessmentTax/factsData";
 import { SELF_ASSESSMENT_TAX_SOLUTION_DATA } from "@/data/selfAssessmentTax/solutionData";
+import { SELF_ASSESSMENT_TAX_FAQ_DATA } from "@/data/selfAssessmentTax/faqData";
 
 export const metadata = {
   title: "Self-Assessment Tax | FAM Chartered Accountants",
@@ -28,7 +29,7 @@ export default function SelfAssessmentTaxPage() {
       <WhyMatters data={SELF_ASSESSMENT_TAX_WHY_MATTERS_DATA} />
       <Facts data={SELF_ASSESSMENT_TAX_FACTS_DATA} />
       <Solution data={SELF_ASSESSMENT_TAX_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={SELF_ASSESSMENT_TAX_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

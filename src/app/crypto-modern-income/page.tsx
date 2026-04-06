@@ -13,6 +13,7 @@ import { CRYPTO_MODERN_INCOME_SERVICE_SCOPE_DATA } from "@/data/cryptoModernInco
 import { CRYPTO_MODERN_INCOME_WHY_MATTERS_DATA } from "@/data/cryptoModernIncome/whyMattersData";
 import { CRYPTO_MODERN_INCOME_FACTS_DATA } from "@/data/cryptoModernIncome/factsData";
 import { CRYPTO_MODERN_INCOME_SOLUTION_DATA } from "@/data/cryptoModernIncome/solutionData";
+import { CRYPTO_MODERN_INCOME_FAQ_DATA } from "@/data/cryptoModernIncome/faqData";
 
 export const metadata = {
   title: "Crypto & Modern Income | FAM Chartered Accountants",
@@ -28,7 +29,7 @@ export default function CryptoModernIncomePage() {
       <WhyMatters data={CRYPTO_MODERN_INCOME_WHY_MATTERS_DATA} />
       <Facts data={CRYPTO_MODERN_INCOME_FACTS_DATA} />
       <Solution data={CRYPTO_MODERN_INCOME_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={CRYPTO_MODERN_INCOME_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

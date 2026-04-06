@@ -13,6 +13,7 @@ import { CAPITAL_GAINS_SERVICE_SCOPE_DATA } from "@/data/capitalGains/serviceSco
 import { CAPITAL_GAINS_WHY_MATTERS_DATA } from "@/data/capitalGains/whyMattersData";
 import { CAPITAL_GAINS_FACTS_DATA } from "@/data/capitalGains/factsData";
 import { CAPITAL_GAINS_SOLUTION_DATA } from "@/data/capitalGains/solutionData";
+import { CAPITAL_GAINS_PROPERTY_TAX_FAQ_DATA } from "@/data/capitalGains/faqData";
 
 export const metadata = {
   title: "Capital Gains & Property Tax | FAM Chartered Accountants",
@@ -28,7 +29,7 @@ export default function CapitalGainsPropertyTaxPage() {
       <WhyMatters data={CAPITAL_GAINS_WHY_MATTERS_DATA} />
       <Facts data={CAPITAL_GAINS_FACTS_DATA} />
       <Solution data={CAPITAL_GAINS_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={CAPITAL_GAINS_PROPERTY_TAX_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

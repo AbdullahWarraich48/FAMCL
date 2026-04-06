@@ -13,6 +13,7 @@ import { PROFESSIONAL_SERVICES_SERVICE_SCOPE_DATA } from "@/data/professionalSer
 import { PROFESSIONAL_SERVICES_WHY_MATTERS_DATA } from "@/data/professionalServices/whyMattersData";
 import { PROFESSIONAL_SERVICES_FACTS_DATA } from "@/data/professionalServices/factsData";
 import { PROFESSIONAL_SERVICES_SOLUTION_DATA } from "@/data/professionalServices/solutionData";
+import { PROFESSIONAL_SERVICES_FAQ_DATA } from "@/data/professionalServices/faqData";
 
 export const metadata = {
   title: "Professional Services | FAM Chartered Accountants",
@@ -29,7 +30,7 @@ export default function ProfessionalServicesPage() {
   
       <Facts data={PROFESSIONAL_SERVICES_FACTS_DATA} />
       <Solution data={PROFESSIONAL_SERVICES_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={PROFESSIONAL_SERVICES_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

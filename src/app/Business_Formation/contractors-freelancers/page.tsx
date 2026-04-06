@@ -14,6 +14,7 @@ import { CONTRACTORS_FREELANCERS_SERVICE_SCOPE_DATA } from "@/data/contractorsFr
 import { CONTRACTORS_FREELANCERS_FACTS_DATA } from "@/data/contractorsFreelancers/factsData";
 import { CONTRACTORS_FREELANCERS_SOLUTION_DATA } from "@/data/contractorsFreelancers/solutionData";
 import { CONTRACTORS_FREELANCERS_WHY_MATTERS_DATA } from "@/data/contractorsFreelancers/whyMattersData";
+import { CONTRACTORS_FREELANCERS_FAQ_DATA } from "@/data/contractorsFreelancers/faqData";
 import WhyMatters from "@/Components/Book-Keeping/Why-Matters";
 
 export const metadata = {
@@ -66,7 +67,7 @@ export default function ContractorsFreelancersPage() {
         </div>
       </section>
       <WhyMatters data={CONTRACTORS_FREELANCERS_WHY_MATTERS_DATA} />
-      <Faq />
+      <Faq data={CONTRACTORS_FREELANCERS_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

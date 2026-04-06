@@ -60,6 +60,29 @@ const StarIcon = ({ className }: StarIconProps) => {
   );
 };
 
+type PhoneIconProps = {
+  className?: string;
+};
+
+const PhoneIcon = ({ className }: PhoneIconProps) => {
+  return (
+    <svg
+      className={className}
+      width="20"
+      height="20"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+      aria-hidden
+    >
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+    </svg>
+  );
+};
+
 type BookKeepingHerosectionProps = {
   heroData?: ServiceHeroData;
 };
@@ -95,7 +118,7 @@ export const BookKeepingHerosection = ({
             </h1>
 
             {hero.subheading && (
-              <p className="mt-2 text-lg font-semibold text-slate-800">
+              <p className="mt-2 text-lg font-semibold text-[#1e3a5f]">
                 {hero.subheading}
               </p>
             )}
@@ -132,9 +155,10 @@ export const BookKeepingHerosection = ({
               </Link>
               <a
                 href={hero.phoneHref}
-                className="inline-flex h-12 min-w-[140px] items-center justify-center gap-2 rounded-xl border-2 border-slate-300 bg-white px-6 py-3 text-base font-semibold text-slate-800 transition-colors hover:border-[#12254B] hover:bg-[#12254B] hover:text-white focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
+                className="inline-flex h-12 min-w-[140px] items-center justify-center gap-2 rounded-xl border-2 border-slate-300 bg-white px-6 py-3 text-base font-semibold text-[#1e3a5f] transition-colors hover:border-[#12254B] hover:bg-[#12254B] hover:text-white focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
                 aria-label={`Call ${hero.phoneNumber}`}
               >
+                <PhoneIcon className="h-5 w-5 shrink-0" />
                 {hero.secondaryCta.labelPrefix} {hero.phoneNumber}
               </a>
             </div>

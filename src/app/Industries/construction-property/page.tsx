@@ -13,6 +13,7 @@ import { CONSTRUCTION_PROPERTY_SERVICE_SCOPE_DATA } from "@/data/constructionPro
 import { CONSTRUCTION_PROPERTY_WHY_MATTERS_DATA } from "@/data/constructionProperty/whyMattersData";
 import { CONSTRUCTION_PROPERTY_FACTS_DATA } from "@/data/constructionProperty/factsData";
 import { CONSTRUCTION_PROPERTY_SOLUTION_DATA } from "@/data/constructionProperty/solutionData";
+import { CONSTRUCTION_PROPERTY_FAQ_DATA } from "@/data/constructionProperty/faqData";
 
 export const metadata = {
   title: "Construction & Property | FAM Chartered Accountants",
@@ -29,7 +30,7 @@ export default function ConstructionPropertyPage() {
   
       <Facts data={CONSTRUCTION_PROPERTY_FACTS_DATA} />
       <Solution data={CONSTRUCTION_PROPERTY_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={CONSTRUCTION_PROPERTY_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

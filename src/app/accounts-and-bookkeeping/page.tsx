@@ -8,6 +8,7 @@ import Solution from "@/Components/Book-Keeping/Solution";
 import Steps from "@/Components/Book-Keeping/Steps";
 import WhyMatters from "@/Components/Book-Keeping/Why-Matters";
 import FooterSection from "@/Components/footer";
+import { ACCOUNTS_AND_BOOKKEEPING_FAQ_DATA } from "@/data/accountsAndBookkeeping/faqData";
 
 export const metadata = {
   title: "Accounts & Bookkeeping | FAM Chartered Accountants",
@@ -24,7 +25,7 @@ export default function AccountsAndBookkeepingPage() {
   
       <Facts />
       <Solution />
-      <Faq />
+      <Faq data={ACCOUNTS_AND_BOOKKEEPING_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

@@ -10,6 +10,7 @@ import FooterSection from "@/Components/footer";
 import TeamStructure from "@/Components/Home/TeamStructure";
 import { FIXED_FEES_HERO_DATA } from "@/data/fixedFees/heroData";
 import { FIXED_FEES_FACTS_DATA } from "@/data/fixedFees/factsData";
+import { FIXED_FEES_FAQ_DATA } from "@/data/fixedFees/faqData";
 
 export const metadata = {
   title: "Fixed Fees | FAM Chartered Accountants",
@@ -17,7 +18,7 @@ export const metadata = {
     "Clear fixed-fee accountancy pricing agreed in advance, linked to the scope and responsibility of the work so you can plan with confidence.",
 };
 
-export default function LandlordsFamiliesPage() {
+export default function FixedFeesPage() {
   return (
     <main className="min-h-screen bg-white">
       <BookKeepingHerosection heroData={FIXED_FEES_HERO_DATA} />
@@ -42,7 +43,7 @@ export default function LandlordsFamiliesPage() {
 
       <Facts data={FIXED_FEES_FACTS_DATA} />
 
-      <Faq />
+      <Faq data={FIXED_FEES_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

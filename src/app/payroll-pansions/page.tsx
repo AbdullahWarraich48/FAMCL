@@ -13,6 +13,7 @@ import { PAYROLL_PANSIONS_SERVICE_SCOPE_DATA } from "@/data/payrollPansions/serv
 import { PAYROLL_PANSIONS_WHY_MATTERS_DATA } from "@/data/payrollPansions/whyMattersData";
 import { PAYROLL_PANSIONS_FACTS_DATA } from "@/data/payrollPansions/factsData";
 import { PAYROLL_PANSIONS_SOLUTION_DATA } from "@/data/payrollPansions/solutionData";
+import { PAYROLL_PENSIONS_FAQ_DATA } from "@/data/payrollPansions/faqData";
 
 export const metadata = {
   title: "Payroll & Pensions | FAM Chartered Accountants",
@@ -29,7 +30,7 @@ export default function PayrollPansionsPage() {
   
       <Facts data={PAYROLL_PANSIONS_FACTS_DATA} />
       <Solution data={PAYROLL_PANSIONS_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={PAYROLL_PENSIONS_FAQ_DATA} />
       <Contact />
       <Steps />
         <AccountingFirm />

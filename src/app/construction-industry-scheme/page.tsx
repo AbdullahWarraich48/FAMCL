@@ -12,6 +12,7 @@ import {
   CIS_FRAMEWORK_SECTION,
   CIS_WHY_CHOOSE_SECTION,
 } from "@/data/constructionIndustryScheme/sectionsData";
+import { CIS_FAQ_DATA } from "@/data/constructionIndustryScheme/faqData";
 import Steps from "@/Components/Book-Keeping/Steps";
 import AccountingFirm from "@/Components/Book-Keeping/Accounting-Firm";
 import CtaExact from "@/Components/Home/Cta";
@@ -34,7 +35,7 @@ export default function ConstructionIndustrySchemePage() {
       <CisBusinessStructures />
       <CisSubcontractorTaxReturn />
       <CisOurServices />
-      <Faq />
+      <Faq data={CIS_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />      

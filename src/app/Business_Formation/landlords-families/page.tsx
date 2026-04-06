@@ -12,6 +12,7 @@ import { LANDLORDS_FAMILIES_SERVICE_SCOPE_DATA } from "@/data/landlordsFamilies/
 import { LANDLORDS_FAMILIES_FACTS_DATA } from "@/data/landlordsFamilies/factsData";
 import { LANDLORDS_FAMILIES_SOLUTION_DATA } from "@/data/landlordsFamilies/solutionData";
 import { LANDLORDS_FAMILIES_WHY_MATTERS_DATA } from "@/data/landlordsFamilies/whyMattersData";
+import { LANDLORDS_FAMILIES_FAQ_DATA } from "@/data/landlordsFamilies/faqData";
 import LandlordsFamiliesChallenges from "@/Components/Home/LandlordsFamiliesChallenges";
 import LandlordsFamiliesChooseService from "@/Components/Home/LandlordsFamiliesChooseService";
 import WhyMatters from "@/Components/Book-Keeping/Why-Matters";
@@ -32,7 +33,7 @@ export default function LandlordsFamiliesPage() {
       <LandlordsFamiliesChallenges />
       <LandlordsFamiliesChooseService />
       <WhyMatters data={LANDLORDS_FAMILIES_WHY_MATTERS_DATA} />
-      <Faq />
+      <Faq data={LANDLORDS_FAMILIES_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

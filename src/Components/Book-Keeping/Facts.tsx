@@ -47,8 +47,8 @@ const FactCard = ({
       <CardTitle
         className={
           principleStyle
-            ? "text-lg font-semibold leading-snug tracking-tight text-[#1e3a5f] sm:text-xl"
-            : "text-3xl font-bold leading-tight tracking-tight text-slate-800 sm:text-4xl"
+            ? "text-base font-semibold leading-snug tracking-tight text-[#1e3a5f] sm:text-lg"
+            : "text-lg font-bold leading-snug tracking-tight text-[#1e3a5f] sm:text-xl"
         }
       >
         {stat}

@@ -13,6 +13,7 @@ import { DIRECTOR_SHAREHOLDER_SERVICE_SCOPE_DATA } from "@/data/directorSharehol
 import { DIRECTOR_SHAREHOLDER_WHY_MATTERS_DATA } from "@/data/directorShareholder/whyMattersData";
 import { DIRECTOR_SHAREHOLDER_FACTS_DATA } from "@/data/directorShareholder/factsData";
 import { DIRECTOR_SHAREHOLDER_SOLUTION_DATA } from "@/data/directorShareholder/solutionData";
+import { DIRECTOR_SHAREHOLDER_ADVICE_FAQ_DATA } from "@/data/directorShareholder/faqData";
 
 export const metadata = {
   title: "Director & Shareholder Advisory | FAM Chartered Accountants",
@@ -28,7 +29,7 @@ export default function DirectorShareholderAdvicePage() {
       <WhyMatters data={DIRECTOR_SHAREHOLDER_WHY_MATTERS_DATA} />
       <Facts data={DIRECTOR_SHAREHOLDER_FACTS_DATA} />
       <Solution data={DIRECTOR_SHAREHOLDER_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={DIRECTOR_SHAREHOLDER_ADVICE_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />

@@ -14,6 +14,7 @@ import {
   SOLE_TRADERS_SOLUTION_DATA,
   SOLE_TRADERS_TRUST_MATRIX_SOLUTION_DATA,
 } from "@/data/soleTraders/solutionData";
+import { SOLE_TRADERS_FAQ_DATA } from "@/data/soleTraders/faqData";
 import SoleTradersChallenges from "@/Components/Home/SoleTradersChallenges";
 import SoleTradersChooseService from "@/Components/Home/SoleTradersChooseService";
 
@@ -33,7 +34,7 @@ export default function SoleTradersPage() {
       <SoleTradersChallenges />
       <SoleTradersChooseService />
       <Solution data={SOLE_TRADERS_TRUST_MATRIX_SOLUTION_DATA} />
-      <Faq />
+      <Faq data={SOLE_TRADERS_FAQ_DATA} />
       <Contact />
       <Steps />
       <AccountingFirm />
