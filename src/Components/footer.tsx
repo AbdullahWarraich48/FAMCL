@@ -168,8 +168,8 @@ const FooterSection = () => {
       role="contentinfo"
     >
       <div className="footer-inner mx-auto max-w-[1512px] pb-10 pl-25 pr-25 pt-10 md:pb-14 md:pt-14 lg:pb-16 lg:pt-16">
-        {/* Large: five flexible columns + last column content-width so “Resources” doesn’t sit in a wide empty cell */}
-        <div className="grid w-full grid-cols-2 items-start gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-[repeat(5,minmax(0,1fr))_max-content] lg:gap-x-6 lg:gap-y-0">
+        {/* Mobile: one column; sm/md: 2–3 cols; lg+: six columns */}
+        <div className="grid w-full grid-cols-1 items-start gap-y-10 sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3 lg:grid-cols-[repeat(5,minmax(0,1fr))_max-content] lg:gap-x-6 lg:gap-y-0">
           <FooterColumn title="Business" links={BUSINESS_LINKS} />
           <FooterColumn title="For You" links={FOR_YOU_LINKS} />
           <FooterColumn
@@ -185,10 +185,10 @@ const FooterSection = () => {
           />
         </div>
 
-        {/* Social media section with equal spacing */}
-        <div className="mt-12 grid w-full grid-cols-2 gap-x-6 gap-y-8 sm:grid-cols-3 lg:mt-16 lg:grid-cols-[repeat(5,minmax(0,1fr))_max-content] lg:gap-x-6 lg:items-end">
+        {/* Social row: stacked on small screens; aligns with link columns from lg */}
+        <div className="mt-12 grid w-full grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3 lg:mt-16 lg:grid-cols-[repeat(5,minmax(0,1fr))_max-content] lg:gap-x-6 lg:items-end">
           <div
-            className={`col-span-2 flex flex-wrap gap-2 sm:col-span-1 ${footerColCellClass}`}
+            className={`flex flex-wrap gap-2 sm:col-span-1 ${footerColCellClass}`}
             role="group"
             aria-label="Social media"
           >
@@ -233,7 +233,7 @@ const FooterSection = () => {
           />
 
           <div
-            className={`col-span-2 flex flex-wrap items-end justify-start gap-4 sm:col-span-1 sm:justify-end lg:justify-end ${footerColCellClass} ${footerResourcesNudgeClass}`}
+            className={`flex flex-wrap items-end justify-start gap-4 sm:col-span-1 sm:justify-end lg:justify-end ${footerColCellClass} ${footerResourcesNudgeClass}`}
           >
             <Image
               src="/assets/images/acca-logo.svg"

@@ -188,7 +188,7 @@ export default function Navbar() {
       >
         {/* Navbar row - let height grow with logo so it doesn't overflow */}
         <div
-          className={`mx-auto relative z-[60] flex w-full max-w-[1440px] shrink-0 items-center justify-between bg-white px-4 sm:px-4 lg:px-8 py-3 md:py-0.5 ${!openDropdown ? "border-b border-slate-200/80" : ""}`}
+          className={`mx-auto relative z-[60] flex w-full max-w-[1440px] shrink-0 items-center justify-between bg-white pl-0.1 pr-4 sm:px-4 lg:px-8 py-3 md:py-0.5 ${!openDropdown ? "border-b border-slate-200/80" : ""}`}
         >
         {/* Left: Logo */}
         <Link
