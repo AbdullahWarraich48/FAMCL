@@ -15,6 +15,7 @@ export type FoundationSectionData = {
 };
 
 const DEFAULT_FOUNDATION_DATA: FoundationSectionData = {
+
   pillLabel: "Our Process",
   heading: "Understanding Before Action",
   intro:
@@ -40,6 +41,10 @@ const DEFAULT_FOUNDATION_DATA: FoundationSectionData = {
 type FoundationProps = {
   data?: FoundationSectionData;
 };
+
+/** Same width × height for both stacked photos at each breakpoint */
+const FOUNDATION_IMAGE_FRAME =
+  "h-[200px] w-[min(100%,260px)] overflow-hidden rounded-[20px] shadow-[0_12px_28px_rgba(15,23,42,0.12)] md:h-[240px] md:w-[min(100%,340px)] md:rounded-[24px] md:shadow-[0_18px_40px_rgba(15,23,42,0.12)] lg:h-[300px] lg:w-[400px] lg:rounded-[28px]";
 
 export default function Foundation({ data }: FoundationProps) {
   const section = data ?? DEFAULT_FOUNDATION_DATA;
@@ -90,31 +95,29 @@ export default function Foundation({ data }: FoundationProps) {
             ) : null}
           </div>
 
-          <div className="relative mx-auto h-[420px] w-full max-w-[620px] lg:h-[520px]">
-            {/* back soft blue block */}
-            <div className="absolute right-[70px] top-[78px] h-[260px] w-[360px] rounded-[20px] bg-[#d9e6fb]" />
-
-            {/* back main image */}
-            <div className="absolute right-0 top-[55px] h-[260px] w-[360px] overflow-hidden rounded-[28px]">
+          <div className="relative mx-auto min-h-[330px] w-full max-w-[620px] md:min-h-[410px] lg:min-h-[520px]">
+            {/* Primary — back layer */}
+            <div className={`absolute right-0 top-0 ${FOUNDATION_IMAGE_FRAME}`}>
               <Image
                 src={section.primaryImage.src}
                 alt={section.primaryImage.alt}
                 fill
                 className="object-cover"
                 priority
+                sizes="(max-width: 640px) 70vw, (max-width: 1024px) 40vw, 400px"
               />
             </div>
 
-            {/* front green block */}
-            <div className="absolute left-[78px] top-[245px] h-[230px] w-[285px] rounded-[20px] bg-[#b8efbe]" />
-
-            {/* front overlapping image */}
-            <div className="absolute left-0 top-[260px] h-[230px] w-[285px] overflow-hidden rounded-[28px]">
+            {/* Secondary — same frame size, overlaps primary (bottom-left) */}
+            <div
+              className={`absolute left-0 top-[130px] z-10 ${FOUNDATION_IMAGE_FRAME} md:top-[165px] lg:top-[220px]`}
+            >
               <Image
                 src={section.secondaryImage.src}
                 alt={section.secondaryImage.alt}
                 fill
                 className="object-cover"
+                sizes="(max-width: 640px) 70vw, (max-width: 1024px) 40vw, 400px"
               />
             </div>
           </div>
