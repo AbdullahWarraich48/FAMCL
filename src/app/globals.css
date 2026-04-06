@@ -54,6 +54,12 @@
 }
 
 @layer components {
+  /* Left-align all footer text (footer is outside centered sections; this blocks stray inheritance). */
+  .site-footer,
+  .site-footer .footer-inner {
+    text-align: left;
+  }
+
   /*
     Footer only: same horizontal padding as .content-padding-x on the right,
     but left side adds --footer-extra-left so you can nudge content in from the left.

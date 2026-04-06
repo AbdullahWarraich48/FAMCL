@@ -45,7 +45,8 @@ export default function ComprehensiveAccountingSolutionsExact() {
             const IconComponent = ICON_MAP[b.iconKey];
             return (
               <div key={b.title} className="relative mx-auto w-full max-w-[620px]">
-                <div className="relative ml-auto w-full max-w-[470px] overflow-hidden rounded-2xl shadow-[0_18px_45px_rgba(0,0,0,0.18)]">
+                {/* Mobile: image centered; lg+: image stays right (original layout) */}
+                <div className="relative mx-auto w-full max-w-[470px] overflow-hidden rounded-2xl shadow-[0_18px_45px_rgba(0,0,0,0.18)] lg:ml-auto">
                   <img
                     src={b.imageUrl}
                     alt={b.title}
@@ -55,7 +56,8 @@ export default function ComprehensiveAccountingSolutionsExact() {
                   <div className="pointer-events-none absolute inset-0 bg-black/10" />
                 </div>
 
-                <Card className="absolute left-0 top-1/2 w-[300px] -translate-y-1/2 rounded-2xl border-0 shadow-[0_22px_45px_rgba(0,0,0,0.20)] md:w-[320px]">
+                {/* Mobile: card centered over the block; lg+: card anchored left like before */}
+                <Card className="absolute left-1/2 top-1/2 z-10 w-[min(300px,calc(100%-2rem))] -translate-x-1/2 -translate-y-1/2 rounded-2xl border-0 shadow-[0_22px_45px_rgba(0,0,0,0.20)] md:w-[320px] lg:left-0 lg:translate-x-0">
                   <div className="rounded-2xl bg-[#D8EAFF]">
                     <CardContent className="p-5 md:p-6">
                       <div className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#175dab]">

@@ -188,23 +188,23 @@ export default function Navbar() {
       >
         {/* Navbar row - let height grow with logo so it doesn't overflow */}
         <div
-          className={`mx-auto relative z-[60] flex w-full max-w-[1440px] shrink-0 items-center justify-between bg-white pl-0.1 pr-4 sm:px-4 lg:px-8 py-3 md:py-0.5 ${!openDropdown ? "border-b border-slate-200/80" : ""}`}
+          className={`content-padding-x mx-auto relative z-[60] flex w-full min-w-0 max-w-[1520px] shrink-0 items-center gap-3 bg-white py-3 md:gap-4 md:py-0.5 lg:gap-6 ${!openDropdown ? "border-b border-slate-200/80" : ""}`}
         >
-        {/* Left: Logo */}
+        {/* Left: Logo — same inset at every breakpoint (no responsive negative margin) */}
         <Link
           href="/"
-          className="flex shrink-0 items-center rounded overflow-visible -ml-7 sm:ml-0"
+          className="flex shrink-0 items-center justify-start rounded overflow-visible"
           aria-label="FAM - Financial & Management Consultants Limited, go to homepage"
           onClick={handleCloseMenu}
         >
-          {/* Compact wrapper, visually larger logo via scale so navbar height stays smaller */}
+          {/* origin-left keeps scaled artwork aligned to the left edge on all screen sizes */}
           <div className="relative h-10 w-40 overflow-visible md:h-16 md:w-48 md:mb-[2px]">
             <Image
               src="/assets/images/fam-approved-logo-feb-2026.png"
               alt="FAM Approved Logo"
               fill
               sizes="(max-width: 768px) 220px, 280px"
-              className="object-contain scale-[1.9] md:scale-[2.1] -translate-y-1.5"
+              className="origin-left object-contain object-left scale-[1.9] md:scale-[2.1] -translate-y-1.5"
               priority
             />
           </div>
@@ -213,9 +213,9 @@ export default function Navbar() {
           </span>
         </Link>
 
-        {/* Center: Nav links */}
+        {/* Center: Nav sits in flex-1 so it stays between logo and actions (no overlap on Nest Hub / iPad) */}
         <nav
-          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-3 lg:flex xl:gap-5"
+          className="hidden min-w-0 flex-1 items-center justify-center gap-2 lg:flex xl:gap-5"
           aria-label="Primary navigation"
         >
           {NAV_LINKS.map((item) =>
@@ -276,64 +276,65 @@ export default function Navbar() {
           )}
         </nav>
 
-        {/* Right: Search + Contact Us */}
-        <div className="hidden shrink-0 items-center gap-4 lg:flex xl:gap-6">
-          <button
-            type="button"
-            className="hidden h-9 w-9 items-center justify-center rounded text-slate-600 transition-colors hover:bg-[#12254B] hover:text-white xl:flex"
-            aria-label="Search"
-          >
-            <svg
-              className="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden
+        {/* Right: desktop actions + mobile CTA/hamburger — ml-auto on small screens only */}
+        <div className="ml-auto flex shrink-0 items-center lg:ml-0">
+          <div className="hidden items-center gap-4 lg:flex xl:gap-6">
+            <button
+              type="button"
+              className="hidden h-9 w-9 items-center justify-center rounded text-slate-600 transition-colors hover:bg-[#12254B] hover:text-white xl:flex"
+              aria-label="Search"
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
-
-          <Link
-            href="/Company/contact-us"
-            className="rounded-lg bg-[#12254b] px-4 py-2.5 text-sm font-semibold text-white shadow transition-colors hover:bg-[#184B83] xl:px-5"
-            aria-label="Contact us"
-          >
-            Contact Us
-          </Link>
-        </div>
-
-        {/* Mobile: CTA + hamburger */}
-        <div className="flex items-center gap-3 lg:hidden">
-          <Link
-            href="/Company/contact-us"
-            className="rounded-lg bg-[#12254b] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#184B83]"
-            aria-label="Contact us"
-          >
-            Contact Us
-          </Link>
-          <button
-            type="button"
-            className="flex h-10 w-10 items-center justify-center rounded text-slate-700 transition-colors hover:bg-[#12254B] hover:text-white"
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            aria-expanded={isMenuOpen}
-            onClick={handleToggleMenu}
-          >
-            {isMenuOpen ? (
-              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+              <svg
+                className="h-5 w-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                aria-hidden
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
+                />
               </svg>
-            ) : (
-              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
+            </button>
+
+            <Link
+              href="/Company/contact-us"
+              className="rounded-lg bg-[#12254b] px-4 py-2.5 text-sm font-semibold text-white shadow transition-colors hover:bg-[#184B83] xl:px-5"
+              aria-label="Contact us"
+            >
+              Contact Us
+            </Link>
+          </div>
+
+          <div className="flex items-center gap-3 lg:hidden">
+            <Link
+              href="/Company/contact-us"
+              className="rounded-lg bg-[#12254b] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#184B83]"
+              aria-label="Contact us"
+            >
+              Contact Us
+            </Link>
+            <button
+              type="button"
+              className="flex h-10 w-10 items-center justify-center rounded text-slate-700 transition-colors hover:bg-[#12254B] hover:text-white"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
+              onClick={handleToggleMenu}
+            >
+              {isMenuOpen ? (
+                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
         </div>
 

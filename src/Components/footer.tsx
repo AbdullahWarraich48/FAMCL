@@ -121,7 +121,8 @@ const footerColCellClass = "min-w-0";
  * - With `lg:` only → applies from 1024px up; mobile/tablet stay unchanged.
  * - Use both for different amounts: `-translate-x-2 lg:-translate-x-16`
  */
-const footerResourcesNudgeClass = "-translate-x-2 lg:-translate-x-16";
+/** Desktop only — avoid transforms on mobile so alignment stays predictable */
+const footerResourcesNudgeClass = "lg:-translate-x-14";
 
 const FooterColumn = ({
   title,
@@ -132,16 +133,18 @@ const FooterColumn = ({
   links: FooterLink[];
   className?: string;
 }) => (
-  <div className={`${footerColCellClass} flex flex-col ${className ?? ""}`}>
-    <h3 className="mb-4 text-base font-bold leading-tight text-[#12254b]">
+  <div
+    className={`${footerColCellClass} flex flex-col items-start text-left ${className ?? ""}`}
+  >
+    <h3 className="mb-4 w-full text-left text-base font-bold leading-tight text-[#12254b]">
       {title}
     </h3>
-    <ul className="flex flex-col gap-2.5" role="list">
+    <ul className="flex w-full flex-col gap-2.5 text-left" role="list">
       {links.map((item) => (
         <li key={`${item.href}-${item.label}`} className="min-w-0">
           <Link
             href={item.href}
-            className="block text-sm leading-snug text-slate-600 break-words transition-colors hover:text-[#12254b] hover:underline"
+            className="block text-left text-sm leading-snug text-slate-600 break-words transition-colors hover:text-[#12254b] hover:underline"
             tabIndex={0}
           >
             {item.label}
@@ -163,13 +166,13 @@ const FooterSection = () => {
 
   return (
     <footer
-      className="site-footer w-full bg-white text-gray-900"
+      className="site-footer w-full bg-white text-left text-gray-900"
       aria-label="Site footer"
       role="contentinfo"
     >
-      <div className="footer-inner mx-auto max-w-[1512px] pb-10 pl-25 pr-25 pt-10 md:pb-14 md:pt-14 lg:pb-16 lg:pt-16">
-        {/* Mobile: one column; sm/md: 2–3 cols; lg+: six columns */}
-        <div className="grid w-full grid-cols-1 items-start gap-y-10 sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3 lg:grid-cols-[repeat(5,minmax(0,1fr))_max-content] lg:gap-x-6 lg:gap-y-0">
+      <div className="footer-inner mx-auto w-full max-w-[1512px] pb-10 pt-10 md:pb-14 md:pt-14 lg:pb-16 lg:pt-16">
+        {/* Mobile: one column, left-aligned; sm/md: 2–3 cols; lg+: six columns */}
+        <div className="grid w-full grid-cols-1 items-start gap-y-10 text-left sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3 lg:grid-cols-[repeat(5,minmax(0,1fr))_max-content] lg:gap-x-6 lg:gap-y-0">
           <FooterColumn title="Business" links={BUSINESS_LINKS} />
           <FooterColumn title="For You" links={FOR_YOU_LINKS} />
           <FooterColumn
@@ -186,9 +189,9 @@ const FooterSection = () => {
         </div>
 
         {/* Social row: stacked on small screens; aligns with link columns from lg */}
-        <div className="mt-12 grid w-full grid-cols-1 gap-y-8 sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3 lg:mt-16 lg:grid-cols-[repeat(5,minmax(0,1fr))_max-content] lg:gap-x-6 lg:items-end">
+        <div className="mt-12 grid w-full grid-cols-1 items-start justify-items-start gap-y-8 text-left sm:grid-cols-2 sm:gap-x-6 md:grid-cols-3 lg:mt-16 lg:grid-cols-[repeat(5,minmax(0,1fr))_max-content] lg:items-end lg:gap-x-6">
           <div
-            className={`flex flex-wrap gap-2 sm:col-span-1 ${footerColCellClass}`}
+            className={`flex flex-wrap justify-start gap-2 sm:col-span-1 ${footerColCellClass}`}
             role="group"
             aria-label="Social media"
           >
@@ -254,8 +257,8 @@ const FooterSection = () => {
       </div>
 
       <div className="bg-[#F8F9FA]">
-        <div className="footer-inner mx-auto flex max-w-[1512px] flex-col gap-6 py-4 md:flex-row md:items-start md:justify-between md:gap-8 md:py-5">
-          <div className="max-w-3xl space-y-1 text-xs leading-relaxed text-gray-600 md:text-sm">
+        <div className="footer-inner mx-auto flex max-w-[1512px] flex-col items-start gap-6 py-4 text-left md:flex-row md:items-start md:justify-between md:gap-8 md:py-5">
+          <div className="max-w-3xl space-y-1 text-left text-xs leading-relaxed text-gray-600 md:text-sm">
             <p>
               © 2026 Financial &amp; Management Consultants Limited. All rights
               reserved.
@@ -267,10 +270,10 @@ const FooterSection = () => {
           </div>
 
           <nav
-            className="shrink-0 text-xs text-gray-600 md:text-sm"
+            className="w-full shrink-0 text-left text-xs text-gray-600 md:w-auto md:text-sm"
             aria-label="Footer legal links"
           >
-            <ul className="flex flex-wrap items-center gap-x-2 gap-y-1">
+            <ul className="flex flex-wrap items-center justify-start gap-x-2 gap-y-1">
               {POLICY_LINKS.map((item, index) => (
                 <li
                   key={`${item.href}-${item.label}`}
