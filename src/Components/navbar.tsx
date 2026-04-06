@@ -200,7 +200,7 @@ export default function Navbar() {
           {/* Compact wrapper, visually larger logo via scale so navbar height stays smaller */}
           <div className="relative h-10 w-40 overflow-visible md:h-16 md:w-48 md:mb-[2px]">
             <Image
-              src="/assets/images/FAM Approved logo 4-feb-2026.png"
+              src="/assets/images/FAM Approved Logo 4-feb-2026.png"
               alt="FAM Approved logo"
               fill
               sizes="(max-width: 768px) 220px, 280px"
