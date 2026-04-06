@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Aleo } from "next/font/google";
 import "./globals.css";
 import Navbar from "../Components/navbar";
+import { FAM_LOGO_PNG } from "@/constants/siteAssets";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -25,7 +26,7 @@ const aleo = Aleo({
 });
 
 /** Same asset as navbar; used for tab / PWA icons (replaces default favicon). */
-const SITE_ICON = "/assets/images/FAM Approved Logo 4-Feb-2026.png";
+const SITE_ICON = FAM_LOGO_PNG;
 
 export const metadata: Metadata = {
   title: "Create Next App",
