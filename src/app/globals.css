@@ -3,6 +3,8 @@
 :root {
   --background: #020617;
   --foreground: #e5e7eb;
+  /* Extra left inset for footer content only (see .site-footer .footer-inner) */
+  --footer-extra-left: 1rem;
 }
 
 @theme inline {
@@ -17,8 +19,11 @@
 }
 
 @layer base {
+  html {
+    overflow-x: hidden;
+  }
   body {
-    @apply font-sans font-normal;
+    @apply font-sans font-normal overflow-x-hidden;
   }
 
   h1 {
@@ -46,6 +51,42 @@
 /* Use on content wrappers only – not on full-bleed/background sections */
 .content-padding-x {
   @apply px-4 sm:px-6 md:px-8 lg:px-12 xl:px-16;
+}
+
+@layer components {
+  /*
+    Footer only: same horizontal padding as .content-padding-x on the right,
+    but left side adds --footer-extra-left so you can nudge content in from the left.
+    Change the variable in :root — e.g. 0.5rem, 1rem, 1.5rem.
+  */
+  .site-footer .footer-inner {
+    padding-right: 1rem;
+    padding-left: calc(1rem + var(--footer-extra-left, 0rem));
+  }
+  @media (min-width: 640px) {
+    .site-footer .footer-inner {
+      padding-right: 1.5rem;
+      padding-left: calc(1.5rem + var(--footer-extra-left, 0rem));
+    }
+  }
+  @media (min-width: 768px) {
+    .site-footer .footer-inner {
+      padding-right: 2rem;
+      padding-left: calc(2rem + var(--footer-extra-left, 0rem));
+    }
+  }
+  @media (min-width: 1024px) {
+    .site-footer .footer-inner {
+      padding-right: 3rem;
+      padding-left: calc(3rem + var(--footer-extra-left, 0rem));
+    }
+  }
+  @media (min-width: 1280px) {
+    .site-footer .footer-inner {
+      padding-right: 4rem;
+      padding-left: calc(4rem + var(--footer-extra-left, 0rem));
+    }
+  }
 }
 
 /* Hide scrollbar but keep scroll functionality */

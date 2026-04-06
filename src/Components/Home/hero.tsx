@@ -19,7 +19,7 @@ export default function LandingSection() {
           <div className="absolute inset-0 bg-black/10" />
         </div>
 
-        <div className="content-padding-x relative flex min-h-screen w-full items-center mx-auto max-w-6xl py-14 sm:py-20">
+        <div className="content-padding-x relative flex min-h-screen w-full items-center justify-center mx-auto max-w-6xl py-14 sm:py-20 lg:justify-start">
           {/* Frosted card - white + strong blur like Figma */}
           <div className="w-full max-w-xl rounded-2xl bg-white/70 shadow-2xl shadow-neutral-900/15 ring-1 ring-white/40 backdrop-blur-xl p-6 sm:p-10">
             <p className="text-sm text-slate-600">

@@ -147,7 +147,7 @@ export default function Navbar() {
       aria-label="Main navigation"
     >
       {/* Top information bar */}
-      <div className="content-padding-x mx-auto flex w-full max-w-[1440px] items-center justify-between gap-4 bg-white py-2.5 text-xs sm:text-sm">
+      <div className="content-padding-x mx-auto flex w-full max-w-[1440px] items-center justify-between gap-4 bg-white py-0.5 text-xs sm:text-sm">
        <div className="flex items-center">
          
         </div>
@@ -188,7 +188,7 @@ export default function Navbar() {
       >
         {/* Navbar row - let height grow with logo so it doesn't overflow */}
         <div
-          className={`mx-auto relative z-[60] flex w-full max-w-[1440px] shrink-0 items-center justify-between bg-white px-0 sm:px-4 lg:px-8 py-3 md:py-4 ${!openDropdown ? "border-b border-slate-200/80" : ""}`}
+          className={`mx-auto relative z-[60] flex w-full max-w-[1440px] shrink-0 items-center justify-between bg-white px-4 sm:px-4 lg:px-8 py-3 md:py-0.5 ${!openDropdown ? "border-b border-slate-200/80" : ""}`}
         >
         {/* Left: Logo */}
         <Link
@@ -198,9 +198,9 @@ export default function Navbar() {
           onClick={handleCloseMenu}
         >
           {/* Compact wrapper, visually larger logo via scale so navbar height stays smaller */}
-          <div className="relative h-10 w-40 overflow-visible md:h-16 md:w-48 md:mb-[14px]">
+          <div className="relative h-10 w-40 overflow-visible md:h-16 md:w-48 md:mb-[2px]">
             <Image
-              src="/assets/images/FAM Approved Logo 4-Feb-2026.png"
+              src="/assets/images/FAM Approved logo 4-feb-2026.png"
               alt="FAM Approved logo"
               fill
               sizes="(max-width: 768px) 220px, 280px"
@@ -340,7 +340,7 @@ export default function Navbar() {
         {/* Business Formation dropdown */}
         {openDropdown === "business-formation" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-0.5 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="Business formation"
             onMouseEnter={() => setOpenDropdown("business-formation")}
@@ -482,7 +482,7 @@ export default function Navbar() {
         {/* Business dropdown */}
         {openDropdown === "business" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-0.5 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="Business services"
             onMouseEnter={() => setOpenDropdown("business")}
@@ -627,7 +627,7 @@ export default function Navbar() {
         {/* For You (personal) dropdown */}
         {openDropdown === "personal" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-0.5 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="For you services"
             onMouseEnter={() => setOpenDropdown("personal")}
@@ -770,7 +770,7 @@ export default function Navbar() {
         {/* Industries dropdown */}
         {openDropdown === "who-we-help" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-0.5 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="Industries"
             onMouseEnter={() => setOpenDropdown("who-we-help")}
@@ -898,7 +898,7 @@ export default function Navbar() {
         {/* Company (About Us) dropdown */}
         {openDropdown === "about-us" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-0.5 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="Company"
             onMouseEnter={() => setOpenDropdown("about-us")}
@@ -1024,7 +1024,7 @@ export default function Navbar() {
         {/* Resources dropdown */}
         {openDropdown === "resources" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 mt-0.5 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
             role="dialog"
             aria-label="Resources"
             onMouseEnter={() => setOpenDropdown("resources")}
