@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { ArrowRight, Users, Headset, RefreshCw } from "lucide-react";
+import { ArrowRight, Users, Headset, RefreshCw, Wallet } from "lucide-react";
 import { Card, CardContent, CardFooter } from "@/Components/ui/card";
 import { Button } from "@/Components/ui/button";
 
@@ -10,6 +10,7 @@ const ICON_MAP = {
   users: Users,
   headset: Headset,
   refreshCw: RefreshCw,
+  wallet: Wallet,
 } as const;
 
 export type ChooseCardItem = {
@@ -37,6 +38,7 @@ export type ChooseCardProps = {
   cards?: ChooseCardItem[];
   sectionId?: string;
   className?: string;
+  largeText?: boolean;
 };
 
 export default function ChooseCard({
@@ -45,6 +47,7 @@ export default function ChooseCard({
   cards = [],
   sectionId = "choose-card-heading",
   className = "",
+  largeText = false,
 }: ChooseCardProps) {
   if (cards.length === 0) return null;
 
@@ -84,12 +87,24 @@ export default function ChooseCard({
               aria-hidden
             />
           </div>
-          <p className="mx-auto mt-4 max-w-3xl text-[14px] leading-6 text-slate-600 md:text-[15px]">
+          <p
+            className={`mx-auto mt-4 max-w-3xl leading-6 text-slate-600 ${
+              largeText
+                ? "text-[16px] md:text-[17px]"
+                : "text-[14px] md:text-[15px]"
+            }`}
+          >
             {sectionDescription}
           </p>
         </header>
 
-        <div className="mt-12 grid grid-cols-1 gap-8 md:grid-cols-3 lg:gap-10">
+        <div
+          className={`mt-12 grid grid-cols-1 items-stretch gap-8 lg:gap-10 ${
+            cards.length >= 4
+              ? "md:grid-cols-2 xl:grid-cols-4"
+              : "md:grid-cols-3"
+          }`}
+        >
           {cards.map((card) => (
             <Card
               key={card.id}
@@ -97,13 +112,13 @@ export default function ChooseCard({
             >
               <CardContent className="flex flex-1 flex-col items-center text-center p-6 pb-2 pt-6 md:p-8 md:pb-3 md:pt-8">
                 {card.imageSrc ? (
-                  <div className="relative flex w-full shrink-0 items-center justify-center">
+                  <div className="flex h-24 w-full shrink-0 items-center justify-center md:h-28">
                     <Image
                       src={card.imageSrc}
                       alt={card.imageAlt ?? card.title}
-                      width={800}
-                      height={200}
-                      className="h-auto w-full object-contain"
+                      width={320}
+                      height={96}
+                      className="max-h-20 w-auto max-w-full object-contain md:max-h-24"
                       draggable={false}
                     />
                   </div>
@@ -113,26 +128,40 @@ export default function ChooseCard({
                     if (!IconComponent) return null;
                     return (
                       <div
-                        className={`flex h-16 w-16 shrink-0 items-center justify-center rounded-xl bg-[#175dab]`}
+                        className="flex h-24 w-full shrink-0 items-center justify-center md:h-28"
                         aria-hidden
                       >
-                        <IconComponent className="h-7 w-7 text-white" />
+                        <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-[#175dab]">
+                          <IconComponent className="h-7 w-7 text-white" />
+                        </div>
                       </div>
                     );
                   })()
                 ) : null}
-                <h3 className="mt-8 text-[20px] font-semibold text-slate-900 md:text-[22px]">
+                <h3
+                  className={`mt-6 w-full shrink-0 font-semibold text-slate-900 ${
+                    largeText
+                      ? "text-[22px] md:text-[24px]"
+                      : "text-[20px] md:text-[22px]"
+                  }`}
+                >
                   {card.title}
                 </h3>
-                <p className="mt-3 flex-1 text-[13px] leading-6 text-slate-600 md:text-[14px]">
+                <p
+                  className={`mt-3 w-full flex-1 leading-6 text-slate-600 ${
+                    largeText
+                      ? "min-h-[4.75rem] text-[15px] md:min-h-[5.25rem] md:text-[16px]"
+                      : "min-h-[4rem] text-[13px] md:min-h-[4.5rem] md:text-[14px]"
+                  }`}
+                >
                   {card.description}
                 </p>
               </CardContent>
-              <CardFooter className="mt-auto shrink-0 pt-0 pb-6 md:pb-8">
+              <CardFooter className="mt-auto w-full shrink-0 px-6 pt-0 pb-6 md:px-8 md:pb-8">
                 <Button
                   variant="outline"
                   size="lg"
-                  className={`h-12 min-h-12 w-full min-w-full max-w-full rounded-full border-2 bg-[#D8EAFF] font-semibold border-[#175dab] text-[#175dab] `}
+                  className={`h-12 min-h-12 w-full min-w-full max-w-full rounded-full border-2 bg-[#D8EAFF] font-semibold border-[#175dab] text-[#175dab] ${largeText ? "text-[15px] md:text-base" : ""}`}
                   asChild
                 >
                   <Link

@@ -3,6 +3,7 @@
 import * as React from "react"
 import Link from "next/link"
 import { Button } from "@/Components/ui/button"
+import { BRAND_DISPLAY_NAME } from "@/constants/siteAssets"
 import { CalendarDays, Phone } from "lucide-react"
 
 export default function CtaExact() {
@@ -11,9 +12,7 @@ export default function CtaExact() {
       <div className="content-padding-x mx-auto max-w-[1440px]">
         <div className="mx-auto flex max-w-4xl flex-col items-center text-center">
           <h2 className="text-[34px] font-bold leading-[1.15] tracking-tight text-white md:text-[44px]">
-            See how Financial &amp; Management Consultants
-            <br />
-            Limited can help you
+            See how {BRAND_DISPLAY_NAME} can help you
           </h2>
 
           <p className="mt-5 max-w-2xl text-[14px] leading-6 text-white/90 md:text-[15px]">

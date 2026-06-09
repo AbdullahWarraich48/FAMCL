@@ -15,7 +15,7 @@ const ICON_MAP = {
 } as const;
 
 const Bullet = ({ dot, text }: { dot: string; text: string }) => (
-  <li className="flex items-center gap-3 text-[13px] leading-6 text-slate-700">
+  <li className="flex items-center gap-3 text-[14px] leading-6 text-slate-700 md:text-[15px]">
     <span className={`h-[5px] w-[5px] rounded-full ${dot}`} />
     <span>{text}</span>
   </li>
@@ -64,11 +64,11 @@ export default function ComprehensiveAccountingSolutionsExact() {
                         <IconComponent className="h-4 w-4 text-white" />
                       </div>
 
-                      <h3 className="mt-3 text-[17px] font-semibold text-slate-900 md:text-[18px]">
+                      <h3 className="mt-3 text-[18px] font-semibold text-slate-900 md:text-[19px]">
                         {b.title}
                       </h3>
 
-                      <p className="mt-2 text-[12px] leading-5 text-slate-600">
+                      <p className="mt-2 text-[13px] leading-5 text-slate-600 md:text-[14px] md:leading-6">
                         {b.desc}
                       </p>
 

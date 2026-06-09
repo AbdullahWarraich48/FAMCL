@@ -33,7 +33,7 @@ function Stars({ n }: { n: number }) {
         <Star
           key={i}
           className={[
-            "h-4 w-4",
+            "h-4 w-4 md:h-5 md:w-5",
             i < n ? "fill-amber-400 text-amber-400" : "text-slate-300",
           ].join(" ")}
         />
@@ -55,7 +55,7 @@ export default function WhatOurClientsSay() {
             </h2>
             <span className="h-px w-24 bg-slate-300 md:w-28" />
           </div>
-          <p className="mx-auto mt-3 max-w-3xl text-[14px] leading-6 text-slate-700 md:text-[15px]">
+          <p className="mx-auto mt-3 max-w-3xl text-[15px] leading-6 text-slate-700 md:text-[16px]">
             Don&apos;t just take our word for it, hear from businesses and individuals who trust us
             with their accounting needs.
           </p>
@@ -86,7 +86,7 @@ export default function WhatOurClientsSay() {
                   </div>
 
                   {/* quote */}
-                  <p className="mt-4 text-[13px] leading-6 text-slate-600">
+                  <p className="mt-4 text-[14px] leading-7 text-slate-600 md:text-[15px] md:leading-7">
                     &quot;{r.text}&quot;
                   </p>
 
@@ -98,8 +98,8 @@ export default function WhatOurClientsSay() {
                     </Avatar>
 
                     <div>
-                      <div className="text-[13px] font-semibold text-slate-900">{r.name}</div>
-                      <div className="text-[12px] text-slate-500">{r.role}</div>
+                      <div className="text-[14px] font-semibold text-slate-900 md:text-[15px]">{r.name}</div>
+                      <div className="text-[13px] text-slate-500 md:text-[14px]">{r.role}</div>
                     </div>
                   </div>
                 </CardContent>

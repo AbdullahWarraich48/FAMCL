@@ -2,6 +2,11 @@
 
 import Link from "next/link";
 import Image from "next/image";
+import {
+  ACCA_LOGO,
+  BRAND_DISPLAY_NAME,
+  ICAEW_LOGO_PNG,
+} from "@/constants/siteAssets";
 import type { LucideIcon } from "lucide-react";
 import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
 
@@ -239,18 +244,18 @@ const FooterSection = () => {
             className={`flex flex-wrap items-end justify-start gap-4 sm:col-span-1 sm:justify-end lg:justify-end ${footerColCellClass} ${footerResourcesNudgeClass}`}
           >
             <Image
-              src="/assets/images/acca-logo.svg"
+              src={ACCA_LOGO}
               alt="ACCA"
               width={56}
               height={56}
-              className="h-12 w-12 shrink-0 md:h-14 md:w-14"
+              className="h-12 w-12 shrink-0 object-contain md:h-14 md:w-14"
             />
             <Image
-              src="/assets/images/ICAEW-White 1.png"
+              src={ICAEW_LOGO_PNG}
               alt="ICAEW chartered accountants"
-              width={120}
-              height={48}
-              className="h-8 w-auto md:h-10"
+              width={220}
+              height={88}
+              className="h-10 w-auto shrink-0 object-contain md:h-12"
             />
           </div>
         </div>
@@ -260,8 +265,7 @@ const FooterSection = () => {
         <div className="footer-inner mx-auto flex max-w-[1512px] flex-col items-start gap-6 py-4 text-left md:flex-row md:items-start md:justify-between md:gap-8 md:py-5">
           <div className="max-w-3xl space-y-1 text-left text-xs leading-relaxed text-gray-600 md:text-sm">
             <p>
-              © 2026 Financial &amp; Management Consultants Limited. All rights
-              reserved.
+              © 2026 {BRAND_DISPLAY_NAME}. All rights reserved.
             </p>
             <p>
               Registered office: Suite 1 Fitzroy House, Lynwood Drive,

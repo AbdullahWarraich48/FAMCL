@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import { Geist, Geist_Mono, Inter, Aleo } from "next/font/google";
 import "./globals.css";
 import Navbar from "../Components/navbar";
-import { FAM_LOGO_PNG } from "@/constants/siteAssets";
+import FloatingWhatsApp from "../Components/FloatingWhatsApp";
+import { BRAND_DISPLAY_NAME, FAM_LOGO_PNG } from "@/constants/siteAssets";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -29,7 +30,7 @@ const aleo = Aleo({
 const SITE_ICON = FAM_LOGO_PNG;
 
 const SITE_NAME = "FAMCL";
-const SITE_DESCRIPTION = "FAM Chartered Accountants";
+const SITE_DESCRIPTION = BRAND_DISPLAY_NAME;
 
 /**
  * Browsers show `title` in the tab and usually the full title on hover — not `description`.
@@ -68,6 +69,7 @@ export default function RootLayout({
       <body className={`${geistSans.variable} ${geistMono.variable} ${inter.variable} ${aleo.variable} antialiased`}>
         <Navbar />
         {children}
+        <FloatingWhatsApp />
       </body>
     </html>
   );

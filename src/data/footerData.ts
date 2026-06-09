@@ -78,4 +78,4 @@ export const SOCIAL_LINKS = [
 ];
 
 export const FOOTER_COPYRIGHT =
-  "© 2026 Financial & Management Consultants Limited. All rights reserved. Registered in England & Wales.";
+  "© 2026 FAM Chartered Accountants. All rights reserved. Registered in England & Wales.";

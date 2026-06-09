@@ -26,6 +26,7 @@ import {
   RESOURCES_COL3,
 } from "@/data/navbarData";
 import { NAVBAR_TOP_BAR_DATA } from "@/data/navbarTopBarData";
+import { BRAND_DISPLAY_NAME, FAM_LOGO_PNG } from "@/constants/siteAssets";
 
 type OpenDropdown =
   | "business"
@@ -116,6 +117,9 @@ export default function Navbar() {
   const isActiveLink = (href: string) =>
     normalizePath(pathname) === normalizePath(href);
 
+  const mainNavLinkClass =
+    "group flex items-center gap-1 whitespace-nowrap text-base font-medium text-slate-700 transition-colors hover:text-slate-900 rounded";
+
   const getDropdownLinkClass = (href: string, extraClass = "") =>
     `group inline-flex items-center gap-2 text-sm font-medium ${
       isActiveLink(href) ? "text-red-600" : "text-slate-700"
@@ -147,18 +151,18 @@ export default function Navbar() {
       aria-label="Main navigation"
     >
       {/* Top information bar */}
-      <div className="content-padding-x mx-auto flex w-full max-w-[1440px] items-center justify-between gap-4 bg-white py-2.5 text-xs sm:text-sm">
+      <div className="content-padding-x mx-auto flex w-full max-w-[1440px] items-center justify-between gap-4 bg-white pt-4 pb-2 text-sm sm:pt-5 sm:text-base">
        <div className="flex items-center">
          
         </div>
 
-        <div className="flex items-center gap-4 sm:gap-6">
-          <p className="hidden text-xs font-medium text-blue-600 sm:block sm:text-sm">
+        <div className="flex flex-wrap items-center justify-end gap-3 sm:gap-4 md:gap-6">
+          <p className="hidden text-sm font-medium text-blue-600 sm:block sm:text-base">
             {NAVBAR_TOP_BAR_DATA.trustText}
           </p>
           <a
             href={`tel:${NAVBAR_TOP_BAR_DATA.phoneNumber.replace(/\s/g, "")}`}
-            className="flex items-center gap-2 text-xs font-semibold text-red-600 transition-colors hover:text-red-700 rounded sm:text-sm"
+            className="flex items-center gap-2 text-sm font-semibold text-red-600 transition-colors hover:text-red-700 rounded sm:text-base"
             aria-label={NAVBAR_TOP_BAR_DATA.phoneLabel}
           >
             <svg
@@ -177,6 +181,27 @@ export default function Navbar() {
             </svg>
             {NAVBAR_TOP_BAR_DATA.phoneLabel}
           </a>
+          <a
+            href={`mailto:${NAVBAR_TOP_BAR_DATA.email}`}
+            className="flex items-center gap-2 text-sm font-semibold text-red-600 transition-colors hover:text-red-700 rounded sm:text-base"
+            aria-label={`Email ${NAVBAR_TOP_BAR_DATA.email}`}
+          >
+            <svg
+              className="h-4 w-4 shrink-0"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              aria-hidden
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth={2}
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            {NAVBAR_TOP_BAR_DATA.emailLabel}
+          </a>
         </div>
       </div>
 
@@ -188,29 +213,27 @@ export default function Navbar() {
       >
         {/* Navbar row - let height grow with logo so it doesn't overflow */}
         <div
-          className={`mx-auto relative z-[60] flex w-full max-w-[1440px] shrink-0 items-center justify-between bg-white px-0 sm:px-4 lg:px-8 py-3 md:py-4 ${!openDropdown ? "border-b border-slate-200/80" : ""}`}
+          className={`mx-auto relative z-[60] flex w-full max-w-[1440px] shrink-0 items-center justify-between bg-white px-0 sm:px-4 lg:px-8 py-2 md:py-2.5 ${!openDropdown ? "border-b border-slate-200/80" : ""}`}
         >
         {/* Left: Logo */}
         <Link
           href="/"
-          className="flex shrink-0 items-center rounded overflow-visible -ml-2 sm:ml-0"
-          aria-label="FAM - Financial & Management Consultants Limited, go to homepage"
+          className="flex h-9 shrink-0 items-center overflow-visible rounded -ml-2 sm:ml-0 md:h-12"
+          aria-label={`${BRAND_DISPLAY_NAME}, go to homepage`}
           onClick={handleCloseMenu}
         >
           {/* Compact wrapper, visually larger logo via scale so navbar height stays smaller */}
-          <div className="relative h-10 w-40 overflow-visible md:h-16 md:w-48 md:mb-[14px]">
+          <div className="relative h-9 w-44 overflow-visible md:h-12 md:w-56">
             <Image
-              src="/assets/images/FAM Approved Logo 4-Feb-2026.png"
+              src={FAM_LOGO_PNG}
               alt="FAM Approved logo"
               fill
-              sizes="(max-width: 768px) 220px, 280px"
-              className="object-contain scale-[1.9] md:scale-[2.1] -translate-y-1.5"
+              sizes="(max-width: 768px) 240px, 320px"
+              className="origin-left object-contain object-left scale-[2.35] md:scale-[2.7] -translate-y-1.5 md:-translate-y-2"
               priority
             />
           </div>
-          <span className="sr-only">
-            Financial &amp; Management Consultants Limited
-          </span>
+          <span className="sr-only">{BRAND_DISPLAY_NAME}</span>
         </Link>
 
         {/* Center: Nav links */}
@@ -227,7 +250,7 @@ export default function Navbar() {
               >
                   <button
                   type="button"
-                  className="group flex items-center gap-1 whitespace-nowrap text-sm font-medium text-slate-700 transition-colors hover:text-slate-900 rounded"
+                  className={mainNavLinkClass}
                   aria-expanded={openDropdown === getDropdownKey(item.label)}
                   aria-haspopup="true"
                   aria-label={`${item.label} menu`}
@@ -254,7 +277,7 @@ export default function Navbar() {
               <Link
                 key={item.label}
                 href={item.href}
-                className="group flex items-center gap-1 whitespace-nowrap text-sm font-medium text-slate-700 transition-colors hover:text-slate-900 rounded"
+                className={mainNavLinkClass}
               >
                 {item.label}
                 <svg
@@ -280,7 +303,7 @@ export default function Navbar() {
         <div className="hidden shrink-0 items-center gap-4 lg:flex xl:gap-6">
           <button
             type="button"
-            className="hidden h-9 w-9 items-center justify-center rounded text-slate-600 transition-colors hover:bg-[#12254B] hover:text-white xl:flex"
+            className="hidden h-8 w-8 items-center justify-center rounded text-slate-600 transition-colors hover:bg-[#12254B] hover:text-white xl:flex"
             aria-label="Search"
           >
             <svg
@@ -319,7 +342,7 @@ export default function Navbar() {
           </Link>
           <button
             type="button"
-            className="flex h-10 w-10 items-center justify-center rounded text-slate-700 transition-colors hover:bg-[#12254B] hover:text-white"
+            className="flex h-9 w-9 items-center justify-center rounded text-slate-700 transition-colors hover:bg-[#12254B] hover:text-white"
             aria-label={isMenuOpen ? "Close menu" : "Open menu"}
             aria-expanded={isMenuOpen}
             onClick={handleToggleMenu}

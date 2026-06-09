@@ -85,6 +85,19 @@ const cloudSoftwareCards: ChooseCardItem[] = [
     buttonText: "text-blue-800",
     buttonHover: "hover:bg-blue-50 hover:border-blue-400",
   },
+  {
+    id: "payroll-manager",
+    title: "Payroll Manager",
+    description:
+      "Cloud payroll software to manage pay runs, pensions, and HMRC submissions with confidence.",
+    buttonLabel: "Learn More",
+    buttonHref: "/payroll-pansions",
+    imageSrc: "/images/payroll-manager.jpg",
+    imageAlt: "Payroll Manager software logo",
+    buttonBorder: "border-blue-300",
+    buttonText: "text-blue-800",
+    buttonHover: "hover:bg-blue-50 hover:border-blue-400",
+  },
 ];
 
 export const CHOOSE_FIRM_SECTION = {

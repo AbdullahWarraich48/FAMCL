@@ -37,6 +37,7 @@ export default function Home() {
         sectionDescription={CLOUD_SOFTWARE_SECTION.sectionDescription}
         cards={CLOUD_SOFTWARE_SECTION.cards}
         sectionId="cloud-software-heading"
+        largeText
       />
       <Client />
       <Cta />
