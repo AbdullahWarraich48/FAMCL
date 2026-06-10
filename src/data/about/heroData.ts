@@ -1,6 +1,6 @@
 export const ABOUT_HERO_DATA = {
-  phoneNumber: "020 1234 5678",
-  phoneHref: "tel:02012345678",
+  phoneNumber: "+44 730 123 3962",
+  phoneHref: "tel:+447301233962",
 
   bannerText: "About FAM",
   heading: "About Us",

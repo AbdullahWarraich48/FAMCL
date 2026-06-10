@@ -87,13 +87,7 @@ export default function ChooseCard({
               aria-hidden
             />
           </div>
-          <p
-            className={`mx-auto mt-4 max-w-3xl leading-6 text-slate-600 ${
-              largeText
-                ? "text-[16px] md:text-[17px]"
-                : "text-[14px] md:text-[15px]"
-            }`}
-          >
+          <p className="mx-auto mt-4 max-w-3xl text-base leading-relaxed text-slate-600 md:text-lg">
             {sectionDescription}
           </p>
         </header>

@@ -55,7 +55,7 @@ export default function ContactCards({ className = "" }: ContactCardsProps) {
               aria-hidden
             />
           </h2>
-          <p className="mx-auto max-w-xl text-base text-gray-600 md:text-lg">
+          <p className="mx-auto max-w-3xl text-base leading-relaxed text-slate-600 md:text-lg">
             {CONTACT_CARDS_SECTION.description}
           </p>
         </header>

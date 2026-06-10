@@ -1,8 +1,8 @@
 import type { ServiceHeroData } from "@/Components/Book-Keeping/Herosection";
 
 export const HOW_WE_WORK_HERO_DATA: ServiceHeroData = {
-  phoneNumber: "020 1234 5678",
-  phoneHref: "tel:02012345678",
+  phoneNumber: "+44 730 123 3962",
+  phoneHref: "tel:+447301233962",
 
   bannerText: "Judgement-led advice built on professional responsibility",
   heading: "How We Work",

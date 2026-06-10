@@ -38,7 +38,7 @@ export default function Contact() {
             headingBgClassName="bg-white"
           />
 
-          <p className="mt-6 max-w-2xl text-[18px] leading-[27.8px] text-slate-600">
+          <p className="mx-auto mt-6 max-w-3xl text-base leading-relaxed text-slate-600 md:text-lg">
             {data.description}
           </p>
         </div>

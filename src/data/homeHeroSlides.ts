@@ -26,43 +26,40 @@ export const HOME_HERO_SLIDES: HomeHeroSlide[] = [
     ctaHref: "#contact",
   },
   {
-    id: "bookkeeping",
+    id: "clarity-accounting",
     backgroundImageSrc:
       "https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1470&q=80",
-    backgroundImageAlt: "Bookkeeping and accounts on a desk with calculator",
-    heading: "Accounts & Bookkeeping You Can Rely On",
+    backgroundImageAlt: "Accounting and financial planning on a desk",
+    heading: "Clarity in Accounting. Confidence in Every Decision.",
     line1:
-      "Accurate, structured records that keep your business compliant and fully informed.",
-    line2:
-      "From day-to-day bookkeeping to year-end reporting — organised and transparent.",
-    ctaLabel: "Explore Bookkeeping",
-    ctaHref: "/bookkeeping",
+      "FAM Chartered Accountants provides structured accounting, tax, and advisory support for businesses, individuals, and families across the UK. We help clients stay compliant, understand their financial position, and make decisions with confidence.",
+    line2: "",
+    ctaLabel: "Book a Free Consultation",
+    ctaHref: "#contact",
   },
   {
-    id: "business-formation",
+    id: "why-choose-fam",
     backgroundImageSrc:
       "https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1470&auto=format&fit=crop",
-    backgroundImageAlt: "Business planning and company formation",
-    heading: "Grow Your Business with Confidence",
+    backgroundImageAlt: "Professional accounting team collaboration",
+    heading: "Why Choose FAM Chartered Accountants?",
     line1:
-      "Whether you are starting out or restructuring, we guide you on setup and compliance.",
-    line2:
-      "Sole traders, limited companies, and landlords — tailored support at every stage.",
-    ctaLabel: "Business Formation",
-    ctaHref: "/Business_Formation/start_business",
+      "Our work is guided by accuracy, professional judgement, and responsibility. We provide clear communication, fixed-fee pricing, and practical advice designed to reduce risk and support long-term financial clarity.",
+    line2: "",
+    ctaLabel: "How We Work",
+    ctaHref: "/Company/how-we-work",
   },
   {
-    id: "tax-planning",
+    id: "specialist-support",
     backgroundImageSrc:
       "https://images.unsplash.com/photo-1554224154-26032ffc0d07?q=80&w=1470&auto=format&fit=crop",
-    backgroundImageAlt: "Tax planning and financial documents",
-    heading: "Tax Planning & Year-Round Compliance",
+    backgroundImageAlt: "Construction and business sector support",
+    heading: "Specialist Support for Local\nBusinesses",
     line1:
-      "Corporation tax, VAT, self-assessment, and payroll handled with care and clarity.",
-    line2:
-      "Stay ahead of deadlines and make informed decisions with proactive advice.",
-    ctaLabel: "View Tax Services",
-    ctaHref: "/corporation-tax",
+      "We support UK businesses across construction, property, professional services, technology, healthcare, and not-for-profit sectors, with specialist expertise in the Construction Industry Scheme (CIS) for contractors and subcontractors.",
+    line2: "",
+    ctaLabel: "Explore Industries",
+    ctaHref: "/Industries/construction-property",
   },
 ];
 

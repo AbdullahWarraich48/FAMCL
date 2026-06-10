@@ -218,18 +218,17 @@ export default function Navbar() {
         {/* Left: Logo */}
         <Link
           href="/"
-          className="flex h-9 shrink-0 items-center overflow-visible rounded -ml-2 sm:ml-0 md:h-12"
+          className="flex h-9 shrink-0 items-center overflow-visible rounded sm:ml-3 md:ml-5 md:h-12"
           aria-label={`${BRAND_DISPLAY_NAME}, go to homepage`}
           onClick={handleCloseMenu}
         >
-          {/* Compact wrapper, visually larger logo via scale so navbar height stays smaller */}
-          <div className="relative h-9 w-44 overflow-visible md:h-12 md:w-56">
+          <div className="relative h-9 w-40 overflow-visible sm:w-44 md:h-7 md:w-48">
             <Image
               src={FAM_LOGO_PNG}
-              alt="FAM Approved logo"
+              alt="FAM Chartered Accountants logo"
               fill
-              sizes="(max-width: 768px) 240px, 320px"
-              className="origin-left object-contain object-left scale-[2.35] md:scale-[2.7] -translate-y-1.5 md:-translate-y-2"
+              sizes="(max-width: 768px) 220px, 280px"
+              className="origin-left object-contain object-left scale-[2.15] md:scale-[2.45] translate-x-3 -translate-y-2 md:translate-x-5 md:-translate-y-4"
               priority
             />
           </div>

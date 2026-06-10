@@ -1,3 +1,7 @@
+export const CONTACT_PHONE_DISPLAY = "+44 730 123 3962";
+export const CONTACT_PHONE_LABEL = `Contact Us: ${CONTACT_PHONE_DISPLAY}`;
+export const CONTACT_PHONE_HREF = "tel:+447301233962";
+
 /** International format only — country code + number, no +, spaces, or dashes. */
 export const WHATSAPP_NUMBER = "447301233962";
 

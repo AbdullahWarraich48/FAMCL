@@ -141,7 +141,7 @@ const FooterColumn = ({
   <div
     className={`${footerColCellClass} flex flex-col items-start text-left ${className ?? ""}`}
   >
-    <h3 className="mb-4 w-full text-left text-base font-bold leading-tight text-[#12254b]">
+    <h3 className="mb-4 w-full text-left text-lg font-bold leading-tight text-[#12254b]">
       {title}
     </h3>
     <ul className="flex w-full flex-col gap-2.5 text-left" role="list">
@@ -149,7 +149,7 @@ const FooterColumn = ({
         <li key={`${item.href}-${item.label}`} className="min-w-0">
           <Link
             href={item.href}
-            className="block text-left text-sm leading-snug text-slate-600 break-words transition-colors hover:text-[#12254b] hover:underline"
+            className="block text-left text-[15px] leading-snug text-slate-600 break-words transition-colors hover:text-[#12254b] hover:underline md:text-base"
             tabIndex={0}
           >
             {item.label}
@@ -253,9 +253,9 @@ const FooterSection = () => {
             <Image
               src={ICAEW_LOGO_PNG}
               alt="ICAEW chartered accountants"
-              width={220}
-              height={88}
-              className="h-10 w-auto shrink-0 object-contain md:h-12"
+              width={280}
+              height={112}
+              className="h-14 w-auto shrink-0 object-contain md:h-16"
             />
           </div>
         </div>

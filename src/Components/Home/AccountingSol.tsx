@@ -35,7 +35,7 @@ export default function ComprehensiveAccountingSolutionsExact() {
             headingBgClassName="bg-slate-50"
             headingClassName="text-[28px] font-bold tracking-tight text-[#175dab] md:text-[32px]"
           />
-          <p className="mx-auto mt-3 max-w-3xl text-[14px] leading-6 text-slate-600 md:text-[15px]">
+          <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-slate-600 md:mt-4 md:text-lg">
             {ACCOUNTING_SOL_SECTION.description}
           </p>
         </div>

@@ -62,23 +62,24 @@ function OriginalHeroCard({ slide }: { slide: HomeHeroSlide }) {
 }
 
 function OverlayHeroContent({ slide }: { slide: HomeHeroSlide }) {
-  return (
-    <div className="mx-auto w-full max-w-6xl px-2 text-center sm:px-4">
-      <p className="text-base font-semibold text-white/95 drop-shadow-[0_2px_6px_rgba(0,0,0,0.5)] sm:text-lg md:text-xl">
-        {BRAND_DISPLAY_NAME}
-      </p>
+  const description = [slide.line1, slide.line2].filter(Boolean).join(" ");
 
-      <h1 className="mt-4 whitespace-nowrap text-[clamp(1.5rem,4.25vw,3.75rem)] font-bold leading-tight tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)]">
-        {slide.heading}
+  return (
+    <div className="mx-auto w-full max-w-[min(100%,72rem)] px-12 text-center sm:px-16 md:px-20 lg:px-24">
+      <h1 className="mx-auto max-w-4xl text-[clamp(1.25rem,3.5vw,2.75rem)] font-bold leading-tight tracking-tight text-white drop-shadow-[0_2px_10px_rgba(0,0,0,0.55)]">
+        {slide.heading.split("\n").map((line, index, lines) => (
+          <span key={`${line}-${index}`}>
+            {line}
+            {index < lines.length - 1 ? <br /> : null}
+          </span>
+        ))}
       </h1>
 
-      <p className="mx-auto mt-5 max-w-3xl text-lg font-medium leading-relaxed text-white/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] sm:mt-6 sm:text-xl md:text-2xl">
-        {slide.line1}
-      </p>
-
-      <p className="mx-auto mt-3 max-w-3xl text-lg font-medium leading-relaxed text-white/90 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] sm:text-xl md:text-2xl">
-        {slide.line2}
-      </p>
+      {description ? (
+        <p className="mx-auto mt-5 max-w-3xl text-[clamp(0.875rem,1.8vw,1.25rem)] font-medium leading-relaxed text-white/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] sm:mt-6">
+          {description}
+        </p>
+      ) : null}
     </div>
   );
 }
@@ -109,34 +110,36 @@ export default function LandingSection() {
 
   return (
     <section className="w-full bg-white" aria-label="Home hero">
-      <div className="relative z-10 min-h-screen w-full overflow-hidden">
-        {HOME_HERO_SLIDES.map((item, index) => {
-          const cardBackground = item.variant === "card";
+      <div className="relative z-10 min-h-screen w-full">
+        <div className="absolute inset-0 overflow-hidden shadow-[0_24px_60px_rgba(15,23,42,0.45)]">
+          {HOME_HERO_SLIDES.map((item, index) => {
+            const cardBackground = item.variant === "card";
 
-          return (
-            <div
-              key={item.id}
-              className={`absolute inset-0 shadow-[0_24px_60px_rgba(15,23,42,0.45)] transition-opacity duration-700 ease-in-out ${
-                index === activeIndex ? "opacity-100" : "opacity-0"
-              }`}
-              aria-hidden={index !== activeIndex}
-            >
-              <Image
-                src={item.backgroundImageSrc}
-                alt={item.backgroundImageAlt}
-                fill
-                priority={index === 0}
-                className="object-cover object-center"
-                sizes="100vw"
-              />
+            return (
               <div
-                className={`absolute inset-0 ${
-                  cardBackground ? "bg-black/10" : "bg-black/55"
+                key={item.id}
+                className={`absolute inset-0 transition-opacity duration-700 ease-in-out ${
+                  index === activeIndex ? "opacity-100" : "opacity-0"
                 }`}
-              />
-            </div>
-          );
-        })}
+                aria-hidden={index !== activeIndex}
+              >
+                <Image
+                  src={item.backgroundImageSrc}
+                  alt={item.backgroundImageAlt}
+                  fill
+                  priority={index === 0}
+                  className="object-cover object-center"
+                  sizes="100vw"
+                />
+                <div
+                  className={`absolute inset-0 ${
+                    cardBackground ? "bg-black/10" : "bg-black/55"
+                  }`}
+                />
+              </div>
+            );
+          })}
+        </div>
 
         <button
           type="button"
@@ -161,7 +164,11 @@ export default function LandingSection() {
             isCardSlide ? "justify-center lg:justify-start" : "justify-center"
           }`}
         >
-          <div key={slide.id} className="w-full" aria-live="polite">
+          <div
+            key={slide.id}
+            className="w-full -translate-y-8 sm:-translate-y-10 md:-translate-y-12"
+            aria-live="polite"
+          >
             {isCardSlide ? (
               <OriginalHeroCard slide={slide} />
             ) : (

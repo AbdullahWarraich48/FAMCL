@@ -55,7 +55,7 @@ export default function WhatOurClientsSay() {
             </h2>
             <span className="h-px w-24 bg-slate-300 md:w-28" />
           </div>
-          <p className="mx-auto mt-3 max-w-3xl text-[15px] leading-6 text-slate-700 md:text-[16px]">
+          <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-slate-600 md:mt-4 md:text-lg">
             Don&apos;t just take our word for it, hear from businesses and individuals who trust us
             with their accounting needs.
           </p>
