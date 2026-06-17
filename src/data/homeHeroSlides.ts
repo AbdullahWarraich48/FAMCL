@@ -14,11 +14,11 @@ export type HomeHeroSlide = {
 export const HOME_HERO_SLIDES: HomeHeroSlide[] = [
   {
     id: "accounting-tax",
-    variant: "card",
+    variant: "overlay",
     backgroundImageSrc:
       "https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=1470&auto=format&fit=crop",
     backgroundImageAlt: "Professionals collaborating on financial planning",
-    heading: "Local expertise that goes beyond accounting & tax",
+    heading: "FAM Chartered Accountant",
     line1:
       "We support you at every stage of your financial journey from compliance to confident financial planning.",
     line2: "",

@@ -38,6 +38,7 @@ export type ChooseCardProps = {
   cards?: ChooseCardItem[];
   sectionId?: string;
   className?: string;
+  sectionClassName?: string;
   largeText?: boolean;
 };
 
@@ -47,6 +48,7 @@ export default function ChooseCard({
   cards = [],
   sectionId = "choose-card-heading",
   className = "",
+  sectionClassName = "bg-white",
   largeText = false,
 }: ChooseCardProps) {
   if (cards.length === 0) return null;
@@ -66,7 +68,7 @@ export default function ChooseCard({
 
   return (
     <section
-      className={`w-full bg-[#F6F9FF] py-16 md:py-20 ${className}`.trim()}
+      className={`w-full py-16 md:py-20 ${sectionClassName} ${className}`.trim()}
       aria-labelledby={sectionId}
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">

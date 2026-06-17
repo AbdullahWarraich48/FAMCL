@@ -1,52 +1,56 @@
-"use client"
+"use client";
 
-import * as React from "react"
-import { Card, CardContent } from "@/Components/ui/card"
-import { Button } from "@/Components/ui/button"
+import Image from "next/image";
+import Link from "next/link";
+import { ArrowRight } from "lucide-react";
+import { Card } from "@/Components/ui/card";
+import { Button } from "@/Components/ui/button";
+import { TAX_CTA_DATA } from "@/data/taxCtaData";
 
 export default function SelfAssessmentCta() {
+  const data = TAX_CTA_DATA;
+
   return (
-    <section className="relative z-10 mt-[-160px] w-full">
+    <section className="w-full bg-white py-10 sm:py-12 md:py-14">
       <div className="content-padding-x mx-auto max-w-[1440px]">
         <Card className="overflow-hidden rounded-2xl border-0 bg-white shadow-[0_18px_45px_rgba(0,0,0,0.14)]">
-          <div className="grid grid-cols-1 md:grid-cols-[420px_1fr]">
-            {/* LEFT IMAGE */}
-            <div className="relative">
-              <img
-                src="https://images.unsplash.com/photo-1554224155-6726b3ff858f?auto=format&fit=crop&w=1200&q=80"
-                alt="Tax documents and calculator"
-                className="h-full min-h-[240px] w-full object-cover md:min-h-[320px]"
-                draggable={false}
+          <div className="grid grid-cols-1 md:grid-cols-[minmax(280px,420px)_1fr]">
+            <div className="relative min-h-[240px] md:min-h-[320px]">
+              <Image
+                src={data.imageSrc}
+                alt={data.imageAlt}
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 100vw, 420px"
               />
-              {/* slight darken like figma */}
               <div className="pointer-events-none absolute inset-0 bg-black/10" />
             </div>
 
-            {/* RIGHT CONTENT (light blue panel) */}
-            <div className="bg-gradient-to-b from-white/70 to-[#D8EAFF]">
-              <CardContent className="p-8 md:p-12">
-                <h3 className="max-w-[720px] text-[28px] font-bold leading-[1.15] tracking-tight text-[#175dab] md:text-[38px]">
-                  Take the next step to complete your self
-                  assessment tax return today
-                </h3>
+            <div className="bg-white">
+              <div className="flex h-full flex-col justify-center p-8 md:p-10 lg:p-12">
+                <h2 className="max-w-[720px] text-[28px] font-bold leading-[1.15] tracking-tight md:text-[36px] lg:text-[38px]">
+                  <span className="text-[#175dab]">{data.titleBlue} </span>
+                  <span className="text-red-600">{data.titleRed}</span>
+                </h2>
 
                 <p className="mt-4 max-w-[760px] text-[14px] leading-7 text-slate-600 md:text-[15px]">
-                  If you&apos;re not confident completing your self-assessment tax return, we&apos;re here to
-                  help. Our experienced advisors support you from start to finish ensuring accuracy,
-                  compliance, and peace of mind while helping you make the most of available allowances.
+                  {data.description}
                 </p>
 
                 <Button
                   asChild
-                  className="mt-8 h-11 rounded-full bg-[#12254B] px-8 text-[13px] font-semibold text-white"
+                  className="mt-8 h-11 w-fit rounded-full bg-[#1E63B3] px-8 text-[13px] font-semibold text-white hover:bg-[#175dab]"
                 >
-                  <a href="#contact">Get Started</a>
+                  <Link href={data.buttonHref}>
+                    {data.buttonLabel}
+                    <ArrowRight className="ml-2 h-4 w-4" aria-hidden />
+                  </Link>
                 </Button>
-              </CardContent>
+              </div>
             </div>
           </div>
         </Card>
       </div>
     </section>
-  )
+  );
 }

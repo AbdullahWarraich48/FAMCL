@@ -2,7 +2,6 @@
 
 import * as React from "react";
 import Image from "next/image";
-import { Card, CardContent } from "@/Components/ui/card";
 import { Button } from "@/Components/ui/button";
 import { ChevronLeft, ChevronRight, Star } from "lucide-react";
 import { CARASOUL_TESTIMONIALS, type Testimonial } from "@/data/carasoulData";
@@ -16,27 +15,33 @@ type CarasoulProps = {
   hideArrows?: boolean;
   items?: Testimonial[];
   trustStrip?: TrustStripConfig;
+  sectionClassName?: string;
 };
 
 const isEditorialSlide = (t: Testimonial) =>
   Boolean(t.bodyParagraphs && t.bodyParagraphs.length > 0);
 
+const isTestimonialSlide = (t: Testimonial) =>
+  Boolean(t.quote && (t.titleBlue || t.titleRed));
+
 export default function TestimonialExact({
   hideArrows,
   items,
   trustStrip,
+  sectionClassName = "bg-white",
 }: CarasoulProps) {
   const data =
     items && items.length > 0 ? items : CARASOUL_TESTIMONIALS;
   const [i, setI] = React.useState(0);
   const t = data[i];
   const editorial = isEditorialSlide(t);
+  const testimonial = isTestimonialSlide(t);
 
   const prev = () => setI((x) => (x - 1 + data.length) % data.length);
   const next = () => setI((x) => (x + 1) % data.length);
 
   return (
-    <section className="w-full bg-white py-10">
+    <section className={`w-full py-12 md:py-16 ${sectionClassName}`}>
       <div className="content-padding-x mx-auto max-w-[1440px]">
         {trustStrip ? (
           <div
@@ -73,13 +78,17 @@ export default function TestimonialExact({
           </div>
         ) : null}
 
-        <div className="relative isolate flex flex-col gap-8 md:min-h-[560px] md:flex-row md:items-center md:justify-start">
-          <div className="relative z-0 w-full shrink-0 md:w-[37%] md:min-w-[240px] md:max-w-[480px]">
-            <div className="overflow-hidden rounded-2xl shadow-[0_18px_40px_rgba(0,0,0,0.12)] md:opacity-95">
-              <div className="relative h-[240px] w-full sm:h-[280px] md:h-[360px]">
+        <div className="relative mx-auto flex max-w-[920px] flex-col gap-5 md:flex-row md:items-center">
+          <div className="relative z-0 w-full shrink-0 md:w-[52%]">
+            <div className="overflow-hidden rounded-xl">
+              <div className="relative aspect-[4/3] w-full">
                 <Image
                   src={t.imageUrl}
-                  alt={editorial ? t.title : `${t.title} — ${t.author ?? "slide"}`}
+                  alt={
+                    editorial
+                      ? t.title
+                      : `${t.title} — ${t.author ?? "client"}`
+                  }
                   fill
                   className="object-cover"
                   sizes="(max-width: 768px) 100vw, 480px"
@@ -90,52 +99,54 @@ export default function TestimonialExact({
             </div>
           </div>
 
-          <Card className="relative z-20 mt-4 flex w-full min-w-0 flex-1 flex-col justify-center rounded-2xl border-0 shadow-[0_26px_56px_rgba(10,37,77,0.22)] md:mt-0 md:min-h-[420px] md:max-w-none md:ml-[-2rem] md:ring-1 md:ring-[#b8d6fa] lg:ml-[-2.5rem]">
-            <div className="flex min-h-[360px] flex-1 flex-col justify-center rounded-2xl bg-gradient-to-b from-white via-[#eef6ff] to-[#d8eaff] md:min-h-[420px]">
-              <CardContent className="relative flex flex-1 flex-col justify-center p-6 sm:p-8 md:p-14">
-                {!hideArrows && (
-                  <div className="absolute right-8 top-8 hidden gap-3 md:flex">
-                    <Button
-                      type="button"
-                      onClick={prev}
-                      className="h-12 w-12 rounded-md bg-[#12254B] p-0"
-                      aria-label="Previous slide"
-                    >
-                      <ChevronLeft className="h-5 w-5 text-white" />
-                    </Button>
-                    <Button
-                      type="button"
-                      onClick={next}
-                      className="h-12 w-12 rounded-md bg-[#12254B] p-0"
-                      aria-label="Next slide"
-                    >
-                      <ChevronRight className="h-5 w-5 text-white" />
-                    </Button>
-                  </div>
-                )}
+          <div className="relative z-10 w-full md:-ml-[18%] md:w-[58%]">
+            <div className="relative rounded-xl bg-[#f5f8fc] shadow-[0_10px_40px_rgba(18,37,75,0.1)]">
+              {!hideArrows && (
+                <div className="absolute right-4 top-4 z-10 hidden gap-1.5 md:flex">
+                  <Button
+                    type="button"
+                    onClick={prev}
+                    className="h-8 w-8 rounded-sm bg-[#12254B] p-0 hover:bg-[#1a3260]"
+                    aria-label="Previous slide"
+                  >
+                    <ChevronLeft className="h-4 w-4 text-white" />
+                  </Button>
+                  <Button
+                    type="button"
+                    onClick={next}
+                    className="h-8 w-8 rounded-sm bg-[#12254B] p-0 hover:bg-[#1a3260]"
+                    aria-label="Next slide"
+                  >
+                    <ChevronRight className="h-4 w-4 text-white" />
+                  </Button>
+                </div>
+              )}
 
-                <h2 className="whitespace-pre-line text-2xl font-bold leading-tight tracking-tight text-[#175dab] sm:text-3xl md:text-5xl md:leading-[1.05]">
-                  {t.title}
-                </h2>
-
-                {editorial ? (
-                  <div
-                    className="mt-4 h-0.5 w-20 rounded-full bg-[#175dab] md:mt-5"
-                    aria-hidden
-                  />
+              <div className="flex min-h-[280px] flex-col justify-center px-7 py-8 sm:px-9 sm:py-10 md:min-h-[300px] md:px-10 md:py-11">
+                {testimonial ? (
+                  <h2 className="text-[1.75rem] font-bold leading-[1.15] tracking-tight sm:text-[1.85rem]">
+                    <span className="block text-[#12254B]">{t.titleBlue}</span>
+                    <span className="mt-0.5 block text-[#c53030]">
+                      {t.titleRed}
+                    </span>
+                  </h2>
                 ) : (
-                  <div
-                    className="mt-4 h-[3px] w-16 bg-slate-900 md:mt-6"
-                    aria-hidden
-                  />
+                  <h2 className="whitespace-pre-line text-2xl font-bold leading-tight tracking-tight text-[#12254B] sm:text-3xl">
+                    {t.title}
+                  </h2>
                 )}
 
+                <div
+                  className="mt-4 h-[3px] w-12 bg-[#1E63B3]"
+                  aria-hidden
+                />
+
                 {!hideArrows && (
-                  <div className="mt-4 flex gap-3 self-end md:hidden">
+                  <div className="mt-4 flex gap-1.5 md:hidden">
                     <Button
                       type="button"
                       onClick={prev}
-                      className="h-10 w-10 rounded-md bg-[#12254B] p-0"
+                      className="h-8 w-8 rounded-sm bg-[#12254B] p-0"
                       aria-label="Previous slide"
                     >
                       <ChevronLeft className="h-4 w-4 text-white" />
@@ -143,7 +154,7 @@ export default function TestimonialExact({
                     <Button
                       type="button"
                       onClick={next}
-                      className="h-10 w-10 rounded-md bg-[#12254B] p-0"
+                      className="h-8 w-8 rounded-sm bg-[#12254B] p-0"
                       aria-label="Next slide"
                     >
                       <ChevronRight className="h-4 w-4 text-white" />
@@ -152,13 +163,13 @@ export default function TestimonialExact({
                 )}
 
                 {editorial && t.subtitle ? (
-                  <p className="mt-6 text-lg font-bold leading-snug text-slate-800 sm:text-xl md:mt-8 md:text-2xl">
+                  <p className="mt-6 text-lg font-bold leading-snug text-slate-800">
                     {t.subtitle}
                   </p>
                 ) : null}
 
                 {editorial && t.bodyParagraphs ? (
-                  <div className="mt-6 space-y-5 text-base leading-relaxed text-slate-600 sm:text-lg md:mt-8 md:text-xl lg:max-w-[46rem]">
+                  <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-600">
                     {t.bodyParagraphs.map((para, idx) => (
                       <p key={idx}>{para}</p>
                     ))}
@@ -166,42 +177,44 @@ export default function TestimonialExact({
                 ) : null}
 
                 {!editorial && t.quote ? (
-                  <p className="mt-6 max-w-none text-base leading-relaxed text-slate-600 sm:text-lg sm:leading-8 md:mt-8 md:text-xl lg:max-w-[46rem]">
+                  <p className="mt-5 max-w-md text-[15px] leading-relaxed text-slate-600 sm:text-base sm:leading-7">
                     &ldquo;{t.quote}&rdquo;
                   </p>
                 ) : null}
 
                 {!editorial && t.author ? (
-                  <div className="mt-8 md:mt-10">
-                    <div className="flex items-center gap-3 text-lg font-semibold text-[#175dab] sm:text-xl md:text-2xl">
-                      <span className="inline-block h-[3px] w-7 bg-slate-900" />
-                      <span>{t.author}</span>
-                    </div>
+                  <div className="mt-7">
+                    <p className="text-base font-bold text-[#12254B]">
+                      &mdash; {t.author}
+                    </p>
                     {t.role ? (
-                      <div className="mt-1 text-sm text-slate-700 sm:mt-2 sm:text-base md:text-lg">
+                      <p className="mt-0.5 text-sm text-slate-500">
                         {t.role}
-                      </div>
+                      </p>
                     ) : null}
                   </div>
                 ) : null}
-              </CardContent>
+              </div>
             </div>
-          </Card>
-
-          <div className="mt-6 flex justify-center gap-3 md:absolute md:bottom-2 md:left-1/2 md:-translate-x-1/2 md:mt-0">
-            {data.map((_, idx) => (
-              <button
-                key={idx}
-                type="button"
-                onClick={() => setI(idx)}
-                aria-label={`Go to slide ${idx + 1}`}
-                className={[
-                  "h-3 w-3 rounded-full transition",
-                  idx === i ? "bg-slate-900" : "bg-slate-300 hover:bg-slate-400",
-                ].join(" ")}
-              />
-            ))}
           </div>
+        </div>
+
+        <div className="mt-7 flex justify-center gap-2 md:mt-8">
+          {data.map((_, idx) => (
+            <button
+              key={idx}
+              type="button"
+              onClick={() => setI(idx)}
+              aria-label={`Go to slide ${idx + 1}`}
+              aria-current={idx === i ? "true" : undefined}
+              className={[
+                "h-2 w-2 rounded-full transition",
+                idx === i
+                  ? "bg-slate-800"
+                  : "bg-slate-300 hover:bg-slate-400",
+              ].join(" ")}
+            />
+          ))}
         </div>
       </div>
     </section>

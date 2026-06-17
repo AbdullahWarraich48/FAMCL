@@ -8,7 +8,12 @@ import {
   ICAEW_LOGO_PNG,
 } from "@/constants/siteAssets";
 import type { LucideIcon } from "lucide-react";
-import { Facebook, Twitter, Linkedin, Instagram } from "lucide-react";
+import {
+  REGISTERED_OFFICE_ADDRESS,
+  SOCIAL_FACEBOOK_URL,
+  SOCIAL_LINKEDIN_URL,
+} from "@/constants/contact";
+import { Facebook, Linkedin } from "lucide-react";
 
 type FooterLink = { label: string; href: string };
 
@@ -88,27 +93,15 @@ const SOCIAL_LINKS: readonly {
 }[] = [
   {
     label: "Facebook",
-    href: "https://facebook.com",
+    href: SOCIAL_FACEBOOK_URL,
     Icon: Facebook,
     colorClass: "text-[#1877F2]",
   },
   {
-    label: "Twitter",
-    href: "https://x.com",
-    Icon: Twitter,
-    colorClass: "text-[#1DA1F2]",
-  },
-  {
     label: "LinkedIn",
-    href: "https://linkedin.com",
+    href: SOCIAL_LINKEDIN_URL,
     Icon: Linkedin,
     colorClass: "text-[#0A66C2]",
-  },
-  {
-    label: "Instagram",
-    href: "https://instagram.com",
-    Icon: Instagram,
-    colorClass: "text-[#E4405F]",
   },
 ];
 
@@ -268,8 +261,8 @@ const FooterSection = () => {
               © 2026 {BRAND_DISPLAY_NAME}. All rights reserved.
             </p>
             <p>
-              Registered office: Suite 1 Fitzroy House, Lynwood Drive,
-              Worcester Park, Surrey, KT4 7AT, UK. Company No. 06613732.
+              Registered office: {REGISTERED_OFFICE_ADDRESS}. Company No.
+              06613732.
             </p>
           </div>
 

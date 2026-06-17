@@ -70,11 +70,14 @@ export const POLICY_LINKS: FooterLink[] = [
   { label: "Cookie Policy", href: "#cookie-policy" },
 ];
 
+import {
+  SOCIAL_FACEBOOK_URL,
+  SOCIAL_LINKEDIN_URL,
+} from "@/constants/contact";
+
 export const SOCIAL_LINKS = [
-  { label: "Facebook", href: "#facebook", iconKey: "facebook" as const },
-  { label: "Twitter", href: "#twitter", iconKey: "twitter" as const },
-  { label: "LinkedIn", href: "#linkedin", iconKey: "linkedin" as const },
-  { label: "Instagram", href: "#instagram", iconKey: "instagram" as const },
+  { label: "Facebook", href: SOCIAL_FACEBOOK_URL, iconKey: "facebook" as const },
+  { label: "LinkedIn", href: SOCIAL_LINKEDIN_URL, iconKey: "linkedin" as const },
 ];
 
 export const FOOTER_COPYRIGHT =

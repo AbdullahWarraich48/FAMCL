@@ -1,5 +1,10 @@
 export type Testimonial = {
+  /** Full title — used for editorial slides and accessibility */
   title: string;
+  /** Testimonial slide — first part of heading (blue) */
+  titleBlue?: string;
+  /** Testimonial slide — second part of heading (red) */
+  titleRed?: string;
   imageUrl: string;
   /** Testimonial slide */
   quote?: string;
@@ -12,7 +17,9 @@ export type Testimonial = {
 
 export const CARASOUL_TESTIMONIALS: Testimonial[] = [
   {
-    title: "Better Results Than\nExpected",
+    title: "Better Results Than Expected",
+    titleBlue: "Better Results",
+    titleRed: "Than Expected",
     quote:
       "They helped me plan properly and I ended up saving more than I had anticipated.",
     author: "Sarah Ahmed",
@@ -21,7 +28,9 @@ export const CARASOUL_TESTIMONIALS: Testimonial[] = [
       "https://images.unsplash.com/photo-1524504388940-b1c1722653e1?auto=format&fit=crop&w=1400&q=80",
   },
   {
-    title: "Professional &\nReliable",
+    title: "Professional & Reliable",
+    titleBlue: "Professional &",
+    titleRed: "Reliable",
     quote:
       "Clear guidance, great communication, and a plan that actually worked for my business.",
     author: "Omar Khan",
@@ -31,6 +40,8 @@ export const CARASOUL_TESTIMONIALS: Testimonial[] = [
   },
   {
     title: "Peace of Mind",
+    titleBlue: "Peace of",
+    titleRed: "Mind",
     quote:
       "I finally feel confident about my finances and the next steps I need to take.",
     author: "Amina Noor",

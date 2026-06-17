@@ -21,10 +21,16 @@ const Bullet = ({ dot, text }: { dot: string; text: string }) => (
   </li>
 );
 
-export default function ComprehensiveAccountingSolutionsExact() {
+type AccountingSolProps = {
+  sectionClassName?: string;
+};
+
+export default function ComprehensiveAccountingSolutionsExact({
+  sectionClassName = "bg-[#cbdcff]",
+}: AccountingSolProps) {
   return (
     <section
-      className="w-full bg-slate-50 py-16"
+      className={`w-full py-16 ${sectionClassName}`}
       aria-labelledby="accounting-sol-heading"
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">
@@ -32,7 +38,7 @@ export default function ComprehensiveAccountingSolutionsExact() {
           <SectionIntroHeader
             headingId="accounting-sol-heading"
             heading={ACCOUNTING_SOL_SECTION.title}
-            headingBgClassName="bg-slate-50"
+            headingBgClassName={sectionClassName}
             headingClassName="text-[28px] font-bold tracking-tight text-[#175dab] md:text-[32px]"
           />
           <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-slate-600 md:mt-4 md:text-lg">

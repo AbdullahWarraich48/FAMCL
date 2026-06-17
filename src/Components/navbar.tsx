@@ -118,7 +118,7 @@ export default function Navbar() {
     normalizePath(pathname) === normalizePath(href);
 
   const mainNavLinkClass =
-    "group flex items-center gap-1 whitespace-nowrap text-base font-medium text-slate-700 transition-colors hover:text-slate-900 rounded";
+    "group flex items-center gap-1 whitespace-nowrap text-base font-medium text-white transition-colors hover:text-white/90 rounded";
 
   const getDropdownLinkClass = (href: string, extraClass = "") =>
     `group inline-flex items-center gap-2 text-sm font-medium ${
@@ -144,102 +144,98 @@ export default function Navbar() {
     return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
+  const PhoneIcon = ({ className = "h-4 w-4" }: { className?: string }) => (
+    <svg
+      className={`${className} shrink-0`}
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+      />
+    </svg>
+  );
+
+  const EmailIcon = ({ className = "h-4 w-4" }: { className?: string }) => (
+    <svg
+      className={`${className} shrink-0`}
+      fill="none"
+      stroke="currentColor"
+      viewBox="0 0 24 24"
+      aria-hidden
+    >
+      <path
+        strokeLinecap="round"
+        strokeLinejoin="round"
+        strokeWidth={2}
+        d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+      />
+    </svg>
+  );
+
   return (
     <header
       className="relative w-full bg-white"
       role="banner"
       aria-label="Main navigation"
     >
-      {/* Top information bar */}
-      <div className="content-padding-x mx-auto flex w-full max-w-[1440px] items-center justify-between gap-4 bg-white pt-4 pb-2 text-sm sm:pt-5 sm:text-base">
-       <div className="flex items-center">
-         
-        </div>
+      {/* Top bar: logo left, contact numbers right */}
+      <div className="content-padding-x mx-auto flex w-full max-w-[1440px] items-center justify-between gap-4 bg-white py-4 sm:py-5">
+        <Link
+          href="/"
+          className="flex shrink-0 items-center rounded"
+          aria-label={`${BRAND_DISPLAY_NAME}, go to homepage`}
+          onClick={handleCloseMenu}
+        >
+          <Image
+            src={FAM_LOGO_PNG}
+            alt="FAM Chartered Accountants logo"
+            width={280}
+            height={92}
+            className="h-14 w-auto max-w-[220px] object-contain object-left sm:h-16 sm:max-w-[260px] md:h-[4.5rem] md:max-w-[300px]"
+            priority
+          />
+          <span className="sr-only">{BRAND_DISPLAY_NAME}</span>
+        </Link>
 
-        <div className="flex flex-wrap items-center justify-end gap-3 sm:gap-4 md:gap-6">
-          <p className="hidden text-sm font-medium text-blue-600 sm:block sm:text-base">
-            {NAVBAR_TOP_BAR_DATA.trustText}
-          </p>
+        <div className="flex flex-col items-end gap-1.5 text-sm sm:text-base">
           <a
-            href={`tel:${NAVBAR_TOP_BAR_DATA.phoneNumber.replace(/\s/g, "")}`}
-            className="flex items-center gap-2 text-sm font-semibold text-red-600 transition-colors hover:text-red-700 rounded sm:text-base"
-            aria-label={NAVBAR_TOP_BAR_DATA.phoneLabel}
+            href={NAVBAR_TOP_BAR_DATA.officePhoneHref}
+            className="flex items-center gap-2 font-semibold text-red-600 transition-colors hover:text-red-700"
+            aria-label={NAVBAR_TOP_BAR_DATA.officePhoneLabel}
           >
-            <svg
-              className="h-4 w-4 shrink-0"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
-              />
-            </svg>
-            {NAVBAR_TOP_BAR_DATA.phoneLabel}
+            <PhoneIcon />
+            <span className="hidden sm:inline">{NAVBAR_TOP_BAR_DATA.officePhoneLabel}</span>
+            <span className="sm:hidden">{NAVBAR_TOP_BAR_DATA.officePhoneNumber}</span>
           </a>
           <a
-            href={`mailto:${NAVBAR_TOP_BAR_DATA.email}`}
-            className="flex items-center gap-2 text-sm font-semibold text-red-600 transition-colors hover:text-red-700 rounded sm:text-base"
-            aria-label={`Email ${NAVBAR_TOP_BAR_DATA.email}`}
+            href={NAVBAR_TOP_BAR_DATA.emailHref}
+            className="flex items-center gap-2 font-semibold text-[#1E63B3] transition-colors hover:text-[#175dab]"
+            aria-label={NAVBAR_TOP_BAR_DATA.emailLabel}
           >
-            <svg
-              className="h-4 w-4 shrink-0"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
-              />
-            </svg>
-            {NAVBAR_TOP_BAR_DATA.emailLabel}
+            <EmailIcon />
+            <span className="hidden sm:inline">{NAVBAR_TOP_BAR_DATA.emailLabel}</span>
+            <span className="sm:hidden">{NAVBAR_TOP_BAR_DATA.email}</span>
           </a>
         </div>
       </div>
 
-      {/* Wrapper so dropdown stays open when moving from trigger to panel */}
+      {/* Full-width blue navigation bar */}
       <div
-        className="relative"
+        className="relative w-full bg-[#1E63B3]"
         ref={navRef}
         onMouseLeave={() => setOpenDropdown(null)}
       >
-        {/* Navbar row - let height grow with logo so it doesn't overflow */}
-        <div
-          className={`mx-auto relative z-[60] flex w-full max-w-[1440px] shrink-0 items-center justify-between bg-white px-0 sm:px-4 lg:px-8 py-2 md:py-2.5 ${!openDropdown ? "border-b border-slate-200/80" : ""}`}
-        >
-        {/* Left: Logo */}
-        <Link
-          href="/"
-          className="flex h-9 shrink-0 items-center overflow-visible rounded sm:ml-3 md:ml-5 md:h-12"
-          aria-label={`${BRAND_DISPLAY_NAME}, go to homepage`}
-          onClick={handleCloseMenu}
-        >
-          <div className="relative h-9 w-40 overflow-visible sm:w-44 md:h-7 md:w-48">
-            <Image
-              src={FAM_LOGO_PNG}
-              alt="FAM Chartered Accountants logo"
-              fill
-              sizes="(max-width: 768px) 220px, 280px"
-              className="origin-left object-contain object-left scale-[2.15] md:scale-[2.45] translate-x-3 -translate-y-2 md:translate-x-5 md:-translate-y-4"
-              priority
-            />
-          </div>
-          <span className="sr-only">{BRAND_DISPLAY_NAME}</span>
-        </Link>
-
-        {/* Center: Nav links */}
-        <nav
-          className="absolute left-1/2 hidden -translate-x-1/2 items-center gap-3 lg:flex xl:gap-5"
-          aria-label="Primary navigation"
-        >
+        <div className="content-padding-x relative mx-auto flex min-h-[60px] w-full max-w-[1440px] items-center justify-center py-3 sm:min-h-[64px] sm:py-3.5">
+          <nav
+            className="hidden items-center gap-3 lg:flex xl:gap-6"
+            aria-label="Primary navigation"
+          >
           {NAV_LINKS.map((item) =>
             item.hasDropdown ? (
               <div
@@ -257,7 +253,7 @@ export default function Navbar() {
                 >
                   {item.label}
                   <svg
-                    className={`h-4 w-4 text-slate-500 transition-colors group-hover:text-slate-700 ${openDropdown === getDropdownKey(item.label) ? "rotate-180" : ""}`}
+                    className={`h-4 w-4 text-white/80 transition-colors group-hover:text-white ${openDropdown === getDropdownKey(item.label) ? "rotate-180" : ""}`}
                     fill="none"
                     stroke="currentColor"
                     viewBox="0 0 24 24"
@@ -280,7 +276,7 @@ export default function Navbar() {
               >
                 {item.label}
                 <svg
-                  className="h-4 w-4 text-slate-500 transition-colors group-hover:text-slate-700"
+                  className="h-4 w-4 text-white/80 transition-colors group-hover:text-white"
                   fill="none"
                   stroke="currentColor"
                   viewBox="0 0 24 24"
@@ -296,67 +292,27 @@ export default function Navbar() {
               </Link>
             )
           )}
-        </nav>
+          </nav>
 
-        {/* Right: Search + Contact Us */}
-        <div className="hidden shrink-0 items-center gap-4 lg:flex xl:gap-6">
-          <button
-            type="button"
-            className="hidden h-8 w-8 items-center justify-center rounded text-slate-600 transition-colors hover:bg-[#12254B] hover:text-white xl:flex"
-            aria-label="Search"
-          >
-            <svg
-              className="h-5 w-5"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-              aria-hidden
+          <div className="absolute right-4 flex items-center lg:hidden sm:right-6 md:right-8">
+            <button
+              type="button"
+              className="flex h-9 w-9 items-center justify-center rounded text-white transition-colors hover:bg-white/10"
+              aria-label={isMenuOpen ? "Close menu" : "Open menu"}
+              aria-expanded={isMenuOpen}
+              onClick={handleToggleMenu}
             >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2}
-                d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"
-              />
-            </svg>
-          </button>
-
-          <Link
-            href="/Company/contact-us"
-            className="rounded-lg bg-[#12254b] px-4 py-2.5 text-sm font-semibold text-white shadow transition-colors hover:bg-[#184B83] xl:px-5"
-            aria-label="Contact us"
-          >
-            Contact Us
-          </Link>
-        </div>
-
-        {/* Mobile: CTA + hamburger */}
-        <div className="flex items-center gap-3 lg:hidden">
-          <Link
-            href="/Company/contact-us"
-            className="rounded-lg bg-[#12254b] px-4 py-2 text-sm font-semibold text-white transition-colors hover:bg-[#184B83]"
-            aria-label="Contact us"
-          >
-            Contact Us
-          </Link>
-          <button
-            type="button"
-            className="flex h-9 w-9 items-center justify-center rounded text-slate-700 transition-colors hover:bg-[#12254B] hover:text-white"
-            aria-label={isMenuOpen ? "Close menu" : "Open menu"}
-            aria-expanded={isMenuOpen}
-            onClick={handleToggleMenu}
-          >
-            {isMenuOpen ? (
-              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
-              </svg>
-            ) : (
-              <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
-                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
-              </svg>
-            )}
-          </button>
-        </div>
+              {isMenuOpen ? (
+                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M6 18L18 6M6 6l12 12" />
+                </svg>
+              ) : (
+                <svg className="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden>
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+              )}
+            </button>
+          </div>
         </div>
 
         {/* Business Formation dropdown */}
