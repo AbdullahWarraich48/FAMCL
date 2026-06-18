@@ -9,38 +9,34 @@ export const PENSIONS_FUTURE_PLANNING_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for You",
   description:
-    "Pension planning is about more than just saving. We ensure that your contributions are tax-efficient and aligned with your long-term financial goals, giving you a clear path to a secure retirement.",
+    "We help you understand and plan your pension position. Contributions are reviewed for tax efficiency. Long-term goals are aligned with current finances. Options are explained in simple terms. Your future income becomes clearer. Planning replaces uncertainty. Manage reporting to The Pension Regulator.",
   items: [
     {
-      title: "Review Pension Position",
-      description:
-        "We assess your current pension situation and provide clarity on your projected future income.",
+      title: "Understand & Plan",
+      description: "We help you understand and plan your pension position.",
       iconKey: "bar-chart" as PensionsServiceScopeIconKey,
     },
     {
       title: "Tax-Efficient Contributions",
-      description:
-        "Contribution patterns are reviewed to ensure your savings are optimised for better tax efficiency and long-term growth.",
+      description: "Contributions are reviewed for tax efficiency.",
       iconKey: "badge-percent" as PensionsServiceScopeIconKey,
     },
     {
-      title: "Align Goals with Current Finances",
-      description:
-        "Your retirement goals are aligned with your current financial situation, ensuring realistic, achievable planning.",
+      title: "Goals Aligned",
+      description: "Long-term goals are aligned with current finances.",
       iconKey: "target" as PensionsServiceScopeIconKey,
     },
     {
-      title: "Explain Options Clearly",
+      title: "Clear Options & Income",
       description:
-        "We provide simple, clear explanations of your pension options, allowing you to make informed decisions.",
+        "Options are explained in simple terms. Your future income becomes clearer.",
       iconKey: "message-square" as PensionsServiceScopeIconKey,
     },
     {
-      title: "Reporting to The Pension Regulator",
+      title: "Planning & Regulator Reporting",
       description:
-        "We handle all necessary reporting to The Pension Regulator to ensure ongoing compliance.",
+        "Planning replaces uncertainty. Manage reporting to The Pension Regulator.",
       iconKey: "badge-check" as PensionsServiceScopeIconKey,
     },
   ],
 };
-

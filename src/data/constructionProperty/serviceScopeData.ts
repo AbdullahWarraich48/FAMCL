@@ -9,38 +9,34 @@ export const CONSTRUCTION_PROPERTY_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for Your Industry",
   description:
-    "We offer accounting and tax services specifically designed for the construction and property sectors. From CIS compliance to VAT management, we ensure your projects are financially sound and legally compliant.",
+    "Specialised accounting and tax services for the UK construction and property sectors, addressing CIS, project profitability, and regulatory compliance.",
   items: [
     {
-      title: "CIS Registration & Compliance",
+      title: "Specialised Accounting & Tax",
       description:
-        "We assist with the registration and management of the Construction Industry Scheme (CIS), ensuring compliance with HMRC rules and avoiding penalties.",
-      iconKey: "hard-hat" as ConstructionPropertyIconKey,
-    },
-    {
-      title: "Project Profitability & Cost Tracking",
-      description:
-        "We implement project-based accounting, providing clear visibility of project costs and margins to ensure profitability.",
+        "Specialised accounting and tax services for the UK construction and property sectors.",
       iconKey: "calculator" as ConstructionPropertyIconKey,
     },
     {
-      title: "VAT Implications for Property Transactions",
+      title: "CIS Compliance",
+      description: "Addressing CIS registration, verification, and returns.",
+      iconKey: "hard-hat" as ConstructionPropertyIconKey,
+    },
+    {
+      title: "Project Profitability",
+      description: "Project profitability tracking and margin protection.",
+      iconKey: "bar-chart" as ConstructionPropertyIconKey,
+    },
+    {
+      title: "Regulatory Compliance",
+      description: "Regulatory compliance across industry-specific requirements.",
+      iconKey: "shield" as ConstructionPropertyIconKey,
+    },
+    {
+      title: "Property & VAT",
       description:
-        "We advise on VAT rules for property transactions, including zero-rating & reverse charges, ensuring compliance & minimising costs.",
+        "VAT implications for property, including zero-rating and reverse charges.",
       iconKey: "receipt-tax" as ConstructionPropertyIconKey,
     },
-    {
-      title: "Industry-Specific Regulatory Compliance",
-      description:
-        "We ensure your business complies with industry-specific regulations, keeping your operations protected.",
-      iconKey: "badge-check" as ConstructionPropertyIconKey,
-    },
-    {
-      title: "Financial Data for Project Bids & Financing",
-      description:
-        "We provide accurate financial data to support your project bids, financing, and other key decisions.",
-      iconKey: "target" as ConstructionPropertyIconKey,
-    },
   ],
-} as const;
-
+};

@@ -1,10 +1,15 @@
 "use client";
 
 import * as React from "react";
+import { SplitHeading } from "@/Components/SplitHeading";
 
 export type SectionIntroHeaderProps = {
   headingId: string;
   heading: React.ReactNode;
+  /** Blue portion when split heading is used */
+  headingBefore?: string;
+  /** Red portion when split heading is used */
+  headingHighlight?: string;
   /** Kept for API compatibility; lines no longer use a mask behind text */
   headingBgClassName?: string;
   sectionLabel?: React.ReactNode;
@@ -21,15 +26,20 @@ export type SectionIntroHeaderProps = {
 const SectionIntroHeader = ({
   headingId,
   heading,
+  headingBefore,
+  headingHighlight,
   sectionLabel,
   labelPillClassName = "shrink-0 rounded-lg bg-[#BFFFCB] px-4 py-2",
   labelTextClassName = "text-sm font-semibold uppercase tracking-[0.2em] text-[#239337]",
   labelAriaLabel = "Section",
   className = "",
   headingBlockMarginTop = "mt-8",
-  headingClassName = "text-[2rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]",
+  headingClassName = "text-[2rem] font-bold leading-[1.15] tracking-tight sm:text-4xl lg:text-[44px]",
 }: SectionIntroHeaderProps) => {
   const hasLabel = sectionLabel != null;
+  const useSplitHeading =
+    (headingBefore != null && headingHighlight != null) ||
+    typeof heading === "string";
 
   return (
     <div className={`flex flex-col items-center text-center ${className}`}>
@@ -51,17 +61,25 @@ const SectionIntroHeader = ({
         className={`flex w-full min-w-0 items-center justify-center gap-3 sm:gap-4 ${hasLabel ? headingBlockMarginTop : "mt-0"}`}
       >
         <span
-          className="h-0.5 shrink-0 rounded-full bg-slate-400 w-14 sm:w-16 md:w-20"
+          className="h-px shrink-0 rounded-full bg-[#1E63B3] w-14 sm:w-16 md:w-20"
           aria-hidden
         />
         <h2
           id={headingId}
           className={`min-w-0 max-w-4xl shrink px-1 text-center sm:px-2 ${headingClassName}`}
         >
-          {heading}
+          {useSplitHeading ? (
+            <SplitHeading
+              heading={heading}
+              headingBefore={headingBefore}
+              headingHighlight={headingHighlight}
+            />
+          ) : (
+            heading
+          )}
         </h2>
         <span
-          className="h-0.5 shrink-0 rounded-full bg-slate-400 w-14 sm:w-16 md:w-20"
+          className="h-px shrink-0 rounded-full bg-[#1E63B3] w-14 sm:w-16 md:w-20"
           aria-hidden
         />
       </div>

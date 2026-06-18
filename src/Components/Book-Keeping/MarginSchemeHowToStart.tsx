@@ -18,14 +18,14 @@ export const MarginSchemeHowToStart = ({
 
   return (
     <section
-      className="w-full bg-slate-50 pb-16 pt-4 md:pb-20 md:pt-6 lg:pb-24"
+      className="w-full bg-[#cbdcff] pb-16 pt-4 md:pb-20 md:pt-6 lg:pb-24"
       aria-labelledby={content.headingId}
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">
         <SectionIntroHeader
           headingId={content.headingId}
           heading={content.title}
-          headingBgClassName="bg-slate-50"
+          headingBgClassName="bg-[#cbdcff]"
           headingBlockMarginTop="mt-0"
           headingClassName="text-[1.65rem] font-bold leading-[1.15] tracking-tight text-[#1e3a5f] sm:text-3xl lg:text-[40px]"
         />

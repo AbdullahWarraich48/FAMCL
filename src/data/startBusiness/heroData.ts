@@ -4,11 +4,12 @@ export const START_BUSINESS_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Helping new businesses start on the right foundation",
+  bannerText: "Business Formation",
   heading: "Starting a Business",
-  subheading: "Support for individuals establishing a business in the UK.",
+  subheading:
+    "Support for individuals establishing a business in the UK with Secretarial services",
   description:
-    "Starting a business involves more than registering a company. Early decisions about structure, compliance, and financial management shape the long-term sustainability of your business. We provide structured support to help founders establish their business correctly from day one and avoid common mistakes that can create risk later.",
+    "Focused on preventing early-stage structural, tax, and compliance errors that commonly affect sustainability — covering both statutory requirements and operational readiness.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -30,4 +31,3 @@ export const START_BUSINESS_HERO_DATA: ServiceHeroData = {
       "Founders rely on our advice to set up their businesses with clarity, compliance, and confidence from day one.",
   },
 } as const;
-

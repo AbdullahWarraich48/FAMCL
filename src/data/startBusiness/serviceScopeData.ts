@@ -9,44 +9,35 @@ export const START_BUSINESS_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Overview",
   heading: "What We Set Up for Your Business",
   description:
-    "Starting a business requires the right legal structure, tax registrations, and compliance framework. We help founders establish these foundations properly so the business can operate confidently and grow sustainably.",
+    "Support for individuals establishing a business in the UK, focused on preventing early-stage structural, tax, and compliance errors that commonly affect sustainability. The service addresses both statutory requirements and operational readiness.",
   items: [
     {
-      title: "Business Structure Planning",
+      title: "UK Business Establishment",
       description:
-        "We assess your income, risk exposure, and long‑term goals to recommend the most suitable business structure.",
-      iconKey: "document-check" as StartBusinessIconKey,
-    },
-    {
-      title: "Statutory Registrations",
-      description:
-        "We handle company and tax registrations with HMRC and Companies House so the process remains simple and efficient.",
+        "Support for individuals establishing a business in the UK.",
       iconKey: "badge-check" as StartBusinessIconKey,
     },
     {
-      title: "Compliance Framework Setup",
+      title: "Structural Error Prevention",
       description:
-        "We establish a clear compliance framework so your business understands reporting obligations and regulatory deadlines.",
-      iconKey: "shield" as StartBusinessIconKey,
+        "Preventing early-stage structural errors that commonly affect sustainability.",
+      iconKey: "document-check" as StartBusinessIconKey,
     },
     {
-      title: "Financial Reporting Foundations",
+      title: "Tax & Compliance Setup",
       description:
-        "We introduce proper record‑keeping and reporting processes to support transparency and financial control.",
-      iconKey: "calculator" as StartBusinessIconKey,
-    },
-    {
-      title: "VAT & Tax Registration Guidance",
-      description:
-        "We advise on when to register for VAT and other taxes and complete the registrations on your behalf.",
+        "Preventing early-stage tax and compliance errors before they create risk.",
       iconKey: "receipt-tax" as StartBusinessIconKey,
     },
     {
-      title: "Growth-Ready Financial Systems",
-      description:
-        "We help implement financial systems that support scaling, funding opportunities, and long‑term sustainability.",
+      title: "Statutory Requirements",
+      description: "Addresses statutory requirements from the outset.",
+      iconKey: "shield" as StartBusinessIconKey,
+    },
+    {
+      title: "Operational Readiness",
+      description: "Operational readiness before trading begins.",
       iconKey: "trend-up" as StartBusinessIconKey,
     },
   ],
 };
-

@@ -7,35 +7,34 @@ type ProfessionalServicesSolutionIconKey = BookkeepingSolutionIconKey;
 
 export const PROFESSIONAL_SERVICES_SOLUTION_DATA: SolutionData = {
   sectionLabel: "Solution & Framework",
-  heading: "How We Deliver This Service",
+  heading: "How We Deliver",
   description:
-    "Our structured approach helps professional services firms optimise their financial operations, ensuring you maximise revenue, comply with regulations, and maintain profitability.",
+    "Our structured approach helps professional services firms optimise financial operations, compliance, and profitability.",
   steps: [
     {
       number: "01",
-      title: "Optimise Time Recording & Billing",
+      title: "Optimise time recording and billing systems for maximum recovery",
       iconKey: "clock" as ProfessionalServicesSolutionIconKey,
     },
     {
       number: "02",
-      title: "Manage Partner/Director Accounts & Profit Allocation",
+      title: "Manage partner/director current accounts and profit allocation",
       iconKey: "calculator" as ProfessionalServicesSolutionIconKey,
     },
     {
       number: "03",
-      title: "Ensure Regulatory Compliance",
+      title: "Ensure SRA and other regulatory compliance for client accounts",
       iconKey: "badge-check" as ProfessionalServicesSolutionIconKey,
     },
     {
       number: "04",
-      title: "Analyse Profitability",
+      title: "Analyse service line and client profitability",
       iconKey: "bar-chart" as ProfessionalServicesSolutionIconKey,
     },
     {
       number: "05",
-      title: "Tax-Efficient Structuring & Profit Extraction",
+      title: "Advise on tax-efficient structuring and profit extraction",
       iconKey: "receipt-tax" as ProfessionalServicesSolutionIconKey,
     },
   ],
-} as const;
-
+};

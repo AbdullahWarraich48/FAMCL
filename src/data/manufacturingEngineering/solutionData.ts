@@ -7,35 +7,37 @@ type ManufacturingEngineeringSolutionIconKey = BookkeepingSolutionIconKey;
 
 export const MANUFACTURING_ENGINEERING_SOLUTION_DATA: SolutionData = {
   sectionLabel: "Solution & Framework",
-  heading: "How We Deliver This Service",
+  heading: "How We Deliver",
   description:
-    "Our approach is designed to address the unique financial needs of manufacturing and engineering firms. From cost accounting to R&D claims, our structured framework ensures you optimise your resources and maximise profitability.",
+    "Our structured framework addresses the unique financial needs of manufacturing and engineering firms.",
   steps: [
     {
       number: "01",
-      title: "Implement Robust Cost Accounting",
+      title:
+        "Implement robust cost accounting to analyse per-unit profitability",
       iconKey: "calculator" as ManufacturingEngineeringSolutionIconKey,
     },
     {
       number: "02",
-      title: "Manage Inventory & Stock Control",
+      title: "Manage inventory valuation and stock control systems",
       iconKey: "boxes" as ManufacturingEngineeringSolutionIconKey,
     },
     {
       number: "03",
-      title: "Maximise R&D Tax Credit Claims",
+      title: "Maximise and correctly document R&D tax credit claims",
       iconKey: "flask" as ManufacturingEngineeringSolutionIconKey,
     },
     {
       number: "04",
-      title: "Financial Forecasting for Growth",
+      title:
+        "Provide financial forecasting for capital expenditure and growth",
       iconKey: "bar-chart" as ManufacturingEngineeringSolutionIconKey,
     },
     {
       number: "05",
-      title: "Analyse Supply Chain Costs",
+      title:
+        "Analyse supply chain costs and advise on efficiency improvements",
       iconKey: "factory" as ManufacturingEngineeringSolutionIconKey,
     },
   ],
-} as const;
-
+};

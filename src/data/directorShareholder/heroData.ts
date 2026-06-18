@@ -4,11 +4,11 @@ export const DIRECTOR_SHAREHOLDER_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Practical Tax Support for Individuals and Families",
+  bannerText: "For You",
   heading: "Director & Shareholder Advisory",
   subheading: "Navigating your duties with confidence.",
   description:
-    "Being a director or shareholder comes with significant responsibilities. We provide clear, practical advice on your legal, tax, and financial duties. From profit extraction to handling director loans, our advisory service ensures you comply with UK company law and protect your personal assets.",
+    "We provide clear, practical advice on legal duties, tax responsibilities, and financial obligations for company directors and shareholders.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -29,5 +29,4 @@ export const DIRECTOR_SHAREHOLDER_HERO_DATA: ServiceHeroData = {
     description:
       "Clients trust our director and shareholder advice for clear communication, accuracy, and long-term support.",
   },
-};
-
+} as const;

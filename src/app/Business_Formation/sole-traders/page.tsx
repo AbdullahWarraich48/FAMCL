@@ -17,11 +17,12 @@ import {
 import { SOLE_TRADERS_FAQ_DATA } from "@/data/soleTraders/faqData";
 import SoleTradersChallenges from "@/Components/Home/SoleTradersChallenges";
 import SoleTradersChooseService from "@/Components/Home/SoleTradersChooseService";
+import { SECTION_BG } from "@/constants/sectionBackgrounds";
 
 export const metadata = {
   title: "Sole Traders | FAM Chartered Accountants",
   description:
-    "Simple, compliant support for self-employed individuals, with clear guidance on tax, record-keeping, and HMRC responsibilities.",
+    "Simple support for self-employed work. Ongoing tax and compliance support for UK Sole Traders with structured record-keeping and planning.",
 };
 
 export default function SoleTradersPage() {
@@ -29,8 +30,8 @@ export default function SoleTradersPage() {
     <main className="min-h-screen bg-white">
       <BookKeepingHerosection heroData={SOLE_TRADERS_HERO_DATA} />
       <ServiceScope data={SOLE_TRADERS_SERVICE_SCOPE_DATA} />
-      <Facts data={SOLE_TRADERS_FACTS_DATA} />
-      <Solution data={SOLE_TRADERS_SOLUTION_DATA} />
+      <Facts data={SOLE_TRADERS_FACTS_DATA} sectionClassName={SECTION_BG.white} />
+      <Solution data={SOLE_TRADERS_SOLUTION_DATA} sectionClassName={SECTION_BG.alt} />
       <SoleTradersChallenges />
       <SoleTradersChooseService />
       <Solution data={SOLE_TRADERS_TRUST_MATRIX_SOLUTION_DATA} />

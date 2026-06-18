@@ -18,6 +18,6 @@ export const CIS_WHY_CHOOSE_SECTION: CisCenteredSection = {
   subheading: "Practical support based on real experience",
   description:
     "Our experience working within the CIS industry allows us to understand our clients’ needs. Our services are designed to provide a smooth and efficient approach to managing financial obligations, whether you are a contractor or subcontractor.",
-  backgroundClassName: "bg-[#f4f6fb]",
+  backgroundClassName: "bg-[#cbdcff]",
 };
 

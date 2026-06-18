@@ -9,38 +9,34 @@ export const PAYROLL_PANSIONS_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for Your Business",
   description:
-    "Payroll administration involves more than simply paying employees. PAYE reporting, pension contributions, and regulatory filings must all be handled correctly. Our payroll service ensures your employee payments remain accurate, organised, and fully compliant.",
+    "We manage payroll, PAYE, and workplace pensions and The Pension Regulator submissions. Employees are paid accurately and on time. Auto-enrolment duties are handled correctly. Starters, leavers, and changes are managed smoothly. Records remain compliant with HMRC and regulators. You avoid administrative overload.",
   items: [
     {
-      title: "Payroll Processing",
+      title: "Payroll, PAYE & Pensions",
       description:
-        "Employee salaries are calculated and processed accurately so staff are paid on time.",
+        "We manage payroll, PAYE, and workplace pensions and The Pension Regulator submissions.",
       iconKey: "calculator" as PayrollServiceScopeIconKey,
     },
     {
-      title: "PAYE Management",
-      description:
-        "PAYE deductions and submissions are managed in accordance with HMRC requirements.",
-      iconKey: "receipt-tax" as PayrollServiceScopeIconKey,
-    },
-    {
-      title: "Workplace Pension Compliance",
-      description:
-        "Auto-enrolment duties and pension contributions are handled correctly under UK regulations.",
+      title: "Accurate, On-Time Pay",
+      description: "Employees are paid accurately and on time.",
       iconKey: "badge-check" as PayrollServiceScopeIconKey,
     },
     {
-      title: "Employee Changes Management",
-      description:
-        "Starters, leavers, and salary adjustments are processed smoothly and recorded properly.",
+      title: "Auto-Enrolment Duties",
+      description: "Auto-enrolment duties are handled correctly.",
+      iconKey: "shield" as PayrollServiceScopeIconKey,
+    },
+    {
+      title: "Starters, Leavers & Changes",
+      description: "Starters, leavers, and changes are managed smoothly.",
       iconKey: "users" as PayrollServiceScopeIconKey,
     },
     {
-      title: "Regulatory Reporting",
+      title: "Compliant Records",
       description:
-        "Payroll-related reports and required submissions are filed accurately and on time.",
-      iconKey: "calendar-clock" as PayrollServiceScopeIconKey,
+        "Records remain compliant with HMRC and regulators. You avoid administrative overload.",
+      iconKey: "document-check" as PayrollServiceScopeIconKey,
     },
   ],
 };
-

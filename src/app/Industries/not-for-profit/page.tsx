@@ -18,7 +18,7 @@ import { NOT_FOR_PROFIT_FAQ_DATA } from "@/data/notForProfit/faqData";
 export const metadata = {
   title: "Not-for-Profit | FAM Chartered Accountants",
   description:
-    "Specialist accounting, regulation, and compliance support for charities and not-for-profit organisations, helping you protect donor trust and meet regulatory requirements.",
+    "Financial governance for organisations with a mission. Reporting, governance, and assurance for charities — Charity Commission and SORP compliance.",
 };
 
 export default function NotForProfitPage() {

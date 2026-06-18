@@ -18,7 +18,7 @@ import { CONSTRUCTION_PROPERTY_FAQ_DATA } from "@/data/constructionProperty/faqD
 export const metadata = {
   title: "Construction & Property | FAM Chartered Accountants",
   description:
-    "Specialist accounting and tax advice for construction and property businesses, including CIS support and project profitability.",
+    "Practical advice for complex projects. Specialist accounting and tax for UK construction and property, including CIS and project profitability.",
 };
 
 export default function ConstructionPropertyPage() {

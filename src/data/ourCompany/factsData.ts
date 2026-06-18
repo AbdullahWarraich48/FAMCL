@@ -7,31 +7,25 @@ type OurCompanyFactsIconKey = BookkeepingFactsIconKey;
 
 export const OUR_COMPANY_FACTS_DATA: FactsData = {
   sectionLabel: "Core Principles",
-  heading: "The Standards That Guide Our Work",
+  heading: "FAM Chartered Accountants Core Principles",
   description:
-    "Our work is guided by three principles designed to ensure clarity, accountability, and responsible financial advice.",
+    "Our work is guided by three core principles that ensure clarity and accountability.",
+  cardStyle: "principles",
   items: [
     {
-      stat: "Accuracy Before Speed",
-      description:
-        "Financial reporting and advice must be precise and reliable rather than rushed.",
-      source: "FAM Chartered Accountants",
-      iconKey: "file-warning" as OurCompanyFactsIconKey,
+      stat: "Accuracy before speed",
+      description: "",
+      iconKey: "clock" as OurCompanyFactsIconKey,
     },
     {
-      stat: "Judgement Before Optimisation",
-      description:
-        "Professional judgement comes before aggressive optimisation, particularly where risk or short-term gains are involved.",
-      source: "FAM Chartered Accountants",
+      stat: "Judgement before optimisation",
+      description: "",
       iconKey: "chart-pie" as OurCompanyFactsIconKey,
     },
     {
-      stat: "Responsibility Before Convenience",
-      description:
-        "Decisions prioritise long-term responsibility and regulatory discipline over convenience or ease.",
-      source: "FAM Chartered Accountants",
-      iconKey: "users" as OurCompanyFactsIconKey,
+      stat: "Responsibility before convenience",
+      description: "",
+      iconKey: "building" as OurCompanyFactsIconKey,
     },
   ],
 };
-

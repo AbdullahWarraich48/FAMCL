@@ -4,11 +4,11 @@ export const CRYPTO_MODERN_INCOME_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Practical Tax Support for Individuals and Families",
+  bannerText: "For You",
   heading: "Crypto & Modern Income",
   subheading: "Simple tax advice for new income streams.",
   description:
-    "Cryptocurrency and digital income are rapidly evolving areas of taxation. We provide expert, up-to-date guidance to ensure your crypto transactions and digital income are reported accurately and in line with UK tax laws, keeping you protected from future tax issues.",
+    "We provide tax guidance for cryptocurrency and digital income, with transactions reviewed accurately and reporting handled correctly as rules evolve.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -29,5 +29,4 @@ export const CRYPTO_MODERN_INCOME_HERO_DATA: ServiceHeroData = {
     description:
       "Clients rate our crypto and digital income support highly for clarity, accuracy, and practical guidance.",
   },
-};
-
+} as const;

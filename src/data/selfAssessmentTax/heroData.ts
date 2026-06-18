@@ -4,11 +4,11 @@ export const SELF_ASSESSMENT_TAX_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Proactive Tax Support for Individuals and Families",
+  bannerText: "For You",
   heading: "Self-Assessment Tax",
   subheading: "Your personal tax return, done properly.",
   description:
-    "Managing your personal tax return can feel overwhelming, but we simplify the process. From reviewing all income sources to applying the right allowances and reliefs, we make sure your Self-Assessment tax return is submitted accurately and on time.",
+    "We prepare and submit your Self-Assessment tax return accurately and on time, with all income reviewed and allowances applied correctly.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -29,5 +29,4 @@ export const SELF_ASSESSMENT_TAX_HERO_DATA: ServiceHeroData = {
     description:
       "Clients recognise our service for excellent, responsive support and clear communication on all tax matters.",
   },
-};
-
+} as const;

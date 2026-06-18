@@ -4,11 +4,11 @@ export const NOT_FOR_PROFIT_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Specialist Financial Advice for UK Industries",
+  bannerText: "Industries",
   heading: "Not-for-Profit",
   subheading: "Financial governance for organisations with a mission.",
   description:
-    "Charities and not-for-profit organisations operate under strict governance and reporting requirements. We provide specialist accounting, regulation, and compliance support to help organisations maintain transparency, protect donor trust, and meet regulatory obligations.",
+    "Financial reporting, governance, and assurance services for charities and not-for-profit organisations, ensuring compliance with Charity Commission regulations and SORP.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -20,7 +20,7 @@ export const NOT_FOR_PROFIT_HERO_DATA: ServiceHeroData = {
 
   featureCards: [
     { label: "Trusted Nationwide" },
-    { label: "Experienced Advisors" },
+    { label: "Experienced Advisers" },
     { label: "Fixed-Fee Pricing" },
   ],
 
@@ -30,4 +30,3 @@ export const NOT_FOR_PROFIT_HERO_DATA: ServiceHeroData = {
       "Clients consistently rate our support highly for clarity, compliance, and understanding of the not-for-profit sector.",
   },
 } as const;
-

@@ -18,7 +18,7 @@ import { HEALTHCARE_FAQ_DATA } from "@/data/healthcare/faqData";
 export const metadata = {
   title: "Healthcare | FAM Chartered Accountants",
   description:
-    "Specialist accounting and advisory support for healthcare providers, ensuring compliant and efficient financial operations so you can focus on patient care.",
+    "Reliable advice for patient-focused organisations. Specialist accounting and compliance for GP practices, dental surgeries, and care homes.",
 };
 
 export default function HealthcarePage() {

@@ -3,7 +3,9 @@ export type Testimonial = {
   title: string;
   /** Testimonial slide — first part of heading (blue) */
   titleBlue?: string;
-  /** Testimonial slide — second part of heading (red) */
+  /** Testimonial slide — red text on the same line as titleBlue */
+  titleMidRed?: string;
+  /** Testimonial slide — red text on the second line */
   titleRed?: string;
   imageUrl: string;
   /** Testimonial slide */
@@ -19,7 +21,8 @@ export const CARASOUL_TESTIMONIALS: Testimonial[] = [
   {
     title: "Better Results Than Expected",
     titleBlue: "Better Results",
-    titleRed: "Than Expected",
+    titleMidRed: "Than",
+    titleRed: "Expected",
     quote:
       "They helped me plan properly and I ended up saving more than I had anticipated.",
     author: "Sarah Ahmed",

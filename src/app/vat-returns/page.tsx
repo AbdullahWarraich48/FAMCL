@@ -18,7 +18,7 @@ import { VAT_RETURNS_FAQ_DATA } from "@/data/vatReturns/faqData";
 export const metadata = {
   title: "VAT Returns | FAM Chartered Accountants",
   description:
-    "HMRC-compliant VAT returns managed accurately and on time, with clear records and proactive support.",
+    "HMRC compliance, made simple. VAT registration, returns, and digital submissions managed accurately and on time.",
 };
 
 export default function VatReturnsPage() {

@@ -18,7 +18,7 @@ import { PENSIONS_FUTURE_PLANNING_FAQ_DATA } from "@/data/pensionsFuturePlanning
 export const metadata = {
   title: "Pensions & Future Planning | FAM Chartered Accountants",
   description:
-    "Guidance on pensions, retirement planning, and long-term financial security so you can plan today for peace of mind tomorrow.",
+    "Plan today for peace of mind tomorrow. Pension planning, tax-efficient contributions, and long-term retirement guidance.",
 };
 
 export default function PensionsFuturePlanningPage() {

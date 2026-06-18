@@ -9,38 +9,34 @@ export const HEALTHCARE_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for Your Industry",
   description:
-    "Healthcare organisations face unique financial and regulatory challenges. Our services are tailored to support medical practices, care providers, and healthcare businesses with compliant financial management and operational clarity.",
+    "Specialist accounting and compliance for private healthcare providers, including GP practices, dental surgeries, and care homes.",
   items: [
     {
-      title: "Specialist Medical Payroll",
+      title: "Specialist Accounting & Compliance",
       description:
-        "We manage payroll for healthcare staff, including locum doctors, practitioners, and support teams, ensuring accurate payments and compliance with HMRC requirements.",
+        "Specialist accounting and compliance for private healthcare providers.",
       iconKey: "document-check" as HealthcareIconKey,
     },
     {
-      title: "NHS Contract & Practice Accounts",
-      description:
-        "We handle NHS contract income and practice accounts for GP practices and clinics, providing clear reporting on funding streams and profitability.",
+      title: "GP Practices",
+      description: "Including GP practices and NHS contract reconciliation.",
       iconKey: "calculator" as HealthcareIconKey,
     },
     {
-      title: "Tax Planning for Partnerships",
-      description:
-        "We advise healthcare partnerships on tax planning, profit allocation, and allowable expense claims to optimise partner drawings and tax efficiency.",
-      iconKey: "receipt-tax" as HealthcareIconKey,
-    },
-    {
-      title: "Regulatory Financial Reporting",
-      description:
-        "We ensure financial reporting meets regulatory requirements, including standards expected by regulators and professional bodies.",
+      title: "Dental Surgeries",
+      description: "Accounting and compliance for dental surgeries.",
       iconKey: "badge-check" as HealthcareIconKey,
     },
     {
-      title: "Strategic Practice Advice",
+      title: "Care Homes",
+      description: "Financial reporting and compliance for care homes.",
+      iconKey: "shield" as HealthcareIconKey,
+    },
+    {
+      title: "Medical Payroll",
       description:
-        "We provide guidance on practice mergers, acquisitions, and succession planning to support long-term stability.",
-      iconKey: "target" as HealthcareIconKey,
+        "Specialist medical payroll, including locum and practitioner payments.",
+      iconKey: "users" as HealthcareIconKey,
     },
   ],
-} as const;
-
+};

@@ -17,11 +17,12 @@ import {
 import { START_BUSINESS_FAQ_DATA } from "@/data/startBusiness/faqData";
 import WhyChooseService from "@/Components/Home/ChooseService";
 import Challenges from "@/Components/Home/Challenges";
+import { SECTION_BG } from "@/constants/sectionBackgrounds";
 
 export const metadata = {
   title: "Starting a Business | FAM Chartered Accountants",
   description:
-    "Support for individuals establishing a business in the UK with professional secretarial services and structured guidance from day one.",
+    "Business Formation support for individuals establishing a business in the UK with secretarial services, structural planning, and compliance from day one.",
 };
 
 export default function StartBusinessPage() {
@@ -29,8 +30,8 @@ export default function StartBusinessPage() {
     <main className="min-h-screen bg-white">
       <BookKeepingHerosection heroData={START_BUSINESS_HERO_DATA} />
       <ServiceScope data={START_BUSINESS_SERVICE_SCOPE_DATA} />
-      <Facts data={START_BUSINESS_FACTS_DATA} />
-      <Solution data={START_BUSINESS_SOLUTION_DATA} />
+      <Facts data={START_BUSINESS_FACTS_DATA} sectionClassName={SECTION_BG.white} />
+      <Solution data={START_BUSINESS_SOLUTION_DATA} sectionClassName={SECTION_BG.alt} />
       <Challenges />
       <WhyChooseService />
       <Solution data={START_BUSINESS_TRUST_MATRIX_SOLUTION_DATA} />

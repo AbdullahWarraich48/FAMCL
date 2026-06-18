@@ -78,8 +78,8 @@ export default function TestimonialExact({
           </div>
         ) : null}
 
-        <div className="relative mx-auto flex max-w-[920px] flex-col gap-5 md:flex-row md:items-center">
-          <div className="relative z-0 w-full shrink-0 md:w-[52%]">
+        <div className="relative flex w-full flex-col gap-5 md:flex-row md:items-center">
+          <div className="relative z-0 w-full shrink-0 md:w-[44%]">
             <div className="overflow-hidden rounded-xl">
               <div className="relative aspect-[4/3] w-full">
                 <Image
@@ -91,7 +91,7 @@ export default function TestimonialExact({
                   }
                   fill
                   className="object-cover"
-                  sizes="(max-width: 768px) 100vw, 480px"
+                  sizes="(max-width: 768px) 100vw, 44vw"
                   priority={i === 0}
                   draggable={false}
                 />
@@ -99,14 +99,14 @@ export default function TestimonialExact({
             </div>
           </div>
 
-          <div className="relative z-10 w-full md:-ml-[18%] md:w-[58%]">
-            <div className="relative rounded-xl bg-[#f5f8fc] shadow-[0_10px_40px_rgba(18,37,75,0.1)]">
+          <div className="relative z-10 w-full md:-ml-[10%] md:w-[66%]">
+            <div className="relative rounded-xl border border-slate-200/90 bg-[#f5f8fc] shadow-[0_12px_48px_rgba(18,37,75,0.14)]">
               {!hideArrows && (
                 <div className="absolute right-4 top-4 z-10 hidden gap-1.5 md:flex">
                   <Button
                     type="button"
                     onClick={prev}
-                    className="h-8 w-8 rounded-sm bg-[#12254B] p-0 hover:bg-[#1a3260]"
+                    className="h-8 w-8 rounded-sm bg-[#1E63B3] p-0 hover:bg-[#175dab]"
                     aria-label="Previous slide"
                   >
                     <ChevronLeft className="h-4 w-4 text-white" />
@@ -114,7 +114,7 @@ export default function TestimonialExact({
                   <Button
                     type="button"
                     onClick={next}
-                    className="h-8 w-8 rounded-sm bg-[#12254B] p-0 hover:bg-[#1a3260]"
+                    className="h-8 w-8 rounded-sm bg-[#1E63B3] p-0 hover:bg-[#175dab]"
                     aria-label="Next slide"
                   >
                     <ChevronRight className="h-4 w-4 text-white" />
@@ -122,54 +122,62 @@ export default function TestimonialExact({
                 </div>
               )}
 
-              <div className="flex min-h-[280px] flex-col justify-center px-7 py-8 sm:px-9 sm:py-10 md:min-h-[300px] md:px-10 md:py-11">
+              <div className="flex min-h-[280px] flex-col justify-center px-5 py-8 sm:min-h-[360px] sm:px-10 md:min-h-[480px] md:px-11 md:py-14 lg:px-12">
                 {testimonial ? (
-                  <h2 className="text-[1.75rem] font-bold leading-[1.15] tracking-tight sm:text-[1.85rem]">
-                    <span className="block text-[#12254B]">{t.titleBlue}</span>
-                    <span className="mt-0.5 block text-[#c53030]">
-                      {t.titleRed}
+                  <h2 className="text-xl font-bold leading-[1.15] tracking-tight sm:text-[1.9rem] md:text-[2.35rem] lg:text-[2.5rem]">
+                    <span className="block">
+                      <span className="text-[#175dab]">{t.titleBlue}</span>
+                      {t.titleMidRed ? (
+                        <>
+                          {" "}
+                          <span className="text-red-600">{t.titleMidRed}</span>
+                        </>
+                      ) : null}
                     </span>
+                    {t.titleRed ? (
+                      <span className="mt-0.5 block text-red-600">{t.titleRed}</span>
+                    ) : null}
                   </h2>
                 ) : (
-                  <h2 className="whitespace-pre-line text-2xl font-bold leading-tight tracking-tight text-[#12254B] sm:text-3xl">
+                  <h2 className="whitespace-pre-line text-xl font-bold leading-tight tracking-tight text-[#175dab] sm:text-[1.9rem] md:text-[2.35rem] lg:text-[2.5rem]">
                     {t.title}
                   </h2>
                 )}
 
                 <div
-                  className="mt-4 h-[3px] w-12 bg-[#1E63B3]"
+                  className="mt-5 h-[3px] w-14 bg-[#175dab]"
                   aria-hidden
                 />
 
-                {!hideArrows && (
-                  <div className="mt-4 flex gap-1.5 md:hidden">
-                    <Button
-                      type="button"
-                      onClick={prev}
-                      className="h-8 w-8 rounded-sm bg-[#12254B] p-0"
-                      aria-label="Previous slide"
-                    >
-                      <ChevronLeft className="h-4 w-4 text-white" />
-                    </Button>
-                    <Button
-                      type="button"
-                      onClick={next}
-                      className="h-8 w-8 rounded-sm bg-[#12254B] p-0"
-                      aria-label="Next slide"
-                    >
-                      <ChevronRight className="h-4 w-4 text-white" />
-                    </Button>
-                  </div>
-                )}
+                  {!hideArrows && (
+                    <div className="mt-4 flex gap-1.5 md:hidden">
+                      <Button
+                        type="button"
+                        onClick={prev}
+                        className="h-8 w-8 rounded-sm bg-[#1E63B3] p-0 hover:bg-[#175dab]"
+                        aria-label="Previous slide"
+                      >
+                        <ChevronLeft className="h-4 w-4 text-white" />
+                      </Button>
+                      <Button
+                        type="button"
+                        onClick={next}
+                        className="h-8 w-8 rounded-sm bg-[#1E63B3] p-0 hover:bg-[#175dab]"
+                        aria-label="Next slide"
+                      >
+                        <ChevronRight className="h-4 w-4 text-white" />
+                      </Button>
+                    </div>
+                  )}
 
                 {editorial && t.subtitle ? (
-                  <p className="mt-6 text-lg font-bold leading-snug text-slate-800">
+                  <p className="mt-5 text-xl font-bold leading-snug text-[#175dab] md:text-[1.35rem]">
                     {t.subtitle}
                   </p>
                 ) : null}
 
                 {editorial && t.bodyParagraphs ? (
-                  <div className="mt-6 space-y-4 text-base leading-relaxed text-slate-600">
+                  <div className="mt-5 space-y-4 overflow-y-auto text-base leading-relaxed text-slate-700 md:text-lg md:leading-8">
                     {t.bodyParagraphs.map((para, idx) => (
                       <p key={idx}>{para}</p>
                     ))}
@@ -177,26 +185,26 @@ export default function TestimonialExact({
                 ) : null}
 
                 {!editorial && t.quote ? (
-                  <p className="mt-5 max-w-md text-[15px] leading-relaxed text-slate-600 sm:text-base sm:leading-7">
+                  <p className="mt-6 max-w-xl text-base leading-relaxed text-slate-700 sm:text-[17px] md:text-lg md:leading-8">
                     &ldquo;{t.quote}&rdquo;
                   </p>
                 ) : null}
 
                 {!editorial && t.author ? (
-                  <div className="mt-7">
-                    <p className="text-base font-bold text-[#12254B]">
+                  <div className="mt-8">
+                    <p className="text-lg font-bold text-[#175dab] md:text-xl">
                       &mdash; {t.author}
                     </p>
                     {t.role ? (
-                      <p className="mt-0.5 text-sm text-slate-500">
+                      <p className="mt-1 text-base text-slate-600 md:text-[17px]">
                         {t.role}
                       </p>
                     ) : null}
                   </div>
                 ) : null}
+                </div>
               </div>
             </div>
-          </div>
         </div>
 
         <div className="mt-7 flex justify-center gap-2 md:mt-8">

@@ -7,31 +7,29 @@ type HowWeWorkFactsIconKey = BookkeepingFactsIconKey;
 
 export const HOW_WE_WORK_FACTS_DATA: FactsData = {
   sectionLabel: "Our Working Model",
-  heading: "A Clear Process That Supports Informed Decisions",
-  description:
-    "Our working model follows a disciplined framework that ensures clarity throughout every engagement.",
+  heading: "Our Working Model",
+  description: "A clear process to ensure you understand your position.",
+  cardStyle: "principles",
   items: [
     {
-      stat: "Understand the Full Context",
-      description:
-        "We begin by reviewing the complete financial and regulatory situation before action is taken.",
-      source: "FAM Chartered Accountants",
+      stat: "Understand the full context",
+      description: "",
       iconKey: "chart-pie" as HowWeWorkFactsIconKey,
     },
     {
-      stat: "Identify Exposure and Uncertainty",
-      description:
-        "Potential risks and areas of uncertainty are identified early, so they can be addressed with judgement rather than urgency.",
-      source: "FAM Chartered Accountants",
+      stat: "Identify exposure and uncertainty",
+      description: "",
       iconKey: "alert-octagon" as HowWeWorkFactsIconKey,
     },
     {
-      stat: "Apply Regulation Consistently",
-      description:
-        "Compliance rules are applied carefully and consistently, supporting reliable outcomes over the long term.",
-      source: "FAM Chartered Accountants",
+      stat: "Apply regulation consistently",
+      description: "",
       iconKey: "building" as HowWeWorkFactsIconKey,
+    },
+    {
+      stat: "Document decisions and assumptions",
+      description: "",
+      iconKey: "file-warning" as HowWeWorkFactsIconKey,
     },
   ],
 };
-

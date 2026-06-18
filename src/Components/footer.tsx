@@ -89,19 +89,16 @@ const SOCIAL_LINKS: readonly {
   label: string;
   href: string;
   Icon: LucideIcon;
-  colorClass: string;
 }[] = [
   {
     label: "Facebook",
     href: SOCIAL_FACEBOOK_URL,
     Icon: Facebook,
-    colorClass: "text-[#1877F2]",
   },
   {
     label: "LinkedIn",
     href: SOCIAL_LINKEDIN_URL,
     Icon: Linkedin,
-    colorClass: "text-[#0A66C2]",
   },
 ];
 
@@ -134,7 +131,7 @@ const FooterColumn = ({
   <div
     className={`${footerColCellClass} flex flex-col items-start text-left ${className ?? ""}`}
   >
-    <h3 className="mb-4 w-full text-left text-lg font-bold leading-tight text-[#12254b]">
+    <h3 className="mb-4 w-full text-left text-xl font-bold leading-tight text-white">
       {title}
     </h3>
     <ul className="flex w-full flex-col gap-2.5 text-left" role="list">
@@ -142,7 +139,7 @@ const FooterColumn = ({
         <li key={`${item.href}-${item.label}`} className="min-w-0">
           <Link
             href={item.href}
-            className="block text-left text-[15px] leading-snug text-slate-600 break-words transition-colors hover:text-[#12254b] hover:underline md:text-base"
+            className="block text-left text-[15px] leading-snug text-white/85 break-words transition-colors hover:text-white hover:underline md:text-base"
             tabIndex={0}
           >
             {item.label}
@@ -164,7 +161,7 @@ const FooterSection = () => {
 
   return (
     <footer
-      className="site-footer w-full bg-white text-left text-gray-900"
+      className="site-footer w-full bg-[#175dab] text-left text-white"
       aria-label="Site footer"
       role="contentinfo"
     >
@@ -193,19 +190,19 @@ const FooterSection = () => {
             role="group"
             aria-label="Social media"
           >
-            {SOCIAL_LINKS.map(({ label, href, Icon, colorClass }) => (
+            {SOCIAL_LINKS.map(({ label, href, Icon }) => (
               <a
                 key={label}
                 href={href}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-slate-300 bg-white text-slate-700 shadow-sm transition-colors hover:border-slate-400 hover:bg-slate-50 focus:outline-none focus-visible:ring-2 focus-visible:ring-[#12254b] focus-visible:ring-offset-2"
+                className="flex h-10 w-10 shrink-0 items-center justify-center rounded-full border border-white/30 bg-white/10 text-white shadow-sm transition-colors hover:border-white/50 hover:bg-white/20 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#175dab]"
                 aria-label={label}
                 tabIndex={0}
                 onKeyDown={(e) => handleSocialKeyDown(e, href)}
               >
                 <Icon
-                  className={`h-5 w-5 ${colorClass}`}
+                  className="h-5 w-5 text-white"
                   strokeWidth={2}
                   aria-hidden
                 />
@@ -254,20 +251,20 @@ const FooterSection = () => {
         </div>
       </div>
 
-      <div className="bg-[#F8F9FA]">
+      <div className="bg-[#2ca01c]">
         <div className="footer-inner mx-auto flex max-w-[1512px] flex-col items-start gap-6 py-4 text-left md:flex-row md:items-start md:justify-between md:gap-8 md:py-5">
-          <div className="max-w-3xl space-y-1 text-left text-xs leading-relaxed text-gray-600 md:text-sm">
+          <div className="max-w-3xl space-y-1 text-left text-sm leading-relaxed text-white/95 md:text-base">
             <p>
               © 2026 {BRAND_DISPLAY_NAME}. All rights reserved.
             </p>
             <p>
               Registered office: {REGISTERED_OFFICE_ADDRESS}. Company No.
-              06613732.
+              08613732.
             </p>
           </div>
 
           <nav
-            className="w-full shrink-0 text-left text-xs text-gray-600 md:w-auto md:text-sm"
+            className="w-full shrink-0 text-left text-sm text-white/95 md:w-auto md:text-base"
             aria-label="Footer legal links"
           >
             <ul className="flex flex-wrap items-center justify-start gap-x-2 gap-y-1">
@@ -277,13 +274,13 @@ const FooterSection = () => {
                   className="flex items-center gap-2"
                 >
                   {index > 0 ? (
-                    <span aria-hidden className="text-gray-400">
+                    <span aria-hidden className="text-white/70">
                       |
                     </span>
                   ) : null}
                   <Link
                     href={item.href}
-                    className="rounded transition-colors hover:text-gray-900 hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-gray-900 focus-visible:ring-offset-2"
+                    className="rounded text-white transition-colors hover:text-white hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#2ca01c]"
                     tabIndex={0}
                   >
                     {item.label}

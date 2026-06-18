@@ -9,38 +9,34 @@ export const TECHNOLOGY_DIGITAL_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for Your Industry",
   description:
-    "Technology companies face unique financial challenges, from managing rapid growth to navigating investor expectations. We provide financial guidance designed specifically for startups, SaaS companies, and fast-growing digital businesses.",
+    "Strategic financial support for the UK's tech and digital sector, from startups to scale-ups, with a focus on R&D, fundraising, and employee share schemes.",
   items: [
     {
-      title: "Financial Models & Forecasting",
+      title: "Strategic Financial Support",
       description:
-        "We develop robust financial models to support forecasting, investment readiness, and strategic planning.",
+        "Strategic financial support for the UK's tech and digital sector, from startups to scale-ups.",
       iconKey: "bar-chart" as TechnologyDigitalIconKey,
     },
     {
-      title: "Employee Share Option Schemes",
-      description:
-        "We structure and administer EMI and other employee share option schemes to attract and retain talent.",
-      iconKey: "users" as TechnologyDigitalIconKey,
-    },
-    {
-      title: "Revenue Recognition for SaaS & Projects",
-      description:
-        "We manage complex revenue recognition for subscription-based SaaS businesses and project-based digital services.",
-      iconKey: "document-check" as TechnologyDigitalIconKey,
-    },
-    {
-      title: "R&D Tax Credit Claims",
-      description:
-        "We ensure your R&D tax credit claims are maximised and fully compliant with HMRC requirements.",
+      title: "R&D Focus",
+      description: "Focus on R&D tax credits and defensible claims.",
       iconKey: "flask" as TechnologyDigitalIconKey,
     },
     {
-      title: "Outsourced Finance Director Support",
+      title: "Fundraising Readiness",
+      description: "Financial models and reporting for fundraising and investment.",
+      iconKey: "trend-up" as TechnologyDigitalIconKey,
+    },
+    {
+      title: "Employee Share Schemes",
+      description: "EMI and other employee share option schemes.",
+      iconKey: "users" as TechnologyDigitalIconKey,
+    },
+    {
+      title: "Scale-Up Support",
       description:
-        "We provide finance-director-level support to help secure business growth, funding, and financial strategy.",
+        "Finance-director-level support as your business scales.",
       iconKey: "target" as TechnologyDigitalIconKey,
     },
   ],
-} as const;
-
+};

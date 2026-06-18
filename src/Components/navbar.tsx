@@ -118,7 +118,7 @@ export default function Navbar() {
     normalizePath(pathname) === normalizePath(href);
 
   const mainNavLinkClass =
-    "group flex items-center gap-1 whitespace-nowrap text-base font-medium text-white transition-colors hover:text-white/90 rounded";
+    "group flex items-center gap-1 whitespace-nowrap text-lg font-medium text-white transition-colors hover:text-white/90 rounded";
 
   const getDropdownLinkClass = (href: string, extraClass = "") =>
     `group inline-flex items-center gap-2 text-sm font-medium ${
@@ -315,10 +315,17 @@ export default function Navbar() {
           </div>
         </div>
 
+        {openDropdown ? (
+          <div
+            className="absolute inset-x-0 top-full z-30 h-3"
+            aria-hidden="true"
+          />
+        ) : null}
+
         {/* Business Formation dropdown */}
         {openDropdown === "business-formation" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2 pt-2"
             role="dialog"
             aria-label="Business formation"
             onMouseEnter={() => setOpenDropdown("business-formation")}
@@ -460,7 +467,7 @@ export default function Navbar() {
         {/* Business dropdown */}
         {openDropdown === "business" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2 pt-2"
             role="dialog"
             aria-label="Business services"
             onMouseEnter={() => setOpenDropdown("business")}
@@ -605,7 +612,7 @@ export default function Navbar() {
         {/* For You (personal) dropdown */}
         {openDropdown === "personal" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2 pt-2"
             role="dialog"
             aria-label="For you services"
             onMouseEnter={() => setOpenDropdown("personal")}
@@ -748,7 +755,7 @@ export default function Navbar() {
         {/* Industries dropdown */}
         {openDropdown === "who-we-help" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2 pt-2"
             role="dialog"
             aria-label="Industries"
             onMouseEnter={() => setOpenDropdown("who-we-help")}
@@ -876,7 +883,7 @@ export default function Navbar() {
         {/* Company (About Us) dropdown */}
         {openDropdown === "about-us" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2 pt-2"
             role="dialog"
             aria-label="Company"
             onMouseEnter={() => setOpenDropdown("about-us")}
@@ -1002,7 +1009,7 @@ export default function Navbar() {
         {/* Resources dropdown */}
         {openDropdown === "resources" && (
           <div
-            className="absolute left-1/2 top-full z-40 mt-2 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2"
+            className="absolute left-1/2 top-full z-40 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2 pt-2"
             role="dialog"
             aria-label="Resources"
             onMouseEnter={() => setOpenDropdown("resources")}
@@ -1143,7 +1150,7 @@ export default function Navbar() {
                   <li key={label}>
                     <Link
                       href={href}
-                      className="flex items-center justify-between py-2 text-sm font-medium text-slate-700 hover:text-slate-900"
+                      className="flex items-center justify-between py-2 text-base font-medium text-slate-700 hover:text-slate-900"
                       onClick={handleCloseMenu}
                     >
                       <span>{label}</span>
@@ -1156,7 +1163,7 @@ export default function Navbar() {
                 <li key={label}>
                   <button
                     type="button"
-                    className="flex w-full items-center justify-between py-2 text-left text-sm font-semibold text-slate-800"
+                    className="flex w-full items-center justify-between py-2 text-left text-base font-semibold text-slate-800"
                     onClick={() =>
                       setOpenMobileSection((prev) => (prev === key ? null : key))
                     }

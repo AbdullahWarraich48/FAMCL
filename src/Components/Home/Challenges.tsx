@@ -1,11 +1,11 @@
 import SectionIntroHeader from "@/Components/SectionIntroHeader";
 
 const CHALLENGES = [
-  "Companies registered without understanding tax consequences",
-  "VAT registration decisions made too early or too late",
-  "Record-keeping ignored until penalties arise",
-  "Personal and business finances mixed together",
-  "No financial planning beyond registration",
+  "Founders often register companies without understanding tax consequences",
+  "VAT registration decisions are made too early or too late",
+  "Record-keeping is ignored until penalties arise",
+  "Personal and business finances are mixed, creating future risk",
+  "No forward planning beyond registration",
 ] as const;
 
 export default function Challenges() {
@@ -20,27 +20,20 @@ export default function Challenges() {
             headingId="founder-challenges-heading"
             sectionLabel={
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C23A5D] sm:text-sm sm:tracking-[0.2em]">
-                Common Founder Challenges
+                Comprehensive Business Support
               </span>
             }
             labelPillClassName="shrink-0 rounded-lg bg-[#FFE4EC] px-4 py-2"
-            labelAriaLabel="Common founder challenges"
-            heading="Risks Many New Businesses Face"
+            labelAriaLabel="Comprehensive business support"
+            heading="Common Early-Stage Mistakes"
             headingBgClassName="bg-white"
             headingBlockMarginTop="mt-6 sm:mt-8"
             headingClassName="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
           />
-
-          <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-slate-600 sm:mt-6 sm:text-[18px] sm:leading-[27.8px]">
-            Many founders unintentionally create financial and compliance risks during the early
-            stages of their business. These patterns are common, avoidable, and often fixed too
-            late.
-          </p>
         </div>
 
-        {/* Challenge cards */}
         <div className="mx-auto mt-10 flex max-w-5xl flex-col gap-5 sm:mt-12 sm:gap-6">
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {CHALLENGES.slice(0, 3).map((text) => (
               <div
                 key={text}
@@ -66,4 +59,3 @@ export default function Challenges() {
     </section>
   );
 }
-

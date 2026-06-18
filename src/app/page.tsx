@@ -11,13 +11,9 @@ import {
 import Client from "@/Components/Home/Client";
 import Cta from "@/Components/Home/Cta";
 import TaxCta from "@/Components/Home/TaxCta";
-import Contact from "@/Components/Book-Keeping/Contact";
+import { SECTION_BG } from "@/constants/sectionBackgrounds";
 
 /** Alternating section backgrounds: odd = white, even = #cbdcff */
-const SECTION_BG = {
-  white: "bg-white",
-  alt: "bg-[#cbdcff]",
-} as const;
 
 export default function Home() {
   return (
@@ -39,6 +35,8 @@ export default function Home() {
       {/* 5 — white */}
       <ChooseCard
         sectionTitle={CHOOSE_FIRM_SECTION.sectionTitle}
+        sectionTitleBefore={CHOOSE_FIRM_SECTION.sectionTitleBefore}
+        sectionTitleHighlight={CHOOSE_FIRM_SECTION.sectionTitleHighlight}
         sectionDescription={CHOOSE_FIRM_SECTION.sectionDescription}
         cards={CHOOSE_FIRM_SECTION.cards}
         sectionId="choose-firm-heading"
@@ -48,6 +46,8 @@ export default function Home() {
       {/* 6 — #cbdcff */}
       <ChooseCard
         sectionTitle={CLOUD_SOFTWARE_SECTION.sectionTitle}
+        sectionTitleBefore={CLOUD_SOFTWARE_SECTION.sectionTitleBefore}
+        sectionTitleHighlight={CLOUD_SOFTWARE_SECTION.sectionTitleHighlight}
         sectionDescription={CLOUD_SOFTWARE_SECTION.sectionDescription}
         cards={CLOUD_SOFTWARE_SECTION.cards}
         sectionId="cloud-software-heading"
@@ -59,7 +59,6 @@ export default function Home() {
       <Client />
 
       <Cta />
-      <Contact />
       <FooterSection />
     </>
   );

@@ -27,7 +27,7 @@ type ServiceScopeProps = {
 };
 
 const ServiceCard = ({ title, description, Icon }: ServiceCardProps) => (
-  <Card className="flex h-full w-full flex-col overflow-hidden rounded-2xl border-0 border-slate-100 bg-gradient-to-b from-white/70 to-[#D8EAFF] p-6 shadow-[0_4px_14px_rgba(0,0,0,0.06),0_2px_6px_rgba(0,0,0,0.04)] transition-shadow hover:shadow-[0_12px_28px_rgba(0,0,0,0.08),0_4px_8px_rgba(0,0,0,0.04)]">
+  <Card className="flex h-full w-full flex-col overflow-hidden rounded-2xl border-0 border-slate-100 bg-white p-6 shadow-[0_4px_14px_rgba(0,0,0,0.06),0_2px_6px_rgba(0,0,0,0.04)] transition-shadow hover:shadow-[0_12px_28px_rgba(0,0,0,0.08),0_4px_8px_rgba(0,0,0,0.04)]">
     <CardHeader className="space-y-3 p-0">
       <span
         className="flex h-12 w-12 items-center justify-center rounded-xl bg-[#1e3a5f] text-white"
@@ -52,7 +52,7 @@ export const ServiceScope = ({ data }: ServiceScopeProps) => {
 
   return (
     <section
-      className="w-full bg-[#F6F9FF] py-16 md:py-20 lg:py-24"
+      className="w-full bg-[#cbdcff] py-16 md:py-20 lg:py-24"
       aria-labelledby="service-scope-heading"
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">
@@ -62,7 +62,7 @@ export const ServiceScope = ({ data }: ServiceScopeProps) => {
             sectionLabel={scopeData.sectionLabel}
             labelPillClassName="shrink-0 rounded-full bg-[#BFFFCB] px-5 py-2.5"
             heading={scopeData.heading}
-            headingBgClassName="bg-[#F6F9FF]"
+            headingBgClassName="bg-[#cbdcff]"
           />
 
           <p className="mt-6 max-w-3xl text-[18px] leading-[27.8px] text-slate-600">

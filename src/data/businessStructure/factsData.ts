@@ -6,32 +6,31 @@ import type {
 type BusinessStructureFactsIconKey = BookkeepingFactsIconKey;
 
 export const BUSINESS_STRUCTURE_FACTS_DATA: FactsData = {
-  sectionLabel: "Facts & Stats",
-  heading: "Business Structuring Insights",
+  sectionLabel: "Facts & Stats (UK)",
+  heading: "Business Structuring in Context",
   description:
-    "Selecting the right business structure is critical for minimising risks and ensuring long-term success. Here’s why getting it right matters.",
+    "Selecting the right business structure is critical for minimising risks and ensuring long-term success.",
   items: [
     {
-      stat: "Common Mistake in New Businesses",
+      stat: "30% Common Mistake",
       description:
-        "Over 30% of new businesses choose the wrong legal structure, which can hinder growth and increase administrative burdens.",
+        "Choosing the wrong legal structure is a common mistake made by over 30% of new businesses.",
       source: "FSB",
       iconKey: "alert-octagon" as BusinessStructureFactsIconKey,
     },
     {
-      stat: "Cost of Restructuring",
+      stat: "Costly Restructuring",
       description:
-        "Changing structure later on can be costly due to legal fees, potential capital gains or stamp duties, and operational disruption.",
+        "Restructuring a business later can be complex and costly, often triggering capital gains or other taxes.",
       source: "ICAEW",
       iconKey: "file-warning" as BusinessStructureFactsIconKey,
     },
     {
-      stat: "Liability Protection with Companies",
+      stat: "Limited Company Trade-Off",
       description:
-        "Limited companies offer liability protection but come with additional administrative and compliance duties.",
+        "Limited companies offer liability protection but come with higher administrative and compliance duties.",
       source: "Companies House",
       iconKey: "building" as BusinessStructureFactsIconKey,
     },
   ],
 };
-

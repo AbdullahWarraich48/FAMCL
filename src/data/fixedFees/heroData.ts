@@ -4,11 +4,10 @@ export const FIXED_FEES_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Judgement-led advice built on professional responsibility",
+  bannerText: "Company",
   heading: "Fixed Fees",
-  subheading: "Clear pricing agreed in advance.",
   description:
-    "Our fees are agreed in advance and linked to the scope of work and responsibility involved, not the outcome of the engagement. This approach ensures transparency and allows clients to make decisions without uncertainty around cost.",
+    "Fees are agreed in advance and linked to scope and responsibility, not outcomes.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -19,9 +18,9 @@ export const FIXED_FEES_HERO_DATA: ServiceHeroData = {
   },
 
   featureCards: [
-    { label: "Transparent Pricing" },
-    { label: "Agreed in Advance" },
-    { label: "No Surprise Bills" },
+    { label: "Clear expectations" },
+    { label: "Proper time allocation" },
+    { label: "Objective advice" },
   ],
 
   trustedBar: {

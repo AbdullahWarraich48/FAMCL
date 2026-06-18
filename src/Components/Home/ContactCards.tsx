@@ -33,13 +33,13 @@ export default function ContactCards({ className = "" }: ContactCardsProps) {
         <header className="mb-12 text-center md:mb-16">
           <h2
             id="contact-cards-heading"
-            className="mb-4 flex items-center justify-center gap-3 text-3xl font-bold tracking-tight md:gap-5 md:text-4xl"
+            className="mb-4 flex min-w-0 items-center justify-center gap-3 text-2xl font-bold tracking-tight sm:text-3xl md:gap-5 md:text-4xl"
           >
             <span
               className="h-px w-10 shrink-0 bg-[#1E63B3] md:w-16"
               aria-hidden
             />
-            <span>
+            <span className="min-w-0 shrink text-center">
               <span className="text-[#12254b]">
                 {CONTACT_CARDS_SECTION.titleBefore}
               </span>
@@ -60,7 +60,7 @@ export default function ContactCards({ className = "" }: ContactCardsProps) {
           </p>
         </header>
 
-        <div className="grid gap-6 md:grid-cols-3 lg:gap-8">
+        <div className="grid gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
           {CONTACT_CARDS.map((card) => (
             <article
               key={card.id}

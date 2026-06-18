@@ -1,11 +1,11 @@
 import SectionIntroHeader from "@/Components/SectionIntroHeader";
 
 const LANDLORD_CHALLENGES = [
-  "Property income treated informally without clear reporting",
-  "Missed deadlines when reporting property disposals",
-  "No alignment between personal tax planning and property income",
-  "Lack of forward estate or succession planning",
-  "Financial decisions made reactively under time pressure",
+  "Property income treated informally",
+  "Missed deadlines for reporting disposals",
+  "No alignment between personal and property tax",
+  "Lack of forward estate planning",
+  "Reactive decisions under time pressure",
 ] as const;
 
 export default function LandlordsFamiliesChallenges() {
@@ -20,26 +20,20 @@ export default function LandlordsFamiliesChallenges() {
             headingId="landlord-challenges-heading"
             sectionLabel={
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C23A5D] sm:text-sm sm:tracking-[0.2em]">
-                Common Landlord Challenges
+                Comprehensive Business Support
               </span>
             }
             labelPillClassName="shrink-0 rounded-lg bg-[#FFE4EC] px-4 py-2"
-            labelAriaLabel="Common landlord challenges"
-            heading="Risks Property Owners Often Face"
+            labelAriaLabel="Comprehensive business support"
+            heading="Common Landlord & Family Challenges"
             headingBgClassName="bg-white"
             headingBlockMarginTop="mt-6 sm:mt-8"
             headingClassName="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
           />
-
-          <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-slate-600 sm:mt-6 sm:text-[18px] sm:leading-[27.8px]">
-            Without structured planning, property income and ownership decisions can create
-            unnecessary tax exposure and financial stress over time.
-          </p>
         </div>
 
-        {/* Challenge cards */}
         <div className="mx-auto mt-10 flex max-w-5xl flex-col gap-5 sm:mt-12 sm:gap-6">
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {LANDLORD_CHALLENGES.slice(0, 3).map((text) => (
               <div
                 key={text}
@@ -65,4 +59,3 @@ export default function LandlordsFamiliesChallenges() {
     </section>
   );
 }
-

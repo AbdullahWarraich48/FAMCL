@@ -6,32 +6,28 @@ import type {
 type PayrollFactsIconKey = BookkeepingFactsIconKey;
 
 export const PAYROLL_PANSIONS_FACTS_DATA: FactsData = {
-  sectionLabel: "Facts & Stats",
-  heading: "Payroll Compliance in the UK",
+  sectionLabel: "Facts & Stats (UK)",
+  heading: "Payroll Compliance in Context",
   description:
     "Payroll accuracy and pension compliance play a critical role in protecting businesses from regulatory penalties and employee disputes.",
   items: [
     {
-      stat: "Payroll Penalties for Errors",
-      description:
-        "Payroll penalties can apply even when errors are small or administrative.",
+      stat: "Small Error Penalties",
+      description: "Payroll penalties apply even for small errors.",
       source: "HMRC",
       iconKey: "alert-octagon" as PayrollFactsIconKey,
     },
     {
-      stat: "Mandatory Pension Compliance",
-      description:
-        "Workplace pensions are a legal requirement for most eligible employees.",
+      stat: "Auto-Enrolment",
+      description: "Auto-enrolment compliance is legally mandatory.",
       source: "The Pensions Regulator",
       iconKey: "users" as PayrollFactsIconKey,
     },
     {
-      stat: "Common SME Compliance Issue",
-      description:
-        "Payroll compliance failures remain a common challenge for small and medium sized businesses.",
+      stat: "Common SME Issue",
+      description: "Payroll compliance failures are a common SME issue.",
       source: "Chartered Institute of Payroll Professionals",
       iconKey: "file-warning" as PayrollFactsIconKey,
     },
   ],
 };
-

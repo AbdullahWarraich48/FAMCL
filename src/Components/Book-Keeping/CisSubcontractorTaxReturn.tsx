@@ -97,7 +97,7 @@ export default function CisSubcontractorTaxReturn({
         </div>
 
         <div className="mx-auto mt-10 max-w-6xl md:mt-12">
-          <div className="grid grid-cols-1 gap-6 md:grid-cols-3 md:gap-8">
+          <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3 lg:gap-8">
             {topRow.map((benefit) => (
               <BenefitCard key={benefit.title} benefit={benefit} />
             ))}

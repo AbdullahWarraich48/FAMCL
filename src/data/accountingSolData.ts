@@ -1,5 +1,7 @@
 export const ACCOUNTING_SOL_SECTION = {
   title: "Comprehensive Accounting Solutions",
+  titleBefore: "Comprehensive ",
+  titleHighlight: "Accounting Solutions",
   description:
     "From day-to-day bookkeeping to complex tax planning, we provide a full range of accounting services tailored to your needs.",
 };

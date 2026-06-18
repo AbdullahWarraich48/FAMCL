@@ -6,34 +6,34 @@ import type {
 type SoleTradersSolutionIconKey = BookkeepingSolutionIconKey;
 
 export const SOLE_TRADERS_SOLUTION_DATA: SolutionData = {
-  sectionLabel: "Solution & Framework",
+  sectionLabel: "Solutions & Roadmap",
   heading: "How We Support Sole Traders",
   description:
-    "Our approach focuses on providing simple but structured financial support so Sole Traders remain compliant and financially organised.",
+    "Our approach focuses on structured financial support so Sole Traders remain compliant and financially organised.",
   steps: [
     {
       number: "01",
-      title: "Establish Record-Keeping Discipline",
+      title: "Establish disciplined record-keeping suitable for HMRC review",
       iconKey: "document-check" as SoleTradersSolutionIconKey,
     },
     {
       number: "02",
-      title: "Separate Business & Personal Finances",
+      title: "Separate business and personal financial activity clearly",
       iconKey: "boxes" as SoleTradersSolutionIconKey,
     },
     {
       number: "03",
-      title: "Identify Allowable Expenses",
+      title: "Identify allowable expenses without exposing risk",
       iconKey: "receipt-tax" as SoleTradersSolutionIconKey,
     },
     {
       number: "04",
-      title: "Plan Tax Liabilities in Advance",
+      title: "Plan tax liabilities ahead of deadlines",
       iconKey: "calculator" as SoleTradersSolutionIconKey,
     },
     {
       number: "05",
-      title: "Review Business Structure Periodically",
+      title: "Review structure periodically as income grows",
       iconKey: "search" as SoleTradersSolutionIconKey,
     },
   ],
@@ -41,40 +41,34 @@ export const SOLE_TRADERS_SOLUTION_DATA: SolutionData = {
 
 export const SOLE_TRADERS_TRUST_MATRIX_SOLUTION_DATA: SolutionData = {
   sectionLabel: "Trust Matrix",
-  heading: "FAM Chartered Accountants – Trust Matrix",
+  heading: "FAM Chartered Accountants Trust Matrix",
   description:
-    "Our work follows a professional framework that emphasises accuracy, accountability, and structured financial management.",
+    "Accuracy enforced. Compliance mandatory. Judgement applied. Process controlled. Accountability retained.",
   steps: [
     {
       number: "01",
-      title: "Accuracy Enforced",
+      title: "Accuracy enforced",
       iconKey: "document-check" as SoleTradersSolutionIconKey,
     },
     {
       number: "02",
-      title: "Accountability Retained",
-      iconKey: "target" as SoleTradersSolutionIconKey,
-    },
-    {
-      number: "03",
-      title: "Compliance Mandatory",
+      title: "Compliance mandatory",
       iconKey: "badge-check" as SoleTradersSolutionIconKey,
     },
     {
+      number: "03",
+      title: "Judgement applied",
+      iconKey: "calculator" as SoleTradersSolutionIconKey,
+    },
+    {
       number: "04",
-      title: "Process Controlled",
+      title: "Process controlled",
       iconKey: "cogs" as SoleTradersSolutionIconKey,
     },
     {
       number: "05",
-      title: "Judgement Applied",
-      iconKey: "calculator" as SoleTradersSolutionIconKey,
-    },
-    {
-      number: "06",
-      title: "Transparent Service",
-      iconKey: "bar-chart" as SoleTradersSolutionIconKey,
+      title: "Accountability retained",
+      iconKey: "target" as SoleTradersSolutionIconKey,
     },
   ],
 };
-

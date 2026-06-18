@@ -18,7 +18,7 @@ import { DIRECTOR_SHAREHOLDER_ADVICE_FAQ_DATA } from "@/data/directorShareholder
 export const metadata = {
   title: "Director & Shareholder Advisory | FAM Chartered Accountants",
   description:
-    "Clear, practical advice for company directors and shareholders on profit extraction, compliance, and protecting personal assets.",
+    "Navigating your duties with confidence. Advice on legal duties, profit extraction, dividends, director loans, and UK company law compliance.",
 };
 
 export default function DirectorShareholderAdvicePage() {

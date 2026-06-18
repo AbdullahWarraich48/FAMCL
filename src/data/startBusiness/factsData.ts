@@ -6,32 +6,31 @@ import type {
 type StartBusinessFactsIconKey = BookkeepingFactsIconKey;
 
 export const START_BUSINESS_FACTS_DATA: FactsData = {
-  sectionLabel: "Facts & Stats",
-  heading: "Business Formation Insights",
+  sectionLabel: "Stats & Facts (UK)",
+  heading: "Starting a Business in Context",
   description:
-    "Starting a business is common, but early structural and financial mistakes can create challenges that affect long‑term sustainability.",
+    "Starting a business is common, but early structural and financial mistakes can create challenges that affect long-term sustainability.",
   items: [
     {
-      stat: "New Businesses Registered",
+      stat: "750,000+ New Businesses",
       description:
-        "Over 750,000 new businesses are registered in the UK each year, adding to a highly competitive marketplace.",
+        "Over 750,000 new businesses are registered annually in the UK.",
       source: "Companies House",
       iconKey: "chart-pie" as StartBusinessFactsIconKey,
     },
     {
-      stat: "Early Business Failures",
+      stat: "First Three Years",
       description:
-        "A high proportion of business failures occur within the first few years when foundations are not set up correctly.",
+        "A high proportion of business failures occur within the first three years.",
       source: "Office for National Statistics",
       iconKey: "alert-octagon" as StartBusinessFactsIconKey,
     },
     {
-      stat: "Financial Setup Risks",
+      stat: "Poor Financial Setup",
       description:
-        "Poor financial structure and reporting systems are a leading contributor to early business failure.",
+        "Poor financial setup is a leading contributor to early failure.",
       source: "British Business Bank",
       iconKey: "clock" as StartBusinessFactsIconKey,
     },
   ],
 };
-

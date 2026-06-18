@@ -58,14 +58,14 @@ export default function CisOurServices({
 }: CisOurServicesProps) {
   return (
     <section
-      className="w-full bg-[#f4f6fb] py-12 md:py-16 lg:py-20"
+      className="w-full bg-[#cbdcff] py-12 md:py-16 lg:py-20"
       aria-labelledby="cis-our-services-heading"
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">
         <SectionIntroHeader
           headingId="cis-our-services-heading"
           heading={heading}
-          headingBgClassName="bg-[#f4f6fb]"
+          headingBgClassName="bg-[#cbdcff]"
           headingBlockMarginTop="mt-0"
           headingClassName="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
         />

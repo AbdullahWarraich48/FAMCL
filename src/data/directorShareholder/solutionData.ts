@@ -7,35 +7,37 @@ type DirectorSolutionIconKey = BookkeepingSolutionIconKey;
 
 export const DIRECTOR_SHAREHOLDER_SOLUTION_DATA: SolutionData = {
   sectionLabel: "Solution & Framework",
-  heading: "How We Deliver This Service",
+  heading: "How We Deliver",
   description:
-    "Our structured advisory service helps directors and shareholders navigate their duties and responsibilities, ensuring compliance, optimising tax strategies, and protecting personal assets.",
+    "Our structured advisory service helps directors and shareholders navigate their duties, optimise tax strategies, and stay compliant.",
   steps: [
     {
       number: "01",
-      title: "Review Your Director & Shareholder Arrangements",
+      title: "Review your current director and shareholder arrangements",
       iconKey: "search" as DirectorSolutionIconKey,
     },
     {
       number: "02",
-      title: "Explain Legal Duties & Tax Obligations",
+      title:
+        "Explain your legal duties and tax obligations in plain English",
       iconKey: "message" as DirectorSolutionIconKey,
     },
     {
       number: "03",
-      title: "Advise on Tax-Efficient Salary & Dividends",
+      title: "Advise on tax-efficient salary and dividend strategies",
       iconKey: "calculator" as DirectorSolutionIconKey,
     },
     {
       number: "04",
-      title: "Ensure Proper Dividend & Loan Documentation",
+      title:
+        "Ensure correct administration and documentation for dividends and loans",
       iconKey: "document-check" as DirectorSolutionIconKey,
     },
     {
       number: "05",
-      title: "Provide Ongoing Support & Guidance",
-      iconKey: "message" as DirectorSolutionIconKey,
+      title:
+        "Provide ongoing support for board resolutions and shareholder agreements",
+      iconKey: "network" as DirectorSolutionIconKey,
     },
   ],
 };
-

@@ -4,11 +4,11 @@ export const PENSIONS_FUTURE_PLANNING_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Practical Tax Support for Individuals and Families",
+  bannerText: "For You",
   heading: "Pensions & Future Planning",
   subheading: "Plan today for peace of mind tomorrow.",
   description:
-    "Planning for retirement is essential for long-term financial security. We help you understand your pension position and develop a strategy that aligns with your long-term goals. With clear, tax-efficient options, we help you secure a comfortable future.",
+    "We help you understand and plan your pension position, with tax-efficient contributions and clear options so your future income becomes clearer.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -29,5 +29,4 @@ export const PENSIONS_FUTURE_PLANNING_HERO_DATA: ServiceHeroData = {
     description:
       "Clients value our retirement and pension planning advice for clarity, empathy, and dependable long-term guidance.",
   },
-};
-
+} as const;

@@ -1,34 +1,35 @@
-import type { BookkeepingFactsIconKey, FactsData } from "@/data/bookkeeping/factsData";
+import type {
+  BookkeepingFactsIconKey,
+  FactsData,
+} from "@/data/bookkeeping/factsData";
 
 type HealthcareFactsIconKey = BookkeepingFactsIconKey;
 
 export const HEALTHCARE_FACTS_DATA: FactsData = {
-  sectionLabel: "Facts & Stats",
-  heading: "Healthcare Sector Insights",
+  sectionLabel: "Facts & Stats (UK)",
+  heading: "Healthcare in Context",
   description:
     "The UK healthcare sector is large and heavily regulated, making specialist financial support increasingly important.",
   items: [
     {
-      stat: "Healthcare\nEmployment",
-      description:
-        "The UK healthcare sector employs over 4 million people across hospitals, practices, and care providers.",
+      stat: "4 Million Employees",
+      description: "The UK healthcare sector employs over 4 million people.",
       source: "NHS England",
       iconKey: "users" as HealthcareFactsIconKey,
     },
     {
-      stat: "Payroll Compliance\nRisks",
+      stat: "Payroll Compliance Risks",
       description:
-        "Payroll errors are among the most common compliance risks faced by healthcare organisations.",
+        "Payroll errors are among the top compliance risks for healthcare providers.",
       source: "HMRC",
       iconKey: "file-warning" as HealthcareFactsIconKey,
     },
     {
-      stat: "Increasing Regulatory\nOversight",
+      stat: "Growing Obligations",
       description:
-        "GP practices and care providers face growing financial reporting and compliance obligations.",
+        "GP practices and care providers face increasing regulatory and financial reporting obligations.",
       source: "Care Quality Commission",
       iconKey: "alert-octagon" as HealthcareFactsIconKey,
     },
   ],
-} as const;
-
+};

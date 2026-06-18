@@ -6,47 +6,35 @@ import type {
 type PayrollWhyMattersIconKey = BookkeepingWhyMattersIconKey;
 
 export const PAYROLL_PANSIONS_WHY_MATTERS_DATA: WhyMattersData = {
-  sectionLabel: "Why It Matters",
-  heading: "The Importance of Accurate Payroll Management",
+  sectionLabel: "Why It Matters to You",
+  heading: "Why Payroll Accuracy Matters",
   description:
-    "Payroll mistakes affect both compliance and employee confidence. Proper systems and professional oversight reduce risk, prevent penalties, and ensure employees are paid correctly every time.",
+    "Payroll errors damage employee trust. Mistakes lead to penalties and complaints. Pension compliance is strictly enforced. Outsourcing payroll reduces risk and saves time. Your team stays confident in the business.",
   items: [
     {
-      title: "Avoid Costly Penalties",
-      description:
-        "Payroll errors or missed submissions can result in financial penalties from HMRC.",
-      iconKey: "alert-triangle" as PayrollWhyMattersIconKey,
-    },
-    {
-      title: "Ensure Accurate Reporting",
-      description:
-        "Accurate payroll systems maintain reliable records for both HMRC and internal management.",
-      iconKey: "clipboard-check" as PayrollWhyMattersIconKey,
-    },
-    {
-      title: "Stay Pension Compliant",
-      description:
-        "Auto-enrolment rules require businesses to manage workplace pensions properly.",
-      iconKey: "shield" as PayrollWhyMattersIconKey,
-    },
-    {
-      title: "Protect Employee Trust",
-      description:
-        "Accurate payroll ensures employees receive the correct payments on time.",
+      title: "Employee Trust",
+      description: "Payroll errors damage employee trust.",
       iconKey: "heart-check" as PayrollWhyMattersIconKey,
     },
     {
-      title: "Reduce Administrative Burden",
-      description:
-        "Outsourcing payroll removes the complexity of calculations and compliance tasks.",
+      title: "Penalties & Complaints",
+      description: "Mistakes lead to penalties and complaints.",
+      iconKey: "alert-triangle" as PayrollWhyMattersIconKey,
+    },
+    {
+      title: "Strict Pension Rules",
+      description: "Pension compliance is strictly enforced.",
+      iconKey: "shield" as PayrollWhyMattersIconKey,
+    },
+    {
+      title: "Reduced Risk & Time Saved",
+      description: "Outsourcing payroll reduces risk and saves time.",
       iconKey: "leaf" as PayrollWhyMattersIconKey,
     },
     {
-      title: "Maintain Business Confidence",
-      description:
-        "Employees and regulators can rely on accurate payroll management.",
+      title: "Team Confidence",
+      description: "Your team stays confident in the business.",
       iconKey: "check-square" as PayrollWhyMattersIconKey,
     },
   ],
 };
-

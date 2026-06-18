@@ -7,28 +7,28 @@ type VatSolutionIconKey = BookkeepingSolutionIconKey;
 
 export const VAT_RETURNS_SOLUTION_DATA: SolutionData = {
   sectionLabel: "Solution & Framework",
-  heading: "How We Deliver This Service",
+  heading: "How We Deliver",
   description:
-    "Our VAT management approach focuses on clarity, accuracy, and consistent compliance. A structured process ensures every stage of your VAT reporting is handled correctly.",
+    "Our VAT management approach focuses on clarity, accuracy, and consistent compliance at every stage.",
   steps: [
     {
       number: "01",
-      title: "Review VAT Position and Risks",
+      title: "Review VAT position and risks",
       iconKey: "search" as VatSolutionIconKey,
     },
     {
       number: "02",
-      title: "Set Up Digital Systems",
+      title: "Set up compliant digital software",
       iconKey: "cogs" as VatSolutionIconKey,
     },
     {
       number: "03",
-      title: "Review VAT Records before each submission",
+      title: "Check VAT data before submission",
       iconKey: "document-check" as VatSolutionIconKey,
     },
     {
       number: "04",
-      title: "Prepare and submit VAT returns accurately and on time",
+      title: "File returns accurately and on time",
       iconKey: "receipt-tax" as VatSolutionIconKey,
     },
     {
@@ -38,4 +38,3 @@ export const VAT_RETURNS_SOLUTION_DATA: SolutionData = {
     },
   ],
 };
-

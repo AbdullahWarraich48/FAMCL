@@ -18,7 +18,7 @@ import { SELF_ASSESSMENT_TAX_FAQ_DATA } from "@/data/selfAssessmentTax/faqData";
 export const metadata = {
   title: "Self-Assessment Tax | FAM Chartered Accountants",
   description:
-    "Specialist support to prepare and submit accurate Self-Assessment tax returns, making sure allowances are used correctly and deadlines are never missed.",
+    "Your personal tax return, done properly. Accurate Self-Assessment preparation, filing, and HMRC support for individuals.",
 };
 
 export default function SelfAssessmentTaxPage() {

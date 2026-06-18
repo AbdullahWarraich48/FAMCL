@@ -18,7 +18,7 @@ import { CAPITAL_GAINS_PROPERTY_TAX_FAQ_DATA } from "@/data/capitalGains/faqData
 export const metadata = {
   title: "Capital Gains & Property Tax | FAM Chartered Accountants",
   description:
-    "Specialist advice on Capital Gains and property tax so you understand what you owe, make use of allowances, and avoid unexpected tax bills when selling assets.",
+    "Clear advice when you sell assets or property. CGT calculation, reliefs, MTD reporting, and deadline management.",
 };
 
 export default function CapitalGainsPropertyTaxPage() {

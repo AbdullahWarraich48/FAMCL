@@ -4,11 +4,11 @@ export const BUSINESS_STRUCTURE_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Supporting Limited Companies from Startup to Scale",
+  bannerText: "For Business",
   heading: "Business Structuring",
   subheading: "Building a foundation for growth.",
   description:
-    "Choosing the right business structure is crucial for long-term success. Whether you are just starting, scaling, or planning an exit, we provide expert advice to ensure your business setup aligns with your goals, tax obligations, and risk tolerance.",
+    "We provide expert advice on choosing and implementing the right legal and tax structure — whether you are starting up, scaling, or planning an exit.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -29,5 +29,4 @@ export const BUSINESS_STRUCTURE_HERO_DATA: ServiceHeroData = {
     description:
       "Clients value our structuring advice for clarity, tax efficiency, and practical guidance at every stage of growth.",
   },
-};
-
+} as const;

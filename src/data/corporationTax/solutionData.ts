@@ -7,9 +7,9 @@ type CorporationTaxSolutionIconKey = BookkeepingSolutionIconKey;
 
 export const CORPORATION_TAX_SOLUTION_DATA: SolutionData = {
   sectionLabel: "Solution & Framework",
-  heading: "How We Deliver This Service",
+  heading: "How We Deliver",
   description:
-    "Our process ensures corporation tax is managed accurately while identifying opportunities for better tax efficiency. Each step focuses on clarity, compliance, and proactive planning.",
+    "Our process ensures corporation tax is managed accurately while identifying opportunities for better tax efficiency.",
   steps: [
     {
       number: "01",
@@ -18,17 +18,17 @@ export const CORPORATION_TAX_SOLUTION_DATA: SolutionData = {
     },
     {
       number: "02",
-      title: "Review past filings and potential risks",
+      title: "Review past filings and risks",
       iconKey: "document-check" as CorporationTaxSolutionIconKey,
     },
     {
       number: "03",
-      title: "Plan tax obligations before deadlines",
+      title: "Plan tax before deadlines",
       iconKey: "calendar-clock" as CorporationTaxSolutionIconKey,
     },
     {
       number: "04",
-      title: "File corporation tax accurately and on time",
+      title: "File accurately and on time",
       iconKey: "receipt-tax" as CorporationTaxSolutionIconKey,
     },
     {
@@ -38,4 +38,3 @@ export const CORPORATION_TAX_SOLUTION_DATA: SolutionData = {
     },
   ],
 };
-

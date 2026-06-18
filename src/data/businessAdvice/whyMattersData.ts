@@ -6,47 +6,35 @@ import type {
 type BusinessAdviceWhyIconKey = BookkeepingWhyMattersIconKey;
 
 export const BUSINESS_ADVICE_WHY_MATTERS_DATA: WhyMattersData = {
-  sectionLabel: "Why It Matters",
-  heading: "The Importance of Clear Business Advice",
+  sectionLabel: "Why It Matters to You",
+  heading: "Why Clear Advice Makes a Difference",
   description:
-    "Most business problems begin quietly, slowly affecting cash flow, profitability, and operations. Clear financial advice helps you avoid costly mistakes, improve your growth trajectory, and prepare for long-term success.",
+    "Most business problems start quietly. Cash flow issues grow before they are noticed. Poor decisions often come from missing information. Advisory support improves survival and growth. Clarity leads to confidence.",
   items: [
     {
-      title: "Reduced Business Risk",
-      description:
-        "Proactive advice helps you avoid potential pitfalls, protecting your business from unexpected challenges.",
-      iconKey: "shield" as BusinessAdviceWhyIconKey,
+      title: "Problems Start Quietly",
+      description: "Most business problems start quietly.",
+      iconKey: "alert-triangle" as BusinessAdviceWhyIconKey,
     },
     {
-      title: "Enhanced Business Growth",
-      description:
-        "Clear guidance fosters growth by identifying profitable opportunities and refining business strategies.",
-      iconKey: "trend-up" as BusinessAdviceWhyIconKey,
-    },
-    {
-      title: "Improved Cash Flow Management",
-      description:
-        "Better financial planning improves cash flow and ensures your business stays on track.",
+      title: "Hidden Cash Flow Issues",
+      description: "Cash flow issues grow before they are noticed.",
       iconKey: "arrow-left-right" as BusinessAdviceWhyIconKey,
     },
     {
-      title: "Faster Decision Making",
-      description:
-        "Data-driven insights allow for quicker, more confident decision-making, reducing delays and missed opportunities.",
-      iconKey: "chart-line" as BusinessAdviceWhyIconKey,
+      title: "Missing Information",
+      description: "Poor decisions often come from missing information.",
+      iconKey: "activity" as BusinessAdviceWhyIconKey,
     },
     {
-      title: "Long-Term Stability",
-      description:
-        "Strategic planning supports long-term stability and growth, ensuring your business thrives for years.",
-      iconKey: "anchor" as BusinessAdviceWhyIconKey,
+      title: "Better Survival & Growth",
+      description: "Advisory support improves survival and growth.",
+      iconKey: "trend-up" as BusinessAdviceWhyIconKey,
     },
     {
-      title: "Clarity During Change",
-      description:
-        "When faced with restructuring or pivoting, expert advice helps you navigate complex decisions with confidence.",
-      iconKey: "clipboard-check" as BusinessAdviceWhyIconKey,
+      title: "Clarity & Confidence",
+      description: "Clarity leads to confidence.",
+      iconKey: "check-square" as BusinessAdviceWhyIconKey,
     },
   ],
 };
-

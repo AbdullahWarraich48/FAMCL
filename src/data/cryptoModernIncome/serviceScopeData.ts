@@ -9,38 +9,33 @@ export const CRYPTO_MODERN_INCOME_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for You",
   description:
-    "With the rise of cryptocurrency and other digital income streams, understanding the tax implications is essential. We guide you through your tax obligations, ensuring your transactions are reviewed, reported, and compliant with evolving tax rules.",
+    "We provide tax guidance for cryptocurrency and digital income. Transactions are reviewed accurately. Tax obligations are identified clearly. Reporting requirements are handled correctly. You stay compliant as rules evolve.",
   items: [
     {
-      title: "Review Crypto Activity",
+      title: "Crypto & Digital Income Guidance",
       description:
-        "We carefully review your crypto transactions to identify taxable events and ensure accuracy.",
+        "We provide tax guidance for cryptocurrency and digital income.",
+      iconKey: "network" as CryptoServiceScopeIconKey,
+    },
+    {
+      title: "Accurate Transaction Review",
+      description: "Transactions are reviewed accurately.",
       iconKey: "search" as CryptoServiceScopeIconKey,
     },
     {
-      title: "Identify Taxable Events",
-      description:
-        "We identify the taxable events from your digital income and determine how they create tax liabilities.",
+      title: "Clear Tax Obligations",
+      description: "Tax obligations are identified clearly.",
       iconKey: "eye" as CryptoServiceScopeIconKey,
     },
     {
-      title: "Calculate Liabilities Correctly",
-      description:
-        "We calculate your tax liabilities based on your crypto activity to ensure you are paying the correct amount.",
-      iconKey: "calculator" as CryptoServiceScopeIconKey,
-    },
-    {
-      title: "Accurate Reporting",
-      description:
-        "We ensure your crypto transactions are reported accurately to HMRC according to UK tax law.",
+      title: "Correct Reporting",
+      description: "Reporting requirements are handled correctly.",
       iconKey: "receipt-tax" as CryptoServiceScopeIconKey,
     },
     {
-      title: "Future Compliance Advice",
-      description:
-        "We provide ongoing guidance as tax rules evolve, ensuring continued compliance.",
-      iconKey: "trend-up" as CryptoServiceScopeIconKey,
+      title: "Evolving Compliance",
+      description: "You stay compliant as rules evolve.",
+      iconKey: "badge-check" as CryptoServiceScopeIconKey,
     },
   ],
 };
-

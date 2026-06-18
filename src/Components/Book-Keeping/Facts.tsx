@@ -14,28 +14,36 @@ import {
   BOOKKEEPING_FACTS_DATA,
   type FactsData,
 } from "@/data/bookkeeping";
+import { SECTION_BG } from "@/constants/sectionBackgrounds";
+import { getFactSourceUrl } from "@/constants/factSourceUrls";
 
 type FactCardProps = {
   stat: string;
   description: string;
   source?: string;
+  sourceUrl?: string;
   icon: LucideIcon;
   principleStyle?: boolean;
 };
 
 type FactsProps = {
   data?: FactsData;
+  sectionClassName?: string;
 };
 
 const FactCard = ({
   stat,
   description,
   source,
+  sourceUrl,
   icon: Icon,
   principleStyle,
-}: FactCardProps) => (
+}: FactCardProps) => {
+  const resolvedSourceUrl = getFactSourceUrl(source, sourceUrl);
+
+  return (
   <Card
-    className={`flex h-full flex-col overflow-hidden rounded-2xl border-0 border-slate-100 bg-gradient-to-b from-white/70 to-[#D8EAFF] p-6 shadow-[0_4px_14px_rgba(0,0,0,0.06),0_2px_6px_rgba(0,0,0,0.04)] transition-shadow hover:shadow-[0_12px_28px_rgba(0,0,0,0.08),0_4px_8px_rgba(0,0,0,0.04)] ${principleStyle ? "text-left" : ""}`}
+    className={`flex h-full flex-col overflow-hidden rounded-2xl border-0 border-slate-100 bg-white p-6 shadow-[0_4px_14px_rgba(0,0,0,0.06),0_2px_6px_rgba(0,0,0,0.04)] transition-shadow hover:shadow-[0_12px_28px_rgba(0,0,0,0.08),0_4px_8px_rgba(0,0,0,0.04)] ${principleStyle ? "text-left" : ""}`}
   >
     <CardHeader className="p-0">
       <span
@@ -54,24 +62,52 @@ const FactCard = ({
         {stat}
       </CardTitle>
     </CardHeader>
-    <CardContent className="flex flex-1 flex-col p-0 pt-4">
-      <CardDescription className="text-[15px] leading-[1.6] text-slate-600">
-        {description}
-      </CardDescription>
+    <CardContent className={`flex flex-1 flex-col p-0 ${description.trim() ? "pt-4" : ""}`}>
+      {description.trim() ? (
+        <CardDescription className="text-[15px] leading-[1.6] text-slate-600">
+          {description}
+        </CardDescription>
+      ) : null}
       {source?.trim() ? (
-        <p className="mt-4 text-[13px] text-slate-500">Source: {source}</p>
+        <p className="mt-4 text-[13px] text-slate-500">
+          Source:{" "}
+          {resolvedSourceUrl ? (
+            <a
+              href={resolvedSourceUrl}
+              target={resolvedSourceUrl.startsWith("/") ? undefined : "_blank"}
+              rel={
+                resolvedSourceUrl.startsWith("/")
+                  ? undefined
+                  : "noopener noreferrer"
+              }
+              className="font-medium text-[#175dab] underline-offset-2 hover:underline"
+            >
+              {source}
+            </a>
+          ) : (
+            source
+          )}
+        </p>
       ) : null}
     </CardContent>
   </Card>
-);
+  );
+};
 
-export const Facts = ({ data }: FactsProps) => {
+export const Facts = ({
+  data,
+  sectionClassName = SECTION_BG.alt,
+}: FactsProps) => {
   const content = data ?? BOOKKEEPING_FACTS_DATA;
   const principleCards = content.cardStyle === "principles";
+  const factsGridClass =
+    content.items.length === 4
+      ? "mt-10 grid grid-cols-1 gap-6 sm:mt-14 sm:grid-cols-2 sm:gap-7 lg:mt-16 lg:grid-cols-2 lg:gap-8 xl:grid-cols-4"
+      : "mt-10 grid grid-cols-1 gap-6 sm:mt-14 sm:grid-cols-2 sm:gap-7 lg:mt-16 lg:grid-cols-3 lg:gap-8";
 
   return (
     <section
-      className="w-full bg-[#F6F9FF] py-10 md:py-16 lg:py-20"
+      className={`w-full ${sectionClassName} py-10 md:py-16 lg:py-20`}
       aria-labelledby="facts-heading"
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">
@@ -84,7 +120,7 @@ export const Facts = ({ data }: FactsProps) => {
               </span>
             }
             heading={content.heading}
-            headingBgClassName="bg-[#F6F9FF]"
+            headingBgClassName={sectionClassName}
             headingBlockMarginTop="mt-6 sm:mt-8"
             headingClassName="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
           />
@@ -94,13 +130,14 @@ export const Facts = ({ data }: FactsProps) => {
           </p>
         </div>
 
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-14 sm:grid-cols-2 sm:gap-7 lg:mt-16 lg:grid-cols-3 lg:gap-8">
-          {content.items.map(({ stat, description, source, iconKey }) => (
+        <div className={factsGridClass}>
+          {content.items.map(({ stat, description, source, sourceUrl, iconKey }) => (
             <FactCard
               key={stat}
               stat={stat}
               description={description}
               source={source}
+              sourceUrl={sourceUrl}
               icon={FACTS_LUCIDE[iconKey]}
               principleStyle={principleCards}
             />

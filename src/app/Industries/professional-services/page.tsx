@@ -18,7 +18,7 @@ import { PROFESSIONAL_SERVICES_FAQ_DATA } from "@/data/professionalServices/faqD
 export const metadata = {
   title: "Professional Services | FAM Chartered Accountants",
   description:
-    "Financial and operational guidance for professional service firms—supporting time tracking, project costing, partner accounting, and tax efficiency.",
+    "Clear finances for client-driven work. Guidance for law, consultancy, and architecture firms — profitability, time tracking, and partner accounting.",
 };
 
 export default function ProfessionalServicesPage() {

@@ -4,7 +4,6 @@ import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Users, Headset, RefreshCw, Wallet } from "lucide-react";
 import { Card, CardContent, CardFooter } from "@/Components/ui/card";
-import { Button } from "@/Components/ui/button";
 
 const ICON_MAP = {
   users: Users,
@@ -23,6 +22,12 @@ export type ChooseCardItem = {
   iconKey?: keyof typeof ICON_MAP;
   /** Background class for icon wrapper, e.g. "bg-blue-600" */
   iconBg?: string;
+  /** Card surface background / gradient classes */
+  cardBg?: string;
+  /** Title text color classes */
+  titleClass?: string;
+  /** Button background class */
+  buttonBg?: string;
   /** Image URL (use when no iconKey) */
   imageSrc?: string;
   /** Alt text for image */
@@ -34,6 +39,8 @@ export type ChooseCardItem = {
 
 export type ChooseCardProps = {
   sectionTitle?: string;
+  sectionTitleBefore?: string;
+  sectionTitleHighlight?: string;
   sectionDescription?: string;
   cards?: ChooseCardItem[];
   sectionId?: string;
@@ -44,6 +51,8 @@ export type ChooseCardProps = {
 
 export default function ChooseCard({
   sectionTitle = "",
+  sectionTitleBefore,
+  sectionTitleHighlight,
   sectionDescription = "",
   cards = [],
   sectionId = "choose-card-heading",
@@ -75,17 +84,24 @@ export default function ChooseCard({
         <header className="mx-auto max-w-5xl text-center">
           <div className="flex w-full min-w-0 items-center justify-center gap-3 md:gap-6">
             <span
-              className="h-px shrink-0 bg-slate-300 w-14 sm:w-16 md:w-20"
+              className="h-px shrink-0 bg-[#1E63B3] w-14 sm:w-16 md:w-20"
               aria-hidden
             />
             <h2
               id={sectionId}
-              className="min-w-0 shrink-0 whitespace-nowrap text-center text-[clamp(0.875rem,2.4vw,2rem)] font-bold leading-tight tracking-tight text-[#175dab]"
+              className="min-w-0 shrink text-center text-[clamp(0.875rem,2.4vw,2rem)] font-bold leading-tight tracking-tight"
             >
-              {sectionTitle}
+              {sectionTitleBefore && sectionTitleHighlight ? (
+                <>
+                  <span className="text-[#175dab]">{sectionTitleBefore}</span>
+                  <span className="text-red-600">{sectionTitleHighlight}</span>
+                </>
+              ) : (
+                <span className="text-[#12254b]">{sectionTitle}</span>
+              )}
             </h2>
             <span
-              className="h-px shrink-0 bg-slate-300 w-14 sm:w-16 md:w-20"
+              className="h-px shrink-0 bg-[#1E63B3] w-14 sm:w-16 md:w-20"
               aria-hidden
             />
           </div>
@@ -98,13 +114,16 @@ export default function ChooseCard({
           className={`mt-12 grid grid-cols-1 items-stretch gap-8 lg:gap-10 ${
             cards.length >= 4
               ? "md:grid-cols-2 xl:grid-cols-4"
-              : "md:grid-cols-3"
+              : "md:grid-cols-2 lg:grid-cols-3"
           }`}
         >
           {cards.map((card) => (
             <Card
               key={card.id}
-              className="flex h-full min-h-[400px] min-w-0 flex-col overflow-hidden rounded-2xl border-0 bg-gradient-to-b from-white/70 to-[#D8EAFF] shadow-[0_18px_45px_rgba(0,0,0,0.08)]"
+              className={`flex h-full min-h-[400px] min-w-0 flex-col overflow-hidden rounded-2xl border-0 shadow-[0_18px_45px_rgba(0,0,0,0.08)] ${
+                card.cardBg ??
+                "bg-gradient-to-b from-white/70 to-[#D8EAFF]"
+              }`}
             >
               <CardContent className="flex flex-1 flex-col items-center text-center p-6 pb-2 pt-6 md:p-8 md:pb-3 md:pt-8">
                 {card.imageSrc ? (
@@ -127,7 +146,9 @@ export default function ChooseCard({
                         className="flex h-24 w-full shrink-0 items-center justify-center md:h-28"
                         aria-hidden
                       >
-                        <div className="flex h-16 w-16 items-center justify-center rounded-xl bg-[#175dab]">
+                        <div
+                          className={`flex h-16 w-16 items-center justify-center rounded-xl ${card.iconBg}`}
+                        >
                           <IconComponent className="h-7 w-7 text-white" />
                         </div>
                       </div>
@@ -135,7 +156,9 @@ export default function ChooseCard({
                   })()
                 ) : null}
                 <h3
-                  className={`mt-6 w-full shrink-0 font-semibold text-slate-900 ${
+                  className={`mt-6 w-full shrink-0 font-semibold ${
+                    card.titleClass ?? "text-slate-900"
+                  } ${
                     largeText
                       ? "text-[22px] md:text-[24px]"
                       : "text-[20px] md:text-[22px]"
@@ -154,23 +177,15 @@ export default function ChooseCard({
                 </p>
               </CardContent>
               <CardFooter className="mt-auto w-full shrink-0 px-6 pt-0 pb-6 md:px-8 md:pb-8">
-                <Button
-                  variant="outline"
-                  size="lg"
-                  className={`h-12 min-h-12 w-full min-w-full max-w-full rounded-full border-2 bg-[#D8EAFF] font-semibold border-[#175dab] text-[#175dab] ${largeText ? "text-[15px] md:text-base" : ""}`}
-                  asChild
+                <Link
+                  href={card.buttonHref}
+                  aria-label={`${card.buttonLabel} - opens in same page`}
+                  onClick={handleAnchorClick(card.buttonHref)}
+                  className={`inline-flex h-12 w-full items-center justify-center gap-1 rounded-full border-2 font-semibold transition-colors ${card.buttonBg ?? "bg-[#D8EAFF]"} ${card.buttonBorder} ${card.buttonText} ${card.buttonHover} ${largeText ? "text-[15px] md:text-base" : "text-sm"}`}
                 >
-                  <Link
-                    href={card.buttonHref}
-                    aria-label={`${card.buttonLabel} - opens in same page`}
-                    tabIndex={0}
-                    onClick={handleAnchorClick(card.buttonHref)}
-                    className="flex h-12 w-full min-h-12 min-w-full items-center justify-center"
-                  >
-                    <span className="truncate">{card.buttonLabel}</span>
-                    <ArrowRight className="ml-2 h-4 w-4 shrink-0" aria-hidden />
-                  </Link>
-                </Button>
+                  <span className="truncate">{card.buttonLabel}</span>
+                  <ArrowRight className="size-4 shrink-0" aria-hidden />
+                </Link>
               </CardFooter>
             </Card>
           ))}

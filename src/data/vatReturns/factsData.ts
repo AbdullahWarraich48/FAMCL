@@ -6,32 +6,30 @@ import type {
 type VatFactsIconKey = BookkeepingFactsIconKey;
 
 export const VAT_RETURNS_FACTS_DATA: FactsData = {
-  sectionLabel: "Facts & Stats",
-  heading: "VAT Compliance in the UK",
+  sectionLabel: "Facts & Stats (UK)",
+  heading: "VAT Compliance in Context",
   description:
     "Accurate VAT reporting plays a major role in maintaining financial stability and avoiding penalties for UK businesses.",
   items: [
     {
-      stat: "Billions Lost to VAT Errors",
-      description:
-        "VAT reporting mistakes cost UK businesses significant amounts each year.",
+      stat: "Billions Lost",
+      description: "VAT errors cost UK businesses billions each year.",
       source: "National Audit Office",
       iconKey: "alert-octagon" as VatFactsIconKey,
     },
     {
-      stat: "Making Tax Digital Requirement",
+      stat: "Making Tax Digital",
       description:
-        "Making Tax Digital has made digital record-keeping mandatory for VAT-registered businesses.",
+        "Making Tax Digital is mandatory for VAT-registered businesses.",
       source: "HMRC",
       iconKey: "chart-pie" as VatFactsIconKey,
     },
     {
-      stat: "Penalties Even for Unintentional Errors",
+      stat: "Unintentional Penalties",
       description:
-        "VAT penalties can apply even when mistakes are not deliberate.",
+        "VAT penalties apply even when mistakes are unintentional.",
       source: "HMRC",
       iconKey: "file-warning" as VatFactsIconKey,
     },
   ],
 };
-

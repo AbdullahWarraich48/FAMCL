@@ -6,47 +6,38 @@ import type {
 type DirectorWhyMattersIconKey = BookkeepingWhyMattersIconKey;
 
 export const DIRECTOR_SHAREHOLDER_WHY_MATTERS_DATA: WhyMattersData = {
-  sectionLabel: "Why It Matters",
-  heading: "The Importance of Clear Director & Shareholder Guidance",
+  sectionLabel: "Why It Matters to You",
+  heading: "Why Director & Shareholder Guidance Matters",
   description:
-    "Being a director or shareholder carries legal and financial responsibilities that, if misunderstood, can lead to personal liability, tax penalties, and disputes. Clear guidance helps you navigate these duties and protects your personal assets.",
+    "Being a director or shareholder carries significant legal and financial responsibilities. Misunderstanding these duties can lead to personal liability, tax penalties, and disputes. Our advisory service provides the clarity needed to make informed decisions, protect your personal assets, and maintain good corporate governance.",
   items: [
     {
-      title: "Maintain Corporate Governance",
+      title: "Significant Responsibilities",
       description:
-        "Clear understanding of your duties ensures good governance and transparency within the company, preventing future legal or financial issues.",
+        "Being a director or shareholder carries significant legal and financial responsibilities.",
       iconKey: "clipboard-check" as DirectorWhyMattersIconKey,
     },
     {
-      title: "Tax-Efficient Strategies",
+      title: "Personal Liability & Penalties",
       description:
-        "We provide advice on tax-efficient salary and dividend strategies, helping you maximise your earnings while complying with UK tax laws.",
-      iconKey: "circle-dollar" as DirectorWhyMattersIconKey,
+        "Misunderstanding these duties can lead to personal liability, tax penalties, and disputes.",
+      iconKey: "alert-triangle" as DirectorWhyMattersIconKey,
     },
     {
-      title: "Avoid Disputes",
+      title: "Informed Decisions",
       description:
-        "Misunderstanding roles or responsibilities can lead to conflicts between directors and shareholders. Our advisory service prevents these issues by ensuring everyone is on the same page.",
-      iconKey: "heart-check" as DirectorWhyMattersIconKey,
+        "Our advisory service provides the clarity needed to make informed decisions.",
+      iconKey: "eye" as DirectorWhyMattersIconKey,
     },
     {
-      title: "Secure Personal Assets",
-      description:
-        "Understanding your legal and tax duties helps protect your personal assets and avoid risks from non-compliance.",
+      title: "Protect Personal Assets",
+      description: "Protect your personal assets.",
       iconKey: "shield" as DirectorWhyMattersIconKey,
     },
     {
-      title: "Avoid Personal Liability",
-      description:
-        "Directors can be personally liable for company tax debts in cases of negligence or deliberate default. We help you manage risks and avoid personal liability.",
-      iconKey: "scale" as DirectorWhyMattersIconKey,
-    },
-    {
-      title: "Prevent Tax Penalties",
-      description:
-        "Improperly paid dividends or failure to meet your obligations can trigger tax penalties and disputes with HMRC. We ensure you remain compliant with tax laws.",
-      iconKey: "alert-triangle" as DirectorWhyMattersIconKey,
+      title: "Good Corporate Governance",
+      description: "Maintain good corporate governance.",
+      iconKey: "check-square" as DirectorWhyMattersIconKey,
     },
   ],
 };
-

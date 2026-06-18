@@ -18,7 +18,7 @@ import { CRYPTO_MODERN_INCOME_FAQ_DATA } from "@/data/cryptoModernIncome/faqData
 export const metadata = {
   title: "Crypto & Modern Income | FAM Chartered Accountants",
   description:
-    "Up-to-date tax advice on cryptocurrency, side income, and digital earnings so your new income streams remain compliant and clearly reported.",
+    "Simple tax advice for new income streams. Crypto and digital income guidance with accurate reporting and HMRC compliance.",
 };
 
 export default function CryptoModernIncomePage() {

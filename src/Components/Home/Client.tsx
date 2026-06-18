@@ -48,12 +48,13 @@ export default function WhatOurClientsSay() {
       <div className="content-padding-x mx-auto max-w-[1440px]">
         {/* Heading */}
         <div className="mx-auto max-w-4xl text-center">
-          <div className="flex items-center justify-center gap-6">
-            <span className="h-px w-24 bg-slate-300 md:w-28" />
-            <h2 className="text-[30px] font-bold tracking-tight text-[#175dab] md:text-[34px]">
-              What Our Clients Say
+          <div className="flex w-full min-w-0 items-center justify-center gap-3 sm:gap-6">
+            <span className="h-px w-10 shrink-0 bg-slate-300 sm:w-14 md:w-20" aria-hidden />
+            <h2 className="min-w-0 shrink text-[1.5rem] font-bold tracking-tight sm:text-[30px] md:text-[34px]">
+              <span className="text-[#175dab]">What Our </span>
+              <span className="text-red-600">Clients Say</span>
             </h2>
-            <span className="h-px w-24 bg-slate-300 md:w-28" />
+            <span className="h-px w-10 shrink-0 bg-slate-300 sm:w-14 md:w-20" aria-hidden />
           </div>
           <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-slate-600 md:mt-4 md:text-lg">
             Don&apos;t just take our word for it, hear from businesses and individuals who trust us

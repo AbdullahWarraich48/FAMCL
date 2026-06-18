@@ -9,10 +9,13 @@ const chooseFirmCards: ChooseCardItem[] = [
     buttonLabel: "Learn More",
     buttonHref: "/about",
     iconKey: "users",
-    iconBg: "bg-blue-600",
-    buttonBorder: "border-blue-300",
-    buttonText: "text-blue-800",
-    buttonHover: "hover:bg-blue-50 hover:border-blue-400",
+    iconBg: "bg-[#1E63B3]",
+    cardBg: "bg-[#f0f7ff]",
+    titleClass: "text-[#12254b]",
+    buttonBg: "bg-white/60",
+    buttonBorder: "border-[#1E63B3]",
+    buttonText: "text-[#1E63B3]",
+    buttonHover: "hover:bg-[#1E63B3]/10",
   },
   {
     id: "meet-us",
@@ -22,10 +25,13 @@ const chooseFirmCards: ChooseCardItem[] = [
     buttonLabel: "Contact Us",
     buttonHref: "#contact",
     iconKey: "headset",
-    iconBg: "bg-green-600",
-    buttonBorder: "border-green-300",
-    buttonText: "text-green-800",
-    buttonHover: "hover:bg-green-50 hover:border-green-400",
+    iconBg: "bg-[#16a34a]",
+    cardBg: "bg-[#f0fdf4]",
+    titleClass: "text-[#12254b]",
+    buttonBg: "bg-white/60",
+    buttonBorder: "border-[#16a34a]",
+    buttonText: "text-[#16a34a]",
+    buttonHover: "hover:bg-[#16a34a]/10",
   },
   {
     id: "switching",
@@ -36,9 +42,12 @@ const chooseFirmCards: ChooseCardItem[] = [
     buttonHref: "/switching-accounts",
     iconKey: "refreshCw",
     iconBg: "bg-red-600",
-    buttonBorder: "border-red-300",
-    buttonText: "text-red-800",
-    buttonHover: "hover:bg-red-50 hover:border-red-400",
+    cardBg: "bg-[#fff1f2]",
+    titleClass: "text-[#12254b]",
+    buttonBg: "bg-white/60",
+    buttonBorder: "border-red-600",
+    buttonText: "text-red-600",
+    buttonHover: "hover:bg-red-50",
   },
 ];
 
@@ -52,9 +61,11 @@ const cloudSoftwareCards: ChooseCardItem[] = [
     buttonHref: "/Agents/free-agent-cloud-accounts",
     imageSrc: "/images/blog__freeagent-logo-og 1.png",
     imageAlt: "FreeAgent accounting software logo",
+    cardBg: "bg-white",
     buttonBorder: "border-blue-300",
     buttonText: "text-blue-800",
-    buttonHover: "hover:bg-blue-50 hover:border-blue-400",
+    buttonHover:
+      "hover:border-[#1E63B3] hover:bg-[#1E63B3] hover:text-white",
   },
   {
     id: "quickbooks",
@@ -65,9 +76,11 @@ const cloudSoftwareCards: ChooseCardItem[] = [
     buttonHref: "/Agents/quick-books",
     imageSrc: "/images/Container (3).png",
     imageAlt: "QuickBooks accounting software logo",
-    buttonBorder: "border-green-400",
-    buttonText: "text-green-800",
-    buttonHover: "hover:bg-green-50 hover:border-green-500",
+    cardBg: "bg-white",
+    buttonBorder: "border-blue-300",
+    buttonText: "text-blue-800",
+    buttonHover:
+      "hover:border-[#1E63B3] hover:bg-[#1E63B3] hover:text-white",
   },
   {
     id: "iris",
@@ -78,9 +91,11 @@ const cloudSoftwareCards: ChooseCardItem[] = [
     buttonHref: "/Agents/iris",
     imageSrc: "/images/iris-software-group 1.png",
     imageAlt: "IRIS accounting software logo",
+    cardBg: "bg-white",
     buttonBorder: "border-blue-300",
     buttonText: "text-blue-800",
-    buttonHover: "hover:bg-blue-50 hover:border-blue-400",
+    buttonHover:
+      "hover:border-[#1E63B3] hover:bg-[#1E63B3] hover:text-white",
   },
   {
     id: "payroll-manager",
@@ -91,14 +106,18 @@ const cloudSoftwareCards: ChooseCardItem[] = [
     buttonHref: "/payroll-pansions",
     imageSrc: "/images/payroll-manager.jpg",
     imageAlt: "Payroll Manager software logo",
+    cardBg: "bg-white",
     buttonBorder: "border-blue-300",
     buttonText: "text-blue-800",
-    buttonHover: "hover:bg-blue-50 hover:border-blue-400",
+    buttonHover:
+      "hover:border-[#1E63B3] hover:bg-[#1E63B3] hover:text-white",
   },
 ];
 
 export const CHOOSE_FIRM_SECTION = {
   sectionTitle: "Choose an Accounting Firm That Works for You",
+  sectionTitleBefore: "Choose an Accounting Firm ",
+  sectionTitleHighlight: "That Works for You",
   sectionDescription:
     "Managing a business comes with enough pressure your accounting shouldn't add to it. Our team takes care of your tax, bookkeeping, accounting, and payroll, so you can focus on growing with confidence. If your current accountant isn't meeting expectations, moving to us is straightforward and stress-free.",
   cards: chooseFirmCards,
@@ -106,6 +125,8 @@ export const CHOOSE_FIRM_SECTION = {
 
 export const CLOUD_SOFTWARE_SECTION = {
   sectionTitle: "Cloud accounting software to support your business.",
+  sectionTitleBefore: "Cloud accounting software to ",
+  sectionTitleHighlight: "support your business.",
   sectionDescription:
     "We use trusted, easy-to-use cloud accounting tools that help you manage your finances efficiently and stay in control anytime, anywhere.",
   cards: cloudSoftwareCards,

@@ -18,7 +18,7 @@ import { TECHNOLOGY_DIGITAL_FAQ_DATA } from "@/data/technologyDigital/faqData";
 export const metadata = {
   title: "Technology & Digital | FAM Chartered Accountants",
   description:
-    "Strategic financial support for tech startups and scale-ups, including R&D incentives, funding rounds, and employee share schemes.",
+    "Support for fast-moving businesses. Strategic financial support for UK tech — R&D, fundraising, and employee share schemes.",
 };
 
 export default function TechnologyDigitalPage() {

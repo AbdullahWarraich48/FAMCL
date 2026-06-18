@@ -2,6 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { SplitHeading } from "@/Components/SplitHeading";
 import { BOOKKEEPING_HERO_DATA } from "@/data/bookkeeping/heroData";
 
 export type ServiceHeroData = {
@@ -113,8 +114,11 @@ export const BookKeepingHerosection = ({
               </span>
             </div>
 
-            <h1 className="mt-6 text-[2rem] font-bold leading-[1.15] tracking-tight text-[#1e3a5f] sm:text-4xl lg:text-[44px] lg:leading-[1.1]">
-              {hero.heading}
+            <h1 className="mt-6 text-[2rem] font-bold leading-[1.15] tracking-tight sm:text-4xl lg:text-[44px] lg:leading-[1.1]">
+              <SplitHeading
+                heading={hero.heading}
+                blueClassName="text-[#175dab]"
+              />
             </h1>
 
             {hero.subheading && (
@@ -131,10 +135,10 @@ export const BookKeepingHerosection = ({
             </p>
 
             {/* CTAs */}
-            <div className="mt-8 flex flex-wrap items-center gap-4">
+            <div className="mt-8 flex w-full flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:gap-4">
               <Link
                 href={hero.primaryCta.href}
-                className="inline-flex h-12 min-w-[140px] items-center justify-center gap-2 rounded-xl bg-[#1e3a5f] px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-[#184B83] focus:outline-none focus:ring-2 focus:ring-[#1e3a5f] focus:ring-offset-2"
+                className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl bg-[#1e3a5f] px-6 py-3 text-base font-semibold text-white shadow-sm transition-colors hover:bg-[#184B83] focus:outline-none focus:ring-2 focus:ring-[#1e3a5f] focus:ring-offset-2 sm:w-auto sm:min-w-[140px]"
                 aria-label="Get started today"
               >
                 {hero.primaryCta.label}
@@ -155,16 +159,19 @@ export const BookKeepingHerosection = ({
               </Link>
               <a
                 href={hero.phoneHref}
-                className="inline-flex h-12 min-w-[140px] items-center justify-center gap-2 rounded-xl border-2 border-slate-300 bg-white px-6 py-3 text-base font-semibold text-[#1e3a5f] transition-colors hover:border-[#12254B] hover:bg-[#12254B] hover:text-white focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2"
+                className="inline-flex h-12 w-full items-center justify-center gap-2 rounded-xl border-2 border-slate-300 bg-white px-4 py-3 text-base font-semibold text-[#1e3a5f] transition-colors hover:border-[#12254B] hover:bg-[#12254B] hover:text-white focus:outline-none focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 sm:w-auto sm:min-w-[140px] sm:px-6"
                 aria-label={`Call ${hero.phoneNumber}`}
               >
                 <PhoneIcon className="h-5 w-5 shrink-0" />
-                {hero.secondaryCta.labelPrefix} {hero.phoneNumber}
+                <span className="sm:hidden">{hero.secondaryCta.labelPrefix}</span>
+                <span className="hidden sm:inline">
+                  {hero.secondaryCta.labelPrefix} {hero.phoneNumber}
+                </span>
               </a>
             </div>
 
             {/* Feature cards - inside left column, icon on top, text below */}
-            <div className="mt-8 grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4">
+            <div className="mt-8 grid grid-cols-1 gap-3 min-[420px]:grid-cols-2 sm:gap-4">
               {hero.featureCards.map(({ label }) => (
                 <div
                   key={label}

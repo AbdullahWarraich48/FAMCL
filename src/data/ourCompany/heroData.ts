@@ -4,11 +4,11 @@ export const OUR_COMPANY_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Judgement-led advice built on professional responsibility",
+  bannerText: "Company",
   heading: "Our Story",
   subheading: "Built on judgement, shaped by responsibility.",
   description:
-    "FAM Chartered Accountants exists to bring clarity where financial complexity creates risk. The firm has grown by focusing on work that withstands scrutiny rather than pursuing visibility or rapid expansion. Our approach prioritises careful judgement, disciplined processes, and responsible decision‑making.",
+    "FAM Chartered Accountants exists to bring clarity where financial complexity creates risk. The firm has grown by doing work that holds up under scrutiny, not by chasing visibility.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -19,9 +19,9 @@ export const OUR_COMPANY_HERO_DATA: ServiceHeroData = {
   },
 
   featureCards: [
-    { label: "Judgement-Led Advice" },
-    { label: "Disciplined Processes" },
-    { label: "Responsible Decision-Making" },
+    { label: "Accuracy before speed" },
+    { label: "Judgement before optimisation" },
+    { label: "Responsibility before convenience" },
   ],
 
   trustedBar: {

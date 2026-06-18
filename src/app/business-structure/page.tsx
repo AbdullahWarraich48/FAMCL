@@ -18,7 +18,7 @@ import { BUSINESS_STRUCTURE_FAQ_DATA } from "@/data/businessStructure/faqData";
 export const metadata = {
   title: "Business Structuring | FAM Chartered Accountants",
   description:
-    "Specialist advice to choose and maintain the right business structure for tax efficiency, risk management, and long-term growth.",
+    "Building a foundation for growth. Expert advice on legal and tax structures for startups, scaling businesses, and exit planning.",
 };
 
 export default function BusinessStructurePage() {

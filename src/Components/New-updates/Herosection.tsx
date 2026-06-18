@@ -12,9 +12,10 @@ type NewsHeroProps = {
 };
 
 export default function NewsUpdatesHero({
-  tagLabel = "Regulatory Insights",
+  tagLabel = "Resources",
   title = "News & Updates",
-  description = "Regulatory changes, tax developments, and financial insights explained clearly.",
+  description =
+    "Regulatory and tax changes explained, with expert interpretation and impact assessment.",
   backgroundClassName = "bg-[#175dab]",
 }: NewsHeroProps) {
   return (

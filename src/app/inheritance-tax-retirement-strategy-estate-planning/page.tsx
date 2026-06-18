@@ -16,9 +16,10 @@ import { INHERITANCE_TAX_SOLUTION_DATA } from "@/data/inheritanceTax/solutionDat
 import { INHERITANCE_TAX_ESTATE_PLANNING_FAQ_DATA } from "@/data/inheritanceTax/faqData";
 
 export const metadata = {
-  title: "Inheritance Tax, Retirement Strategy & Estate Planning | FAM Chartered Accountants",
+  title:
+    "Inheritance Tax, Retirement Strategy and Estate Planning | FAM Chartered Accountants",
   description:
-    "Support with inheritance tax planning, retirement strategy, and estate structuring so you can protect your family and pass on your wealth tax-efficiently.",
+    "Protect what matters to your family. Inheritance Tax planning, retirement strategy, and estate structuring for efficient wealth transfer.",
 };
 
 export default function InheritanceTaxRetirementStrategyEstatePlanningPage() {

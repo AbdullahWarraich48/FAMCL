@@ -4,11 +4,11 @@ export const SOLE_TRADERS_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Helping new businesses start on the right foundation",
+  bannerText: "Business Formation",
   heading: "Sole Traders",
-  subheading: "Simple support for self‑employed work.",
+  subheading: "Simple support for self-employed work.",
   description:
-    "Operating as a Sole Trader is often seen as simple, but small mistakes in record‑keeping, tax planning, or compliance can create unnecessary risks. We provide structured and tax‑compliant guidance for self‑employed individuals, helping you maintain clear financial records and stay fully compliant with HMRC requirements.",
+    "Ongoing tax and compliance support for self-employed individuals operating under UK Sole Trader rules, where simplicity often hides risk.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -30,4 +30,3 @@ export const SOLE_TRADERS_HERO_DATA: ServiceHeroData = {
       "Sole traders rely on our guidance to keep their records accurate, compliant, and ready for HMRC review.",
   },
 } as const;
-

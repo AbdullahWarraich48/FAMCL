@@ -18,7 +18,7 @@ import { PAYROLL_PENSIONS_FAQ_DATA } from "@/data/payrollPansions/faqData";
 export const metadata = {
   title: "Payroll & Pensions | FAM Chartered Accountants",
   description:
-    "Accurate, compliant payroll and pension management so your team is paid correctly and on time while your business stays fully compliant.",
+    "Your people paid properly. Payroll, PAYE, and workplace pensions managed accurately with full HMRC and regulator compliance.",
 };
 
 export default function PayrollPansionsPage() {

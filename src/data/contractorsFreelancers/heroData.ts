@@ -4,11 +4,11 @@ export const CONTRACTORS_FREELANCERS_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Helping new businesses start on the right foundation",
+  bannerText: "Business Formation",
   heading: "Contractors & Freelancers",
   subheading: "Stay compliant without the stress.",
   description:
-    "Contractors and freelancers operate in an environment where tax rules and employment status regulations can change frequently. We provide compliance and tax support designed for individuals working under contracts or freelance arrangements, helping ensure your structure and reporting remain aligned with current regulations.",
+    "Compliance and tax support for individuals working under contracts or freelance arrangements, where regulatory interpretation materially affects outcomes.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -30,4 +30,3 @@ export const CONTRACTORS_FREELANCERS_HERO_DATA: ServiceHeroData = {
       "Independent professionals rely on our support to stay compliant, manage status, and avoid unexpected tax issues.",
   },
 } as const;
-

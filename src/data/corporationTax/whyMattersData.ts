@@ -6,47 +6,36 @@ import type {
 type CorporationTaxWhyMattersIconKey = BookkeepingWhyMattersIconKey;
 
 export const CORPORATION_TAX_WHY_MATTERS_DATA: WhyMattersData = {
-  sectionLabel: "Why It Matters",
-  heading: "The Value Behind Proper Tax Planning",
+  sectionLabel: "Why It Matters to You",
+  heading: "The Real Cost of Poor Tax Planning",
   description:
-    "Corporation tax mistakes can quietly affect a business over time. Overpaying reduces growth potential, while underpaying can result in penalties, interest, or investigations. Effective tax planning ensures your obligations are handled correctly while giving you clarity and confidence about your financial position.",
+    "Overpaying tax quietly drains growth. Underpaying risks fines, interest, and investigations. Tax stress distracts business owners from growth. Good tax planning improves cash flows. It also reduces long-term risk and uncertainty.",
   items: [
     {
-      title: "Reduced Risk",
+      title: "Overpaying Drains Growth",
+      description: "Overpaying tax quietly drains growth.",
+      iconKey: "circle-dollar" as CorporationTaxWhyMattersIconKey,
+    },
+    {
+      title: "Underpaying Risks Penalties",
       description:
-        "Accurate tax management reduces the risk of penalties, fines, or compliance issues.",
+        "Underpaying risks fines, interest, and investigations.",
       iconKey: "scale" as CorporationTaxWhyMattersIconKey,
     },
     {
-      title: "Better Financial Decisions",
-      description:
-        "Understanding tax obligations clearly allows better business planning and investment.",
-      iconKey: "chart-line" as CorporationTaxWhyMattersIconKey,
+      title: "Tax Stress Distracts",
+      description: "Tax stress distracts business owners from growth.",
+      iconKey: "activity" as CorporationTaxWhyMattersIconKey,
     },
     {
-      title: "HMRC Compliance",
-      description:
-        "Proper filings ensure your business remains compliant with HMRC regulations.",
-      iconKey: "clipboard-check" as CorporationTaxWhyMattersIconKey,
-    },
-    {
-      title: "Lower Stress",
-      description:
-        "Professional tax management removes the pressure of dealing with complex tax rules.",
-      iconKey: "leaf" as CorporationTaxWhyMattersIconKey,
-    },
-    {
-      title: "Stronger Cash Flow Planning",
-      description:
-        "When tax obligations are planned ahead, businesses manage cash flow more effectively.",
+      title: "Better Cash Flow",
+      description: "Good tax planning improves cash flows.",
       iconKey: "arrow-left-right" as CorporationTaxWhyMattersIconKey,
     },
     {
-      title: "Long-Term Stability",
-      description:
-        "Consistent tax planning reduces uncertainty and protects your business over time.",
+      title: "Reduced Long-Term Risk",
+      description: "It also reduces long-term risk and uncertainty.",
       iconKey: "anchor" as CorporationTaxWhyMattersIconKey,
     },
   ],
 };
-

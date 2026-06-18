@@ -9,38 +9,34 @@ export const INHERITANCE_TAX_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for You",
   description:
-    "Estate planning and Inheritance Tax management ensure that your assets are efficiently transferred to the next generation while reducing unnecessary tax exposure. We provide clear, strategic advice to help you manage these complex areas with confidence.",
+    "We help structure your affairs to protect your family. Inheritance Tax exposure is reviewed. Assets are planned for efficient transfer. Future risks are identified early. Peace of mind replaces uncertainty. Develop Retirement Strategy tax efficient exit for selling or smooth handing over to next generation.",
   items: [
     {
-      title: "Review Estate Structure",
-      description:
-        "We review your current estate structure to identify areas that may need adjustment to reduce tax exposure.",
+      title: "Structure Your Affairs",
+      description: "We help structure your affairs to protect your family.",
+      iconKey: "shield" as InheritanceServiceScopeIconKey,
+    },
+    {
+      title: "IHT Exposure Review",
+      description: "Inheritance Tax exposure is reviewed.",
+      iconKey: "search" as InheritanceServiceScopeIconKey,
+    },
+    {
+      title: "Efficient Asset Transfer",
+      description: "Assets are planned for efficient transfer.",
       iconKey: "network" as InheritanceServiceScopeIconKey,
     },
     {
-      title: "Identify Tax Exposure",
+      title: "Early Risk Identification",
       description:
-        "We identify potential Inheritance Tax liabilities and create strategies to minimise them.",
-      iconKey: "badge-percent" as InheritanceServiceScopeIconKey,
+        "Future risks are identified early. Peace of mind replaces uncertainty.",
+      iconKey: "eye" as InheritanceServiceScopeIconKey,
     },
     {
-      title: "Explain Planning Options",
+      title: "Retirement Strategy",
       description:
-        "We explain various estate planning options, such as trusts, gifts, and tax-efficient strategies.",
-      iconKey: "message-square" as InheritanceServiceScopeIconKey,
-    },
-    {
-      title: "Coordinate with Professionals",
-      description:
-        "If needed, we collaborate with legal and financial professionals to ensure your plan is comprehensive.",
-      iconKey: "users" as InheritanceServiceScopeIconKey,
-    },
-    {
-      title: "Keep Plans Under Review",
-      description:
-        "We monitor and update your estate and retirement plans as your circumstances evolve.",
+        "Develop Retirement Strategy tax efficient exit for selling or smooth handing over to next generation.",
       iconKey: "calendar-clock" as InheritanceServiceScopeIconKey,
     },
   ],
 };
-

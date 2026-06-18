@@ -4,11 +4,11 @@ export const VAT_RETURNS_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Supporting Limited Companies from Startup to Scale",
+  bannerText: "For Business",
   heading: "VAT Returns",
   subheading: "HMRC compliance, made simple.",
   description:
-    "Managing VAT correctly is essential for maintaining compliance and financial stability. With accurate records and timely submissions, businesses can avoid penalties, interest, and unnecessary complications. We handle your VAT obligations so your reporting remains organised, compliant, and stress-free.",
+    "We manage VAT registration, returns, and digital submissions so your reporting stays compliant, accurate, and stress-free.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -29,5 +29,4 @@ export const VAT_RETURNS_HERO_DATA: ServiceHeroData = {
     description:
       "Our clients consistently rate our VAT support highly for clarity, accuracy, and dependable service.",
   },
-};
-
+} as const;

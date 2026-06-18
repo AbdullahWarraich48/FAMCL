@@ -7,35 +7,39 @@ type CapitalGainsSolutionIconKey = BookkeepingSolutionIconKey;
 
 export const CAPITAL_GAINS_SOLUTION_DATA: SolutionData = {
   sectionLabel: "Solution & Framework",
-  heading: "How We Deliver This Service",
+  heading: "How We Deliver",
   description:
-    "We follow a structured approach to ensure your CGT reporting and tax planning is handled accurately and efficiently. From reviewing property sales to applying reliefs, our step-by-step process protects your finances.",
+    "We follow a structured approach from reviewing the sale through to future planning, so your CGT position is handled accurately and on time.",
   steps: [
     {
       number: "01",
-      title: "Review the Sale & History",
+      title: "Review the sale and history",
       iconKey: "search" as CapitalGainsSolutionIconKey,
     },
     {
       number: "02",
-      title: "Calculate Gains Correctly",
+      title: "Calculate gains correctly",
       iconKey: "calculator" as CapitalGainsSolutionIconKey,
     },
     {
       number: "03",
-      title: "Apply Reliefs & Allowances",
+      title: "Apply reliefs and allowances",
       iconKey: "badge-check" as CapitalGainsSolutionIconKey,
     },
     {
       number: "04",
-      title: "MTD Quarterly Reporting & Submit Reports on Time",
+      title: "MTD quarterly reporting",
       iconKey: "network" as CapitalGainsSolutionIconKey,
     },
     {
       number: "05",
-      title: "Advise on Future Planning",
+      title: "Submit reports on time",
+      iconKey: "calendar-clock" as CapitalGainsSolutionIconKey,
+    },
+    {
+      number: "06",
+      title: "Advise on future planning",
       iconKey: "target" as CapitalGainsSolutionIconKey,
     },
   ],
 };
-

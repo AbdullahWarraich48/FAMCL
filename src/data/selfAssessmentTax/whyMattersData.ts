@@ -6,47 +6,48 @@ import type {
 type SelfAssessmentWhyMattersIconKey = BookkeepingWhyMattersIconKey;
 
 export const SELF_ASSESSMENT_TAX_WHY_MATTERS_DATA: WhyMattersData = {
-  sectionLabel: "Why It Matters",
-  heading: "The Importance of Accurate Tax Returns",
+  sectionLabel: "Why It Matters to You",
+  heading: "Why Getting Your Return Right Matters",
   description:
-    "Incorrect or late tax returns can result in automatic penalties and unnecessary stress. With our proactive approach, you ensure your tax position is clear, and you avoid costly mistakes.",
+    "Late or incorrect returns trigger penalties automatically. From April 2026, HMRC implement Making Tax Digital – MDT for self employment businesses and property income which require quarterly reporting. Small mistakes can lead to HMRC enquiries. Many people overpay tax without realizing it. Tax stress often builds silently until deadlines arrive. Clear handling removes uncertainty and anxiety. You regain confidence in your finances.",
   items: [
     {
-      title: "Avoid Penalties",
+      title: "Automatic Penalties",
       description:
-        "Late or incorrect returns trigger penalties immediately, and we ensure that doesn’t happen.",
+        "Late or incorrect returns trigger penalties automatically.",
       iconKey: "alert-triangle" as SelfAssessmentWhyMattersIconKey,
     },
     {
-      title: "Make Tax Digital Compliance",
+      title: "Making Tax Digital from 2026",
       description:
-        "From April 2026, HMRC will require quarterly reports under Making Tax Digital for self-employed individuals and property income.",
+        "From April 2026, HMRC implement Making Tax Digital – MDT for self employment businesses and property income which require quarterly reporting.",
       iconKey: "clipboard-check" as SelfAssessmentWhyMattersIconKey,
     },
     {
-      title: "Reduce HMRC Inquiries",
-      description:
-        "Inconsistent filings often lead to HMRC inquiries. Our accurate filings reduce this risk.",
+      title: "HMRC Enquiries",
+      description: "Small mistakes can lead to HMRC enquiries.",
       iconKey: "shield" as SelfAssessmentWhyMattersIconKey,
     },
     {
-      title: "Prevent Overpayment",
-      description:
-        "Many individuals overpay taxes due to missed allowances. We ensure you claim everything you’re entitled to.",
+      title: "Avoid Overpaying",
+      description: "Many people overpay tax without realizing it.",
       iconKey: "circle-dollar" as SelfAssessmentWhyMattersIconKey,
     },
     {
-      title: "Alleviate Tax Stress",
+      title: "Silent Tax Stress",
       description:
-        "We handle everything, removing the anxiety of last-minute tax filings and complex paperwork.",
+        "Tax stress often builds silently until deadlines arrive.",
+      iconKey: "activity" as SelfAssessmentWhyMattersIconKey,
+    },
+    {
+      title: "Remove Uncertainty",
+      description: "Clear handling removes uncertainty and anxiety.",
       iconKey: "leaf" as SelfAssessmentWhyMattersIconKey,
     },
     {
-      title: "Clarity in Your Finances",
-      description:
-        "We make your tax position clear, helping you regain confidence in your financial matters.",
-      iconKey: "chart-line" as SelfAssessmentWhyMattersIconKey,
+      title: "Financial Confidence",
+      description: "You regain confidence in your finances.",
+      iconKey: "check-square" as SelfAssessmentWhyMattersIconKey,
     },
   ],
 };
-

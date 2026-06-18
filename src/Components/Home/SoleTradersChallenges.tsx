@@ -1,11 +1,11 @@
 import SectionIntroHeader from "@/Components/SectionIntroHeader";
 
 const SOLE_TRADER_CHALLENGES = [
-  "Income tracked informally until the end of the year",
+  "Income tracked informally until year end",
   "Expenses claimed incorrectly or inconsistently",
-  "Tax bills arriving without preparation",
-  "Limited visibility of profitability",
-  "Business decisions made without financial insight",
+  "Tax bills arrive without preparation",
+  "No visibility of profitability",
+  "Growth decisions made without financial insight",
 ] as const;
 
 export default function SoleTradersChallenges() {
@@ -20,27 +20,20 @@ export default function SoleTradersChallenges() {
             headingId="sole-trader-challenges-heading"
             sectionLabel={
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C23A5D] sm:text-sm sm:tracking-[0.2em]">
-                Common Sole Trader Challenges
+                Comprehensive Business Support
               </span>
             }
             labelPillClassName="shrink-0 rounded-lg bg-[#FFE4EC] px-4 py-2"
-            labelAriaLabel="Common sole trader challenges"
-            heading="Risks Self-Employed Individuals Often Face"
+            labelAriaLabel="Comprehensive business support"
+            heading="Common Sole Trader Challenges"
             headingBgClassName="bg-white"
             headingBlockMarginTop="mt-6 sm:mt-8"
             headingClassName="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
           />
-
-          <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-slate-600 sm:mt-6 sm:text-[18px] sm:leading-[27.8px]">
-            Many Sole Traders operate independently, which can lead to financial and tax issues
-            that develop gradually over time. These patterns are common, but avoidable with
-            structured support.
-          </p>
         </div>
 
-        {/* Challenge cards */}
         <div className="mx-auto mt-10 flex max-w-5xl flex-col gap-5 sm:mt-12 sm:gap-6">
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {SOLE_TRADER_CHALLENGES.slice(0, 3).map((text) => (
               <div
                 key={text}
@@ -66,4 +59,3 @@ export default function SoleTradersChallenges() {
     </section>
   );
 }
-

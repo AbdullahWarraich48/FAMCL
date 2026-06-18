@@ -6,34 +6,34 @@ import type {
 type LimitedCompaniesSolutionIconKey = BookkeepingSolutionIconKey;
 
 export const LIMITED_COMPANIES_SOLUTION_DATA: SolutionData = {
-  sectionLabel: "Solution & Framework",
+  sectionLabel: "Solutions & Roadmap",
   heading: "How We Support Limited Companies",
   description:
     "Our structured approach ensures directors understand their responsibilities and maintain strong financial discipline within the company.",
   steps: [
     {
       number: "01",
-      title: "Clarify Director Duties",
+      title: "Clarify director duties and reporting responsibilities",
       iconKey: "document-check" as LimitedCompaniesSolutionIconKey,
     },
     {
       number: "02",
-      title: "Maintain Statutory Records",
+      title: "Maintain statutory records correctly",
       iconKey: "boxes" as LimitedCompaniesSolutionIconKey,
     },
     {
       number: "03",
-      title: "Prepare Accurate Accounts",
+      title: "Prepare accounts aligned to both HMRC and Companies House",
       iconKey: "bar-chart" as LimitedCompaniesSolutionIconKey,
     },
     {
       number: "04",
-      title: "Manage Corporation Tax Planning",
+      title: "Manage Corporation Tax planning proactively",
       iconKey: "receipt-tax" as LimitedCompaniesSolutionIconKey,
     },
     {
       number: "05",
-      title: "Support Compliance Decisions",
+      title: "Support directors through compliance decisions",
       iconKey: "cogs" as LimitedCompaniesSolutionIconKey,
     },
   ],
@@ -41,41 +41,34 @@ export const LIMITED_COMPANIES_SOLUTION_DATA: SolutionData = {
 
 export const LIMITED_COMPANIES_TRUST_MATRIX_SOLUTION_DATA: SolutionData = {
   sectionLabel: "Trust Matrix",
-  heading: "FAM Chartered Accountants – Trust Matrix",
+  heading: "FAM Chartered Accountants Trust Matrix",
   description:
-    "Our work follows a professional framework that emphasises accountability, clarity, and controlled financial processes.",
+    "Accuracy enforced. Compliance mandatory. Judgement applied. Process controlled. Accountability retained.",
   steps: [
     {
       number: "01",
-      title: "Accuracy Enforced",
+      title: "Accuracy enforced",
       iconKey: "document-check" as LimitedCompaniesSolutionIconKey,
     },
     {
       number: "02",
-      title: "Accountability Retained",
-      iconKey: "target" as LimitedCompaniesSolutionIconKey,
-    },
-    {
-      number: "03",
-      title: "Compliance Mandatory",
+      title: "Compliance mandatory",
       iconKey: "badge-check" as LimitedCompaniesSolutionIconKey,
     },
     {
+      number: "03",
+      title: "Judgement applied",
+      iconKey: "calculator" as LimitedCompaniesSolutionIconKey,
+    },
+    {
       number: "04",
-      title: "Process Controlled",
+      title: "Process controlled",
       iconKey: "cogs" as LimitedCompaniesSolutionIconKey,
     },
     {
       number: "05",
-      title: "Judgement Applied",
-      iconKey: "calculator" as LimitedCompaniesSolutionIconKey,
-    },
-    {
-      number: "06",
-      title: "Transparent Service",
-      iconKey: "bar-chart" as LimitedCompaniesSolutionIconKey,
+      title: "Accountability retained",
+      iconKey: "target" as LimitedCompaniesSolutionIconKey,
     },
   ],
 };
-
-

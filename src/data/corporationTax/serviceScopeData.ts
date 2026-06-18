@@ -9,38 +9,34 @@ export const CORPORATION_TAX_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for Your Business",
   description:
-    "Corporation tax management involves more than simply submitting returns. It requires accurate calculation, careful planning, and consistent compliance with HMRC regulations. Our approach ensures your tax obligations are handled professionally while identifying opportunities to improve efficiency and reduce unnecessary tax payments.",
+    "We manage your business tax obligations under UK Law. This includes calculation, planning, and filing. Tax is planned ahead, not rushed at deadlines. Allowances and reliefs are identified early. Your structure is reviewed for efficiency. HMRC communication is handled professionally. You stay compliant without fear.",
   items: [
     {
-      title: "Tax Calculation & Filing",
+      title: "Calculation, Planning & Filing",
       description:
-        "We calculate your corporation tax accurately and prepare compliant filings according to UK regulations.",
+        "We manage your business tax obligations under UK Law. This includes calculation, planning, and filing.",
       iconKey: "calculator" as CorporationTaxIconKey,
     },
     {
-      title: "Tax Planning Ahead of Deadlines",
-      description:
-        "Your tax position is planned early so deadlines are never missed and surprises are avoided.",
+      title: "Planned Ahead of Deadlines",
+      description: "Tax is planned ahead, not rushed at deadlines.",
       iconKey: "calendar-clock" as CorporationTaxIconKey,
     },
     {
-      title: "Reliefs & Allowances Identification",
-      description:
-        "Eligible tax reliefs and allowances are identified so you do not miss legitimate savings.",
+      title: "Allowances & Reliefs",
+      description: "Allowances and reliefs are identified early.",
       iconKey: "badge-percent" as CorporationTaxIconKey,
     },
     {
-      title: "Business Structure Review",
-      description:
-        "Your company structure is reviewed to ensure it remains tax-efficient as your business grows.",
+      title: "Structure Review",
+      description: "Your structure is reviewed for efficiency.",
       iconKey: "network" as CorporationTaxIconKey,
     },
     {
-      title: "HMRC Communication Management",
+      title: "HMRC Communication",
       description:
-        "We handle communication with HMRC professionally, ensuring queries and filings are managed correctly.",
+        "HMRC communication is handled professionally. You stay compliant without fear.",
       iconKey: "message-square" as CorporationTaxIconKey,
     },
   ],
 };
-

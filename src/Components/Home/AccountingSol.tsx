@@ -37,9 +37,18 @@ export default function ComprehensiveAccountingSolutionsExact({
         <div className="mx-auto max-w-4xl text-center">
           <SectionIntroHeader
             headingId="accounting-sol-heading"
-            heading={ACCOUNTING_SOL_SECTION.title}
+            heading={
+              <>
+                <span className="text-[#175dab]">
+                  {ACCOUNTING_SOL_SECTION.titleBefore}
+                </span>
+                <span className="text-red-600">
+                  {ACCOUNTING_SOL_SECTION.titleHighlight}
+                </span>
+              </>
+            }
             headingBgClassName={sectionClassName}
-            headingClassName="text-[28px] font-bold tracking-tight text-[#175dab] md:text-[32px]"
+            headingClassName="text-[28px] font-bold tracking-tight md:text-[32px]"
           />
           <p className="mx-auto mt-3 max-w-3xl text-base leading-relaxed text-slate-600 md:mt-4 md:text-lg">
             {ACCOUNTING_SOL_SECTION.description}
@@ -50,21 +59,21 @@ export default function ComprehensiveAccountingSolutionsExact({
           {ACCOUNTING_SOL_BLOCKS.map((b) => {
             const IconComponent = ICON_MAP[b.iconKey];
             return (
-              <div key={b.title} className="relative mx-auto w-full max-w-[620px]">
-                {/* Mobile: image centered; lg+: image stays right (original layout) */}
+              <div key={b.title} className="relative mx-auto w-full max-w-[620px] pb-4 lg:min-h-[480px] lg:pb-0">
+                {/* Image */}
                 <div className="relative mx-auto w-full max-w-[470px] overflow-hidden rounded-2xl shadow-[0_18px_45px_rgba(0,0,0,0.18)] lg:ml-auto">
                   <img
                     src={b.imageUrl}
                     alt={b.title}
-                    className="h-[420px] w-full object-cover md:h-[460px]"
+                    className="h-[280px] w-full object-cover sm:h-[360px] md:h-[420px] lg:h-[460px]"
                     draggable={false}
                   />
                   <div className="pointer-events-none absolute inset-0 bg-black/10" />
                 </div>
 
-                {/* Mobile: card centered over the block; lg+: card anchored left like before */}
-                <Card className="absolute left-1/2 top-1/2 z-10 w-[min(300px,calc(100%-2rem))] -translate-x-1/2 -translate-y-1/2 rounded-2xl border-0 shadow-[0_22px_45px_rgba(0,0,0,0.20)] md:w-[320px] lg:left-0 lg:translate-x-0">
-                  <div className="rounded-2xl bg-[#D8EAFF]">
+                {/* Card: stacked on mobile, overlaid on large screens */}
+                <Card className="relative z-10 mx-auto mt-6 w-full max-w-[360px] rounded-2xl border-0 shadow-[0_22px_45px_rgba(0,0,0,0.20)] lg:absolute lg:left-0 lg:top-1/2 lg:mt-0 lg:w-[360px] lg:-translate-y-1/2">
+                  <div className="rounded-2xl bg-white">
                     <CardContent className="p-5 md:p-6">
                       <div className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-[#175dab]">
                         <IconComponent className="h-4 w-4 text-white" />
@@ -74,7 +83,7 @@ export default function ComprehensiveAccountingSolutionsExact({
                         {b.title}
                       </h3>
 
-                      <p className="mt-2 text-[13px] leading-5 text-slate-600 md:text-[14px] md:leading-6">
+                      <p className="mt-2 text-[14px] leading-6 text-slate-600 md:text-[15px] md:leading-7">
                         {b.desc}
                       </p>
 

@@ -9,7 +9,7 @@ import FooterSection from "@/Components/footer";
 export const metadata = {
   title: "News & Updates | FAM Chartered Accountants",
   description:
-    "Regulatory changes, tax developments, and financial insights explained clearly so you can stay ahead and make confident decisions.",
+    "Regulatory and tax changes explained, with expert interpretation and impact assessment.",
 };
 
 export default function NewsAndUpdatesPage() {

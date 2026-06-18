@@ -1,10 +1,13 @@
 import Image from "next/image";
+import { SplitHeading } from "@/Components/SplitHeading";
+import { SECTION_BG } from "@/constants/sectionBackgrounds";
 
 type TeamStructureProps = {
   badgeLabel: string;
   title: string;
   paragraphs: string[];
   bulletItems?: string[];
+  sectionClassName?: string;
   mainImage: {
     src: string;
     alt: string;
@@ -20,13 +23,14 @@ export default function TeamStructure({
   title,
   paragraphs,
   bulletItems,
+  sectionClassName = SECTION_BG.alt,
   mainImage,
   secondaryImage,
 }: TeamStructureProps) {
   const [firstParagraph, ...restParagraphs] = paragraphs;
 
   return (
-    <section className="w-full bg-[#f4f6fb]">
+    <section className={`w-full ${sectionClassName}`}>
       <div className="content-padding-x mx-auto max-w-[1440px] py-10 md:py-16 lg:py-20">
         <div className="grid grid-cols-1 items-center gap-10 md:gap-12 lg:grid-cols-2 lg:gap-14">
           <div className="max-w-[640px]">
@@ -34,8 +38,8 @@ export default function TeamStructure({
               {badgeLabel}
             </span>
 
-            <h2 className="mt-6 text-[26px] font-semibold leading-[1.18] text-[#1f5ca8] sm:mt-8 sm:text-[30px] md:text-[36px] lg:text-[42px]">
-              {title}
+            <h2 className="mt-6 text-[26px] font-semibold leading-[1.18] sm:mt-8 sm:text-[30px] md:text-[36px] lg:text-[42px]">
+              <SplitHeading heading={title} />
             </h2>
 
             {firstParagraph && (

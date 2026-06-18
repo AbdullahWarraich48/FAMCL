@@ -1,11 +1,11 @@
 import SectionIntroHeader from "@/Components/SectionIntroHeader";
 
 const LIMITED_COMPANY_CHALLENGES = [
-  "Directors unaware of their personal responsibilities",
+  "Directors unaware of personal responsibility",
   "Accounts prepared late or inconsistently",
-  "Tax planning done only after profits are realised",
-  "HMRC correspondence handled reactively rather than proactively",
-  "Poor coordination between payroll, VAT, and company accounts",
+  "Tax planned after profit is realised",
+  "HMRC correspondence handled reactively",
+  "Poor coordination between payroll, VAT, and accounts",
 ] as const;
 
 export default function LimitedCompaniesChallenges() {
@@ -20,27 +20,20 @@ export default function LimitedCompaniesChallenges() {
             headingId="limited-company-challenges-heading"
             sectionLabel={
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C23A5D] sm:text-sm sm:tracking-[0.2em]">
-                Common Director Challenges
+                Comprehensive Business Support
               </span>
             }
             labelPillClassName="shrink-0 rounded-lg bg-[#FFE4EC] px-4 py-2"
-            labelAriaLabel="Common director challenges"
-            heading="Risks Many Limited Companies Face"
+            labelAriaLabel="Comprehensive business support"
+            heading="Common Limited Company Challenges"
             headingBgClassName="bg-white"
             headingBlockMarginTop="mt-6 sm:mt-8"
             headingClassName="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
           />
-
-          <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-slate-600 sm:mt-6 sm:text-[18px] sm:leading-[27.8px]">
-            Many companies face financial and compliance issues when proper structures are not
-            maintained. These challenges often build up gradually, but can be reduced with clear
-            systems and ongoing support.
-          </p>
         </div>
 
-        {/* Challenge cards */}
         <div className="mx-auto mt-10 flex max-w-5xl flex-col gap-5 sm:mt-12 sm:gap-6">
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {LIMITED_COMPANY_CHALLENGES.slice(0, 3).map((text) => (
               <div
                 key={text}
@@ -66,4 +59,3 @@ export default function LimitedCompaniesChallenges() {
     </section>
   );
 }
-

@@ -1,28 +1,28 @@
 import Image from "next/image";
+import { SplitHeading } from "@/Components/SplitHeading";
 
 export default function LimitedCompaniesChooseService() {
   return (
-    <section className="w-full bg-[#edf1f6]">
-      <div className="mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-12 px-8 py-10 md:px-12 lg:grid-cols-2 lg:px-20 lg:py-12">
+    <section className="w-full bg-[#cbdcff]">
+      <div className="content-padding-x mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-12 py-10 lg:grid-cols-2 lg:py-12">
         <div className="max-w-[560px]">
           <span className="inline-block rounded-full bg-[#b8efbe] px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-[#198f3f]">
             Why Choose This Service
           </span>
 
-          <h2 className="mt-8 text-[34px] font-semibold leading-[1.12] text-[#1f5ca8] md:text-[42px]">
-            Designed For Directors Who Value Responsibility And Control
+          <h2 className="mt-8 text-[1.75rem] font-semibold leading-[1.12] sm:text-[2rem] md:text-[34px] lg:text-[42px]">
+            <SplitHeading heading="Designed For Responsibility, Not Convenience" />
           </h2>
 
-          <p className="mt-8 text-[18px] leading-[1.7] text-[#606b7a]">
-            This service recognises that directors carry personal accountability for their company&apos;s
-            actions and compliance. Our support focuses on protecting both the business and its
-            officers through structured financial oversight.
+          <p className="mt-8 text-base leading-[1.7] text-[#606b7a] sm:text-[17px] md:text-[18px]">
+            This service is designed for responsibility, not convenience. It
+            recognises that directors are accountable personally, not
+            abstractly. Support is structured to protect both the company and
+            its officers.
           </p>
 
-          <p className="mt-8 text-[18px] leading-[1.7] text-[#606b7a]">
-            The approach prioritises accuracy, regulatory discipline, and informed decision-making,
-            ensuring directors understand the consequences of financial and compliance decisions
-            before they are made.
+          <p className="mt-8 text-base leading-[1.7] text-[#606b7a] sm:text-[17px] md:text-[18px]">
+            Decisions are reviewed for consequence, not speed.
           </p>
         </div>
 
@@ -39,4 +39,3 @@ export default function LimitedCompaniesChooseService() {
     </section>
   );
 }
-

@@ -4,11 +4,11 @@ export const LIMITED_COMPANIES_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Helping new businesses start on the right foundation",
+  bannerText: "Business Formation",
   heading: "Limited Companies",
   subheading: "Structure, clarity, and room to grow.",
   description:
-    "Operating a limited company brings greater opportunity but also greater responsibility. Directors must manage statutory obligations, tax planning, and regulatory compliance carefully. We provide structured accounting, tax, and compliance support to help limited companies operate confidently while protecting both the business and its directors.",
+    "Accounting, tax, and compliance support for UK limited companies, with emphasis on director responsibility, statutory obligations, and risk control.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -30,4 +30,3 @@ export const LIMITED_COMPANIES_HERO_DATA: ServiceHeroData = {
       "Limited company directors rely on our advice to keep their businesses compliant, efficient, and ready for growth.",
   },
 } as const;
-

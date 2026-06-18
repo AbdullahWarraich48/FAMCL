@@ -1,34 +1,34 @@
-import type { BookkeepingFactsIconKey, FactsData } from "@/data/bookkeeping/factsData";
+import type {
+  BookkeepingFactsIconKey,
+  FactsData,
+} from "@/data/bookkeeping/factsData";
 
 type PensionsFactsIconKey = BookkeepingFactsIconKey;
 
 export const PENSIONS_FUTURE_PLANNING_FACTS_DATA: FactsData = {
-  sectionLabel: "Facts & Stats",
-  heading: "Pension Planning in the UK",
+  sectionLabel: "Facts & Stats (UK)",
+  heading: "Pension Planning in Context",
   description:
-    "Here’s why planning for your pension matters and why taking action today is crucial.",
+    "Planning for your pension today is crucial for long-term financial security in retirement.",
   items: [
     {
-      stat: "Under-Saving for Retirement",
-      description:
-        "Millions of UK adults are not saving enough for retirement, increasing the risk of financial pressure later in life.",
+      stat: "Under-Saving",
+      description: "Millions of UK adults are under-saving for retirement.",
       source: "Office for National Statistics",
       iconKey: "alert-octagon" as PensionsFactsIconKey,
     },
     {
-      stat: "Tax Rules Affect Long-Term Outcomes",
+      stat: "Tax Rules Matter",
       description:
-        "Pension tax rules significantly impact the size of your retirement fund and long-term financial outcomes.",
+        "Pension tax rules significantly affect long-term outcomes.",
       source: "FCA",
       iconKey: "badge-percent" as PensionsFactsIconKey,
     },
     {
-      stat: "Early Planning Improves Retirement Security",
-      description:
-        "Planning for retirement early increases financial security in later years by giving your savings longer to grow.",
+      stat: "Early Planning",
+      description: "Early planning improves retirement security.",
       source: "MoneyHelper (UK Government)",
       iconKey: "clock" as PensionsFactsIconKey,
     },
   ],
 };
-

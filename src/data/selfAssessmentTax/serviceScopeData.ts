@@ -9,38 +9,35 @@ export const SELF_ASSESSMENT_TAX_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for You",
   description:
-    "Self-Assessment tax returns require careful attention to detail and timely filing. We handle the entire process to ensure your return is complete and compliant with all regulations.",
+    "We prepare and submit your Self-Assessment tax return accurately and on time. All sources of income are reviewed, not just the obvious ones. Allowances and reliefs are applied correctly. Errors and omissions are identified early. HMRC correspondence is handled for you. Deadlines stop being stressful. Your tax position becomes clear, not confusing.",
   items: [
     {
-      title: "Review All Income Sources",
+      title: "Accurate Preparation & Filing",
       description:
-        "We examine all your sources of income, ensuring nothing is missed.",
+        "We prepare and submit your Self-Assessment tax return accurately and on time.",
+      iconKey: "document-check" as SelfAssessmentIconKey,
+    },
+    {
+      title: "All Income Reviewed",
+      description:
+        "All sources of income are reviewed, not just the obvious ones.",
       iconKey: "search" as SelfAssessmentIconKey,
     },
     {
-      title: "Apply Allowances & Reliefs",
-      description:
-        "We apply the relevant allowances and reliefs to reduce the amount of tax you pay.",
+      title: "Allowances & Reliefs",
+      description: "Allowances and reliefs are applied correctly.",
       iconKey: "badge-percent" as SelfAssessmentIconKey,
     },
     {
-      title: "Identify Errors Early",
-      description:
-        "Potential errors and omissions are identified and corrected before submission.",
+      title: "Early Error Detection",
+      description: "Errors and omissions are identified early.",
       iconKey: "eye" as SelfAssessmentIconKey,
     },
     {
-      title: "HMRC Correspondence",
+      title: "HMRC & Clear Position",
       description:
-        "We manage all communication with HMRC, removing the hassle for you.",
+        "HMRC correspondence is handled for you. Deadlines stop being stressful. Your tax position becomes clear, not confusing.",
       iconKey: "message-square" as SelfAssessmentIconKey,
-    },
-    {
-      title: "Accurate & Timely Filing",
-      description:
-        "We ensure your Self-Assessment tax return is filed accurately and on time.",
-      iconKey: "calendar-clock" as SelfAssessmentIconKey,
     },
   ],
 };
-

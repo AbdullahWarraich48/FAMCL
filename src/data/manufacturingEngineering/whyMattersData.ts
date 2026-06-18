@@ -6,41 +6,37 @@ import type {
 type ManufacturingEngineeringWhyIconKey = BookkeepingWhyMattersIconKey;
 
 export const MANUFACTURING_ENGINEERING_WHY_MATTERS_DATA: WhyMattersData = {
-  sectionLabel: "Why It Matters",
-  heading: "The Importance of Industry-Specific Financial Management",
+  sectionLabel: "Why It Matters to You",
+  heading: "Why Financial Precision Matters",
   description:
-    "In the manufacturing and engineering sectors, small financial oversights can lead to significant inefficiencies. Our services help you identify and manage key areas like cost control, R&D claims, and inventory management to maximise profitability and ensure long-term sustainability.",
+    "In a sector driven by efficiency, financial blind spots are liabilities. Uncontrolled costs, missed R&D tax relief, and poor inventory valuation directly impact your bottom line. We deliver the financial data needed to optimise production, claim valuable reliefs, and drive sustainable growth.",
   items: [
     {
-      title: "Avoid Financial Blind Spots",
+      title: "Financial Blind Spots",
       description:
-        "Uncontrolled costs, missed tax relief opportunities, and poor inventory management directly impact your bottom line. Our services help uncover and address these issues.",
+        "In a sector driven by efficiency, financial blind spots are liabilities.",
       iconKey: "eye" as ManufacturingEngineeringWhyIconKey,
     },
     {
-      title: "Maximise R&D Tax Credits",
-      description:
-        "Many manufacturers miss out on valuable R&D tax relief due to insufficient understanding or documentation. We ensure you claim all eligible tax credits.",
+      title: "Uncontrolled Costs",
+      description: "Uncontrolled costs directly impact your bottom line.",
+      iconKey: "alert-triangle" as ManufacturingEngineeringWhyIconKey,
+    },
+    {
+      title: "Missed R&D Relief",
+      description: "Missed R&D tax relief directly impacts your bottom line.",
       iconKey: "flask" as ManufacturingEngineeringWhyIconKey,
     },
     {
-      title: "Enhance Efficiency in Production",
-      description:
-        "Accurate financial data and analysis allow you to optimise production and supply chain processes for maximum efficiency.",
-      iconKey: "cogs" as ManufacturingEngineeringWhyIconKey,
+      title: "Poor Inventory Valuation",
+      description: "Poor inventory valuation directly impacts your bottom line.",
+      iconKey: "chart-line" as ManufacturingEngineeringWhyIconKey,
     },
     {
-      title: "Sustainable Growth",
+      title: "Optimise & Grow",
       description:
-        "With the right financial management strategies in place, you can achieve sustainable growth and remain competitive in the market.",
-      iconKey: "leaf" as ManufacturingEngineeringWhyIconKey,
-    },
-    {
-      title: "Improve Cash Flow & Profitability",
-      description:
-        "Managing cash flow and optimising profitability is key to growth. We help reduce unnecessary expenses and ensure you stay on top of your financials.",
-      iconKey: "circle-dollar" as ManufacturingEngineeringWhyIconKey,
+        "We deliver the financial data needed to optimise production, claim valuable reliefs, and drive sustainable growth.",
+      iconKey: "trend-up" as ManufacturingEngineeringWhyIconKey,
     },
   ],
-} as const;
-
+};

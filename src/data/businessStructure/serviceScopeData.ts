@@ -9,38 +9,34 @@ export const BUSINESS_STRUCTURE_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for Your Business",
   description:
-    "Selecting the right legal and tax structure for your business is the first step toward achieving growth and minimising risks. We help you choose the optimal structure, from sole trader to limited company, ensuring it aligns with your business strategy and goals.",
+    "We provide expert advice on choosing and implementing the right legal and tax structure for your business, whether you are starting up, scaling, or planning an exit. Our guidance covers sole trader, partnership, LLP, and limited company structures, ensuring your setup aligns with your commercial goals and risk appetite.",
   items: [
     {
-      title: "Choosing the Right Structure",
+      title: "Expert Structure Advice",
       description:
-        "We guide you through the decision-making process, whether you need a sole trader, partnership, LLP, or limited company structure.",
+        "We provide expert advice on choosing and implementing the right legal and tax structure for your business, whether you are starting up, scaling, or planning an exit.",
       iconKey: "network" as BusinessStructureIconKey,
     },
     {
-      title: "Risk & Liability Management",
+      title: "Sole Trader & Partnership",
       description:
-        "We assess how each structure reduces or shares risk and aligns with your business’s risk profile.",
-      iconKey: "shield" as BusinessStructureIconKey,
+        "Our guidance covers sole trader and partnership structures.",
+      iconKey: "users" as BusinessStructureIconKey,
     },
     {
-      title: "Tax Efficiency Planning",
-      description:
-        "Our experts assess tax implications and ensure your business structure is optimised for the most tax-efficient strategy.",
-      iconKey: "badge-percent" as BusinessStructureIconKey,
+      title: "LLP & Limited Company",
+      description: "Our guidance covers LLP and limited company structures.",
+      iconKey: "factory" as BusinessStructureIconKey,
     },
     {
-      title: "Investment & Funding Preparation",
-      description:
-        "We help you choose a structure that supports investment readiness and appeals to potential lenders or investors.",
+      title: "Commercial Goals",
+      description: "Ensuring your setup aligns with your commercial goals.",
       iconKey: "trend-up" as BusinessStructureIconKey,
     },
     {
-      title: "Company Formation & Registration",
-      description:
-        "We handle the entire company formation and registration process, ensuring compliance with UK law.",
-      iconKey: "document-check" as BusinessStructureIconKey,
+      title: "Risk Appetite",
+      description: "Ensuring your setup aligns with your risk appetite.",
+      iconKey: "shield" as BusinessStructureIconKey,
     },
   ],
 };
-

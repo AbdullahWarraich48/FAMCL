@@ -6,47 +6,35 @@ import type {
 type InheritanceWhyMattersIconKey = BookkeepingWhyMattersIconKey;
 
 export const INHERITANCE_TAX_WHY_MATTERS_DATA: WhyMattersData = {
-  sectionLabel: "Why It Matters",
-  heading: "The Importance of Early Estate and Retirement Planning",
+  sectionLabel: "Why It Matters to You",
+  heading: "Why Estate Planning Matters",
   description:
-    "Inheritance Tax and estate planning are complex but essential for preserving family wealth. By planning early, you ensure your assets are protected and passed on efficiently, avoiding unnecessary tax burdens and legal challenges.",
+    "Inheritance Tax can significantly reduce estates. Planning late limits available options. Rules are complex and often misunderstood. Early action protects family wealth. Clarity avoids difficult situations later.",
   items: [
     {
-      title: "Reduce Inheritance Tax",
-      description:
-        "Inheritance Tax can be as high as 40%, significantly reducing your estate. Proper planning can help reduce this burden.",
+      title: "Reduced Estates",
+      description: "Inheritance Tax can significantly reduce estates.",
       iconKey: "alert-triangle" as InheritanceWhyMattersIconKey,
     },
     {
-      title: "Protect Family Wealth",
-      description:
-        "Early planning helps preserve your wealth and ensures it is transferred efficiently to your heirs.",
-      iconKey: "shield" as InheritanceWhyMattersIconKey,
-    },
-    {
-      title: "Avoid Late Planning",
-      description:
-        "Planning too late limits your options. Taking action early ensures you have the flexibility to make the best decisions for your family.",
+      title: "Late Planning Limits Options",
+      description: "Planning late limits available options.",
       iconKey: "clock" as InheritanceWhyMattersIconKey,
     },
     {
-      title: "Minimise Tax Exposure",
-      description:
-        "By structuring your estate correctly, you can minimise your tax exposure and pass on more of your wealth.",
-      iconKey: "circle-dollar" as InheritanceWhyMattersIconKey,
-    },
-    {
-      title: "Navigate Complex Rules",
-      description:
-        "Inheritance Tax and estate planning rules are complex. We guide you through them, ensuring you understand your options and the implications of your decisions.",
+      title: "Complex Rules",
+      description: "Rules are complex and often misunderstood.",
       iconKey: "scale" as InheritanceWhyMattersIconKey,
     },
     {
-      title: "Peace of Mind",
-      description:
-        "Effective planning reduces uncertainty, ensuring that your family is taken care of when the time comes.",
+      title: "Protect Family Wealth",
+      description: "Early action protects family wealth.",
+      iconKey: "shield" as InheritanceWhyMattersIconKey,
+    },
+    {
+      title: "Avoid Difficult Situations",
+      description: "Clarity avoids difficult situations later.",
       iconKey: "leaf" as InheritanceWhyMattersIconKey,
     },
   ],
 };
-

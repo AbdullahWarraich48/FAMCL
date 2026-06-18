@@ -7,35 +7,36 @@ type HealthcareSolutionIconKey = BookkeepingSolutionIconKey;
 
 export const HEALTHCARE_SOLUTION_DATA: SolutionData = {
   sectionLabel: "Solution & Framework",
-  heading: "How We Deliver This Service",
+  heading: "How We Deliver",
   description:
     "Our structured approach helps healthcare providers manage financial operations, maintain compliance, and focus on patient care.",
   steps: [
     {
       number: "01",
-      title: "Manage Specialist Medical Payroll",
+      title:
+        "Manage specialist medical payroll, including locum and practitioner payments",
       iconKey: "document-check" as HealthcareSolutionIconKey,
     },
     {
       number: "02",
-      title: "Handle NHS Contract Reconciliation",
+      title: "Handle NHS contract reconciliation and GP practice accounts",
       iconKey: "calculator" as HealthcareSolutionIconKey,
     },
     {
       number: "03",
-      title: "Provide Tax Planning Advice",
+      title: "Advise on tax planning for partnerships and expense claims",
       iconKey: "receipt-tax" as HealthcareSolutionIconKey,
     },
     {
       number: "04",
-      title: "Ensure Regulatory Compliance",
+      title: "Ensure financial reporting meets CQC and regulatory standards",
       iconKey: "badge-check" as HealthcareSolutionIconKey,
     },
     {
       number: "05",
-      title: "Support Strategic Practice Planning",
+      title:
+        "Provide guidance on practice mergers, acquisitions, and succession planning",
       iconKey: "target" as HealthcareSolutionIconKey,
     },
   ],
-} as const;
-
+};

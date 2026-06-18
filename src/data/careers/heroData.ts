@@ -4,11 +4,10 @@ export const CAREERS_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Judgement-led advice built on professional responsibility",
+  bannerText: "Company",
   heading: "Careers",
-  subheading: "For professionals who value judgement over volume.",
   description:
-    "FAM Chartered Accountants looks for professionals who prioritise careful judgement, professional responsibility, and disciplined work rather than volume alone. Our environment is suited to individuals who value accuracy, accountability, and thoughtful problem-solving.",
+    "FAM Chartered Accountants looks for professionals who value judgement over volume.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -19,9 +18,10 @@ export const CAREERS_HERO_DATA: ServiceHeroData = {
   },
 
   featureCards: [
-    { label: "Professional Responsibility" },
-    { label: "Judgement Over Volume" },
-    { label: "Collaborative Culture" },
+    { label: "Attention to detail" },
+    { label: "Comfort with responsibility" },
+    { label: "Respect for regulatory standards" },
+    { label: "Prefers solving complex problems" },
   ],
 
   trustedBar: {

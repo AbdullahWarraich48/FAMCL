@@ -7,35 +7,34 @@ type InheritanceSolutionIconKey = BookkeepingSolutionIconKey;
 
 export const INHERITANCE_TAX_SOLUTION_DATA: SolutionData = {
   sectionLabel: "Solution & Framework",
-  heading: "How We Deliver This Service",
+  heading: "How We Deliver",
   description:
-    "Our approach is structured and proactive. We work with you to understand your goals, identify potential risks, and ensure that your estate and retirement strategy are tailored to your family’s needs.",
+    "Our structured approach helps you understand your estate position, reduce tax exposure, and keep plans updated as circumstances change.",
   steps: [
     {
       number: "01",
-      title: "Review Estate Structure",
+      title: "Review estate structure",
       iconKey: "search" as InheritanceSolutionIconKey,
     },
     {
       number: "02",
-      title: "Identify Tax Exposure",
+      title: "Identify tax exposure",
       iconKey: "calculator" as InheritanceSolutionIconKey,
     },
     {
       number: "03",
-      title: "Explain Planning Options",
+      title: "Explain planning options",
       iconKey: "message" as InheritanceSolutionIconKey,
     },
     {
       number: "04",
-      title: "Coordinate with Professionals",
+      title: "Coordinate with professionals if needed",
       iconKey: "network" as InheritanceSolutionIconKey,
     },
     {
       number: "05",
-      title: "Keep Plans Under Review",
+      title: "Keep plans under review",
       iconKey: "calendar-clock" as InheritanceSolutionIconKey,
     },
   ],
 };
-

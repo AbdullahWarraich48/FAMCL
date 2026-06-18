@@ -6,47 +6,35 @@ import type {
 type CapitalGainsWhyMattersIconKey = BookkeepingWhyMattersIconKey;
 
 export const CAPITAL_GAINS_WHY_MATTERS_DATA: WhyMattersData = {
-  sectionLabel: "Why It Matters",
-  heading: "The Importance of Capital Gains & Property Tax Planning",
+  sectionLabel: "Why It Matters to You",
+  heading: "Why CGT Planning Matters",
   description:
-    "Property tax rules are complex, and missing deadlines or overlooking reliefs can result in significant financial consequences. Professional advice ensures your tax position is managed efficiently, protecting your proceeds and avoiding unnecessary costs.",
+    "Property tax rules are complex and strict. Missed deadlines lead to automatic penalties. Overlooking reliefs increases tax unnecessarily. Selling property without advice can be costly. Correct planning protects your proceeds.",
   items: [
     {
-      title: "Complex Rules Simplified",
-      description:
-        "Property tax rules are strict and complex. We simplify them for you and ensure compliance.",
+      title: "Complex & Strict Rules",
+      description: "Property tax rules are complex and strict.",
       iconKey: "clipboard-check" as CapitalGainsWhyMattersIconKey,
     },
     {
-      title: "Maximise Reliefs",
-      description:
-        "Overlooking reliefs leads to overpaying taxes. We ensure all applicable reliefs are applied to reduce your CGT liability.",
-      iconKey: "circle-dollar" as CapitalGainsWhyMattersIconKey,
-    },
-    {
-      title: "Tax Efficiency",
-      description:
-        "Correct planning and proactive tax management help minimise your tax burden and protect your profits.",
-      iconKey: "trend-up" as CapitalGainsWhyMattersIconKey,
-    },
-    {
-      title: "Future-Proof Your Sales",
-      description:
-        "Strategic advice ensures you are well-prepared for future property sales and tax responsibilities.",
-      iconKey: "clock" as CapitalGainsWhyMattersIconKey,
-    },
-    {
-      title: "Avoid Penalties",
-      description:
-        "Missing CGT reporting deadlines now carry penalties, which can significantly increase your tax bill. We ensure timely submission to avoid these costs.",
+      title: "Automatic Penalties",
+      description: "Missed deadlines lead to automatic penalties.",
       iconKey: "alert-triangle" as CapitalGainsWhyMattersIconKey,
     },
     {
-      title: "Cost of Incorrect Planning",
-      description:
-        "Selling property without professional advice can lead to costly mistakes. We guide you through the process to avoid unexpected tax bills.",
+      title: "Missed Reliefs",
+      description: "Overlooking reliefs increases tax unnecessarily.",
+      iconKey: "circle-dollar" as CapitalGainsWhyMattersIconKey,
+    },
+    {
+      title: "Cost of No Advice",
+      description: "Selling property without advice can be costly.",
       iconKey: "scale" as CapitalGainsWhyMattersIconKey,
+    },
+    {
+      title: "Protect Your Proceeds",
+      description: "Correct planning protects your proceeds.",
+      iconKey: "shield" as CapitalGainsWhyMattersIconKey,
     },
   ],
 };
-

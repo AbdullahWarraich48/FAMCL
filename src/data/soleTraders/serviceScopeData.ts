@@ -6,41 +6,37 @@ import type {
 type SoleTradersServiceScopeIconKey = BookkeepingServiceScopeIconKey;
 
 export const SOLE_TRADERS_SERVICE_SCOPE_DATA: ServiceScopeData = {
-  sectionLabel: "Service Overview",
+  sectionLabel: "Service Focus",
   heading: "What We Support for Sole Traders",
   description:
-    "Sole Traders often manage their finances independently, which can lead to gaps in compliance, record-keeping, or tax planning. Our service provides structured support to ensure your self-employed work remains organised, compliant, and financially clear.",
+    "Ongoing tax and compliance support for self-employed individuals operating under UK Sole Trader rules, where simplicity often hides risk.",
   items: [
     {
-      title: "Record-Keeping Systems",
+      title: "Ongoing Tax Support",
       description:
-        "We establish disciplined record-keeping processes that meet HMRC requirements and support accurate reporting.",
-      iconKey: "document-check" as SoleTradersServiceScopeIconKey,
-    },
-    {
-      title: "Business & Personal Finance Separation",
-      description:
-        "We help you clearly separate business and personal finances so your activity is easy to track and explain.",
-      iconKey: "boxes" as SoleTradersServiceScopeIconKey,
-    },
-    {
-      title: "Allowable Expense Guidance",
-      description:
-        "We identify legitimate business expenses while ensuring claims remain compliant with HMRC rules.",
+        "Ongoing tax support for self-employed individuals operating under UK Sole Trader rules.",
       iconKey: "receipt-tax" as SoleTradersServiceScopeIconKey,
     },
     {
-      title: "Tax Planning Support",
+      title: "Compliance Support",
       description:
-        "We help plan your tax liabilities in advance so you can prepare for Self Assessment deadlines with confidence.",
-      iconKey: "calculator" as SoleTradersServiceScopeIconKey,
+        "Ongoing compliance support for self-employed individuals under UK Sole Trader rules.",
+      iconKey: "shield" as SoleTradersServiceScopeIconKey,
     },
     {
-      title: "Profitability & Financial Visibility",
-      description:
-        "We provide insight into your business income, expenses, and profitability so you can make informed decisions.",
-      iconKey: "bar-chart" as SoleTradersServiceScopeIconKey,
+      title: "UK Sole Trader Rules",
+      description: "Support aligned to UK Sole Trader rules and HMRC requirements.",
+      iconKey: "document-check" as SoleTradersServiceScopeIconKey,
+    },
+    {
+      title: "Self-Employed Focus",
+      description: "Designed for self-employed individuals managing their own affairs.",
+      iconKey: "users" as SoleTradersServiceScopeIconKey,
+    },
+    {
+      title: "Hidden Risk Awareness",
+      description: "Where simplicity often hides risk — structured support replaces guesswork.",
+      iconKey: "eye" as SoleTradersServiceScopeIconKey,
     },
   ],
 };
-

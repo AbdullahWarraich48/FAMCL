@@ -39,11 +39,14 @@ export default function SelfAssessmentCta() {
 
                 <Button
                   asChild
-                  className="mt-8 h-11 w-fit rounded-full bg-[#1E63B3] px-8 text-[13px] font-semibold text-white hover:bg-[#175dab]"
+                  className="mt-8 h-11 w-fit rounded-full bg-[#1E63B3] px-8 text-[13px] font-semibold leading-none text-white hover:bg-[#175dab]"
                 >
-                  <Link href={data.buttonHref}>
-                    {data.buttonLabel}
-                    <ArrowRight className="ml-2 h-4 w-4" aria-hidden />
+                  <Link
+                    href={data.buttonHref}
+                    className="inline-flex items-center justify-center gap-2"
+                  >
+                    <span className="translate-x-1.5">{data.buttonLabel}</span>
+                    <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
                   </Link>
                 </Button>
               </div>

@@ -6,41 +6,40 @@ import type {
 type ContractorsFreelancersServiceScopeIconKey = BookkeepingServiceScopeIconKey;
 
 export const CONTRACTORS_FREELANCERS_SERVICE_SCOPE_DATA: ServiceScopeData = {
-  sectionLabel: "Service Overview",
+  sectionLabel: "Service Approach",
   heading: "What We Support for Contractors & Freelancers",
   description:
-    "Contract work often sits between employment and business activity, making compliance more complex. Our service provides structured support to ensure your working arrangements remain clear, defensible, and compliant.",
+    "Compliance and tax support for individuals working under contracts or freelance arrangements, where regulatory interpretation materially affects outcomes.",
   items: [
     {
-      title: "Contract & Working Arrangement Review",
+      title: "Compliance Support",
       description:
-        "We analyse your working arrangements and contractual terms to determine the correct tax treatment.",
-      iconKey: "document-check" as ContractorsFreelancersServiceScopeIconKey,
-    },
-    {
-      title: "IR35 & Status Guidance",
-      description:
-        "We assess employment status rules and help align your working arrangements with current IR35 guidance.",
+        "Compliance support for individuals working under contracts or freelance arrangements.",
       iconKey: "shield" as ContractorsFreelancersServiceScopeIconKey,
     },
     {
-      title: "Tax Exposure Assessment",
+      title: "Tax Support",
       description:
-        "We evaluate potential tax risks under current legislation to ensure you minimise unexpected liabilities.",
+        "Tax support aligned to current rules and contractual reality.",
       iconKey: "receipt-tax" as ContractorsFreelancersServiceScopeIconKey,
     },
     {
-      title: "Structure Setup & Compliance",
+      title: "Contract & Freelance Work",
       description:
-        "We establish an appropriate operating structure that supports both compliance and financial clarity.",
-      iconKey: "boxes" as ContractorsFreelancersServiceScopeIconKey,
+        "For individuals working under contracts or freelance arrangements.",
+      iconKey: "document-check" as ContractorsFreelancersServiceScopeIconKey,
     },
     {
-      title: "Ongoing Regulatory Monitoring",
+      title: "Regulatory Interpretation",
       description:
-        "We monitor regulatory changes affecting contractors and freelancers to ensure your structure remains compliant.",
+        "Where regulatory interpretation materially affects outcomes.",
+      iconKey: "scale" as ContractorsFreelancersServiceScopeIconKey,
+    },
+    {
+      title: "Defensible Outcomes",
+      description:
+        "Advice grounded in interpretation, not assumption.",
       iconKey: "eye" as ContractorsFreelancersServiceScopeIconKey,
     },
   ],
 };
-

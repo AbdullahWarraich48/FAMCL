@@ -1,11 +1,11 @@
 import SectionIntroHeader from "@/Components/SectionIntroHeader";
 
 const CONTRACTOR_CHALLENGES = [
-  "Confusion around IR35 and employment status rules",
-  "Business structures chosen for simplicity rather than compliance",
-  "Inconsistent reporting of income",
-  "Unexpected tax adjustments following HMRC review",
-  "Limited visibility of long-term tax exposure",
+  "Confusion around IR35 and status rules",
+  "Structure chosen for convenience, not compliance",
+  "Inconsistent income reporting",
+  "Unexpected tax adjustments",
+  "Lack of forward visibility",
 ] as const;
 
 export default function ContractorsFreelancersChallenges() {
@@ -20,26 +20,20 @@ export default function ContractorsFreelancersChallenges() {
             headingId="contractor-challenges-heading"
             sectionLabel={
               <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#C23A5D] sm:text-sm sm:tracking-[0.2em]">
-                Common Contractor Challenges
+                Comprehensive Business Support
               </span>
             }
             labelPillClassName="shrink-0 rounded-lg bg-[#FFE4EC] px-4 py-2"
-            labelAriaLabel="Common contractor challenges"
-            heading="Risks Many Contractors Face"
+            labelAriaLabel="Comprehensive business support"
+            heading="Common Contractor Challenges"
             headingBgClassName="bg-white"
             headingBlockMarginTop="mt-6 sm:mt-8"
             headingClassName="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
           />
-
-          <p className="mt-4 max-w-3xl text-[16px] leading-relaxed text-slate-600 sm:mt-6 sm:text-[18px] sm:leading-[27.8px]">
-            Contractors and freelancers often encounter issues when compliance decisions are based on
-            convenience rather than the latest regulatory interpretation. These risks can build up
-            quietly over time, but can be managed with the right structure and advice.
-          </p>
         </div>
 
         <div className="mx-auto mt-10 flex max-w-5xl flex-col gap-5 sm:mt-12 sm:gap-6">
-          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-3">
+          <div className="grid grid-cols-1 gap-4 sm:gap-6 md:grid-cols-2 lg:grid-cols-3">
             {CONTRACTOR_CHALLENGES.slice(0, 3).map((text) => (
               <div
                 key={text}
@@ -65,4 +59,3 @@ export default function ContractorsFreelancersChallenges() {
     </section>
   );
 }
-

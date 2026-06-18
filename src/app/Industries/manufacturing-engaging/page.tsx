@@ -18,7 +18,7 @@ import { MANUFACTURING_ENGINEERING_FAQ_DATA } from "@/data/manufacturingEngineer
 export const metadata = {
   title: "Manufacturing & Engineering | FAM Chartered Accountants",
   description:
-    "Expert financial management and advisory services for manufacturing and engineering businesses—supporting cost control, production efficiency, and tax relief claims.",
+    "Numbers that support growth and efficiency. Financial management for UK manufacturing and engineering — cost control, R&D credits, and inventory.",
 };
 
 export default function ManufacturingEngineeringPage() {

@@ -4,11 +4,11 @@ export const PAYROLL_PANSIONS_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Supporting Limited Companies from Startup to Scale",
+  bannerText: "For Business",
   heading: "Payroll & Pensions",
   subheading: "Your people paid properly.",
   description:
-    "Managing payroll and pension obligations requires accuracy, consistency, and compliance with strict UK regulations. From salary payments to pension contributions, every detail must be handled correctly. We manage your payroll systems so employees are paid on time and your business remains fully compliant.",
+    "We manage payroll, PAYE, and workplace pensions so employees are paid accurately and your business stays compliant with HMRC and regulators.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -29,5 +29,4 @@ export const PAYROLL_PANSIONS_HERO_DATA: ServiceHeroData = {
     description:
       "Our clients consistently rate our payroll and pensions support highly for accuracy, reliability, and clear communication.",
   },
-};
-
+} as const;

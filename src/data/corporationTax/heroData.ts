@@ -4,11 +4,11 @@ export const CORPORATION_TAX_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Supporting Limited Companies from Startup to Scale",
+  bannerText: "For Business",
   heading: "Corporation Tax",
   subheading: "Pay the right tax. Not more.",
   description:
-    "We manage your corporation tax so your business stays compliant and efficient. From planning to filing, every step is handled accurately and on time. With proactive tax planning, your obligations remain clear, organised, and stress-free.",
+    "We manage your business tax obligations under UK law — from calculation and planning to filing — so you stay compliant without fear.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -30,4 +30,3 @@ export const CORPORATION_TAX_HERO_DATA: ServiceHeroData = {
       "Our clients consistently rate our service as excellent, recognising our clear communication, accuracy, and dependable support.",
   },
 } as const;
-

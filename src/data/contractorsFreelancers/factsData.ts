@@ -6,32 +6,22 @@ import type {
 type ContractorsFreelancersFactsIconKey = BookkeepingFactsIconKey;
 
 export const CONTRACTORS_FREELANCERS_FACTS_DATA: FactsData = {
-  sectionLabel: "Facts & Stats",
-  heading: "Contractor And Freelance Insights",
+  sectionLabel: "Stats & Facts (UK)",
+  heading: "Contractors & Freelancers in Context",
   description:
     "Contracting and freelance work are common in the UK, but regulatory interpretation can significantly affect tax outcomes.",
   items: [
     {
-      stat: "Frequent Regulatory Changes",
-      description:
-        "Contractor taxation and employment status rules are subject to frequent regulatory change, increasing the risk of misinterpretation.",
+      stat: "Frequent Rule Changes",
+      description: "Contractor rules are subject to frequent change.",
       source: "HMRC",
       iconKey: "alert-octagon" as ContractorsFreelancersFactsIconKey,
     },
     {
-      stat: "Structural Risk",
-      description:
-        "Incorrect operating structure can significantly increase tax exposure and the risk of HMRC challenge.",
+      stat: "Structural Tax Exposure",
+      description: "Incorrect structure increases tax exposure.",
       source: "ICAEW",
       iconKey: "trend" as ContractorsFreelancersFactsIconKey,
     },
-    {
-      stat: "Growth of the Contractor Workforce",
-      description:
-        "Millions of individuals in the UK operate through freelance or contractor arrangements across multiple sectors.",
-      source: "Office for National Statistics",
-      iconKey: "users" as ContractorsFreelancersFactsIconKey,
-    },
   ],
 };
-

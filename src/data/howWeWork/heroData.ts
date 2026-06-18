@@ -4,11 +4,10 @@ export const HOW_WE_WORK_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Judgement-led advice built on professional responsibility",
+  bannerText: "Company",
   heading: "How We Work",
-  subheading: "A structured approach designed to reduce risk.",
   description:
-    "FAM Chartered Accountants follows a structured but flexible working model designed to reduce risk rather than maximise throughput. Our approach ensures clients understand their financial position clearly before making decisions.",
+    "FAM Chartered Accountants follows a structured but flexible working model, designed to reduce risk rather than maximise throughput.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -19,9 +18,10 @@ export const HOW_WE_WORK_HERO_DATA: ServiceHeroData = {
   },
 
   featureCards: [
-    { label: "Judgement-Led Advice" },
-    { label: "Structured Processes" },
-    { label: "Risk-Focused Approach" },
+    { label: "Understand the full context" },
+    { label: "Identify exposure and uncertainty" },
+    { label: "Apply regulation consistently" },
+    { label: "Document decisions and assumptions" },
   ],
 
   trustedBar: {

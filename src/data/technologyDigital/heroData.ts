@@ -4,11 +4,11 @@ export const TECHNOLOGY_DIGITAL_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Specialist Financial Advice for UK Industries",
-  heading: "Technology &\nDigital",
+  bannerText: "Industries",
+  heading: "Technology & Digital",
   subheading: "Support for fast-moving businesses.",
   description:
-    "The technology sector moves quickly, and financial clarity is essential for sustainable growth. We provide strategic financial support for tech startups and scale-ups, helping businesses manage R&D incentives, funding rounds, and employee share schemes while maintaining strong financial discipline.",
+    "Strategic financial support for the UK's tech and digital sector, from startups to scale-ups, with a focus on R&D, fundraising, and employee share schemes.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -20,14 +20,13 @@ export const TECHNOLOGY_DIGITAL_HERO_DATA: ServiceHeroData = {
 
   featureCards: [
     { label: "Trusted Nationwide" },
-    { label: "Experienced Advisors" },
+    { label: "Experienced Advisers" },
     { label: "Fixed-Fee Pricing" },
   ],
 
   trustedBar: {
     title: "Trusted by businesses nationwide",
     description:
-      "The clients consistently rate our service with excellent feedback for accuracy and support.",
+      "Clients consistently rate our service with excellent feedback for accuracy and support.",
   },
 } as const;
-

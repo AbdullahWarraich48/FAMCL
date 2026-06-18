@@ -145,7 +145,7 @@ export default function Steps() {
 
   return (
     <section
-      className="w-full bg-[#F6F9FF] py-16 md:py-20 lg:py-24"
+      className="w-full bg-[#cbdcff] py-16 md:py-20 lg:py-24"
       aria-labelledby="steps-heading"
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">
@@ -153,13 +153,13 @@ export default function Steps() {
           <SectionIntroHeader
             headingId="steps-heading"
             heading={data.heading}
-            headingBgClassName="bg-[#F6F9FF]"
+            headingBgClassName="bg-[#cbdcff]"
             headingClassName="text-[1.75rem] font-bold leading-tight tracking-tight text-[#175dab] sm:text-3xl lg:text-4xl"
           />
         </div>
 
         {/* Three step cards */}
-        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-16 sm:grid-cols-2 sm:gap-7 lg:grid-cols-3 lg:gap-8">
+        <div className="mt-10 grid grid-cols-1 gap-6 sm:mt-16 lg:mt-16 lg:grid-cols-3 lg:gap-8">
           {data.items.map(({ step, title, description, iconKey }) => (
             <StepCard
               key={step}

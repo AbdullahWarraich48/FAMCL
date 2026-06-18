@@ -18,7 +18,7 @@ import { CORPORATION_TAX_PAGE_FAQ_DATA } from "@/data/corporationTax/faqData";
 export const metadata = {
   title: "Corporation Tax | FAM Chartered Accountants",
   description:
-    "Proactive corporation tax planning and compliance, from accurate filings to strategic advice tailored to your company.",
+    "Pay the right tax. Not more. Corporation tax calculation, planning, and filing under UK law.",
 };
 
 export default function CorporationTaxPage() {

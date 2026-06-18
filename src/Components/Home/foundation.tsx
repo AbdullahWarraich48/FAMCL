@@ -1,4 +1,6 @@
 import Image from "next/image";
+import { SplitHeading } from "@/Components/SplitHeading";
+import { SECTION_BG } from "@/constants/sectionBackgrounds";
 
 export type FoundationSectionData = {
   pillLabel: string;
@@ -40,17 +42,21 @@ const DEFAULT_FOUNDATION_DATA: FoundationSectionData = {
 
 type FoundationProps = {
   data?: FoundationSectionData;
+  sectionClassName?: string;
 };
 
 /** Same width × height for both stacked photos at each breakpoint */
 const FOUNDATION_IMAGE_FRAME =
   "h-[200px] w-[min(100%,260px)] overflow-hidden rounded-[20px] shadow-[0_12px_28px_rgba(15,23,42,0.12)] md:h-[240px] md:w-[min(100%,340px)] md:rounded-[24px] md:shadow-[0_18px_40px_rgba(15,23,42,0.12)] lg:h-[300px] lg:w-[400px] lg:rounded-[28px]";
 
-export default function Foundation({ data }: FoundationProps) {
+export default function Foundation({
+  data,
+  sectionClassName = SECTION_BG.alt,
+}: FoundationProps) {
   const section = data ?? DEFAULT_FOUNDATION_DATA;
 
   return (
-    <section className="w-full bg-[#f4f6fb]">
+    <section className={`w-full ${sectionClassName}`}>
       <div className="content-padding-x mx-auto max-w-[1440px] py-12 md:py-16 lg:py-20">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-14">
           <div className="max-w-[560px]">
@@ -58,28 +64,27 @@ export default function Foundation({ data }: FoundationProps) {
               {section.pillLabel}
             </span>
 
-            <h2 className="mt-8 text-[34px] font-semibold leading-[1.12] text-[#1f5ca8] md:text-[42px]">
-              {section.heading}
+            <h2 className="mt-8 text-[1.75rem] font-semibold leading-[1.12] sm:text-[2rem] md:text-[34px] lg:text-[42px]">
+              <SplitHeading heading={section.heading} />
             </h2>
-
             {section.subheading ? (
               <p className="mt-4 text-[17px] font-medium leading-snug text-[#7a8aa0] md:text-[19px]">
                 {section.subheading}
               </p>
             ) : null}
 
-            <p className="mt-8 text-[18px] leading-[1.7] text-[#606b7a]">
+            <p className="mt-8 text-base leading-[1.7] text-[#606b7a] sm:text-[17px] md:text-[18px]">
               {section.intro}
             </p>
 
             {section.bulletIntro && (
-              <p className="mt-6 text-[18px] leading-[1.7] text-[#606b7a]">
+              <p className="mt-6 text-base leading-[1.7] text-[#606b7a] sm:text-[17px] md:text-[18px]">
                 {section.bulletIntro}
               </p>
             )}
 
             {section.bullets && section.bullets.length > 0 && (
-              <div className="mt-3 text-[18px] leading-[1.7] text-[#606b7a]">
+              <div className="mt-3 text-base leading-[1.7] text-[#606b7a] sm:text-[17px] md:text-[18px]">
                 <ul className="list-disc space-y-1 pl-5">
                   {section.bullets.map((item) => (
                     <li key={item}>{item}</li>
@@ -89,7 +94,7 @@ export default function Foundation({ data }: FoundationProps) {
             )}
 
             {section.outro?.trim() ? (
-              <p className="mt-6 text-[18px] leading-[1.7] text-[#606b7a]">
+              <p className="mt-6 text-base leading-[1.7] text-[#606b7a] sm:text-[17px] md:text-[18px]">
                 {section.outro}
               </p>
             ) : null}

@@ -7,35 +7,34 @@ type CryptoSolutionIconKey = BookkeepingSolutionIconKey;
 
 export const CRYPTO_MODERN_INCOME_SOLUTION_DATA: SolutionData = {
   sectionLabel: "Solution & Framework",
-  heading: "How We Deliver This Service",
+  heading: "How We Deliver",
   description:
-    "Our structured approach ensures that your crypto transactions are properly handled and compliant with UK tax laws.",
+    "Our structured approach ensures your crypto activity is reviewed, reported accurately, and kept compliant with UK tax law.",
   steps: [
     {
       number: "01",
-      title: "Review Crypto Activity",
+      title: "Review crypto activity",
       iconKey: "search" as CryptoSolutionIconKey,
     },
     {
       number: "02",
-      title: "Identify Taxable Events",
-      iconKey: "search" as CryptoSolutionIconKey,
+      title: "Identify taxable events",
+      iconKey: "document-check" as CryptoSolutionIconKey,
     },
     {
       number: "03",
-      title: "Calculate Liabilities Correctly",
+      title: "Calculate liabilities correctly",
       iconKey: "calculator" as CryptoSolutionIconKey,
     },
     {
       number: "04",
-      title: "Report Accurately",
+      title: "Report accurately",
       iconKey: "receipt-tax" as CryptoSolutionIconKey,
     },
     {
       number: "05",
-      title: "Advise on Future Compliance",
-      iconKey: "calendar-clock" as CryptoSolutionIconKey,
+      title: "Advise on future compliance",
+      iconKey: "message" as CryptoSolutionIconKey,
     },
   ],
 };
-

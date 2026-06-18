@@ -12,19 +12,24 @@ import {
   BOOKKEEPING_FAQ_DATA,
   type FaqSectionData,
 } from "@/data/bookkeeping";
+import { SECTION_BG } from "@/constants/sectionBackgrounds";
 
 type FaqProps = {
   data?: FaqSectionData;
+  sectionClassName?: string;
 };
 
-export default function Faq({ data }: FaqProps) {
+export default function Faq({
+  data,
+  sectionClassName = SECTION_BG.alt,
+}: FaqProps) {
   const resolved = data ?? BOOKKEEPING_FAQ_DATA;
   const hasCategories = Boolean(resolved.categories?.length);
   const flatItems = resolved.items ?? [];
 
   return (
     <section
-      className="w-full bg-[#F6F9FF] py-16 md:py-20 lg:py-24"
+      className={`w-full ${sectionClassName} py-16 md:py-20 lg:py-24`}
       aria-labelledby="faq-heading"
     >
       <div className="content-padding-x mx-auto max-w-[1440px]">
@@ -33,7 +38,7 @@ export default function Faq({ data }: FaqProps) {
             headingId="faq-heading"
             sectionLabel={resolved.sectionLabel}
             heading={resolved.heading}
-            headingBgClassName="bg-[#F6F9FF]"
+            headingBgClassName={sectionClassName}
           />
 
           <p className="mt-6 max-w-3xl text-[18px] leading-[27.8px] text-slate-600">
@@ -44,7 +49,7 @@ export default function Faq({ data }: FaqProps) {
         <div
           className={`mx-auto mt-16 ${hasCategories ? "max-w-5xl" : "max-w-3xl"}`}
         >
-          <Card className="overflow-hidden rounded-2xl border-0 border-slate-100 bg-gradient-to-b from-white/70 to-[#D8EAFF] shadow-[0_4px_14px_rgba(0,0,0,0.06),0_2px_6px_rgba(0,0,0,0.04)]">
+          <Card className="overflow-hidden rounded-2xl border-0 border-slate-100 bg-white shadow-[0_4px_14px_rgba(0,0,0,0.06),0_2px_6px_rgba(0,0,0,0.04)]">
             <CardContent className="p-0">
               {hasCategories ? (
                 <div className="divide-y divide-slate-200/80">

@@ -9,38 +9,33 @@ export const VAT_RETURNS_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for Your Business",
   description:
-    "VAT obligations involve more than simply submitting a return. Proper registration, accurate records, and compliant digital systems are essential for avoiding errors and maintaining HMRC compliance. Our service ensures your VAT processes remain organised, transparent, and reliable.",
+    "We manage VAT registration, returns, and digital submissions. Your VAT is checked before it is filed. Errors are reduced. Records remain audit-ready at all times. Digital systems are kept compliant and simple.",
   items: [
     {
-      title: "VAT Registration & Setup",
+      title: "Registration & Returns",
       description:
-        "We assist with VAT registration and ensure your business is registered under the correct VAT scheme.",
+        "We manage VAT registration, returns, and digital submissions.",
       iconKey: "badge-check" as VatServiceScopeIconKey,
     },
     {
-      title: "Digital VAT Compliance",
-      description:
-        "We help keep your digital VAT systems compliant with Making Tax Digital requirements.",
-      iconKey: "network" as VatServiceScopeIconKey,
+      title: "Pre-Filing Checks",
+      description: "Your VAT is checked before it is filed.",
+      iconKey: "document-check" as VatServiceScopeIconKey,
     },
     {
-      title: "VAT Return Preparation",
-      description:
-        "All VAT data is reviewed and prepared before submission to minimise reporting errors.",
+      title: "Reduced Errors",
+      description: "Errors are reduced.",
       iconKey: "receipt-tax" as VatServiceScopeIconKey,
     },
     {
-      title: "Accurate Filing",
-      description:
-        "VAT returns are prepared and submitted to HMRC on time to maintain compliance.",
-      iconKey: "calendar-clock" as VatServiceScopeIconKey,
+      title: "Audit-Ready Records",
+      description: "Records remain audit-ready at all times.",
+      iconKey: "boxes" as VatServiceScopeIconKey,
     },
     {
-      title: "Organised Record Maintenance",
-      description:
-        "Your VAT records remain structured, clear, and audit-ready at all times.",
-      iconKey: "boxes" as VatServiceScopeIconKey,
+      title: "Digital Compliance",
+      description: "Digital systems are kept compliant and simple.",
+      iconKey: "network" as VatServiceScopeIconKey,
     },
   ],
 };
-

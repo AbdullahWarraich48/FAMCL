@@ -18,14 +18,14 @@ export const VatMarginFrameworkSection = ({
 
   return (
     <section
-      className="w-full bg-slate-50 py-14 md:py-20 lg:py-24"
+      className="w-full bg-[#cbdcff] py-14 md:py-20 lg:py-24"
       aria-labelledby={content.headingId}
     >
       <div className="content-padding-x mx-auto max-w-3xl">
         <SectionIntroHeader
           headingId={content.headingId}
           heading={content.title}
-          headingBgClassName="bg-slate-50"
+          headingBgClassName="bg-[#cbdcff]"
           headingBlockMarginTop="mt-0"
           headingClassName="text-[1.65rem] font-bold leading-[1.15] tracking-tight text-[#1e3a5f] sm:text-3xl lg:text-[40px]"
         />

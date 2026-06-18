@@ -9,38 +9,35 @@ export const BUSINESS_ADVICE_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for Your Business",
   description:
-    "Our advisory services support businesses through significant decisions, from growth strategies to managing risks. We help you make informed, data-driven decisions that align with your goals and market conditions.",
+    "We provide practical financial advice for real decisions. Growth, restructuring, retirement strategy and risk management. Advice is based on numbers, not opinions. Options are explained clearly. You understand consequences before acting. Support is proactive, not reactive.",
   items: [
     {
-      title: "Growth Strategy",
+      title: "Practical Financial Advice",
       description:
-        "We provide actionable advice to help your business grow, whether through expanding operations, optimising finances, or diversifying.",
+        "We provide practical financial advice for real decisions.",
+      iconKey: "bar-chart" as BusinessAdviceServiceIconKey,
+    },
+    {
+      title: "Growth & Strategy",
+      description:
+        "Growth, restructuring, retirement strategy and risk management.",
       iconKey: "trend-up" as BusinessAdviceServiceIconKey,
     },
     {
-      title: "Restructuring & Planning",
-      description:
-        "We guide you through business restructuring to improve efficiency, profitability, or exit options.",
-      iconKey: "network" as BusinessAdviceServiceIconKey,
+      title: "Numbers-Based Guidance",
+      description: "Advice is based on numbers, not opinions.",
+      iconKey: "calculator" as BusinessAdviceServiceIconKey,
     },
     {
-      title: "Retirement Strategy",
+      title: "Clear Options",
       description:
-        "We help you prepare for the future by developing long-term retirement plans for business owners and key stakeholders.",
-      iconKey: "calendar-clock" as BusinessAdviceServiceIconKey,
-    },
-    {
-      title: "Risk Management",
-      description:
-        "Our approach is proactive, reviewing the risks your business faces and helping you implement strategies to mitigate potential financial and operational risks.",
-      iconKey: "shield" as BusinessAdviceServiceIconKey,
-    },
-    {
-      title: "Proactive Advice",
-      description:
-        "We monitor key performance indicators regularly, so we can help you address issues early and maintain sustainable growth.",
+        "Options are explained clearly. You understand consequences before acting.",
       iconKey: "eye" as BusinessAdviceServiceIconKey,
+    },
+    {
+      title: "Proactive Support",
+      description: "Support is proactive, not reactive.",
+      iconKey: "shield" as BusinessAdviceServiceIconKey,
     },
   ],
 };
-

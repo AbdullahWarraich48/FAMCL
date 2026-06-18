@@ -4,11 +4,10 @@ export const OUR_TEAM_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Judgement-led advice built on professional responsibility",
+  bannerText: "Company",
   heading: "Our Team",
-  subheading: "Built on competence and accountability.",
   description:
-    "The team at FAM Chartered Accountants is structured around competence and accountability rather than hierarchy. Each engagement is handled by professionals who understand UK tax and compliance frameworks and how regulatory rules apply in practice.",
+    "The team at FAM Chartered Accountants is structured around competence and accountability, not hierarchy.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -19,9 +18,9 @@ export const OUR_TEAM_HERO_DATA: ServiceHeroData = {
   },
 
   featureCards: [
-    { label: "Experienced Professionals" },
-    { label: "Clear Accountability" },
-    { label: "Regulatory Expertise" },
+    { label: "Professional judgement" },
+    { label: "Continuous learning" },
+    { label: "Awareness of regulatory change" },
   ],
 
   trustedBar: {

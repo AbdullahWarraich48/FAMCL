@@ -9,38 +9,36 @@ export const CAPITAL_GAINS_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for You",
   description:
-    "Managing CGT requires careful attention to detail, especially with property and asset disposals. We ensure you comply with HMRC regulations, apply the correct reliefs, and file your reports on time.",
+    "We calculate Capital Gains Tax on property and asset sales. Residential and investment properties are handled correctly. Allowable costs and reliefs are applied properly. Reporting deadlines are managed for you. Reporting income under Making Tax Digital – MTD if come under its reporting threshold. Your position is reviewed before HMRC submission. Unexpected tax bills are avoided.",
   items: [
     {
-      title: "CGT Calculation on Property Sales",
+      title: "CGT Calculation",
       description:
-        "We accurately calculate Capital Gains Tax on residential and investment property sales, ensuring you only pay what’s due.",
+        "We calculate Capital Gains Tax on property and asset sales.",
       iconKey: "calculator" as CapitalGainsServiceScopeIconKey,
     },
     {
-      title: "Allowance and Relief Applications",
+      title: "Residential & Investment Property",
       description:
-        "We apply all relevant allowances and reliefs so your CGT liability is minimised.",
-      iconKey: "badge-percent" as CapitalGainsServiceScopeIconKey,
-    },
-    {
-      title: "Making Tax Digital (MTD) Compliance",
-      description:
-        "For businesses that meet the reporting threshold, we ensure your CGT-related income is reported under Making Tax Digital regulations.",
+        "Residential and investment properties are handled correctly.",
       iconKey: "network" as CapitalGainsServiceScopeIconKey,
     },
     {
-      title: "Timely Report Submission",
+      title: "Costs & Reliefs",
+      description: "Allowable costs and reliefs are applied properly.",
+      iconKey: "badge-percent" as CapitalGainsServiceScopeIconKey,
+    },
+    {
+      title: "Deadlines & MTD Reporting",
       description:
-        "We manage reporting deadlines for CGT and file your returns on time, avoiding penalties.",
+        "Reporting deadlines are managed for you. Reporting income under Making Tax Digital – MTD if come under its reporting threshold.",
       iconKey: "calendar-clock" as CapitalGainsServiceScopeIconKey,
     },
     {
-      title: "Future Tax Planning",
+      title: "Pre-Submission Review",
       description:
-        "We review your position and provide proactive advice on future tax planning to protect your proceeds.",
-      iconKey: "trend-up" as CapitalGainsServiceScopeIconKey,
+        "Your position is reviewed before HMRC submission. Unexpected tax bills are avoided.",
+      iconKey: "document-check" as CapitalGainsServiceScopeIconKey,
     },
   ],
 };
-

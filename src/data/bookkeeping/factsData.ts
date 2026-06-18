@@ -20,6 +20,8 @@ export type FactsData = {
     description: string;
     /** Hidden in the UI when omitted or empty */
     source?: string;
+    /** Optional override; otherwise resolved from FACT_SOURCE_URLS by source name */
+    sourceUrl?: string;
     iconKey: BookkeepingFactsIconKey;
   }>;
 };

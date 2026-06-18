@@ -1,34 +1,34 @@
-import type { BookkeepingFactsIconKey, FactsData } from "@/data/bookkeeping/factsData";
+import type {
+  BookkeepingFactsIconKey,
+  FactsData,
+} from "@/data/bookkeeping/factsData";
 
 type CapitalGainsFactsIconKey = BookkeepingFactsIconKey;
 
 export const CAPITAL_GAINS_FACTS_DATA: FactsData = {
-  sectionLabel: "Facts & Stats",
-  heading: "Capital Gains & Property Tax Compliance",
+  sectionLabel: "Facts & Stats (UK)",
+  heading: "Capital Gains Tax in Context",
   description:
-    "Capital Gains Tax is an essential part of property sales. These facts highlight why accurate CGT management is critical.",
+    "Capital Gains Tax is an essential part of property sales. Accurate reporting and relief planning protect your proceeds.",
   items: [
     {
-      stat: "Shorter CGT Reporting Deadlines",
+      stat: "60-Day Deadlines",
       description:
-        "CGT reporting deadlines for property sales have become shorter, in some cases as short as 60 days.",
+        "CGT reporting deadlines are now as short as 60 days for property.",
       source: "HMRC",
       iconKey: "clock" as CapitalGainsFactsIconKey,
     },
     {
-      stat: "CGT Reporting Errors",
-      description:
-        "Property disposals are a leading source of CGT reporting errors, often due to complex rules.",
+      stat: "Property Disposal Errors",
+      description: "Property disposals are a major source of CGT errors.",
       source: "National Audit Office",
       iconKey: "file-warning" as CapitalGainsFactsIconKey,
     },
     {
-      stat: "Missed Reliefs Lead to Overpayment",
-      description:
-        "Many taxpayers overpay Capital Gains Tax due to missed reliefs and allowances.",
+      stat: "Overpayment Risk",
+      description: "Many taxpayers overpay CGT due to missed reliefs.",
       source: "ICAEW",
       iconKey: "badge-percent" as CapitalGainsFactsIconKey,
     },
   ],
 };
-

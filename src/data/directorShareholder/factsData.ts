@@ -1,29 +1,32 @@
-import type { BookkeepingFactsIconKey, FactsData } from "@/data/bookkeeping/factsData";
+import type {
+  BookkeepingFactsIconKey,
+  FactsData,
+} from "@/data/bookkeeping/factsData";
 
 type DirectorFactsIconKey = BookkeepingFactsIconKey;
 
 export const DIRECTOR_SHAREHOLDER_FACTS_DATA: FactsData = {
-  sectionLabel: "Facts & Stats",
-  heading: "Director & Shareholder Compliance in the UK",
+  sectionLabel: "Facts & Stats (UK)",
+  heading: "Director & Shareholder Compliance in Context",
   description:
     "Ensuring directors and shareholders comply with legal and tax obligations is essential for protecting both the company and personal assets.",
   items: [
     {
-      stat: "Personal Liability for Tax Debts",
+      stat: "Personal Liability",
       description:
-        "Directors can be held personally liable for the company’s tax debts in cases of negligence or deliberate default.",
+        "Directors can be held personally liable for a company's tax debts in cases of negligence or deliberate default.",
       source: "HMRC",
       iconKey: "alert-octagon" as DirectorFactsIconKey,
     },
     {
-      stat: "Dividends & Compliance",
+      stat: "Improper Dividends",
       description:
-        "Improperly paid dividends are one of the most common causes of company compliance failures, often triggering action from HMRC.",
+        "Improperly paid dividends are a common compliance failure, leading to HMRC challenges and tax liabilities.",
       source: "Companies House",
       iconKey: "file-warning" as DirectorFactsIconKey,
     },
     {
-      stat: "Companies Act 2006 Duties",
+      stat: "Companies Act 2006",
       description:
         "The Companies Act 2006 sets out seven key duties for directors, including the duty to promote the success of the company.",
       source: "legislation.gov.uk",
@@ -31,4 +34,3 @@ export const DIRECTOR_SHAREHOLDER_FACTS_DATA: FactsData = {
     },
   ],
 };
-

@@ -4,11 +4,11 @@ export const CAPITAL_GAINS_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Practical Tax Support for Individuals and Families",
+  bannerText: "For You",
   heading: "Capital Gains & Property Tax",
   subheading: "Clear advice when you sell assets or property.",
   description:
-    "Selling property or assets can result in unexpected tax bills if not managed properly. We calculate your Capital Gains Tax (CGT) on property and asset sales, ensuring allowances, reliefs, and deadlines are handled correctly. Our approach helps you avoid surprises and manage your responsibilities with confidence.",
+    "We calculate Capital Gains Tax on property and asset sales, apply reliefs correctly, and manage reporting deadlines so unexpected tax bills are avoided.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -29,5 +29,4 @@ export const CAPITAL_GAINS_HERO_DATA: ServiceHeroData = {
     description:
       "Clients value our clear communication, accuracy, and dependable support on complex tax matters.",
   },
-};
-
+} as const;

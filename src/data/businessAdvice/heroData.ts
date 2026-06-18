@@ -4,11 +4,11 @@ export const BUSINESS_ADVICE_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Supporting Limited Companies from Startup to Scale",
+  bannerText: "For Business",
   heading: "Business Advice",
   subheading: "Clear guidance when decisions matter.",
   description:
-    "When critical business decisions arise, clear financial advice is key. We offer practical, data-driven insights for business growth, restructuring, retirement strategy, and risk management. Every recommendation is based on facts, not opinions, ensuring you understand the consequences before acting.",
+    "We provide practical financial advice for real decisions — growth, restructuring, retirement strategy, and risk management — based on numbers, not opinions.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -29,5 +29,4 @@ export const BUSINESS_ADVICE_HERO_DATA: ServiceHeroData = {
     description:
       "Clients rely on our advisory support for clear communication, practical insight, and dependable strategic guidance.",
   },
-};
-
+} as const;

@@ -9,38 +9,36 @@ export const NOT_FOR_PROFIT_SERVICE_SCOPE_DATA: ServiceScopeData = {
   sectionLabel: "Service Scope",
   heading: "What We Manage for Your Organisation",
   description:
-    "Not-for-profit organisations require careful financial governance to maintain accountability and transparency. Our services help charities and mission-driven organisations manage reporting, compliance, and financial oversight effectively.",
+    "Financial reporting, governance, and assurance services for charities and not-for-profit organisations, ensuring compliance with Charity Commission regulations and SORP.",
   items: [
     {
-      title: "Charity Financial Reporting",
+      title: "Financial Reporting",
       description:
-        "We prepare and review financial statements in accordance with Charity SORP requirements.",
+        "Financial reporting compliant with Charity SORP requirements.",
       iconKey: "document-check" as NotForProfitIconKey,
     },
     {
-      title: "Fund Accounting & Financial Management",
+      title: "Governance & Assurance",
       description:
-        "We advise on fund tracking, ensuring restricted, unrestricted, and designated funds are managed and reported clearly.",
-      iconKey: "calculator" as NotForProfitIconKey,
+        "Governance and assurance services for charities and not-for-profit organisations.",
+      iconKey: "shield" as NotForProfitIconKey,
     },
     {
-      title: "Regulatory Compliance & Filings",
+      title: "Charity Commission Compliance",
       description:
-        "We ensure your organisation meets Charity Commission requirements and all regulatory filing obligations.",
+        "Ensuring compliance with Charity Commission regulations.",
       iconKey: "badge-check" as NotForProfitIconKey,
     },
     {
-      title: "VAT Guidance for Charities",
-      description:
-        "We provide advice on VAT matters affecting charities, including trading subsidiaries and VAT recovery rules.",
-      iconKey: "receipt-tax" as NotForProfitIconKey,
+      title: "SORP Compliance",
+      description: "Accounts and reporting aligned to Charity SORP.",
+      iconKey: "calculator" as NotForProfitIconKey,
     },
     {
-      title: "Trustee Governance Support",
+      title: "Fund Accounting",
       description:
-        "We assist trustees in understanding their financial responsibilities and maintaining strong governance standards.",
-      iconKey: "target" as NotForProfitIconKey,
+        "Fund accounting including restricted and unrestricted funds.",
+      iconKey: "boxes" as NotForProfitIconKey,
     },
   ],
-} as const;
-
+};

@@ -4,11 +4,11 @@ export const MANUFACTURING_ENGINEERING_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Specialist Financial Advice for UK Industries",
-  heading: "Manufacturing &\nEngineering",
+  bannerText: "Industries",
+  heading: "Manufacturing & Engineering",
   subheading: "Numbers that support growth and efficiency.",
   description:
-    "The manufacturing and engineering sectors are driven by efficiency and precision. We offer expert financial management and advisory services, helping you control costs, optimise production, and claim valuable tax reliefs, ensuring long-term growth and operational efficiency.",
+    "Financial management and advisory for UK manufacturing and engineering firms, focusing on cost control, R&D tax credits, and inventory management.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -20,14 +20,13 @@ export const MANUFACTURING_ENGINEERING_HERO_DATA: ServiceHeroData = {
 
   featureCards: [
     { label: "Trusted Nationwide" },
-    { label: "Experienced Advisors" },
+    { label: "Experienced Advisers" },
     { label: "Fixed-Fee Pricing" },
   ],
 
   trustedBar: {
     title: "Trusted by businesses nationwide",
     description:
-      "The clients consistently rate our service with excellent feedback for accuracy and support.",
+      "Clients consistently rate our service with excellent feedback for accuracy and support.",
   },
 } as const;
-

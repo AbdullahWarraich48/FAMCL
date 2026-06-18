@@ -4,11 +4,11 @@ export const LANDLORDS_FAMILIES_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Helping new businesses start on the right foundation",
+  bannerText: "Business Formation",
   heading: "Landlords & Families",
   subheading: "Property and personal tax made clear.",
   description:
-    "Managing property income and family finances requires careful tax planning and long-term thinking. We provide structured tax and planning support for landlords and families, helping ensure property income, ownership structures, and reporting obligations are managed clearly and efficiently.",
+    "Tax and planning support for individuals with property income and family financial arrangements, where long-term impact outweighs short-term decisions.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -30,4 +30,3 @@ export const LANDLORDS_FAMILIES_HERO_DATA: ServiceHeroData = {
       "Landlords and families rely on our support to manage property income, stay compliant, and plan with confidence.",
   },
 } as const;
-

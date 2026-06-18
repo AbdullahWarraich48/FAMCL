@@ -4,11 +4,11 @@ export const INHERITANCE_TAX_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Practical Tax Support for Individuals and Families",
-  heading: "Inheritance Tax, Retirement Strategy, & Estate Planning",
+  bannerText: "For You",
+  heading: "Inheritance Tax, Retirement Strategy and Estate Planning",
   subheading: "Protect what matters to your family.",
   description:
-    "We review your estate structure, manage Inheritance Tax exposure, and provide clear planning options to secure your legacy for the future. Our advice ensures your wishes are documented, tax-efficient, and aligned with your long-term family goals.",
+    "We help structure your affairs to protect your family, review Inheritance Tax exposure, and plan assets for efficient transfer to the next generation.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -29,5 +29,4 @@ export const INHERITANCE_TAX_HERO_DATA: ServiceHeroData = {
     description:
       "Clients value our inheritance and estate planning advice for clear communication, accuracy, and dependable support.",
   },
-};
-
+} as const;

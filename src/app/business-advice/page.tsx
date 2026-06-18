@@ -18,7 +18,7 @@ import { BUSINESS_ADVICE_FAQ_DATA } from "@/data/businessAdvice/faqData";
 export const metadata = {
   title: "Business Advice | FAM Chartered Accountants",
   description:
-    "Practical, data-driven business advice for growth, restructuring, risk management, and long-term planning.",
+    "Clear guidance when decisions matter. Practical financial advice for growth, restructuring, retirement strategy, and risk management.",
 };
 
 export default function BusinessAdvicePage() {
