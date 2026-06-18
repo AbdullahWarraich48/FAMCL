@@ -63,4 +63,4 @@ export const HOME_HERO_SLIDES: HomeHeroSlide[] = [
   },
 ];
 
-export const HOME_HERO_SLIDE_INTERVAL_MS = 3000;
+export const HOME_HERO_SLIDE_INTERVAL_MS = 5000;
