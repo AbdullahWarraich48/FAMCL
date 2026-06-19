@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { SplitHeading } from "@/Components/SplitHeading";
-import { SECTION_BG } from "@/constants/sectionBackgrounds";
+import {
+  SECTION_BG,
+  SECTION_LABEL_PILL,
+  SECTION_LABEL_TEXT,
+} from "@/constants/sectionBackgrounds";
 
 type TeamStructureProps = {
   badgeLabel: string;
@@ -34,7 +38,9 @@ export default function TeamStructure({
       <div className="content-padding-x mx-auto max-w-[1440px] py-10 md:py-16 lg:py-20">
         <div className="grid grid-cols-1 items-center gap-10 md:gap-12 lg:grid-cols-2 lg:gap-14">
           <div className="max-w-[640px]">
-            <span className="inline-block rounded-full bg-[#b8efbe] px-3 py-1.5 text-[11px] font-semibold uppercase tracking-[0.14em] text-[#198f3f] sm:px-4 sm:py-2 sm:text-[12px]">
+            <span
+              className={`inline-block ${SECTION_LABEL_PILL} ${SECTION_LABEL_TEXT}`}
+            >
               {badgeLabel}
             </span>
 

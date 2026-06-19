@@ -16,12 +16,12 @@ export const CIS_OUR_SERVICES_COLUMNS: readonly CisOurServiceColumn[] = [
     iconKey: "contractors",
     items: [
       "HMRC enquiries for CIS suffered and deductions",
-      "CIS registration (net or gross basis) as contractor, subcontractor, or both",
-      "subcontractor verification with HMRC",
-      "payment management ensuring correct CIS deductions",
-      "deduction statements (CIS pay slips and year-end statements)",
-      "bookkeeping of CIS, payroll, and accounting records",
-      "submission of monthly CIS returns to HMRC",
+      "CIS registration in HMRC on net or gross basis as contractor, subcontractor, or both at the same time",
+      "Subcontractor verification: verify your subcontractors with HMRC",
+      "Payment management: ensure subcontractors are paid correctly after CIS deductions as per criteria",
+      "Deduction statements: supply paperwork, payment and deduction statements or CIS pay slips and year-end statements to subcontractors",
+      "Record keeping: bookkeeping of all CIS and payroll records with other accounting records",
+      "Submissions: submission of monthly CIS returns to HMRC",
     ],
   },
   {
@@ -29,10 +29,10 @@ export const CIS_OUR_SERVICES_COLUMNS: readonly CisOurServiceColumn[] = [
     title: "For Subcontractors",
     iconKey: "subcontractors",
     items: [
-      "employment status assessment and HMRC registration",
-      "verification with HMRC",
-      "record keeping and organisation of business records",
-      "preparation of self-employment tax returns",
+      "Employment status: register with HMRC after determining status as a subcontractor or employee",
+      "Verification: verify with HMRC on behalf of the contractor",
+      "Record keeping: manage and organise the business records",
+      "Tax return: prepare the end-of-year self-employment tax returns",
     ],
   },
 ] as const;

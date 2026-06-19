@@ -105,11 +105,11 @@ export const BookKeepingHerosection = ({
           <div className="flex flex-col">
             {/* Green pill - solid green, white text */}
             <div
-              className="inline-flex w-fit items-center justify-center rounded-lg bg-[#BFFFCB] px-4 py-2.5"
+              className="inline-flex w-fit items-center justify-center rounded-full bg-[#175DAB] px-5 py-2.5"
               role="status"
               aria-label="Service focus"
             >
-              <span className="text-sm font-medium text-[#239337] sm:text-base">
+              <span className="text-sm font-medium text-white sm:text-base">
                 {hero.bannerText}
               </span>
             </div>

@@ -1,6 +1,6 @@
 /** Copy for the “We also help you understand:” card on the CIS page */
 export const CIS_WE_ALSO_HELP_ITEMS = [
-  "suitable business structures for growth",
+  "what business models will be suitable for expansion",
   "whether to register under CIS Net or Gross",
-  "VAT implications including Standard and Reverse Charge rules for invoicing and billing",
+  "VAT implications for Standard and Reverse Charge on invoicing and billing",
 ] as const;

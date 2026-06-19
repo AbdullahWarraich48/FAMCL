@@ -1,5 +1,10 @@
 "use client";
 
+import {
+  SECTION_LABEL_PILL_INLINE,
+  SECTION_LABEL_TEXT,
+} from "@/constants/sectionBackgrounds";
+
 export default function FocusAreas() {
   return (
     <section
@@ -10,7 +15,9 @@ export default function FocusAreas() {
         <div className="mx-auto grid max-w-[1280px] gap-10 md:grid-cols-2 md:gap-14">
           {/* Left column – Areas of focus */}
           <div>
-            <span className="inline-flex items-center justify-center rounded-full bg-emerald-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700 sm:text-sm">
+            <span
+              className={`${SECTION_LABEL_PILL_INLINE} ${SECTION_LABEL_TEXT} text-xs sm:text-sm`}
+            >
               Areas of Focus
             </span>
 
@@ -42,7 +49,9 @@ export default function FocusAreas() {
 
           {/* Right column – Why it matters */}
           <div>
-            <span className="inline-flex items-center justify-center rounded-full bg-emerald-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700 sm:text-sm">
+            <span
+              className={`${SECTION_LABEL_PILL_INLINE} ${SECTION_LABEL_TEXT} text-xs sm:text-sm`}
+            >
               Why It Matters
             </span>
 

@@ -11,6 +11,7 @@ import {
 import Client from "@/Components/Home/Client";
 import Cta from "@/Components/Home/Cta";
 import TaxCta from "@/Components/Home/TaxCta";
+import TfCornerExpansion from "@/Components/Home/TfCornerExpansion";
 import { SECTION_BG } from "@/constants/sectionBackgrounds";
 
 /** Alternating section backgrounds: odd = white, even = #cbdcff */
@@ -43,7 +44,7 @@ export default function Home() {
         sectionClassName={SECTION_BG.white}
       />
 
-      {/* 6 — #cbdcff */}
+      {/* 7 — #cbdcff */}
       <ChooseCard
         sectionTitle={CLOUD_SOFTWARE_SECTION.sectionTitle}
         sectionTitleBefore={CLOUD_SOFTWARE_SECTION.sectionTitleBefore}
@@ -55,8 +56,11 @@ export default function Home() {
         largeText
       />
 
-      {/* 7 — white */}
+      {/* 8 — white */}
       <Client />
+
+      {/* 9 — #cbdcff */}
+      <TfCornerExpansion sectionClassName={SECTION_BG.alt} />
 
       <Cta />
       <FooterSection />

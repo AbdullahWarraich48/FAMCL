@@ -15,13 +15,13 @@ import AccountingFirm from "@/Components/Book-Keeping/Accounting-Firm";
 export const metadata = {
   title: "VAT Margin Scheme | FAM Chartered Accountants",
   description:
-    "VAT margin scheme advice for eligible second-hand sales, record-keeping, and compliant VAT returns.",
+    "VAT margin scheme advice for second-hand car sellers, mobile and IT traders — pay VAT on profit margin with compliant records and returns.",
 };
 
 export default function VatMarginSchemePage() {
   return (
     <main className="min-h-screen bg-white">
-      {/* <BookKeepingHerosection heroData={VAT_MARGIN_SCHEME_HERO_DATA} /> */}
+      <BookKeepingHerosection heroData={VAT_MARGIN_SCHEME_HERO_DATA} />
       <ApplicableGoodsGrid />
       <MarginSchemeHowToStart />
       <VatMarginExceptionsGrid />

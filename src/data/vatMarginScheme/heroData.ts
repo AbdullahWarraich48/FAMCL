@@ -4,11 +4,10 @@ export const VAT_MARGIN_SCHEME_HERO_DATA: ServiceHeroData = {
   phoneNumber: "+44 730 123 3962",
   phoneHref: "tel:+447301233962",
 
-  bannerText: "Specialist Guidance for Second-Hand Goods Businesses",
+  bannerText: "For Business",
   heading: "VAT Margin Scheme",
-  subheading: "VAT calculated on profit, not full selling price",
   description:
-    "Second-hand car sellers, mobile phone traders, and IT equipment businesses form a significant part of our client base. The VAT margin scheme allows businesses to pay VAT only on the profit margin instead of the full selling price. Due to high turnover, VAT payments can create cashflow pressure, especially when businesses rely on credit lines.",
+    "Second-hand car sellers, mobile and IT equipment traders are a main part of our client base. The VAT margin scheme allows second-hand car sellers to pay VAT only on the profit margin rather than the whole price. Due to high turnover, cashflow often faces challenges from VAT payments and financial costs, with credit lines commonly used by car sellers.",
 
   primaryCta: { label: "Get Started Today", href: "#get-started" },
   secondaryCta: { labelPrefix: "Call", usePhoneNumber: true },
@@ -19,9 +18,9 @@ export const VAT_MARGIN_SCHEME_HERO_DATA: ServiceHeroData = {
   },
 
   featureCards: [
-    { label: "Trusted Nationwide" },
-    { label: "Experienced Advisers" },
-    { label: "Fixed-Fee Pricing" },
+    { label: "Second-hand vehicles" },
+    { label: "Margin scheme records" },
+    { label: "Compliant VAT returns" },
   ],
 
   trustedBar: {

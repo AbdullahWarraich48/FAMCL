@@ -84,7 +84,7 @@ export default function ChooseCard({
         <header className="mx-auto max-w-5xl text-center">
           <div className="flex w-full min-w-0 items-center justify-center gap-3 md:gap-6">
             <span
-              className="h-px shrink-0 bg-[#1E63B3] w-14 sm:w-16 md:w-20"
+              className="h-px shrink-0 bg-[#175DAB] w-14 sm:w-16 md:w-20"
               aria-hidden
             />
             <h2
@@ -101,7 +101,7 @@ export default function ChooseCard({
               )}
             </h2>
             <span
-              className="h-px shrink-0 bg-[#1E63B3] w-14 sm:w-16 md:w-20"
+              className="h-px shrink-0 bg-[#175DAB] w-14 sm:w-16 md:w-20"
               aria-hidden
             />
           </div>

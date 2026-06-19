@@ -36,7 +36,7 @@ export default function ContactCards({ className = "" }: ContactCardsProps) {
             className="mb-4 flex min-w-0 items-center justify-center gap-3 text-2xl font-bold tracking-tight sm:text-3xl md:gap-5 md:text-4xl"
           >
             <span
-              className="h-px w-10 shrink-0 bg-[#1E63B3] md:w-16"
+              className="h-px w-10 shrink-0 bg-[#175DAB] md:w-16"
               aria-hidden
             />
             <span className="min-w-0 shrink text-center">
@@ -51,7 +51,7 @@ export default function ContactCards({ className = "" }: ContactCardsProps) {
               </span>
             </span>
             <span
-              className="h-px w-10 shrink-0 bg-[#1E63B3] md:w-16"
+              className="h-px w-10 shrink-0 bg-[#175DAB] md:w-16"
               aria-hidden
             />
           </h2>

@@ -62,6 +62,12 @@ export const ApplicableGoodsGrid = ({ data }: ApplicableGoodsGridProps) => {
           headingClassName="text-[1.65rem] font-bold leading-[1.15] tracking-tight text-[#1e3a5f] sm:text-3xl lg:text-[40px]"
         />
 
+        {content.intro ? (
+          <p className="mx-auto mt-6 max-w-3xl text-center text-[16px] leading-relaxed text-slate-600 sm:mt-8 sm:text-[17px] sm:leading-[1.65]">
+            {content.intro}
+          </p>
+        ) : null}
+
         <div className="mt-12 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:mt-14 lg:grid-cols-3 lg:gap-8">
           {content.items.map(({ title, description }) => (
             <GoodsCard key={title} title={title} description={description} />

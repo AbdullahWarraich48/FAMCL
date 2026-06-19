@@ -1,6 +1,10 @@
 "use client";
 
 import Link from "next/link";
+import {
+  SECTION_LABEL_PILL_INLINE,
+  SECTION_LABEL_TEXT,
+} from "@/constants/sectionBackgrounds";
 
 export default function FeaturedInsight() {
   return (
@@ -12,7 +16,7 @@ export default function FeaturedInsight() {
         <div className="mx-auto max-w-[1280px] rounded-3xl bg-gradient-to-b from-[#E4F2FF] to-[#F4F9FF] px-6 py-8 shadow-[0_18px_40px_rgba(15,23,42,0.18)] md:px-10 md:py-10">
           {/* Pill */}
           <div
-            className="inline-flex items-center justify-center rounded-full bg-[#bfffcb]  px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 sm:text-sm"
+            className={`${SECTION_LABEL_PILL_INLINE} ${SECTION_LABEL_TEXT} text-xs sm:text-sm`}
             aria-label="Featured insight"
           >
             Featured Insight

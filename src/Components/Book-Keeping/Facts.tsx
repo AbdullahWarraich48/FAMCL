@@ -114,11 +114,7 @@ export const Facts = ({
         <div className="flex flex-col items-center text-center">
           <SectionIntroHeader
             headingId="facts-heading"
-            sectionLabel={
-              <span className="text-xs font-semibold uppercase tracking-[0.18em] text-[#239337] sm:text-sm sm:tracking-[0.2em]">
-                {content.sectionLabel}
-              </span>
-            }
+            sectionLabel={content.sectionLabel}
             heading={content.heading}
             headingBgClassName={sectionClassName}
             headingBlockMarginTop="mt-6 sm:mt-8"

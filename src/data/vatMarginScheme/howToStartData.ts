@@ -10,12 +10,11 @@ export const VAT_MARGIN_HOW_TO_START_DATA: HowToStartMarginSchemeData = {
   headingId: "vat-margin-how-to-start-heading",
   title: "How to Start the Margin Scheme",
   intro:
-    "A business can start using the margin scheme at any time by:",
+    "A business can start using a margin scheme at any time by keeping the correct records and then reporting it on the VAT return.",
   checklistItems: [
-    "Keeping the correct records for margin scheme supplies",
-    "Reporting margin scheme sales correctly on your VAT Return",
-    "Applying the scheme only where the goods qualify under HMRC rules",
+    "Keep the correct records for each margin scheme item",
+    "Report margin scheme sales on your VAT return",
+    "Apply the scheme only where goods qualify under HMRC rules",
   ],
-  infoNote:
-    "There is no requirement to register separately for the scheme.",
+  infoNote: "Businesses do not have to register for the margin scheme.",
 };

@@ -2,6 +2,11 @@
 
 import * as React from "react";
 import { SplitHeading } from "@/Components/SplitHeading";
+import {
+  SECTION_ACCENT_LINE,
+  SECTION_LABEL_PILL,
+  SECTION_LABEL_TEXT,
+} from "@/constants/sectionBackgrounds";
 
 export type SectionIntroHeaderProps = {
   headingId: string;
@@ -21,6 +26,9 @@ export type SectionIntroHeaderProps = {
   /** Margin above the heading row (after the label when present) */
   headingBlockMarginTop?: string;
   headingClassName?: string;
+  headingBlueClassName?: string;
+  headingRedClassName?: string;
+  accentLineClassName?: string;
 };
 
 const SectionIntroHeader = ({
@@ -28,13 +36,17 @@ const SectionIntroHeader = ({
   heading,
   headingBefore,
   headingHighlight,
+  headingBgClassName,
   sectionLabel,
-  labelPillClassName = "shrink-0 rounded-lg bg-[#BFFFCB] px-4 py-2",
-  labelTextClassName = "text-sm font-semibold uppercase tracking-[0.2em] text-[#239337]",
+  labelPillClassName = SECTION_LABEL_PILL,
+  labelTextClassName = SECTION_LABEL_TEXT,
   labelAriaLabel = "Section",
   className = "",
   headingBlockMarginTop = "mt-8",
   headingClassName = "text-[2rem] font-bold leading-[1.15] tracking-tight sm:text-4xl lg:text-[44px]",
+  headingBlueClassName,
+  headingRedClassName,
+  accentLineClassName = SECTION_ACCENT_LINE,
 }: SectionIntroHeaderProps) => {
   const hasLabel = sectionLabel != null;
   const useSplitHeading =
@@ -61,7 +73,7 @@ const SectionIntroHeader = ({
         className={`flex w-full min-w-0 items-center justify-center gap-3 sm:gap-4 ${hasLabel ? headingBlockMarginTop : "mt-0"}`}
       >
         <span
-          className="h-px shrink-0 rounded-full bg-[#1E63B3] w-14 sm:w-16 md:w-20"
+          className={accentLineClassName}
           aria-hidden
         />
         <h2
@@ -73,13 +85,15 @@ const SectionIntroHeader = ({
               heading={heading}
               headingBefore={headingBefore}
               headingHighlight={headingHighlight}
+              blueClassName={headingBlueClassName}
+              redClassName={headingRedClassName}
             />
           ) : (
             heading
           )}
         </h2>
         <span
-          className="h-px shrink-0 rounded-full bg-[#1E63B3] w-14 sm:w-16 md:w-20"
+          className={accentLineClassName}
           aria-hidden
         />
       </div>

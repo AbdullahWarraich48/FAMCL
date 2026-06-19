@@ -1,6 +1,10 @@
 import Image from "next/image";
 import { SplitHeading } from "@/Components/SplitHeading";
-import { SECTION_BG } from "@/constants/sectionBackgrounds";
+import {
+  SECTION_BG,
+  SECTION_LABEL_PILL,
+  SECTION_LABEL_TEXT,
+} from "@/constants/sectionBackgrounds";
 
 export type FoundationSectionData = {
   pillLabel: string;
@@ -60,7 +64,9 @@ export default function Foundation({
       <div className="content-padding-x mx-auto max-w-[1440px] py-12 md:py-16 lg:py-20">
         <div className="grid grid-cols-1 items-center gap-12 lg:grid-cols-2 lg:gap-14">
           <div className="max-w-[560px]">
-            <span className="inline-block rounded-full bg-[#b8efbe] px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-[#198f3f]">
+            <span
+              className={`inline-block ${SECTION_LABEL_PILL} ${SECTION_LABEL_TEXT}`}
+            >
               {section.pillLabel}
             </span>
 

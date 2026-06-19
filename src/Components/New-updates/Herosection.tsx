@@ -1,5 +1,10 @@
 "use client";
 
+import {
+  SECTION_LABEL_PILL_ON_DARK,
+  SECTION_LABEL_TEXT,
+} from "@/constants/sectionBackgrounds";
+
 type NewsHeroProps = {
   /** Small pill label above the heading */
   tagLabel?: string;
@@ -26,7 +31,7 @@ export default function NewsUpdatesHero({
       <div className="content-padding-x mx-auto flex max-w-[1440px] flex-col items-center py-16 text-center text-white md:py-20 lg:py-24">
         {/* Pill */}
         <div
-          className="inline-flex items-center justify-center rounded-full bg-[#bfffcb] px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-slate-900 sm:text-sm"
+          className={`${SECTION_LABEL_PILL_ON_DARK} ${SECTION_LABEL_TEXT} text-xs sm:text-sm`}
           aria-label={tagLabel}
         >
           {tagLabel}

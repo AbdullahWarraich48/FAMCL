@@ -28,11 +28,15 @@ const CisCenteredSectionBlock = ({
             headingClassName="text-[1.75rem] font-bold leading-[1.15] tracking-tight text-[#175dab] sm:text-4xl lg:text-[44px]"
           />
 
-          <p className="mt-3 text-center text-[15px] font-medium leading-relaxed text-slate-500 sm:text-base">
-            {section.subheading}
-          </p>
+          {section.subheading?.trim() ? (
+            <p className="mt-3 text-center text-[15px] font-medium leading-relaxed text-slate-500 sm:text-base">
+              {section.subheading}
+            </p>
+          ) : null}
 
-          <p className="mx-auto mt-6 max-w-3xl text-center text-[15px] leading-relaxed text-slate-600 sm:text-[16px] sm:leading-[27.8px]">
+          <p
+            className={`mx-auto max-w-3xl text-center text-[15px] leading-relaxed text-slate-600 sm:text-[16px] sm:leading-[27.8px] ${section.subheading?.trim() ? "mt-6" : "mt-4 sm:mt-6"}`}
+          >
             {section.description}
           </p>
         </div>

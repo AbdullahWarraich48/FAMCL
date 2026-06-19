@@ -15,32 +15,32 @@ export const CIS_SUBCONTRACTOR_TAX_RETURN_HEADING =
   "CIS Subcontractor Tax Return";
 
 export const CIS_SUBCONTRACTOR_TAX_RETURN_INTRO =
-  "Managing your tax obligations effectively. We ensure tax returns are filed on time and provide planning support to help manage cashflow.";
+  "We help you meet your tax obligations. We ensure your tax return is filed on time, and we also provide tax planning which helps manage business cashflows better.";
 
 export const CIS_SUBCONTRACTOR_BENEFITS: readonly CisSubcontractorBenefit[] = [
   {
     title: "Faster Refunds",
-    description: "receiving tax refunds sooner",
+    description: "Receiving tax refunds sooner",
     iconKey: "trendingUp",
   },
   {
     title: "More Time",
-    description: "more time to arrange tax payments",
+    description: "More time to arrange how to pay tax liability",
     iconKey: "clock",
   },
   {
     title: "Reduced Risk",
-    description: "reduced risk of penalties and interest",
+    description: "Less risk of late filing penalties and overdue payment interest",
     iconKey: "shield",
   },
   {
     title: "Less Stress",
-    description: "less stress at deadlines",
+    description: "Less stress in dealing with last-minute tax returns",
     iconKey: "shieldCheck",
   },
   {
     title: "PAYE Option",
-    description: "option to pay tax through PAYE code where possible",
+    description: "Paying tax through PAYE tax code (where possible)",
     iconKey: "calculator",
   },
 ] as const;

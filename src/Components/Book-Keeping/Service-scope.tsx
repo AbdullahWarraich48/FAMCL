@@ -60,7 +60,6 @@ export const ServiceScope = ({ data }: ServiceScopeProps) => {
           <SectionIntroHeader
             headingId="service-scope-heading"
             sectionLabel={scopeData.sectionLabel}
-            labelPillClassName="shrink-0 rounded-full bg-[#BFFFCB] px-5 py-2.5"
             heading={scopeData.heading}
             headingBgClassName="bg-[#cbdcff]"
           />

@@ -1,12 +1,15 @@
 import Image from "next/image";
 import { SplitHeading } from "@/Components/SplitHeading";
+import { SECTION_LABEL_PILL, SECTION_LABEL_TEXT } from "@/constants/sectionBackgrounds";
 
 export default function LimitedCompaniesChooseService() {
   return (
     <section className="w-full bg-[#cbdcff]">
       <div className="content-padding-x mx-auto grid max-w-[1280px] grid-cols-1 items-center gap-12 py-10 lg:grid-cols-2 lg:py-12">
         <div className="max-w-[560px]">
-          <span className="inline-block rounded-full bg-[#b8efbe] px-4 py-2 text-[12px] font-semibold uppercase tracking-[0.14em] text-[#198f3f]">
+          <span
+            className={`inline-block ${SECTION_LABEL_PILL} ${SECTION_LABEL_TEXT}`}
+          >
             Why Choose This Service
           </span>
 

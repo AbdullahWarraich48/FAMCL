@@ -4,6 +4,10 @@ import Link from "next/link";
 import { Card, CardHeader, CardTitle, CardDescription, CardContent, CardFooter } from "@/Components/ui/card";
 import { Button } from "@/Components/ui/button";
 import { CalendarDays } from "lucide-react";
+import {
+  SECTION_LABEL_PILL_INLINE,
+  SECTION_LABEL_TEXT,
+} from "@/constants/sectionBackgrounds";
 
 type UpdateItem = {
   id: number;
@@ -66,7 +70,9 @@ export default function LatestUpdate() {
       <div className="content-padding-x mx-auto max-w-[1440px]">
         {/* Heading */}
         <div className="flex flex-col items-center text-center">
-          <span className="inline-flex items-center justify-center rounded-full bg-emerald-100 px-4 py-1.5 text-xs font-semibold uppercase tracking-[0.2em] text-emerald-700 sm:text-sm">
+          <span
+            className={`${SECTION_LABEL_PILL_INLINE} ${SECTION_LABEL_TEXT} text-xs sm:text-sm`}
+          >
             Stay Informed
           </span>
           <h2
