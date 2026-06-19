@@ -118,6 +118,7 @@ export default function TfCornerExpansion({
           <SectionIntroHeader
             headingId="tf-corner-expansion-heading"
             sectionLabel={section.sectionLabel}
+            heading={`${section.titleBefore}${section.titleHighlight}`}
             headingBefore={section.titleBefore}
             headingHighlight={section.titleHighlight}
             headingBgClassName={sectionClassName}

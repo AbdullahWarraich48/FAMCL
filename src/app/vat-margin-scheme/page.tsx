@@ -1,5 +1,5 @@
 import ApplicableGoodsGrid from "@/Components/Book-Keeping/ApplicableGoodsGrid";
-import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
+// import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
 import Contact from "@/Components/Book-Keeping/Contact";
 import Faq from "@/Components/Book-Keeping/Faq";
 import MarginSchemeHowToStart from "@/Components/Book-Keeping/MarginSchemeHowToStart";
@@ -21,7 +21,7 @@ export const metadata = {
 export default function VatMarginSchemePage() {
   return (
     <main className="min-h-screen bg-white">
-      <BookKeepingHerosection heroData={VAT_MARGIN_SCHEME_HERO_DATA} />
+      {/* <BookKeepingHerosection heroData={VAT_MARGIN_SCHEME_HERO_DATA} /> */}
       <ApplicableGoodsGrid />
       <MarginSchemeHowToStart />
       <VatMarginExceptionsGrid />
