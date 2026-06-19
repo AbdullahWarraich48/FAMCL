@@ -1,5 +1,5 @@
 import AccountingFirm from "@/Components/Book-Keeping/Accounting-Firm";
-import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
+// import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
 import Contact from "@/Components/Book-Keeping/Contact";
 import Facts from "@/Components/Book-Keeping/Facts";
 import Faq from "@/Components/Book-Keeping/Faq";
@@ -20,7 +20,7 @@ export const metadata = {
 export default function OurTeamPage() {
   return (
     <main className="min-h-screen bg-white">
-      <BookKeepingHerosection heroData={OUR_TEAM_HERO_DATA} />
+      {/* <BookKeepingHerosection heroData={OUR_TEAM_HERO_DATA} /> */}
       <TeamStructure {...OUR_TEAM_STRUCTURE_DATA} />
       <Facts data={OUR_TEAM_FACTS_DATA} sectionClassName={SECTION_BG.white} />
       <Faq data={OUR_TEAM_FAQ_DATA} />

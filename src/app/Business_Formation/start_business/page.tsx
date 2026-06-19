@@ -1,5 +1,5 @@
 import AccountingFirm from "@/Components/Book-Keeping/Accounting-Firm";
-import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
+// import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
 import ServiceScope from "@/Components/Book-Keeping/Service-scope";
 import Contact from "@/Components/Book-Keeping/Contact";
 import Facts from "@/Components/Book-Keeping/Facts";
@@ -28,7 +28,7 @@ export const metadata = {
 export default function StartBusinessPage() {
   return (
     <main className="min-h-screen bg-white">
-      <BookKeepingHerosection heroData={START_BUSINESS_HERO_DATA} />
+      {/* <BookKeepingHerosection heroData={START_BUSINESS_HERO_DATA} /> */}
       <ServiceScope data={START_BUSINESS_SERVICE_SCOPE_DATA} />
       <Facts data={START_BUSINESS_FACTS_DATA} sectionClassName={SECTION_BG.white} />
       <Solution data={START_BUSINESS_SOLUTION_DATA} sectionClassName={SECTION_BG.alt} />

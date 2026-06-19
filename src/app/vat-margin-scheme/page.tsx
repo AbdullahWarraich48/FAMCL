@@ -21,7 +21,7 @@ export const metadata = {
 export default function VatMarginSchemePage() {
   return (
     <main className="min-h-screen bg-white">
-      <BookKeepingHerosection heroData={VAT_MARGIN_SCHEME_HERO_DATA} />
+      {/* <BookKeepingHerosection heroData={VAT_MARGIN_SCHEME_HERO_DATA} /> */}
       <ApplicableGoodsGrid />
       <MarginSchemeHowToStart />
       <VatMarginExceptionsGrid />

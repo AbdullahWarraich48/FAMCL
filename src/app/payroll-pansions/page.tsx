@@ -1,5 +1,5 @@
 import AccountingFirm from "@/Components/Book-Keeping/Accounting-Firm";
-import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
+// import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
 import ServiceScope from "@/Components/Book-Keeping/Service-scope";
 import Contact from "@/Components/Book-Keeping/Contact";
 import Facts from "@/Components/Book-Keeping/Facts";
@@ -24,7 +24,7 @@ export const metadata = {
 export default function PayrollPansionsPage() {
   return (
     <main className="min-h-screen bg-white">
-      <BookKeepingHerosection heroData={PAYROLL_PANSIONS_HERO_DATA} />
+      {/* <BookKeepingHerosection heroData={PAYROLL_PANSIONS_HERO_DATA} /> */}
       <ServiceScope data={PAYROLL_PANSIONS_SERVICE_SCOPE_DATA} />
       <WhyMatters data={PAYROLL_PANSIONS_WHY_MATTERS_DATA} />
   

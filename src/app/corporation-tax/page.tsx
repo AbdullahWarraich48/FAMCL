@@ -1,5 +1,5 @@
 import AccountingFirm from "@/Components/Book-Keeping/Accounting-Firm";
-import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
+// import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
 import ServiceScope from "@/Components/Book-Keeping/Service-scope";
 import Contact from "@/Components/Book-Keeping/Contact";
 import Facts from "@/Components/Book-Keeping/Facts";
@@ -24,7 +24,7 @@ export const metadata = {
 export default function CorporationTaxPage() {
   return (
     <main className="min-h-screen bg-white">
-      <BookKeepingHerosection heroData={CORPORATION_TAX_HERO_DATA} />
+      {/* <BookKeepingHerosection heroData={CORPORATION_TAX_HERO_DATA} /> */}
       <ServiceScope data={CORPORATION_TAX_SERVICE_SCOPE_DATA} />
       <WhyMatters data={CORPORATION_TAX_WHY_MATTERS_DATA} />
   
