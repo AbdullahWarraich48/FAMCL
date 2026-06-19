@@ -1,4 +1,4 @@
-import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
+// import BookKeepingHerosection from "@/Components/Book-Keeping/Herosection";
 import Faq from "@/Components/Book-Keeping/Faq";
 import FooterSection from "@/Components/footer";
 import { FAQS_PAGE_DATA } from "@/data/faqs/faqData";
@@ -14,7 +14,7 @@ export const metadata = {
 export default function FaqsPage() {
   return (
     <main className="min-h-screen bg-white">
-      <BookKeepingHerosection heroData={FAQS_HERO_DATA} />
+      {/* <BookKeepingHerosection heroData={FAQS_HERO_DATA} /> */}
       <Faq data={FAQS_PAGE_DATA} />
    <CtaExact /> 
       <FooterSection />
