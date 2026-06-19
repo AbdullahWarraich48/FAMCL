@@ -10,7 +10,7 @@ export const metadata = {
     export default function AccountsAndBookkeepingPage() {
   return (
     <>
-      <BookKeepingHerosection />
+      {/* <BookKeepingHerosection /> */}
       <ServiceScope />
     </>
   );
