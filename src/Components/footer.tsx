@@ -260,7 +260,15 @@ const FooterSection = () => {
         <div className="footer-inner mx-auto flex max-w-[1512px] flex-col items-start gap-6 py-4 text-left md:flex-row md:items-start md:justify-between md:gap-8 md:py-5">
           <div className="max-w-3xl space-y-1 text-left text-sm leading-relaxed text-white/95 md:text-base">
             <p>
-              © 2026 {BRAND_DISPLAY_NAME}. All rights reserved. Powered by Aibitsol.
+              © 2026 {BRAND_DISPLAY_NAME}. All rights reserved. Powered by{" "}
+              <a
+                href="https://aibitsol.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="font-semibold text-white underline-offset-2 transition-colors hover:text-white hover:underline focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-offset-2 focus-visible:ring-offset-[#2ca01c]"
+              >
+                Aibitsol
+              </a>
             </p>
             <p>
               Registered office: {REGISTERED_OFFICE_ADDRESS}. Company No.
