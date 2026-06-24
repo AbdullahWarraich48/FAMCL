@@ -79,7 +79,7 @@ export default function Foundation({
               </p>
             ) : null}
 
-            <p className="mt-8 text-base leading-[1.7] text-[#606b7a] sm:text-[17px] md:text-[18px]">
+            <p className="mt-8 text-justify text-base leading-[1.7] text-[#606b7a] sm:text-[17px] md:text-[18px]">
               {section.intro}
             </p>
 

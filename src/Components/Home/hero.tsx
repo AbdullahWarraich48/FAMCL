@@ -9,7 +9,9 @@ import {
 } from "@/data/homeHeroSlides";
 
 function OverlayHeroContent({ slide }: { slide: HomeHeroSlide }) {
-  const description = [slide.line1, slide.line2].filter(Boolean).join(" ");
+  const descriptionLines = [slide.line1, slide.line2, slide.line3].filter(
+    (line): line is string => Boolean(line?.trim()),
+  );
 
   return (
     <div className="mx-auto w-full max-w-5xl px-4 text-center sm:px-8">
@@ -22,10 +24,17 @@ function OverlayHeroContent({ slide }: { slide: HomeHeroSlide }) {
         ))}
       </h1>
 
-      {description ? (
-        <p className="mx-auto mt-5 max-w-3xl text-[clamp(0.9rem,1.8vw,1.125rem)] font-normal leading-relaxed text-white/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)] sm:mt-6">
-          {description}
-        </p>
+      {descriptionLines.length > 0 ? (
+        <div className="mx-auto mt-5 max-w-3xl space-y-2 sm:mt-6">
+          {descriptionLines.map((line) => (
+            <p
+              key={line}
+              className="text-[clamp(0.9rem,1.8vw,1.125rem)] font-normal leading-relaxed text-white/95 drop-shadow-[0_2px_8px_rgba(0,0,0,0.5)]"
+            >
+              {line}
+            </p>
+          ))}
+        </div>
       ) : null}
     </div>
   );
@@ -63,7 +72,7 @@ export default function LandingSection() {
                 className="object-cover object-center"
                 sizes="100vw"
               />
-              <div className="absolute inset-0 bg-black/55" />
+              <div className="absolute inset-0 bg-black/70" />
             </div>
           ))}
         </div>

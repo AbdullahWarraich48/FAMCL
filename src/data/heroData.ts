@@ -8,6 +8,6 @@ export const HERO_DATA = {
   subtitle: "FAM Chartered Accountants",
   title: "Local expertise that goes beyond accounting & tax",
   description:
-    "We support you at every stage of your financial journey from compliance to confident financial planning.",
+    "ACCA and ICAEW regulated Chartered Accountants and Tax Consultants. Over two decades of experience delivering tailored accounting and tax solutions. Clear advice beyond compliance — built on accuracy, judgement, and trust.",
   buttonLabel: "Book a Free Consultation",
 };

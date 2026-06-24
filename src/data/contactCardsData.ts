@@ -29,7 +29,7 @@ export const CONTACT_CARDS = [
       titleColor: "text-[#12254b]",
       buttonBorder: "border-[#1E63B3]",
       buttonText: "text-[#1E63B3]",
-      buttonHoverBg: "hover:bg-[#1E63B3]/10",
+      buttonHoverBg: "hover:bg-[#1E63B3] hover:text-white",
     },
   },
   {
@@ -46,7 +46,7 @@ export const CONTACT_CARDS = [
       titleColor: "text-[#12254b]",
       buttonBorder: "border-[#16a34a]",
       buttonText: "text-[#16a34a]",
-      buttonHoverBg: "hover:bg-[#16a34a]/10",
+      buttonHoverBg: "hover:bg-[#16a34a] hover:text-white",
     },
   },
   {
@@ -63,7 +63,7 @@ export const CONTACT_CARDS = [
       titleColor: "text-[#12254b]",
       buttonBorder: "border-red-600",
       buttonText: "text-red-600",
-      buttonHoverBg: "hover:bg-red-50",
+      buttonHoverBg: "hover:bg-red-600 hover:text-white",
     },
   },
 ] as const;

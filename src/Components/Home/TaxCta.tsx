@@ -37,18 +37,34 @@ export default function SelfAssessmentCta() {
                   {data.description}
                 </p>
 
-                <Button
-                  asChild
-                  className="mt-8 h-11 w-fit rounded-full bg-[#1E63B3] px-8 text-[13px] font-semibold leading-none text-white hover:bg-[#175dab]"
-                >
-                  <Link
-                    href={data.buttonHref}
-                    className="inline-flex items-center justify-center gap-2"
+                <div className="mt-8 flex flex-wrap items-center gap-3">
+                  <Button
+                    asChild
+                    className="h-11 w-fit rounded-full bg-[#1E63B3] px-8 text-[13px] font-semibold leading-none text-white hover:bg-[#175dab]"
                   >
-                    <span className="translate-x-1.5">{data.buttonLabel}</span>
-                    <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
-                  </Link>
-                </Button>
+                    <Link
+                      href={data.buttonHref}
+                      className="inline-flex items-center justify-center gap-2"
+                    >
+                      <span className="translate-x-1.5">{data.buttonLabel}</span>
+                      <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
+                    </Link>
+                  </Button>
+
+                  <Button
+                    asChild
+                    variant="outline"
+                    className="h-11 w-fit rounded-full border-2 border-[#1E63B3] bg-white px-8 text-[13px] font-semibold leading-none text-[#1E63B3] hover:bg-[#1E63B3] hover:text-white"
+                  >
+                    <Link
+                      href={data.secondaryButtonHref}
+                      className="inline-flex items-center justify-center gap-2"
+                    >
+                      <span>{data.secondaryButtonLabel}</span>
+                      <ArrowRight className="h-4 w-4 shrink-0" aria-hidden />
+                    </Link>
+                  </Button>
+                </div>
               </div>
             </div>
           </div>

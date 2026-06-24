@@ -75,7 +75,7 @@ export default function TfCornerExpansion({
           >
             <ContactBlock
               icon={Phone}
-              iconBgClassName="bg-[#f4a4a4]"
+              iconBgClassName="bg-red-600"
               label="Phone"
             >
               {card.phones.map((phone) => (
@@ -91,7 +91,7 @@ export default function TfCornerExpansion({
 
             <ContactBlock
               icon={Mail}
-              iconBgClassName="bg-[#9fd4a8]"
+              iconBgClassName="bg-[#16a34a]"
               label="Email"
             >
               <a
@@ -104,7 +104,7 @@ export default function TfCornerExpansion({
 
             <ContactBlock
               icon={MapPin}
-              iconBgClassName="bg-[#9ec5e8]"
+              iconBgClassName="bg-[#1E63B3]"
               label={card.canadaOffice.label}
             >
               <p>{card.canadaOffice.address}</p>
@@ -112,7 +112,7 @@ export default function TfCornerExpansion({
 
             <ContactBlock
               icon={MapPin}
-              iconBgClassName="bg-[#9ec5e8]"
+              iconBgClassName="bg-[#1E63B3]"
               label={card.usOffice.label}
             >
               <p>{card.usOffice.address}</p>
@@ -120,7 +120,7 @@ export default function TfCornerExpansion({
 
             <ContactBlock
               icon={Globe}
-              iconBgClassName="bg-[#9fd4a8]"
+              iconBgClassName="bg-[#12254B]"
               label="Website"
             >
               <Link

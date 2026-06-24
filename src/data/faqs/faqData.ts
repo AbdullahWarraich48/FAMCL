@@ -57,7 +57,7 @@ export const FAQS_PAGE_DATA: FaqSectionData = {
         {
           question: "How do I choose the right business structure?",
           answer:
-            "The right structure balances liability, tax, administration, and your plans (e.g. sole trader, partnership, or limited company). We compare options using your expected profits, risk, and long-term goals—not generic rules of thumb.",
+            "The right structure balances liability, tax, administration, and your plans (e.g. sole trader, partnership, or limited company). We compare options and most important tax implications under different business structures.",
         },
         {
           question: "What should I do if my business is facing cash-flow problems?",

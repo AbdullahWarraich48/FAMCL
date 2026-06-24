@@ -8,4 +8,6 @@ export const TAX_CTA_DATA = {
     "If you're not confident completing your self-assessment tax return, we're here to help. Our experienced advisors support you from start to finish ensuring accuracy, compliance, and peace of mind while helping you make the most of available allowances.",
   buttonLabel: "Get Started",
   buttonHref: "/self-assesment-tax",
+  secondaryButtonLabel: "Outsource",
+  secondaryButtonHref: "/recources/outsource",
 };

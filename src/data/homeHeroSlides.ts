@@ -5,8 +5,9 @@ export type HomeHeroSlide = {
   /** Original home hero uses the frosted card; additional slides use overlay text. */
   variant?: "card" | "overlay";
   heading: string;
-  line1: string;
-  line2: string;
+  line1?: string;
+  line2?: string;
+  line3?: string;
   ctaLabel: string;
   ctaHref: string;
 };
@@ -20,8 +21,11 @@ export const HOME_HERO_SLIDES: HomeHeroSlide[] = [
     backgroundImageAlt: "Professionals collaborating on financial planning",
     heading: "FAM Chartered Accountant",
     line1:
-      "We support you at every stage of your financial journey from compliance to confident financial planning.",
-    line2: "",
+      "ACCA and ICAEW regulated Chartered Accountants and Tax Consultants.",
+    line2:
+      "Over two decades of experience delivering tailored accounting and tax solutions.",
+    line3:
+      "Clear advice beyond compliance — built on accuracy, judgement, and trust.",
     ctaLabel: "Book a Free Consultation",
     ctaHref: "#contact",
   },

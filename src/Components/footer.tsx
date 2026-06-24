@@ -42,6 +42,10 @@ const FOR_YOU_LINKS: FooterLink[] = [
       "Inheritance Tax, Retirement Strategy & Estate Planning",
     href: "/inheritance-tax-retirement-strategy-estate-planning",
   },
+  {
+    label: "Tax Enquiries & Investigations",
+    href: "/tax-enquiries-and-investigations",
+  },
 ];
 
 const BUSINESS_FORMATION_LINKS: FooterLink[] = [
@@ -82,6 +86,7 @@ const COMPANY_LINKS: FooterLink[] = [
 const RESOURCES_LINKS: FooterLink[] = [
   { label: "News & Updates", href: "/recources/news-and-updates" },
   { label: "FAQs", href: "/faqs" },
+  { label: "Outsource", href: "/recources/outsource" },
   { label: "Tools & Calculators", href: "/recources/tools-calculator" },
 ];
 
@@ -255,7 +260,7 @@ const FooterSection = () => {
         <div className="footer-inner mx-auto flex max-w-[1512px] flex-col items-start gap-6 py-4 text-left md:flex-row md:items-start md:justify-between md:gap-8 md:py-5">
           <div className="max-w-3xl space-y-1 text-left text-sm leading-relaxed text-white/95 md:text-base">
             <p>
-              © 2026 {BRAND_DISPLAY_NAME}. All rights reserved.
+              © 2026 {BRAND_DISPLAY_NAME}. All rights reserved. Powered by Aibitsol.
             </p>
             <p>
               Registered office: {REGISTERED_OFFICE_ADDRESS}. Company No.

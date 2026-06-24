@@ -7,25 +7,28 @@ type OurCompanyFactsIconKey = BookkeepingFactsIconKey;
 
 export const OUR_COMPANY_FACTS_DATA: FactsData = {
   sectionLabel: "Core Principles",
-  heading: "FAM Chartered Accountants Core Principles",
+  heading: "Our Services Based on Three Core Principles",
   description:
-    "Our work is guided by three core principles that ensure clarity and accountability.",
+    "We ensure to provide quality service with great care of compliance, which creates value as convenience and growth for our clients.",
   cardStyle: "principles",
   items: [
     {
-      stat: "Accuracy before speed",
-      description: "",
-      iconKey: "clock" as OurCompanyFactsIconKey,
+      stat: "Quality Service",
+      description:
+        "Professional accounting and advisory delivered with accuracy, clarity, and consistent attention to detail.",
+      iconKey: "badge-percent" as OurCompanyFactsIconKey,
     },
     {
-      stat: "Judgement before optimisation",
-      description: "",
-      iconKey: "chart-pie" as OurCompanyFactsIconKey,
+      stat: "Care of Compliance",
+      description:
+        "Regulatory obligations handled carefully and proactively, keeping your records accurate and fully compliant.",
+      iconKey: "file-warning" as OurCompanyFactsIconKey,
     },
     {
-      stat: "Responsibility before convenience",
-      description: "",
-      iconKey: "building" as OurCompanyFactsIconKey,
+      stat: "Convenience & Growth",
+      description:
+        "Practical, accessible support that saves you time and helps your business grow with confidence.",
+      iconKey: "trend" as OurCompanyFactsIconKey,
     },
   ],
 };

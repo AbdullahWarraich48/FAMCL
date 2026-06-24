@@ -15,7 +15,7 @@ const chooseFirmCards: ChooseCardItem[] = [
     buttonBg: "bg-white/60",
     buttonBorder: "border-[#1E63B3]",
     buttonText: "text-[#1E63B3]",
-    buttonHover: "hover:bg-[#1E63B3]/10",
+    buttonHover: "hover:bg-[#1E63B3] hover:text-white",
   },
   {
     id: "meet-us",
@@ -31,7 +31,7 @@ const chooseFirmCards: ChooseCardItem[] = [
     buttonBg: "bg-white/60",
     buttonBorder: "border-[#16a34a]",
     buttonText: "text-[#16a34a]",
-    buttonHover: "hover:bg-[#16a34a]/10",
+    buttonHover: "hover:bg-[#16a34a] hover:text-white",
   },
   {
     id: "switching",
@@ -47,7 +47,7 @@ const chooseFirmCards: ChooseCardItem[] = [
     buttonBg: "bg-white/60",
     buttonBorder: "border-red-600",
     buttonText: "text-red-600",
-    buttonHover: "hover:bg-red-50",
+    buttonHover: "hover:bg-red-600 hover:text-white",
   },
 ];
 
@@ -101,7 +101,7 @@ const cloudSoftwareCards: ChooseCardItem[] = [
     id: "payroll-manager",
     title: "Payroll Manager",
     description:
-      "Cloud payroll software to manage pay runs, pensions, and HMRC submissions with confidence.",
+      "Payroll software to manage pay runs, pensions, and HMRC submissions with confidence.",
     buttonLabel: "Learn More",
     buttonHref: "/payroll-pansions",
     imageSrc: "/images/payroll-manager.jpg",

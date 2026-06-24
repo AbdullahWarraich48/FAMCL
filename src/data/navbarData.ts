@@ -10,7 +10,7 @@ export const NAV_LINKS: NavLink[] = [
     href: "/Business_Formation/start_business",
     hasDropdown: true,
   },
-  { label: "Industries", href: "#industries", hasDropdown: true },
+  { label: "Business Sectors", href: "#industries", hasDropdown: true },
   { label: "Company", href: "/Company/our-company", hasDropdown: true },
   { label: "Resources", href: "#resources", hasDropdown: true },
 ];
@@ -94,6 +94,10 @@ export const PERSONAL_SERVICES_COL1: { label: string; href: string; withArrow?: 
     withArrow: true,
   },
   { label: "Capital Gains & Property Tax", href: "/capital-gain-property-tax" },
+  {
+    label: "Tax Enquiries & Investigations",
+    href: "/tax-enquiries-and-investigations",
+  },
 ] as const;
 
 export const PERSONAL_SERVICES_COL2 = [
@@ -189,6 +193,7 @@ export const RESOURCES_COL1: { label: string; href: string; withArrow?: boolean 
 
 export const RESOURCES_COL2 = [
   { label: "FAQs", href: "/faqs" },
+  { label: "Outsource", href: "/recources/outsource" },
 ] as const;
 
 export const RESOURCES_COL3 = [

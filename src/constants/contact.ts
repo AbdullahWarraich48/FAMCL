@@ -1,9 +1,9 @@
-export const CONTACT_PHONE_DISPLAY = "+44 20 8144 4825";
+export const CONTACT_PHONE_DISPLAY = "44 20 8144 4825";
 export const CONTACT_PHONE_LABEL = `Contact Us: ${CONTACT_PHONE_DISPLAY}`;
 export const CONTACT_PHONE_HREF = "tel:+442081444825";
 
 export const OFFICE_PHONE_DISPLAY = CONTACT_PHONE_DISPLAY;
-export const OFFICE_PHONE_LABEL = `Office Number: ${OFFICE_PHONE_DISPLAY}`;
+export const OFFICE_PHONE_LABEL = `Contact Us: ${OFFICE_PHONE_DISPLAY}`;
 export const OFFICE_PHONE_HREF = CONTACT_PHONE_HREF;
 
 export const CONTACT_EMAIL = "info@famcl.uk";

@@ -14,7 +14,7 @@ export const OUR_COMPANY_FAQ_DATA: FaqSectionData = {
     {
       question: "Are you regulated?",
       answer:
-        "We operate as professional accountants in line with UK regulatory and professional body requirements. We can confirm our credentials and insurance on request.",
+        "We operate as professional accountants in line with UK regulatory and professional body requirements. We regulated by the Association of Chartered Certified Accountants – ACCA UK and the Institute of Chartered Accountants in England and Wales ICAEW UK.",
     },
     {
       question: "How do you approach advice?",

@@ -40,7 +40,7 @@ type OpenDropdown =
 const getDropdownKey = (label: string): OpenDropdown => {
   if (label === "For You") return "personal";
   if (label === "Business Formation") return "business-formation";
-  if (label === "Industries") return "who-we-help";
+  if (label === "Business Sectors") return "who-we-help";
   if (label === "Company") return "about-us";
   if (label === "Who We Help") return "who-we-help";
   if (label === "About Us") return "about-us";
@@ -118,7 +118,7 @@ export default function Navbar() {
     normalizePath(pathname) === normalizePath(href);
 
   const mainNavLinkClass =
-    "group flex items-center gap-1 whitespace-nowrap text-lg font-medium text-white transition-colors hover:text-white/90 rounded";
+    "group flex items-center gap-1 whitespace-nowrap text-lg font-bold text-white transition-colors hover:text-white/90 rounded";
 
   const getDropdownLinkClass = (href: string, extraClass = "") =>
     `group inline-flex items-center gap-2 text-sm font-medium ${
@@ -752,12 +752,12 @@ export default function Navbar() {
           </div>
         )}
 
-        {/* Industries dropdown */}
+        {/* Business Sectors dropdown */}
         {openDropdown === "who-we-help" && (
           <div
             className="absolute left-1/2 top-full z-40 w-[min(720px,calc(100vw-2rem))] -translate-x-1/2 pt-2"
             role="dialog"
-            aria-label="Industries"
+            aria-label="Business Sectors"
             onMouseEnter={() => setOpenDropdown("who-we-help")}
           >
             <div className="overflow-hidden rounded-2xl border border-slate-200 bg-white shadow-2xl">
@@ -770,7 +770,7 @@ export default function Navbar() {
                         <p className="text-[11px] font-semibold uppercase tracking-wider text-white/80">
                           Find out more about
                         </p>
-                        <h3 className="text-2xl font-bold text-white">Industries</h3>
+                        <h3 className="text-2xl font-bold text-white">Business Sectors</h3>
                       </div>
 
                       <div className="hidden h-10 w-px bg-white/25 sm:block" />
@@ -1150,7 +1150,7 @@ export default function Navbar() {
                   <li key={label}>
                     <Link
                       href={href}
-                      className="flex items-center justify-between py-2 text-base font-medium text-slate-700 hover:text-slate-900"
+                      className="flex items-center justify-between py-2 text-base font-bold text-slate-700 hover:text-slate-900"
                       onClick={handleCloseMenu}
                     >
                       <span>{label}</span>
@@ -1163,7 +1163,7 @@ export default function Navbar() {
                 <li key={label}>
                   <button
                     type="button"
-                    className="flex w-full items-center justify-between py-2 text-left text-base font-semibold text-slate-800"
+                    className="flex w-full items-center justify-between py-2 text-left text-base font-bold text-slate-800"
                     onClick={() =>
                       setOpenMobileSection((prev) => (prev === key ? null : key))
                     }
